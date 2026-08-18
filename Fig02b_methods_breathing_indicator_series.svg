@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 300" width="1600" height="300" data-study3-canonical-name="Fig02b_methods_breathing_indicator_series" data-study3-title-slug="breathing-performance-indicator">
+  <rect x="0" y="0" width="1600" height="300" rx="18" ry="18" fill="#000000" />
+  <title>Breathing Performance Indicator</title>
+  <desc>Breathing-performance indicator series used in the methods section. Keywords: Study 3; Viscereality; Fig02b_methods_breathing_indicator_series; Breathing Performance Indicator; breathing-performance-indicator; main manuscript figure</desc>
+  <g stroke="#707070" stroke-width="2.8" stroke-linecap="round" fill="none" stroke-linejoin="round">
+    <path d="M 100.00,222.00 L 1500.00,222.00" />
+    <path d="M 100.00,222.00 L 116.00,214.00" />
+    <path d="M 100.00,222.00 L 116.00,230.00" />
+    <path d="M 1500.00,222.00 L 1484.00,214.00" />
+    <path d="M 1500.00,222.00 L 1484.00,230.00" />
+  </g>
+  <g fill="#B0B0B0" font-family="DejaVu Sans" font-size="26" font-weight="400">
+    <text x="100.00" y="260.00" text-anchor="middle">Full contraction</text>
+    <text x="800.00" y="260.00" text-anchor="middle">Neutral</text>
+    <text x="1500.00" y="260.00" text-anchor="middle">Full expansion</text>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.0">
+    <path d="M 333.33,52.00 L 337.90,55.32" />
+    <path d="M 378.98,85.17 L 374.42,81.85" />
+    <path d="M 378.98,85.17 L 377.24,90.53" />
+    <path d="M 361.55,138.83 L 363.29,133.47" />
+    <path d="M 361.55,138.83 L 355.90,138.83" />
+    <path d="M 305.12,138.83 L 310.76,138.83" />
+    <path d="M 305.12,138.83 L 303.38,133.47" />
+    <path d="M 287.68,85.17 L 289.43,90.53" />
+    <path d="M 287.68,85.17 L 292.25,81.85" />
+    <path d="M 333.33,52.00 L 328.77,55.32" />
+    <path d="M 566.67,52.00 L 579.91,61.62" />
+    <path d="M 612.32,85.17 L 599.08,75.55" />
+    <path d="M 612.32,85.17 L 607.26,100.73" />
+    <path d="M 594.88,138.83 L 599.94,123.27" />
+    <path d="M 594.88,138.83 L 578.52,138.83" />
+    <path d="M 538.45,138.83 L 554.82,138.83" />
+    <path d="M 538.45,138.83 L 533.40,123.27" />
+    <path d="M 521.02,85.17 L 526.07,100.73" />
+    <path d="M 521.02,85.17 L 534.25,75.55" />
+    <path d="M 566.67,52.00 L 553.43,61.62" />
+    <path d="M 800.00,52.00 L 845.65,85.17" />
+    <path d="M 845.65,85.17 L 828.21,138.83" />
+    <path d="M 828.21,138.83 L 771.79,138.83" />
+    <path d="M 771.79,138.83 L 754.35,85.17" />
+    <path d="M 754.35,85.17 L 800.00,52.00" />
+    <path d="M 1033.33,52.00 L 1046.57,61.62" />
+    <path d="M 1078.98,85.17 L 1065.75,75.55" />
+    <path d="M 1078.98,85.17 L 1073.93,100.73" />
+    <path d="M 1061.55,138.83 L 1066.60,123.27" />
+    <path d="M 1061.55,138.83 L 1045.18,138.83" />
+    <path d="M 1005.12,138.83 L 1021.48,138.83" />
+    <path d="M 1005.12,138.83 L 1000.06,123.27" />
+    <path d="M 987.68,85.17 L 992.74,100.73" />
+    <path d="M 987.68,85.17 L 1000.92,75.55" />
+    <path d="M 1033.33,52.00 L 1020.09,61.62" />
+    <path d="M 1266.67,52.00 L 1271.23,55.32" />
+    <path d="M 1312.32,85.17 L 1307.75,81.85" />
+    <path d="M 1312.32,85.17 L 1310.57,90.53" />
+    <path d="M 1294.88,138.83 L 1296.62,133.47" />
+    <path d="M 1294.88,138.83 L 1289.24,138.83" />
+    <path d="M 1238.45,138.83 L 1244.10,138.83" />
+    <path d="M 1238.45,138.83 L 1236.71,133.47" />
+    <path d="M 1221.02,85.17 L 1222.76,90.53" />
+    <path d="M 1221.02,85.17 L 1225.58,81.85" />
+    <path d="M 1266.67,52.00 L 1262.10,55.32" />
+  </g>
+</svg>
