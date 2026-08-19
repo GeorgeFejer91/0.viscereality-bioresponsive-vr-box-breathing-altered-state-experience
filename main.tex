@@ -1,113 +1,44 @@
-% Secondary single-column preprint build for PsyArXiv-style sharing and review.
-\documentclass[12pt]{article}
+% Springer Nature Virtual Reality submission source; compile with pdflatex.
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[margin=1in]{geometry}
-\usepackage{setspace}
-\usepackage[natbibapa]{apacite}
-\usepackage[mathlines,switch]{lineno}
-\usepackage[hidelinks]{hyperref}
-\usepackage{url}
-\usepackage{caption}
 \usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{multirow}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{amsthm}
-\usepackage{mathrsfs}
-\usepackage[title]{appendix}
-\usepackage{xcolor}
-\usepackage{textcomp}
-\usepackage{manyfoot}
-\usepackage{booktabs}
-\usepackage{algorithm}
-\usepackage{algorithmicx}
-\usepackage{algpseudocode}
-\usepackage{listings}
 \usepackage{placeins}
-\usepackage{tikz}
-\usepackage{authblk}
-\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds,shapes.geometric}
 
-\theoremstyle{plain}
-\newtheorem{theorem}{Theorem}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{example}{Example}
-\newtheorem{remark}{Remark}
-\newtheorem{definition}{Definition}
-
-\urlstyle{same}
 \raggedbottom
-\onehalfspacing
-\setlength{\parskip}{0.35em}
-\setlength{\parindent}{1.2em}
-\setlength{\affilsep}{0.4em}
-\renewcommand\Authfont{\normalsize\bfseries}
-\renewcommand\Affilfont{\small\normalfont}
-\renewcommand\Authands{, }
-\renewcommand{\linenumberfont}{\normalfont\tiny\sffamily\color{gray}}
-\modulolinenumbers[1]
-\emergencystretch=2em
-\newcommand{\preprintlayouttuning}{1}
-\DeclareCaptionFont{snfigurecaption}{\rmfamily\fontsize{8}{9.5}\selectfont}
-\captionsetup[figure]{
-  font=snfigurecaption,
-  labelfont=bf,
-  textfont=normalfont,
-  justification=raggedright,
-  singlelinecheck=false,
-  labelsep=space,
-  name=Fig.,
-  skip=6pt
-}
 \setlength{\abovecaptionskip}{6pt plus 2pt minus 1pt}
 \setlength{\belowcaptionskip}{2pt plus 1pt minus 1pt}
 \setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
 \setlength{\floatsep}{12pt plus 2pt minus 2pt}
 \setlength{\intextsep}{10pt plus 2pt minus 2pt}
-\renewcommand{\topfraction}{0.9}
-\renewcommand{\bottomfraction}{0.8}
-\renewcommand{\textfraction}{0.08}
-\renewcommand{\floatpagefraction}{0.8}
-\setcounter{topnumber}{3}
-\setcounter{bottomnumber}{2}
-\setcounter{totalnumber}{4}
-
-\title{Viscereality: Bioresponsive Virtual Reality for Box Breathing and Altered-State Experience}
-
-\author[1,2,3]{George Fejer\thanks{Correspondence: george.fejer@aliusresearch.org}}
-\author[4]{Till Holzapfel}
-\author{Taru Hirvonen}
-\author[5]{Johannes Blum}
-\author[6]{Anestis Lalidis Mateo}
-\author[2]{Michael Gaebler}
-\author[7,8]{Bigna Lenggenhager}
-
-\affil[1]{University of Konstanz, Konstanz, Germany}
-\affil[2]{Max Planck Institute for Human Cognitive and Brain Sciences, Germany}
-\affil[3]{ALIUS Research Network, Germany}
-\affil[4]{University of Duisburg-Essen, Research Center Trustworthy Data Science and Security, Duisburg, Germany}
-\affil[5]{P\"adagogische Hochschule Schaffhausen, Schaffhausen, Switzerland}
-\affil[6]{Institute for Building Intelligence, Hochschule Bielefeld - University of Applied Sciences and Arts, Bielefeld, Germany}
-\affil[7]{AIR—Association for Independent Research, Zurich, Switzerland}
-\affil[8]{Department of Psychology, University of Zurich, Zurich, Switzerland}
-
-\date{\today}
 
 \begin{document}
 
+\title[Viscereality]{Viscereality: Bioresponsive Virtual Reality for Box Breathing and Altered-State Experience}
+
+\author*[1,2,3]{\fnm{George} \sur{Fejer}}\email{george.fejer@aliusresearch.org}
+\author[4]{\fnm{Till} \sur{Holzapfel}}\email{tillholzapfel@gmail.com}
+\author{\fnm{Taru} \sur{Hirvonen}}\email{2taruhi@gmail.com}
+\author[5]{\fnm{Johannes} \sur{Blum}}\email{johannes.blum@phsh.ch}
+\author[6]{\fnm{Anestis} \sur{Lalidis Mateo}}\email{alalidis@hsbi.de}
+\author[2]{\fnm{Michael} \sur{Gaebler}}\email{gaebler@mpib-berlin.mpg.de}
+\author[7,8]{\fnm{Bigna} \sur{Lenggenhager}}\email{bigna.lenggenhager@gmail.com}
+
+\affil*[1]{\orgname{University of Konstanz}, \orgaddress{\city{Konstanz}, \country{Germany}}}
+\affil[2]{\orgname{Max Planck Institute for Human Cognitive and Brain Sciences}, \orgaddress{\country{Germany}}}
+\affil[3]{\orgname{ALIUS Research Network}, \orgaddress{\country{Germany}}}
+\affil[4]{\orgname{University of Duisburg-Essen}, \orgdiv{Research Center Trustworthy Data Science and Security}, \orgaddress{\city{Duisburg}, \country{Germany}}}
+\affil[5]{\orgname{P\"adagogische Hochschule Schaffhausen}, \orgaddress{\city{Schaffhausen}, \country{Switzerland}}}
+\affil[6]{\orgdiv{Institute for Building Intelligence}, \orgname{Hochschule Bielefeld - University of Applied Sciences and Arts}, \orgaddress{\city{Bielefeld}, \country{Germany}}}
+\affil[7]{\orgname{AIR---Association for Independent Research}, \orgaddress{\city{Zurich}, \country{Switzerland}}}
+\affil[8]{\orgdiv{Department of Psychology}, \orgname{University of Zurich}, \orgaddress{\city{Zurich}, \country{Switzerland}}}
+
+\abstract{Breath-based interactions in virtual reality typically map breathing onto discrete visual objects or downstream physiological proxies. Viscereality takes a different approach, mapping lung volume onto a surrounding space composed of particles arranged in an orb enclosing the participant through interoceptive-exteroceptive sensory substitution, such that inhalation expands the environment outward and exhalation contracts it inward. The aesthetic texture of the particle field is controlled by coupled oscillators governing phase relationships among individual particles' animation cycles, making visual organisation an experimentally adjustable parameter independent of the respiratory mechanics. In a preregistered within-subjects study ($N = 39$), participants completed three 10-minute audio-guided box-breathing sessions in counterbalanced order: a high-symmetry VR condition in which oscillator coupling transiently aligned particles into geometric coherence during breath holds, an asymmetric VR condition in which coupling remained irregular throughout, and a black-screen control with only a minimal breathing performance indicator. Subjective experience was assessed with an altered states of consciousness questionnaire, temporal experience tracers, and three pictographic self-related measures. Relative to the black-screen control, VR conditions improved breathing synchronization, shifted participants toward a more spatially extended frame of self-reference, and produced altered-state profiles with strong perceptual effects, moderate positive effects, and weaker distressing effects. Despite lasting only 10 minutes, perceptual and positive effect intensities were superficially comparable to those reported in 90-minute facilitated breathwork sessions conducted without VR, while negative effects were lower. Temporal experience tracers converged with the retrospective questionnaire across all dimensions. Post-unmasking condition identification was centered near random guessing (Bang blinding index $= -.051$, 95\% CI $[-.359, .256]$), although the interval was too wide to establish intact blinding under the strict $\pm 0.2$ criterion; the symmetry manipulation yielded no difference on any outcome measure. These results suggest that even a brief bioresponsive VR breathing session can meaningfully augment both breathing behavior and subjective experience, and may warrant further exploration as a complement to established breathwork practices.}
+
+\keywords{biofeedback, breath-based interaction, breathwork, altered states of consciousness, particle systems}
+
 \maketitle
 
-\begin{abstract}
-Breath-based interactions in virtual reality typically map breathing onto discrete visual objects or downstream physiological proxies. Viscereality takes a different approach, mapping lung volume onto a surrounding space composed of particles arranged in an orb enclosing the participant through interoceptive-exteroceptive sensory substitution, such that inhalation expands the environment outward and exhalation contracts it inward. The aesthetic texture of the particle field is controlled by coupled oscillators governing phase relationships among individual particles' animation cycles, making visual organisation an experimentally adjustable parameter independent of the respiratory mechanics. In a preregistered within-subjects study ($N = 39$), participants completed three 10-minute audio-guided box-breathing sessions in counterbalanced order: a high-symmetry VR condition in which oscillator coupling transiently aligned particles into geometric coherence during breath holds, an asymmetric VR condition in which coupling remained irregular throughout, and a black-screen control with only a minimal breathing performance indicator. Subjective experience was assessed with an altered states of consciousness questionnaire, temporal experience tracers, and three pictographic self-related measures. Relative to the black-screen control, VR conditions improved breathing synchronization, shifted participants toward a more spatially extended frame of self-reference, and produced altered-state profiles with strong perceptual effects, moderate positive effects, and weaker distressing effects. Despite lasting only 10 minutes, perceptual and positive effect intensities were superficially comparable to those reported in 90-minute facilitated breathwork sessions conducted without VR, while negative effects were lower. Temporal experience tracers converged with the retrospective questionnaire across all dimensions. Participants remained blind to the aesthetic symmetry manipulation, which also yielded no difference on any outcome measure. These results suggest that even a brief bioresponsive VR breathing session can meaningfully augment both breathing behavior and subjective experience, and may warrant further exploration as a complement to established breathwork practices.
-\end{abstract}
-
-\noindent\textbf{Keywords:} biofeedback, breath-based interaction, breathwork, altered states of consciousness, particle systems
-
-\linenumbers
-
-% --- Introduction (inlined from Preprint 3) ---
 \section{Introduction}\label{sec:intro}
 
 % ═══════════════════════════════════════════════════════════════════
@@ -225,12 +156,11 @@ To evaluate the particle system's capacity to manipulate aesthetic properties, w
 
 The present study provides the first controlled empirical evaluation of Viscereality with naive participants. We used a preregistered within-subjects design with $N = 39$. Each participant completed three 10-minute audio-guided box-breathing sessions in counterbalanced order. These were a high-symmetry condition, in which positive oscillator coupling transiently aligned ongoing particle oscillations into dynamic geometric coherence during breath-hold phases; an anti-symmetry condition, in which negative coupling produced a visually irregular particle field throughout; and a control condition without the particle environment (retaining only a minimal breathing performance indicator; see Section~\ref{subsubsec:breathing_indicator}). The two particle conditions used identical particles, breath-coupled spatial dynamics, colour palette, and audio guidance, differing only in oscillator coupling parameters. The central within-VR contrast therefore concerned the aesthetic organisation of an otherwise identical breath-responsive scene.
 
-We assessed four substantive outcome domains together with a methodological blinding assessment. Breathing adherence was quantified as the phase-locking value between the observed respiratory signal and an ideal reference trajectory. Self-related experience was assessed with three pictographic measures, namely body-boundary permeability \citep{Dambrun2016}, spatial frame of reference \citep{Hanley2019}, and perceived self-size \citep{vidal2025inducing}. Altered states of consciousness were assessed retrospectively with the 11D-ASC \citep{studerus2010, Dittrich1998} and complemented by temporal experience tracers as a time-resolved measure of the same experiential domain \citep{Jachs2022}. Blinding efficacy between the two active VR conditions was assessed retrospectively with a two-stage procedure. Before unmasking, participants completed 12 probe questions covering condition-specific, shared, and sham features. After being told that the two active scenes differed, they indicated in which order the high-symmetry and anti-symmetry scenes had been presented, together with confidence ratings. These responses were used to estimate blinding efficacy with an adapted Bang’s Blinding Index \citep{Bang2004}.
+We assessed four substantive outcome domains together with a methodological blinding assessment. Breathing adherence was quantified as the phase-locking value between the observed respiratory signal and an ideal reference trajectory. Self-related experience was assessed with three pictographic measures, namely body-boundary permeability \citep{Dambrun2016}, spatial frame of reference \citep{Hanley2019}, and perceived self-size \citep{vidal2025inducing}. Altered states of consciousness were assessed retrospectively with the 11D-ASC \citep{studerus2010, Dittrich1998} and complemented by temporal experience tracers as a time-resolved measure of the same experiential domain \citep{Jachs2022}. Blinding efficacy between the two active VR conditions was assessed retrospectively with a two-stage procedure. Before unmasking, participants completed 12 probe questions covering condition-specific, shared, and sham features. After being told that the two active scenes differed, they indicated in which order the high-symmetry and anti-symmetry scenes had been presented, together with confidence ratings. These responses were used to estimate condition-identification blinding with a standard single-group Bang blinding index and an exploratory confidence-weighted directional variant \citep{Bang2004}.
 
 We hypothesised that, relative to black-screen box breathing, the bioresponsive VR conditions would increase breathing adherence and altered-state intensity, and would also influence the three self-related measures, which were included more exploratorily because prior evidence for environment-centred respiratory manipulations remains limited. Within VR, we further expected the high-symmetry condition to bias experience toward more positively valenced dimensions than the anti-symmetry condition.
 
-% --- End Introduction ---
-% --- Methods (inlined from Preprint 3) ---
+
 \section{Methods}\label{sec:methods}
 
 \subsection{Participants}\label{subsec:participants}
@@ -241,7 +171,7 @@ Participants were seated in a bean bag, wore noise-blocking headphones, held a c
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=\textwidth,trim=0 24bp 0 0,clip]{Fig01_methods_study_procedure_condition_flowchart.pdf}
+\includegraphics[width=\textwidth,trim=0 24bp 0 0,clip]{Fig01_study_procedure.pdf}
 \caption{Study procedure. After onboarding, each participant completed three 10-minute box-breathing sessions (black-screen control, symmetric VR, asymmetric VR) in one of six counterbalanced orders, with the full assessment battery administered in VR after each block. A blinding questionnaire followed the third block before the study concluded.}
 \label{fig:methods_study_procedure_flowchart}
 \end{figure}
@@ -261,11 +191,7 @@ The user is positioned at the center of a large particle-covered sphere. The pri
 % Figure 2 is maintained as a manual PowerPoint/SVG asset and exported via
 % 09_create_controller_pipeline_flowchart.py so the manuscript and OSF use
 % the same canonical figure.
-\ifdefined\preprintlayouttuning
-\includegraphics[width=\textwidth,height=0.59\textheight,keepaspectratio]{Fig02_methods_controller_pipeline.pdf}
-\else
-\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{Fig02_methods_controller_pipeline.pdf}
-\fi
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{Fig02_controller_pipeline.pdf}
 \caption{Signal processing pipeline from abdomen-mounted controller motion to rendered sphere radius. Raw 3D movement is projected onto a calibrated breathing axis, classified into inhale, exhale, or hold phases, and mapped onto expansion and contraction dynamics that update the visible sphere at a fixed velocity.}
 \label{fig:methods_controller_radius_pipeline}
 \end{figure}
@@ -289,17 +215,14 @@ All three conditions, including the control, displayed a minimal breathing perfo
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.92\textwidth]{Fig02b_methods_breathing_indicator_series.pdf}
-\caption{Breathing performance indicator across the box-breathing cycle. The pentagon segments shorten as the tracked breathing signal moves from half-volume toward the inhalation and exhalation extrema, disappearing at the target endpoints.}
-\label{fig:methods_breathing_indicator_series}
+\includegraphics[width=\textwidth]{Fig03_breathing_indicator.pdf}
+\caption{Central breathing-performance indicator shown in all three conditions. The pentagon ring was fully visible at the neutral sphere radius and progressively disappeared toward full contraction or full expansion, providing condition-matched feedback about breathing excursion.}
+\label{fig:methods_breathing_indicator}
 \end{figure}
 \FloatBarrier
 
-\ifdefined\preprintlayouttuning
-\FloatBarrier
-\fi
 \subsection{Outcome Measures}\label{subsec:measures}
-We retained the five preregistered measurement blocks used in the assessment battery, but organize them here into four recurring outcome families that also structure the Results section. These were adherence to box breathing, self-related measures, altered states of consciousness, and the blinding questionnaire. Within the altered-states family, we present the derived 3D-ASCr composites first as a dimensionality-reduced overview of the same 11D-ASC data, then the underlying 11D-ASC questionnaire, and finally temporal experience tracers as an exploratory convergent-validity check rather than as a separate outcome family, with full tracer analyses reported in the supplementary materials.
+We retained the five preregistered measurement blocks used in the assessment battery, but organize them here into four recurring outcome families that also structure the Results section. These were adherence to box breathing, self-related measures, altered states of consciousness, and the blinding questionnaire. Within the altered-states family, we present the derived 3D-ASCr composites first as a dimensionality-reduced overview of the same 11D-ASC data, then the underlying 11D-ASC questionnaire, and finally temporal experience tracers as an exploratory convergent-validity check rather than as a separate outcome family, with full tracer analyses reported in the OSF repository.
 
 \subsubsection{Adherence to Box Breathing}\label{subsubsec:measures_adherence}
 Adherence quantifies how closely each participant's breathing followed the instructed 4-4-4-4 box-breathing rhythm across each 10-minute block. The preregistered plan was to compute this from discrete phase labels produced by the breath-detection algorithm (Section~\ref{subsubsec:breath_detection}), which classifies each frame as inhale, exhale, hold, or bad tracking. The intended metric was phase-duration error, defined as the absolute deviation from the 4-second target per breathing phase, averaged across valid cycles per condition, with participant exclusion if fewer than 70\% of cycles were valid or if mean error exceeded 2 standard deviations above the sample mean.
@@ -310,18 +233,20 @@ We quantified adherence as the phase-locking value (PLV) between two continuous 
 
 Because PLV does not decompose into per-cycle validity counts, the preregistered 70\%-valid-cycle plus 2-SD mean-error exclusion rule could not be transferred directly. Outlier exclusion instead used a lower-tail global IQR rule on condition-level PLV values, elevated to participant-level exclusion if any condition was flagged. A full implementation-level description of the signal processing and PLV computation pipeline is provided in the accompanying analysis scripts and project materials.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.94\textwidth]{Fig03_methods_plv_p01_overview.pdf}
-\caption{Breathing dynamics for a representative participant (P01) across all three conditions. Observed sphere-radius traces (orange) are overlaid on the ideal 4-4-4-4 reference (blue), with per-block PLV values shown at right. Fragmented phase-label bars below each time series illustrate the segmentation noise that motivated the switch from phase-duration error to PLV as the adherence metric. Equivalent figures for all participants are provided in the supplementary materials.}
+\includegraphics[width=0.94\textwidth]{Fig04_plv_example.pdf}
+\caption{Breathing dynamics for a representative participant (P01) across all three conditions. Observed sphere-radius traces (orange) are overlaid on the ideal 4-4-4-4 reference (blue), with per-block PLV values shown at right. Fragmented phase-label bars below each time series illustrate the segmentation noise that motivated the switch from phase-duration error to PLV as the adherence metric. Equivalent figures for all participants are provided in the OSF repository.}
 \label{fig:method_p01_plv_overview}
 \end{figure}
 
 \subsubsection{Self-Related Measures}\label{subsubsec:measures_self}
-Three single-item pictographic instruments assessed self-related experience after each condition. The Perceived Body Boundaries Scale \citep{Dambrun2016} presents body silhouettes ranging from sharply delineated to fully diffuse; participants select the image best matching their felt boundary permeability. The Spatial Frame of Reference Continuum (SFoRC; \citealt{Hanley2020}) depicts a figure in concentric spatial zones from body-centered to environment-encompassing, indexing the degree to which the spatial sense of self extended beyond the body. The Small Self Scale \citep{Vidal2024} presents figures decreasing in size relative to their surroundings, capturing awe-like self-diminishment. All three yield a single ordinal score per condition. The three instruments were administered as separate single-item pictographic scales.
+Three single-item pictographic instruments assessed self-related experience after each condition. The Perceived Body Boundaries Scale \citep{Dambrun2016} presents body silhouettes ranging from sharply delineated to fully diffuse; participants select the image best matching their felt boundary permeability. The Spatial Frame of Reference Continuum (SFoRC; \citealt{Hanley2020}) depicts a figure in concentric spatial zones from body-centered to environment-encompassing, indexing the degree to which the spatial sense of self extended beyond the body. The Small Self Scale \citep{Vidal2024} presents figures decreasing in size relative to their surroundings, capturing awe-like self-diminishment. All three yield a single ordinal score per condition. The administered item keys and the study materials are available in the OSF repository (\url{https://osf.io/3v825/}).
+
+
 
 \subsubsection{Altered States of Consciousness}\label{subsubsec:measures_asc}
-The altered-states family was assessed with the 11D-ASC questionnaire and an exploratory temporal-tracer task. For presentation, we describe this family in the same internal order used in the Results section: derived 3D-ASCr composites, the full 11D-ASC questionnaire, and the exploratory temporal tracers, which are summarized briefly in the main text with full analyses in the supplementary materials.
+The altered-states family was assessed with the 11D-ASC questionnaire and an exploratory temporal-tracer task. For presentation, we describe this family in the same internal order used in the Results section: derived 3D-ASCr composites, the full 11D-ASC questionnaire, and the exploratory temporal tracers, which are summarized briefly in the main text with full analyses in the OSF repository.
 
 \medskip\noindent\textbf{3D-ASCr Composites.} To provide a compact overview before the full dimensional decomposition, we first summarize the preregistered 11D-ASC data using the revised 3D-ASCr composites \citep{Stocker2025}. Each composite is the unweighted mean of its constituent 11D subscale means: Positive Effects (the mean of EU, SE, BS, IS, DIS, and CMP), Distressing Effects (the mean of ICC and ANX), and Perceptual Effects (the mean of CI, EI, and AVS). Because these composites are derived deterministically from the 11D subscale scores, they do not introduce additional analytic degrees of freedom; they serve as a dimensionality-reduced summary of the same measurement instrument. The revised 3D-ASCr scoring scheme became available after preregistration, so the composites were not preregistered as separate outcomes, but the underlying 11D-ASC data from which they are computed were.
 
@@ -329,16 +254,16 @@ The altered-states family was assessed with the 11D-ASC questionnaire and an exp
 
 \medskip\phantomsection\noindent\textbf{Temporal Experience Tracers (Exploratory).}\label{subsubsec:measures_tracers} Temporal experience tracers are a continuous retrospective self-report method in which participants draw intensity curves for specified experiential dimensions over a session's time course \citep{Jachs2022,Damci2023,LewisHealy2024}. Unlike global retrospective ratings, tracers preserve temporal dynamics.
 
-\begin{wrapfigure}[24]{r}{0.46\textwidth}
-\vspace{-0.4\baselineskip}
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.94\linewidth]{Fig05_tracer_schematic.pdf}
-\caption{Temporal trace profiles illustrating peak intensity and area under the curve (AUC). Peak is the maximum intensity reached, whereas AUC summarizes cumulative experiential load across the session.}
+\includegraphics[width=0.82\textwidth,trim=0 16bp 0 0,clip]{Fig05_tracer_schematic.pdf}
+\caption{Temporal experience tracers capture within-session intensity profiles that a single retrospective ASC slider cannot disambiguate. Two profiles with identical peaks but different cumulative loads illustrate how tracers separately recover peak intensity and area under the curve (AUC), two summary variables that may differentially underlie a given 0--100 VAS rating depending on how participants anchor their response.}
 \label{fig:methods_tracer_peak_auc_schematic}
-\end{wrapfigure}
+\end{figure}
+\FloatBarrier
 
-For each of the 11 ASC dimensions, the constituent questionnaire items were consolidated into a single prompt that named the construct and briefly described what it refers to, yielding one tracer per dimension rather than 42 individual item-level ratings. Participants traced how each dimension's intensity changed across the block using the VR controller on a world-space time--value plotting surface. The controller's 3D position was projected onto a 2D drawing plane, with input gated by a trigger-hold mechanism to ensure intentional drawing and constant spatial spacing of emitted points regardless of hand speed. This produced 11 continuous traces per condition, each summarized by peak intensity (maximum value) and area under the curve (AUC; cumulative experiential load; Figure~\ref{fig:methods_tracer_peak_auc_schematic}). The tracers were intended as an exploratory adjunct to the ASC questionnaire, testing whether 11 dimension-level traces recover comparable information to the full 42-item instrument. Because the tracers did not change the interpretation of our primary results, full tracer analyses are reported in the supplementary materials.
-\par\FloatBarrier
+For each of the 11 ASC dimensions, the constituent questionnaire items were consolidated into a single prompt that named the construct and briefly described what it refers to, yielding one tracer per dimension rather than 42 individual item-level ratings. Participants traced how each dimension's intensity changed across the block using the VR controller on a world-space time--value plotting surface. The controller's 3D position was projected onto a 2D drawing plane, with input gated by a trigger-hold mechanism to ensure intentional drawing and constant spatial spacing of emitted points regardless of hand speed. This produced 11 continuous traces per condition, each summarized by peak intensity (maximum value) and area under the curve (AUC; cumulative experiential load; Figure~\ref{fig:methods_tracer_peak_auc_schematic}). The tracers were intended as an exploratory adjunct to the ASC questionnaire, testing whether 11 dimension-level traces recover comparable information to the full 42-item instrument. Because the tracers did not change the interpretation of our primary results, full tracer analyses are reported in the OSF repository.
+
 
 \subsubsection{Blinding Questionnaire}\label{subsubsec:measures_blinding}
 Blinding was assessed in two phases. In the pre-unmasking phase, participants were told that the study investigated how subtle differences in visual aesthetics might influence perception in virtual reality. We constructed a 12-item ad hoc masked-comparison questionnaire for this study. For each item, participants chose whether the feature was stronger in Scenario 1, stronger in Scenario 2, equal in both scenarios, or absent in both scenarios. The chance baseline was 0.25. Scenario labels referred to the two virtual-reality conditions in encounter order. The item set covered three hidden domains. These were manipulation-relevant symmetry/coordination cues that genuinely differed between the two VR conditions, matched comparison features that were present similarly in both conditions and therefore should be judged as equal, and foil (sham) features that were not present in either condition and therefore should be judged as absent. There were four items per domain.
@@ -349,29 +274,28 @@ In the post-unmasking phase, participants were told that one condition featured 
 
 \subsection{Preregistration and Statistical Analysis}\label{subsec:stats}
 
-The study was preregistered on AsPredicted (\#262,545; \href{https://aspredicted.org/qc3rz2.pdf}{\texttt{https://aspredicted.org/qc3rz2.pdf}}). We retained all preregistered design elements and outcome families. The preregistered analysis plan specified a repeated-measures ANOVA with condition as the within-subjects factor and presentation order as a covariate for each outcome, two planned contrasts (pooled VR versus black-screen control, and symmetric versus asymmetric), and parallel Bayesian analyses. Adherence was to be quantified as phase-duration error with a cycle-validity exclusion rule, as described and motivated in Section~\ref{subsubsec:measures_adherence}. We deviated from this plan in several respects. Each deviation is listed below with its rationale, and a compact preregistration-versus-implementation table is provided in the supplementary materials.
+The study was preregistered on AsPredicted (\#262,545). The unchanged registry record is archived with the data, code, and study materials at OSF (\url{https://osf.io/3v825/}). We retained all preregistered design elements and outcome families. The preregistered analysis plan specified a repeated-measures ANOVA with condition as the within-subjects factor and presentation order as a covariate for each outcome, two planned contrasts (pooled VR versus black-screen control, and symmetric versus asymmetric), and parallel Bayesian analyses. Adherence was to be quantified as phase-duration error with a cycle-validity exclusion rule, as described and motivated in Section~\ref{subsubsec:measures_adherence}. We deviated from this plan in several respects. Each deviation is listed below with its rationale, and a compact preregistration-versus-implementation table is provided in the OSF repository.
 
 \medskip\noindent\textbf{Adherence metric.} Phase-duration error was replaced by PLV because the recorded phase-label data were too fragmented to yield reliable per-phase error estimates without introducing arbitrary binning decisions (see Section~\ref{subsubsec:measures_adherence} for a full account). The associated exclusion rule was changed from 70\%-valid-cycle plus 2-SD mean-error to a lower-tail global IQR rule on condition-level PLV values, because PLV does not decompose into per-cycle validity counts.
 
-\medskip\noindent\textbf{Omnibus condition test.} The preregistered RM-ANOVA with condition and order was replaced by an order-adjusted mixed-effects likelihood-ratio test comparing a model with condition and block-position order against an order-only model, with participant as random intercept. The realized counterbalanced design was more naturally represented by condition-specific block-position covariates than by a single omnibus order term, and this formulation preserves the intended within-subject and order-adjusted comparison without forcing an approximation to the realized order structure. A condition-only repeated-measures ANOVA without the order covariate is retained in the supplementary outputs as a sensitivity check.
+\medskip\noindent\textbf{Omnibus condition test.} The preregistered RM-ANOVA with condition and order was replaced by an order-adjusted mixed-effects likelihood-ratio test comparing a model with condition and block-position order against an order-only model, with participant as random intercept. The realized counterbalanced design was more naturally represented by condition-specific block-position covariates than by a single omnibus order term, and this formulation preserves the intended within-subject and order-adjusted comparison without forcing an approximation to the realized order structure. A condition-only repeated-measures ANOVA without the order covariate is retained in the OSF outputs as a sensitivity check.
 
 \medskip\noindent\textbf{Planned contrasts.} The two preregistered planned contrasts were implemented as standalone paired $t$-tests, which yield the same paired contrast statistics as ANOVA follow-ups in this within-subject setting. These serve as the confirmatory anchor for all multi-test outcome families in the Results section, and for significant planned contrasts in the altered-state families we additionally report paired common-language effect sizes (CLES), defined as the proportion of participants whose score was higher in the VR condition than in the control condition \citep{McGraw1992}.
 
-\medskip\noindent\textbf{Robustness and multiplicity.} Because Shapiro--Wilk checks indicated non-normality for several condition-level and difference-score distributions, Wilcoxon signed-rank tests and Friedman omnibus tests were added as distribution-free robustness checks. The preregistration did not specify a multiple-comparison correction strategy. We applied Benjamini--Hochberg false-discovery-rate (FDR) correction within each multi-test outcome family (11 ASC dimensions, 3 derived 3D-ASCr dimensions, 11 tracer peak variables, 11 tracer AUC variables, 3 self-related variables). Main-text confirmatory interpretations are anchored in the planned contrasts with uncorrected $p$ values. FDR-adjusted $q$ values and the full robustness-check output are reported in the supplementary materials and are mentioned in the main text only when they materially qualify the confirmatory pattern.
+\medskip\noindent\textbf{Robustness and multiplicity.} Because Shapiro--Wilk checks indicated non-normality for several condition-level and difference-score distributions, Wilcoxon signed-rank tests and Friedman omnibus tests were added as distribution-free robustness checks. The preregistration did not specify a multiple-comparison correction strategy. We applied Benjamini--Hochberg false-discovery-rate (FDR) correction within each multi-test outcome family (11 ASC dimensions, 3 derived 3D-ASCr dimensions, 11 tracer peak variables, 11 tracer AUC variables, 3 self-related variables). Main-text confirmatory interpretations are anchored in the planned contrasts with uncorrected $p$ values. FDR-adjusted $q$ values and the full robustness-check output are reported in the OSF repository and are mentioned in the main text only when they materially qualify the confirmatory pattern.
 
 \medskip\noindent\textbf{3D-ASCr composites.} The revised 3D-ASCr scoring scheme \citep{Stocker2025} became available after preregistration. Because these composites are deterministic averages of the preregistered 11D-ASC subscale scores, they do not introduce additional analytic degrees of freedom and are presented as a dimensionality-reduced summary rather than as separate confirmatory endpoints (see Section~\ref{subsubsec:measures_asc}).
 
-\medskip\noindent\textbf{Bayesian analyses.} Bayesian analyses were preregistered and run in parallel on the same included sample ($N = 39$). Omnibus Bayes factors compared a point-null model without condition ($H_0$: outcome $\sim$ order + participant random intercept) against a model that additionally included condition ($H_1$: outcome $\sim$ condition + order + participant random intercept), using the BayesFactor R package with explicit prior settings (fixed-effect $r = 0.50$, continuous-covariate $r = \sqrt{2}/4 \approx 0.354$, random-effect nuisance $r = 1.00$; \citealt{BayesFactor}; \citealp{vanDoorn2021JASPBayesian,kruschke2021barg}). For the two planned paired contrasts, we compared $H_0$ ($\delta = 0$) against two-sided $H_1$ ($\delta \neq 0$) using a Bayesian paired $t$-test with the default Cauchy prior on standardized effect size ($r = \sqrt{2}/2 \approx 0.707$; \citealt{BayesFactor}; \citealp{vanDoorn2021JASPBayesian}). Preregistered one-sided ordered checks (symmetric $>$ asymmetric $>$ black-screen) were restricted to EU, BS, and AVS. We report BF$_{10}$ values (and BF$_{01} = 1/\mathrm{BF}_{10}$ when the data favor the null) as relative evidence rather than as posterior probabilities or effect sizes \citep{vanDoorn2021JASPBayesian,kruschke2021barg}. Posterior median standardized effect sizes with 95\% credible intervals and prior-robustness checks are reported in the supplementary materials.
+\medskip\noindent\textbf{Bayesian analyses.} Bayesian analyses were preregistered and run in parallel on the same included sample ($N = 39$). Omnibus Bayes factors compared a point-null model without condition ($H_0$: outcome $\sim$ order + participant random intercept) against a model that additionally included condition ($H_1$: outcome $\sim$ condition + order + participant random intercept), using the BayesFactor R package with explicit prior settings (fixed-effect $r = 0.50$, continuous-covariate $r = \sqrt{2}/4 \approx 0.354$, random-effect nuisance $r = 1.00$; \citealt{BayesFactor}; \citealp{vanDoorn2021JASPBayesian,kruschke2021barg}). For the two planned paired contrasts, we compared $H_0$ ($\delta = 0$) against two-sided $H_1$ ($\delta \neq 0$) using a Bayesian paired $t$-test with the default Cauchy prior on standardized effect size ($r = \sqrt{2}/2 \approx 0.707$; \citealt{BayesFactor}; \citealp{vanDoorn2021JASPBayesian}). Preregistered one-sided ordered checks (symmetric $>$ asymmetric $>$ black-screen) were restricted to EU, BS, and AVS. We report BF$_{10}$ values (and BF$_{01} = 1/\mathrm{BF}_{10}$ when the data favor the null) as relative evidence rather than as posterior probabilities or effect sizes \citep{vanDoorn2021JASPBayesian,kruschke2021barg}. Posterior median standardized effect sizes with 95\% credible intervals and prior-robustness checks are reported in the OSF repository.
 
-\medskip\noindent\textbf{Blinding analyses.} Pre-unmasking blinding was analyzed at four levels: category-level accuracy against the 0.25 chance baseline, signal-detection $d'$ and criterion $c$ from binary hit/false-alarm recoding, conditional directional accuracy among symmetry-item detections against 0.50, and chi-square uniformity tests on response distributions. For post-unmasking condition identification, we report a single-group Bang blinding index (BBI) as the primary endpoint \citep{Bang2004,Kolahi2009}, with legacy unweighted and confidence-weighted BI variants retained for reproducibility. Under Bang's framework, the index is centered at 0 (random guessing), with positive values indicating unblinding and negative values indicating opposite guessing. Values within $|$BI$| \le 0.2$ are interpreted as functionally intact blinding \citep{Qin2024,Kolahi2009}.
+\medskip\noindent\textbf{Blinding analyses.} Pre-unmasking blinding was analyzed at four levels: category-level accuracy against the 0.25 chance baseline, signal-detection $d'$ and criterion $c$ from binary hit/false-alarm recoding, conditional directional accuracy among symmetry-item detections against 0.50, and chi-square uniformity tests on response distributions. For post-unmasking identification, responses were classified as correct ($R$), incorrect ($W$), or uncertain ($U$) from the participant's selected active-VR session and the counterbalanced condition order. The primary single-group Bang blinding index was $\mathrm{BBI}=(R-W)/(R+W+U)$ \citep{Bang2004,Kolahi2009}; its 95\% confidence interval was obtained by participant-level bootstrap resampling. The point estimate is centered at 0 under balanced correct and incorrect identification, with positive values indicating correct identification and negative values indicating opposite identification. We treated intact blinding as established only when the entire 95\% interval lay within $[-0.2,0.2]$ \citep{Qin2024,Kolahi2009}. We additionally report the legacy exploratory confidence-weighted directional index, defined as the confidence-weighted mean of correct classifications among directional responses with confidence greater than zero, minus 0.5. Bang interpretation bands were not applied to this exploratory variant.
 
 \medskip\noindent\textbf{Exploratory analyses.} Two additional analyses complemented the confirmatory tests. We fit condition $\times$ PLV interaction models to test whether breathing synchronization moderated subjective effects, and we computed ASC--tracer correspondence correlations between ASC ratings and matched tracer dimensions (peak and AUC).
 
-% --- End Methods ---
-% --- Results (inlined from Preprint 3) ---
+
 \section{Results}\label{sec:results}
 
-Across the four recurring outcome families, condition effects were consistently driven by the contrast between virtual-reality and black-screen conditions. No outcome showed a reliable symmetric-versus-asymmetric difference. We report the results in the same family order used in Methods: adherence, self-related measures, altered states of consciousness, and the blinding questionnaire. Within the altered-states family, the internal order is 3D-ASCr composites and the 11D-ASC questionnaire; temporal experience tracers are summarized briefly as a convergent-validity check, with full analyses in the supplementary materials. For all multi-test families, confirmatory interpretations are anchored in the preregistered planned contrasts evaluated as paired $t$-tests, with the order-adjusted mixed-effects omnibus noted for each family as context. Wilcoxon signed-rank robustness checks, Friedman omnibus tests, and FDR-adjusted $q$ values are documented in the supplementary materials and are mentioned here only when they materially qualify the paired $t$ pattern.
+Across the four recurring outcome families, condition effects were consistently driven by the contrast between virtual-reality and black-screen conditions. No outcome showed a reliable symmetric-versus-asymmetric difference. We report the results in the same family order used in Methods: adherence, self-related measures, altered states of consciousness, and the blinding questionnaire. Within the altered-states family, the internal order is 3D-ASCr composites and the 11D-ASC questionnaire; temporal experience tracers are summarized briefly as a convergent-validity check, with full analyses in the OSF repository. For all multi-test families, confirmatory interpretations are anchored in the preregistered planned contrasts evaluated as paired $t$-tests, with the order-adjusted mixed-effects omnibus noted for each family as context. Wilcoxon signed-rank robustness checks, Friedman omnibus tests, and FDR-adjusted $q$ values are documented in the OSF repository and are mentioned here only when they materially qualify the paired $t$ pattern.
 
 \subsection{Sample and Exclusions}\label{subsec:results_sample}
 
@@ -385,7 +309,7 @@ To test whether visual biofeedback improved adherence to the guided box-breathin
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=\textwidth,trim=0 8bp 0 0,clip]{Fig04_results_plv_exclusion_and_adherence_unified.pdf}
+\includegraphics[width=\textwidth,trim=0 8bp 0 0,clip]{Fig06_plv_results.pdf}
 \caption{Breathing adherence (PLV) by condition for the included sample (N = 39). Violin plots show condition-wise distributions with paired individual trajectories in gray. The dashed red line marks the pooled lower-tail IQR exclusion cutoff (0.366); hollow circles and red crosses indicate flagged participants and their below-cutoff values, respectively. If any single condition fell below the cutoff, the participant was excluded entirely from all analyses across all conditions. Pooled VR conditions showed significantly higher PLV than the black-screen control.}
 \label{fig:results_plv_overview}
 \end{figure}
@@ -396,9 +320,6 @@ To test whether visual biofeedback improved adherence to the guided box-breathin
 To assess whether the breath-responsive virtual environment shifted subjective self-representation, we compared three pictographic instruments across conditions. Only the spatial frame-of-reference continuum showed a condition effect. Participants reported a more spatially extended sense of self during virtual-reality conditions, with $M = 3.15$ ($SD = 1.41$) for black screen, $M = 4.18$ ($SD = 1.82$) for symmetric VR, and $M = 4.26$ ($SD = 1.73$) for asymmetric VR. The planned pooled-VR-versus-black-screen contrast confirmed the effect, $t(38) = 4.28$, $p < .001$, $d_z = 0.69$, 95\% CI $[0.56, 1.57]$. The symmetric-versus-asymmetric contrast was not significant, $t(38) = -0.32$, $p = .752$. The order-adjusted mixed-effects omnibus converged with this pattern, $\chi^2(2) = 20.04$, $p < .001$. Neither perceived body-boundary permeability ($t(38) = -0.17$, $p = .864$) nor small self ($t(38) = 1.39$, $p = .173$) showed a significant VR-versus-black contrast, and no self-related measure showed a significant symmetric-versus-asymmetric contrast.
 
 Bayesian comparisons agreed with this pattern at the planned-contrast level. For spatial frame of reference, the pooled-VR-versus-black contrast was about 204.4 times more likely than no difference ($\mathrm{BF}_{10} = 204.44$). Perceived body boundaries instead favored the null for that same contrast ($\mathrm{BF}_{01} = 5.71$), while small self remained only weakly informative in the null direction ($\mathrm{BF}_{01} = 2.39$), consistent with the absence of a reliable self-related effect outside the spatial-frame measure.
-\ifdefined\preprintlayouttuning
-\FloatBarrier
-\fi
 
 \subsubsection{Altered States of Consciousness}\label{subsubsec:results_asc}
 
@@ -411,7 +332,7 @@ No composite showed a symmetric-versus-asymmetric difference (all $p \ge .357$).
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=\textwidth]{Fig06_results_3d_ascr_condition_grid.pdf}
+\includegraphics[width=\textwidth]{Fig07_3d_ascr_results.pdf}
 \caption{Condition-wise distributions for the three 3D-ASCr composites (N = 39). All three dimensions increased in VR relative to the black-screen control, with the largest effect for Perceptual Effects; no symmetric-versus-asymmetric differences emerged.}
 \label{fig:results_asc3}
 \end{figure}
@@ -420,24 +341,20 @@ No composite showed a symmetric-versus-asymmetric difference (all $p \ge .357$).
 \fi
 
 \paragraph{11D-ASC questionnaire.}
-Six subscales showed significant pooled-VR-versus-black-screen planned contrasts: Experience of Unity ($t(38) = 3.50$, $p = .001$, $d_z = 0.56$), Spiritual Experience ($t(38) = 2.58$, $p = .014$, $d_z = 0.41$), Disembodiment ($t(38) = 2.59$, $p = .014$, $d_z = 0.41$), Elementary Imagery ($t(38) = 4.71$, $p < .001$, $d_z = 0.75$), Audio-Visual Synesthesia ($t(38) = 5.15$, $p < .001$, $d_z = 0.82$), and Changed Meaning of Percepts ($t(38) = 3.30$, $p = .002$, $d_z = 0.53$). On the native ASC scale, these pooled-VR increases ranged from 6.6 points for Spiritual Experience to 25.6 points for Audio-Visual Synesthesia. Standardized effects ranged from moderate ($d_z = 0.41$ for Spiritual Experience and Disembodiment) to large ($d_z = 0.82$ for Audio-Visual Synesthesia), with 67.9\% to 87.2\% of participants scoring higher in VR than in the control condition across these six dimensions. Impaired Control and Cognition was significant at the uncorrected level ($t(38) = 2.15$, $p = .038$, $d_z = 0.34$) but borderline after within-family FDR adjustment ($q = .060$). Anxiety did not reach significance ($t(38) = 1.92$, $p = .063$). No subscale showed a significant symmetric-versus-asymmetric contrast (all $p \ge .166$). Condition-wise descriptives for all 11 subscales are reported in the supplementary materials.
+Six subscales showed significant pooled-VR-versus-black-screen planned contrasts: Experience of Unity ($t(38) = 3.50$, $p = .001$, $d_z = 0.56$), Spiritual Experience ($t(38) = 2.58$, $p = .014$, $d_z = 0.41$), Disembodiment ($t(38) = 2.59$, $p = .014$, $d_z = 0.41$), Elementary Imagery ($t(38) = 4.71$, $p < .001$, $d_z = 0.75$), Audio-Visual Synesthesia ($t(38) = 5.15$, $p < .001$, $d_z = 0.82$), and Changed Meaning of Percepts ($t(38) = 3.30$, $p = .002$, $d_z = 0.53$). On the native ASC scale, these pooled-VR increases ranged from 6.6 points for Spiritual Experience to 25.6 points for Audio-Visual Synesthesia. Standardized effects ranged from moderate ($d_z = 0.41$ for Spiritual Experience and Disembodiment) to large ($d_z = 0.82$ for Audio-Visual Synesthesia), with 67.9\% to 87.2\% of participants scoring higher in VR than in the control condition across these six dimensions. Impaired Control and Cognition was significant at the uncorrected level ($t(38) = 2.15$, $p = .038$, $d_z = 0.34$) but borderline after within-family FDR adjustment ($q = .060$). Anxiety did not reach significance ($t(38) = 1.92$, $p = .063$). No subscale showed a significant symmetric-versus-asymmetric contrast (all $p \ge .166$). Condition-wise descriptives for all 11 subscales are reported in the OSF repository.
 
-Order-adjusted mixed-effects omnibus tests converged with the planned-contrast pattern for most subscales, with one divergence. Impaired Control and Cognition showed a marginal mixed-model omnibus ($p = .040$, $q = .062$) but was supported by a non-parametric Friedman robustness check ($p < .001$); this divergence is documented in the supplementary materials.
+Order-adjusted mixed-effects omnibus tests converged with the planned-contrast pattern for most subscales, with one divergence. Impaired Control and Cognition showed a marginal mixed-model omnibus ($p = .040$, $q = .062$) but was supported by a non-parametric Friedman robustness check ($p < .001$); this divergence is documented in the OSF repository.
 
-Bayesian planned contrasts supported the same six dimensions. The strongest evidence concentrated in Audio-Visual Synesthesia ($\mathrm{BF}_{10} = 2{,}408$) and Elementary Imagery ($\mathrm{BF}_{10} = 670$), followed by Experience of Unity ($\mathrm{BF}_{10} = 64.0$), Changed Meaning of Percepts ($\mathrm{BF}_{10} = 12.6$), Spiritual Experience ($\mathrm{BF}_{10} = 5.60$), and Disembodiment ($\mathrm{BF}_{10} = 4.94$). Blissful State, Insightfulness, and Complex Imagery favored the null ($\mathrm{BF}_{01}$ range 3.3--8.8), while Impaired Control and Cognition and Anxiety remained inconclusive. Symmetric-versus-asymmetric Bayesian contrasts uniformly favored no difference ($\mathrm{BF}_{01}$ range 2.3--5.7; per-dimension values in the supplementary materials).
+Bayesian planned contrasts supported the same six dimensions. The strongest evidence concentrated in Audio-Visual Synesthesia ($\mathrm{BF}_{10} = 2{,}408$) and Elementary Imagery ($\mathrm{BF}_{10} = 670$), followed by Experience of Unity ($\mathrm{BF}_{10} = 64.0$), Changed Meaning of Percepts ($\mathrm{BF}_{10} = 12.6$), Spiritual Experience ($\mathrm{BF}_{10} = 5.60$), and Disembodiment ($\mathrm{BF}_{10} = 4.94$). Blissful State, Insightfulness, and Complex Imagery favored the null ($\mathrm{BF}_{01}$ range 3.3--8.8), while Impaired Control and Cognition and Anxiety remained inconclusive. Symmetric-versus-asymmetric Bayesian contrasts uniformly favored no difference ($\mathrm{BF}_{01}$ range 2.3--5.7; per-dimension values in the OSF repository).
 
 The preregistered one-sided ordering checks were more selective. For the predicted asymmetric-greater-than-black step, the data supported the directional effect for Experience of Unity ($\mathrm{BF}_{10} = 87.7$) and Audio-Visual Synesthesia ($\mathrm{BF}_{10} = 745.0$) but not for Blissful State ($\mathrm{BF}_{01} = 2.68$). For the predicted symmetric-greater-than-asymmetric step, the data favored the null for Experience of Unity and Blissful State ($\mathrm{BF}_{01} = 8.07$ and $12.43$) and remained inconclusive for Audio-Visual Synesthesia ($\mathrm{BF}_{10} = 0.79$).
 
 \paragraph{Temporal experience tracers (exploratory).}
-Temporal experience tracers broadly confirmed the questionnaire pattern, with significant pooled ASC-tracer correlations across all 11 dimensions and the strongest VR-related effects again clustering on Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia. No tracer variable showed a symmetric-versus-asymmetric difference. Because the tracers did not alter the interpretation of the primary ASC results, they are reported here only as a convergent-validity check; Figure~\ref{fig:results_asc_tracers} illustrates the convergence between questionnaire ratings, tracer peaks, and tracer AUC, and detailed statistics are in the supplementary materials.
+Temporal experience tracers broadly confirmed the questionnaire pattern, with significant pooled ASC-tracer correlations across all 11 dimensions and the strongest VR-related effects again clustering on Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia. No tracer variable showed a symmetric-versus-asymmetric difference. Because the tracers did not alter the interpretation of the primary ASC results, they are reported here only as a convergent-validity check; Figure~\ref{fig:results_asc_tracers} illustrates the convergence between questionnaire ratings, tracer peaks, and tracer AUC, and detailed statistics are in the OSF repository.
 
 \begin{figure}[!htbp]
 \centering
-\ifdefined\preprintlayouttuning
-\includegraphics[width=0.94\textwidth]{Fig07_results_tracer_combined_radar.pdf}
-\else
-\includegraphics[width=\textwidth]{Fig07_results_tracer_combined_radar.pdf}
-\fi
+\includegraphics[width=\textwidth]{Fig08_tracer_profiles.pdf}
 \caption{Altered-state profiles across all 11 dimensions, shown for three measurement summaries: retrospective 11D-ASC questionnaire ratings (left), tracer peak intensity (center), and tracer AUC (right). The close convergence across panels supports the tracers' validity as a compact adjunct to the full questionnaire. Condition colors are consistent throughout.}
 \label{fig:results_asc_tracers}
 \end{figure}
@@ -451,30 +368,21 @@ For descriptive cross-study context, we compared the pooled Viscereality VR prof
 
 Pre-unmasking responses revealed selective sensitivity to the symmetry manipulation. Mean accuracy on symmetry items was $M = 0.442$ ($SD = 0.289$), above the 0.25 chance baseline (Wilcoxon $W = 73.50$, $p < .001$, $r = .57$). By contrast, neutral-item accuracy ($M = 0.276$; $p = .610$) and sham-item accuracy ($M = 0.327$; $p = .075$) were not clearly above chance. Signal-detection $d'$ was $M = 0.637$ ($SD = 0.787$), above zero ($W = 79.50$, $p < .001$, $r = .66$), while criterion $c$ was near zero ($M = -0.024$). Among participants who detected a difference on at least one symmetry item ($n = 37$), mean directional accuracy was $M = 0.671$ ($SD = 0.330$), above the 0.50 directional-chance baseline ($W = 102.50$, $p = .010$, $r = .42$).
 
-This item-level awareness did not translate into condition-level identification. Post-unmasking forced-choice performance yielded a single-group Bang blinding index centered near zero (BBI $= -.051$, 95\% CI $[-.308, .205]$; binomial $p = .845$), with a point estimate inside the prespecified $\pm 0.2$ functional-blinding band. Participants thus showed no net ability to identify the more symmetric condition when asked directly. For reproducibility, legacy unweighted and confidence-weighted BI variants computed on the subset of participants with scorable post-unmasking responses were also near zero (unweighted BI $= -0.039$, $n = 26$; confidence-weighted BI $= -0.006$, $n = 25$), though these used reduced denominators because unresolved or incomplete responses could not be scored, which limits their precision (Figure~\ref{fig:results_blinding}).
+Post-unmasking identification was nearly balanced: 17 participants selected the correct active-VR condition, 19 selected the incorrect condition, and 3 selected the uncertainty option. The standard single-group Bang blinding index was therefore centered near zero (BBI $= -.051$, 95\% bootstrap CI $[-.359, .256]$; two-sided binomial $p = .868$). The point estimate showed no net correct identification, but the interval extended beyond both sides of the strict $[-0.2,0.2]$ criterion; the data therefore do not establish intact blinding with the required precision. The exploratory confidence-weighted directional index was likewise near zero ($-.016$, 95\% bootstrap CI $[-.203, .168]$, $n = 35$ directional responses with confidence greater than zero). This variant is shown descriptively and is not interpreted using the standard Bang bands (Figure~\ref{fig:results_blinding}).
 
-\ifdefined\preprintlayouttuning
-\begin{figure}[!tbp]
-\else
-\begin{figure}[H]
-\fi
+\begin{figure}[!htbp]
 \centering
-\ifdefined\preprintlayouttuning
-\includegraphics[width=0.94\textwidth]{Fig08_results_blinding_condensed_summary.pdf}
-\else
-\includegraphics[width=\textwidth]{Fig08_results_blinding_condensed_summary.pdf}
-\fi
-\caption{Blinding and manipulation-awareness summary (N = 39). (A) Pre-unmasking item-level accuracy by domain: participants detected symmetry-related features above the 25\% chance baseline but showed no elevated accuracy on neutral or sham items. (B) Post-unmasking forced-choice identification was split roughly evenly across correct, incorrect, and undecided responses. (C) Bang blinding indices fell within the prespecified $\pm 0.2$ functional-blinding band (shaded), indicating that item-level sensitivity did not translate into reliable condition identification.}
+\includegraphics[width=\textwidth]{Fig09_blinding_results.pdf}
+\caption{Blinding and manipulation-awareness summary ($N = 39$). (a) Pre-unmasking item-level accuracy by domain; asterisks denote FDR-adjusted $q < .001$ against the 25\% chance baseline. (b) Post-unmasking classifications comprised 17 correct, 19 incorrect, and 3 uncertain responses. (c) The standard Bang blinding index (filled navy circle) and exploratory confidence-weighted directional index (open green diamond) with participant-bootstrap 95\% confidence intervals. The shaded interpretation bands apply only to the standard Bang index; its confidence interval was not fully contained within the strict $[-0.2,0.2]$ blinding region.}
 \label{fig:results_blinding}
 \end{figure}
 \FloatBarrier
 
 \subsection{Exploratory Checks}\label{subsec:results_exploratory}
 
-Exploratory mixed-model checks for order and PLV moderation are reported in the supplementary materials. No FDR-corrected order main effects, condition $\times$ order, condition $\times$ PLV, or condition $\times$ order $\times$ PLV interactions emerged for any ASC, 3D-ASCr, tracer, or self-related outcome family. For PLV itself, there was a main effect of order, $\chi^2(1) = 8.28$, $p = .004$, but no condition $\times$ order interaction, $\chi^2(2) = 0.37$, $p = .833$, indicating that block order did not change the between-condition adherence pattern. A planned linear contrast across session position was significant, $t(38) = -3.16$, $p = .003$, 95\% CI $[-0.100, -0.022]$, indicating that PLV decreased rather than increased across sessions and therefore aligning more with waning engagement or fatigue than with a practice-improves account.
+Exploratory mixed-model checks for order and PLV moderation are reported in the OSF repository. No FDR-corrected order main effects, condition $\times$ order, condition $\times$ PLV, or condition $\times$ order $\times$ PLV interactions emerged for any ASC, 3D-ASCr, tracer, or self-related outcome family. For PLV itself, there was a main effect of order, $\chi^2(1) = 8.28$, $p = .004$, but no condition $\times$ order interaction, $\chi^2(2) = 0.37$, $p = .833$, indicating that block order did not change the between-condition adherence pattern. A planned linear contrast across session position was significant, $t(38) = -3.16$, $p = .003$, 95\% CI $[-0.100, -0.022]$, indicating that PLV decreased rather than increased across sessions and therefore aligning more with waning engagement or fatigue than with a practice-improves account.
 
-% --- End Results ---
-% --- Discussion (inlined from Preprint 3) ---
+
 \section{Discussion}\label{sec:discussion}
 
 
@@ -494,7 +402,7 @@ Of the three self-related measures, only the spatial frame-of-reference continuu
 
 
 \subsection{Altered states of consciousness}
-Our bioresponsive virtual reality environment paired with 10-minute box breathing and ambient background music produced altered states of consciousness relative to the black-screen control. All three higher-order dimensions of the altered states questionnaire increased during audio-guided breathwork in VR, with the largest effect in Perceptual Effects, a moderate effect in Positive Effects, and a smaller effect in Distressing Effects. Temporal experience tracers converged with the questionnaire pattern, validating them as a less burdensome repeated-measures alternative, though they did not add interpretive value beyond the questionnaire in this dataset (supplementary materials). Visual items dominated the altered-state profile, showing the largest effect size of any outcome in the study, and this carries a construct validity caveat for using this questionnaire in the context of VR. Participants are essentially asked to report whether they saw items whose descriptions are inspired by the visual characteristics of hallucinatory content, while being administered visuals designed to resemble hallucinatory content. This represents a circularity problem in using these questionnaires to assess the efficacy of such induction methods. The concern also extends to related subscales assessing other visually laden phenomena. For instance, participants in our study listened to identical audio tracks across all conditions, which had no influence on the visual display, yet Audio-Visual Synesthesia scores were substantially higher in VR, indicating that the mere presence of a visually rich display was sufficient to evoke cross-modal attributions in their self-report. This problem is not unique to the present study; it extends to any VR paradigm that relies on visual distortions resembling altered states to induce them, such as the Hallucination Machine \citep{Suzuki2017hallucinationMachine}. This represents a major caveat for using this questionnaire as evaluation criteria for VR as an altered-states induction method. We would nonetheless contend that the visual component should not be dismissed as merely inflating scores. Visual stimuli can be a powerful inductor on their own; Ganzfeld stimulation shows that visual input alone can induce altered states \citep{Wackermann2019ganzfeld}, and whether visionary experience contributes functionally to the broader experiential profile or is epiphenomenal remains an open question in psychedelic research \citep{Roseman2022morethaneye}. VR environments in which visual content can be varied parametrically offer a way to disentangle these contributions in combination with other induction methods or independent markers \citep{rosas2023entropic}.
+Our bioresponsive virtual reality environment paired with 10-minute box breathing and ambient background music produced altered states of consciousness relative to the black-screen control. All three higher-order dimensions of the altered states questionnaire increased during audio-guided breathwork in VR, with the largest effect in Perceptual Effects, a moderate effect in Positive Effects, and a smaller effect in Distressing Effects. Temporal experience tracers converged with the questionnaire pattern, validating them as a less burdensome repeated-measures alternative, though they did not add interpretive value beyond the questionnaire in this dataset (OSF repository). Visual items dominated the altered-state profile, showing the largest effect size of any outcome in the study, and this carries a construct validity caveat for using this questionnaire in the context of VR. Participants are essentially asked to report whether they saw items whose descriptions are inspired by the visual characteristics of hallucinatory content, while being administered visuals designed to resemble hallucinatory content. This represents a circularity problem in using these questionnaires to assess the efficacy of such induction methods. The concern also extends to related subscales assessing other visually laden phenomena. For instance, participants in our study listened to identical audio tracks across all conditions, which had no influence on the visual display, yet Audio-Visual Synesthesia scores were substantially higher in VR, indicating that the mere presence of a visually rich display was sufficient to evoke cross-modal attributions in their self-report. This problem is not unique to the present study; it extends to any VR paradigm that relies on visual distortions resembling altered states to induce them, such as the Hallucination Machine \citep{Suzuki2017hallucinationMachine}. This represents a major caveat for using this questionnaire as evaluation criteria for VR as an altered-states induction method. We would nonetheless contend that the visual component should not be dismissed as merely inflating scores. Visual stimuli can be a powerful inductor on their own; Ganzfeld stimulation shows that visual input alone can induce altered states \citep{Wackermann2019ganzfeld}, and whether visionary experience contributes functionally to the broader experiential profile or is epiphenomenal remains an open question in psychedelic research \citep{Roseman2022morethaneye}. VR environments in which visual content can be varied parametrically offer a way to disentangle these contributions in combination with other induction methods or independent markers \citep{rosas2023entropic}.
 
 To interpret the subjective effects beyond their measurement caveats, it helps to situate them relative to similar induction contexts. The 11D-ASC was designed to enable such comparisons across different techniques and substances \citep{Dittrich1998,studerus2010}, and a growing body of cross-study data now supports them \citep{Prugger2022}. Two other published studies have administered the same questionnaire to participants undergoing breathing interventions \citep{Bahi2023,Havenith2025}. The profile reported by \citet{Havenith2025}, pooled across 90-minute Conscious-Connected and 180-minute Holotropic breathwork sessions with experienced practitioners, is closest to ours and serves as the primary descriptive reference here. These profiles are not statistically comparable; the comparison serves only as a rough qualitative contextualization across studies that differ in breathing technique, session duration, population, and context. At the 3D-ASCr composite level, Positive Effects and Perceptual Effects were similar in magnitude between our VR intervention and circular breathwork, while Distressing Effects were markedly lower in ours. This last difference is unsurprising. Circular breathwork is designed as a therapeutic process in which hyperventilation, evocative music, and facilitator support are used to surface and process difficult material \citep{Grof2019,Kartar2025,Lalande2012}. Our protocol was aimed at relaxation, used physiologically mild box breathing with no facilitator, and involved no expectation of emotional processing. The lower distress therefore reflects a paradigm in which the conditions that typically produce distress were absent by design.
 
@@ -502,9 +410,9 @@ Looking closer at the differences across subscales, our VR intervention produced
 
 \subsection{Blinding and the null symmetry result}
 
-The blinding results reveal a dissociation between implicit feature-level detection and explicit condition-level identification. Participants showed selective sensitivity to the symmetry manipulation when probed with intermixed feature-detection items before being told that the conditions differed. Accuracy on symmetry-relevant items was 44.2\%, significantly above the 25\% chance baseline despite the majority guessing incorrectly, while accuracy on neutral and sham items remained at chance. Because condition order was counterbalanced across participants, this above-chance performance could not arise from a simple directional guessing bias and instead reflects genuine partial registration of the aesthetic difference. This implicit detection did not translate into explicit identification. After unmasking, when participants were informed that the two VR conditions differed in visual symmetry during breath holds, most were either unsure or incorrectly identified which session contained the symmetry manipulation. Both Bang blinding indices fell within the prespecified functional-blinding range, and the confidence-weighted index was even closer to zero, indicating that confidence was unrelated to accuracy. The manipulation was therefore functionally blinded at the level of explicit condition identification, despite some evidence of implicit perceptual sensitivity to the aesthetic differences between conditions.
+The blinding results reveal a dissociation between implicit feature-level detection and explicit condition-level identification. Participants showed selective sensitivity to the symmetry manipulation when probed with intermixed feature-detection items before being told that the conditions differed. Accuracy on symmetry-relevant items was 44.2\%, significantly above the 25\% chance baseline, while accuracy on neutral and sham items remained at chance. Because condition order was counterbalanced, this pattern reflects partial registration of the aesthetic difference rather than a fixed directional response bias. After unmasking, however, correct and incorrect identifications were nearly balanced (17 versus 19, with 3 uncertain). The standard BBI point estimate was consequently near zero ($-.051$), as was the exploratory confidence-weighted index ($-.016$). The standard 95\% interval was wide ($[-.359,.256]$) and not contained within the strict $[-0.2,0.2]$ region. Thus, the data show no net correct condition identification, but they are not precise enough to establish intact blinding conclusively.
 
-The fact that participants partially detected the symmetry manipulation at the feature level yet remained functionally blinded at the condition level may also point toward a potential explanation for why no outcome family showed a meaningful difference between the symmetry and anti-symmetry conditions. The geometric coherence unique to the symmetry condition emerged only during breath-hold phases, which nominally occupy half the breathing cycle. But the primary task demand was to drive the expansion and contraction of the particle sphere through inhaling and exhaling, and participants' attention was likely oriented toward this respiratory coupling rather than toward the aesthetic character of the holds. The breath holds remained visually active, as the particle field continued its turbulent oscillations throughout, but these were not the phases where participants felt they were performing the task. The effective attentional exposure to the symmetry difference was therefore considerably less than the nominal 50\% of session time. The blinding data compound this ambiguity. Functional blinding at the condition level could indicate that the blinding strategy succeeded, or it could reflect that the manipulation was too subtle or too brief to register as an experientially meaningful difference. The same perceptual subtlety that makes within-modality blinding possible may also be what prevents the aesthetic variation from producing measurable shifts in subjective experience. The present design does not provide precise control over the timing, duration, or attentional allocation of exposure to the aesthetic manipulation, and the degree to which task demands distracted from the hold-phase aesthetics is an uncontrolled variable.
+The fact that participants partially detected the symmetry manipulation at the feature level yet showed no net correct identification at the condition level may also point toward a potential explanation for why no outcome family showed a meaningful difference between the symmetry and anti-symmetry conditions. The geometric coherence unique to the symmetry condition emerged only during breath-hold phases, which nominally occupy half the breathing cycle. But the primary task demand was to drive the expansion and contraction of the particle sphere through inhaling and exhaling, and participants' attention was likely oriented toward this respiratory coupling rather than toward the aesthetic character of the holds. The breath holds remained visually active, as the particle field continued its turbulent oscillations throughout, but these were not the phases where participants felt they were performing the task. The effective attentional exposure to the symmetry difference was therefore considerably less than the nominal 50\% of session time. The blinding data compound this ambiguity. The near-zero point estimate could reflect successful blinding, but its wide interval precludes a definitive conclusion; it could also reflect that the manipulation was too subtle or too brief to register as an experientially meaningful difference. The same perceptual subtlety that enables within-modality blinding may also prevent the aesthetic variation from producing measurable shifts in subjective experience. The present design does not provide precise control over the timing, duration, or attentional allocation of exposure to the aesthetic manipulation, and the degree to which task demands distracted from the hold-phase aesthetics is an uncontrolled variable.
 
 Several explanations for the null symmetry result should be weighed together. The manipulation may have been too subtle to produce experiential differences at the level measured by the present outcome scales. The effective exposure may have been too brief, given that the symmetry difference was confined to breath-hold phases and that attention was likely oriented toward the respiratory coupling during inhale and exhale phases. The particular features that were varied, specifically the coupling strength governing spatial coherence, may not be the features that matter most for subjective experience in this context. Or the aesthetic difference may genuinely not produce measurable experiential shifts at this exposure level regardless of attention. The present data do not distinguish between these accounts, and doing so would require designs that isolate exposure duration, attentional allocation, and aesthetic feature type as independent variables.
 
@@ -527,19 +435,23 @@ The present study demonstrates that the particle system was conducive to pleasan
 \subsection{Conclusion}
 This study demonstrates that Viscereality, a breath-responsive VR environment that maps lung volume onto a surrounding particle field, is conducive to positive experiential states and supports guided breathing practice during brief self-administered sessions with naive participants. In 10 minutes of box breathing, the system shifted spatial self-experience toward a more expanded frame of reference and produced an altered-state profile in which positive and perceptual effects were comparable in magnitude to those reported after prolonged facilitator-supported circular breathwork, while producing less distress and no adverse events across 47 participants.
 
-% --- End Discussion ---
+\section*{Declarations}
+Funding: This project was funded by the BIAL Foundation.
 
-\section*{Funding Statement}
-This project was funded by the BIAL Foundation.
+Competing interests: [To be confirmed by all authors before submission.]
 
-\section*{Ethics Statement}
-The study protocol (project title: ``Altered States of Viscereality: Augmenting Breathwork with Bioresponsive Virtual Reality'') was reviewed and approved by the Institutional Review Board (Ethics Committee) of the University of Konstanz. The committee concluded that the study procedures, including data handling and storage, were in line with institutional ethics regulations, relevant national and international regulations, and the Declaration of Helsinki.
+Ethics approval: The study protocol (project title: ``Altered States of Viscereality: Augmenting Breathwork with Bioresponsive Virtual Reality'') was reviewed and approved by the Institutional Review Board (Ethics Committee) of the University of Konstanz. The committee concluded that the study procedures, including data handling and storage, were in line with institutional ethics regulations, relevant national and international regulations, and the Declaration of Helsinki.
 
-\section*{Consent}
-All participants provided informed consent before participation and consented to the publication of anonymized, non-identifiable data.
+Consent to participate: All participants provided informed consent before participation.
 
-\clearpage
-\bibliographystyle{apacite}
+Consent for publication: Participants consented to the publication of anonymized, non-identifiable data.
+
+Availability of data and materials: The deidentified participant-level data, original preregistration record, analysis outputs, study materials, and reproducibility documentation are available at OSF: \url{https://osf.io/3v825/}.
+
+Code availability: Analysis and figure-generation code, exact environment specifications, and replay instructions are available at OSF: \url{https://osf.io/3v825/}.
+
+Authors' contributions: [To be completed and approved by all authors before submission.]
+
 \bibliography{references}
 
 \end{document}
