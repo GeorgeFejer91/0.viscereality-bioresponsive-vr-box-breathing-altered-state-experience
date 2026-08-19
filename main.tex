@@ -40,7 +40,33 @@
 \affil[7]{\orgname{AIR---Association for Independent Research}, \orgaddress{\city{Zurich}, \country{Switzerland}}}
 \affil[8]{\orgdiv{Department of Psychology}, \orgname{University of Zurich}, \orgaddress{\city{Zurich}, \country{Switzerland}}}
 
-\abstract{Breath-based interactions in virtual reality typically map breathing onto discrete visual objects or downstream physiological proxies. Viscereality takes a different approach, mapping lung volume onto a surrounding space composed of particles arranged in an orb enclosing the participant through interoceptive-exteroceptive sensory substitution, such that inhalation expands the environment outward and exhalation contracts it inward. The aesthetic texture of the particle field is controlled by coupled oscillators governing phase relationships among individual particles' animation cycles, making visual organisation an experimentally adjustable parameter independent of the respiratory mechanics. In a preregistered within-subjects study ($N = 39$), participants completed three 10-minute audio-guided box-breathing sessions in counterbalanced order: a high-symmetry VR condition in which oscillator coupling transiently aligned particles into geometric coherence during breath holds, an asymmetric VR condition in which coupling remained irregular throughout, and a black-screen control with only a minimal breathing performance indicator. Subjective experience was assessed with an altered states of consciousness questionnaire, temporal experience tracers, and three pictographic self-related measures. Relative to the black-screen control, VR conditions improved breathing synchronization, shifted participants toward a more spatially extended frame of self-reference, and produced altered-state profiles with strong perceptual effects, moderate positive effects, and weaker distressing effects. Despite lasting only 10 minutes, perceptual and positive effect intensities were superficially comparable to those reported in 90-minute facilitated breathwork sessions conducted without VR, while negative effects were lower. Temporal experience tracers converged with the retrospective questionnaire across all dimensions. Post-unmasking condition identification was centered near random guessing (Bang blinding index $= -.051$, 95\% CI $[-.359, .256]$), although the interval was too wide to establish intact blinding under the strict $\pm 0.2$ criterion; the symmetry manipulation yielded no difference on any outcome measure. These results suggest that even a brief bioresponsive VR breathing session can meaningfully augment both breathing behavior and subjective experience, and may warrant further exploration as a complement to established breathwork practices.}
+\abstract{
+Breath-based interactions in virtual reality typically map breathing onto discrete
+visual objects or physiological proxies. Viscereality instead uses a particle field to
+translate internal physiological state into an exteroceptive representation, mapping
+lung volume onto the surrounding space, so that inhalation expands the environment and
+exhalation contracts it. Unlike discrete objects, particle representations have no
+fixed shape or boundary, and carry information through the position, motion, colour,
+and size of individual units and through their interactions, such as synchronization
+with nearest neighbours. Here we investigate a VR system developed to augment
+breathing practices and modulate altered states of consciousness by making these
+dynamics more fluid and synchronous during breath retention, and whether users are
+aware of this. In a preregistered within-subjects study, participants completed three
+ten-minute audio-guided box-breathing sessions in counterbalanced order: a
+high-symmetry VR condition in which particles transiently aligned into geometric
+coherence during breath holds, an asymmetric condition in which they remained
+irregular, and a minimal-feedback control showing only a central breathing indicator.
+Subjective experience was assessed with an altered states of consciousness
+questionnaire and pictographic self-related measures. Relative to control, VR
+conditions improved breathing synchronization, expanded the spatial frame of
+self-reference, and produced altered-state profiles with strong perceptual, moderate
+pleasant, and weak distressing effects. The symmetry manipulation registered implicitly in participants' experience without supporting explicit identification of which session was symmetric. After a single ten-minute session, perceptual alterations and pleasant
+experiences were comparable to those reported for hyperventilation-based breathwork of
+longer duration, while distress was lower.}
+
+
+
+
 
 \keywords{biofeedback, breath-based interaction, breathwork, altered states of consciousness, particle systems}
 
@@ -248,7 +274,20 @@ Because PLV does not decompose into per-cycle validity counts, the preregistered
 \end{figure}
 
 \subsubsection{Self-Related Measures}\label{subsubsec:measures_self}
-Three single-item pictographic instruments assessed self-related experience after each condition. The Perceived Body Boundaries Scale \citep{Dambrun2016} presents body silhouettes ranging from sharply delineated to fully diffuse; participants select the image best matching their felt boundary permeability. The Spatial Frame of Reference Continuum (SFoRC; \citealt{Hanley2020}) depicts a figure in concentric spatial zones from body-centered to environment-encompassing, indexing the degree to which the spatial sense of self extended beyond the body. The Small Self Scale \citep{Vidal2024} presents figures decreasing in size relative to their surroundings, capturing awe-like self-diminishment. All three yield a single ordinal score per condition. The administered item keys and the study materials are available in the OSF repository (\url{https://osf.io/3v825/}).
+Three single-item pictographic instruments assessed self-related experience after each
+condition. The Perceived Body Boundaries Scale \citep{Dambrun2016} presents body
+silhouettes ranging from sharply delineated to fully diffuse; participants select the
+image best matching their felt boundary permeability. The Spatial Frame of Reference
+Continuum (SFoRC; \citealt{Hanley2020}) depicts a figure in concentric spatial zones
+from body-centered to environment-encompassing, indexing the degree to which the
+spatial sense of self extended beyond the body. The Small Self Scale \citep{Vidal2024}
+presents figures decreasing in size relative to their surroundings, capturing awe-like
+self-diminishment. All three yield a single ordinal score per condition. Each
+pictograph was recreated as a scalable vector graphic for VR presentation, using the
+published figures as references and refining the SVG source with large language models
+to preserve the graded structure of the source scale. The recreated stimulus set, the
+administered item keys, and the study materials are available in the OSF repository
+(\url{https://osf.io/64mwk/}).
 
 
 
@@ -311,12 +350,12 @@ The analysis-ready dataset contained 47 participants. Applying the PLV-based out
 
 \subsubsection{Adherence (PLV)}\label{subsubsec:results_plv}
 
-To test whether visual biofeedback improved adherence to the guided box-breathing rhythm, we compared PLV across conditions. Mean PLV was $M = 0.787$ ($SD = 0.141$) for black screen, $M = 0.836$ ($SD = 0.127$) for symmetric VR, and $M = 0.860$ ($SD = 0.094$) for asymmetric VR. The planned pooled-VR-versus-black-screen contrast confirmed this difference, $t(38) = 3.47$, $p = .001$, $d_z = 0.56$, 95\% CI for the mean PLV difference $[0.026, 0.097]$. The symmetric-versus-asymmetric contrast was not significant, $t(38) = -1.13$, $p = .267$, $d_z = -0.18$. The order-adjusted mixed-effects omnibus supported a condition effect, $\chi^2(2) = 12.66$, $p = .002$. The corresponding Bayesian planned contrasts showed that the pooled-VR-versus-black difference was about 24.1 times more likely than no difference ($\mathrm{BF}_{10} = 24.11$), whereas the symmetric-versus-asymmetric data were about 3.2 times more likely under a no-difference model ($\mathrm{BF}_{01} = 3.22$). Figure~\ref{fig:results_plv_overview} combines the exclusion-rule visualization with the included-sample PLV outcome.
+To test whether visual biofeedback improved adherence to the guided box-breathing rhythm, we compared PLV across conditions. Mean PLV was $M = 0.787$ ($SD = 0.141$) for black screen, $M = 0.836$ ($SD = 0.127$) for symmetric VR, and $M = 0.860$ ($SD = 0.094$) for asymmetric VR. The planned pooled-VR-versus-black-screen contrast confirmed this difference, $t(38) = 3.47$, $p = .001$, $d_z = 0.56$, 95\% CI for the mean PLV difference $[0.026, 0.097]$. Because the exclusions were defined from the PLV distribution, we also evaluated all 47 complete cases: the corresponding mean difference was attenuated and its interval crossed zero, $t(46) = 1.09$, $p = .283$, $d_z = 0.16$, 95\% CI $[-0.031, 0.105]$. The symmetric-versus-asymmetric contrast was not significant, $t(38) = -1.13$, $p = .267$, $d_z = -0.18$. The order-adjusted mixed-effects omnibus supported a condition effect, $\chi^2(2) = 12.66$, $p = .002$. The corresponding Bayesian planned contrasts showed that the pooled-VR-versus-black difference was about 24.1 times more likely than no difference ($\mathrm{BF}_{10} = 24.11$), whereas the symmetric-versus-asymmetric data were about 3.2 times more likely under a no-difference model ($\mathrm{BF}_{01} = 3.22$). Figure~\ref{fig:results_plv_overview} combines the exclusion-rule visualization with the selected- and complete-sample PLV estimates.
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth,trim=0 8bp 0 0,clip]{Fig06_plv_results.pdf}
-\caption{Breathing adherence (PLV) by condition for the included sample (N = 39). Violin plots show condition-wise distributions with paired individual trajectories in gray. The dashed red line marks the pooled lower-tail IQR exclusion cutoff (0.366); hollow circles and red crosses indicate flagged participants and their below-cutoff values, respectively. If any single condition fell below the cutoff, the participant was excluded entirely from all analyses across all conditions. Pooled VR conditions showed significantly higher PLV than the black-screen control.}
+\caption{Controller-derived feedback synchrony (PLV) by condition for the selected sample ($N = 39$), with condition-wise distributions and paired individual trajectories in gray. The dashed red line marks the pooled lower-tail IQR exclusion cutoff (0.366); hollow circles and red crosses indicate flagged participants and their below-cutoff values, respectively. If any single condition fell below the cutoff, the participant was excluded entirely from all analyses across all conditions.}
 \label{fig:results_plv_overview}
 \end{figure}
 \FloatBarrier
