@@ -6,6 +6,12 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{placeins}
 
+% Overleaf can retain auxiliary files from an earlier referee/lineno build.
+% Ignore stale line-number records if they are present in main.aux.
+\makeatletter
+\providecommand{\@LN}[2]{}
+\makeatother
+
 \raggedbottom
 \setlength{\abovecaptionskip}{6pt plus 2pt minus 1pt}
 \setlength{\belowcaptionskip}{2pt plus 1pt minus 1pt}
@@ -272,9 +278,9 @@ In shorthand, the four symmetry-related items asked whether one scene more stron
 
 In the post-unmasking phase, participants were told that one condition featured brief visual synchronization during breath holds while the other remained irregular throughout. They indicated which session was more symmetric via a three-option forced choice (\emph{first}, \emph{second}, or \emph{I don't know}), followed by a confidence rating.
 
-\subsection{Preregistration and Statistical Analysis}\label{subsec:stats}
+\subsection{Preregistration and Reproducibility}\label{subsec:stats}
 
-The study was preregistered on AsPredicted (\#262,545). The unchanged registry record is archived with the data, code, and study materials at OSF (\url{https://osf.io/3v825/}). We retained all preregistered design elements and outcome families. The preregistered analysis plan specified a repeated-measures ANOVA with condition as the within-subjects factor and presentation order as a covariate for each outcome, two planned contrasts (pooled VR versus black-screen control, and symmetric versus asymmetric), and parallel Bayesian analyses. Adherence was to be quantified as phase-duration error with a cycle-validity exclusion rule, as described and motivated in Section~\ref{subsubsec:measures_adherence}. We deviated from this plan in several respects. Each deviation is listed below with its rationale, and a compact preregistration-versus-implementation table is provided in the OSF repository.
+The study was preregistered on AsPredicted (\#262,545). The unchanged registry record, all deidentified participant-level data, statistical analysis scripts and outputs, figure-generation scripts, and study materials were uploaded to OSF as a reproducibility package (\url{https://doi.org/10.17605/OSF.IO/64MWK}). We retained all preregistered design elements and outcome families. The preregistered analysis plan specified a repeated-measures ANOVA with condition as the within-subjects factor and presentation order as a covariate for each outcome, two planned contrasts (pooled VR versus black-screen control, and symmetric versus asymmetric), and parallel Bayesian analyses. Adherence was to be quantified as phase-duration error with a cycle-validity exclusion rule, as described and motivated in Section~\ref{subsubsec:measures_adherence}. We deviated from this plan in several respects. Each deviation is listed below with its rationale, and a compact preregistration-versus-implementation table is provided in the OSF repository.
 
 \medskip\noindent\textbf{Adherence metric.} Phase-duration error was replaced by PLV because the recorded phase-label data were too fragmented to yield reliable per-phase error estimates without introducing arbitrary binning decisions (see Section~\ref{subsubsec:measures_adherence} for a full account). The associated exclusion rule was changed from 70\%-valid-cycle plus 2-SD mean-error to a lower-tail global IQR rule on condition-level PLV values, because PLV does not decompose into per-cycle validity counts.
 
@@ -436,7 +442,7 @@ The present study demonstrates that the particle system was conducive to pleasan
 This study demonstrates that Viscereality, a breath-responsive VR environment that maps lung volume onto a surrounding particle field, is conducive to positive experiential states and supports guided breathing practice during brief self-administered sessions with naive participants. In 10 minutes of box breathing, the system shifted spatial self-experience toward a more expanded frame of reference and produced an altered-state profile in which positive and perceptual effects were comparable in magnitude to those reported after prolonged facilitator-supported circular breathwork, while producing less distress and no adverse events across 47 participants.
 
 \section*{Declarations}
-Funding: This project was funded by the BIAL Foundation.
+Funding: This project was funded by the BIAL Foundation through its Grants Programme for Scientific Research. The award title and award number should be entered from the executed BIAL funding agreement if required by the submission system; the public project record does not identify them. The BIAL Foundation's research-grants information is available at \url{https://www.bialfoundation.com/en-GB/scientific-research/grants}.
 
 Competing interests: [To be confirmed by all authors before submission.]
 
@@ -446,9 +452,9 @@ Consent to participate: All participants provided informed consent before partic
 
 Consent for publication: Participants consented to the publication of anonymized, non-identifiable data.
 
-Availability of data and materials: The deidentified participant-level data, original preregistration record, analysis outputs, study materials, and reproducibility documentation are available at OSF: \url{https://osf.io/3v825/}.
+Availability of data and materials: The deidentified participant-level data, original preregistration record, statistical analysis outputs, figure-generation scripts, study materials, and reproducibility documentation are available as a reproducibility package at OSF: \url{https://doi.org/10.17605/OSF.IO/64MWK}.
 
-Code availability: Analysis and figure-generation code, exact environment specifications, and replay instructions are available at OSF: \url{https://osf.io/3v825/}.
+Code availability: The statistical analysis and figure-generation scripts, exact environment specifications, and replay instructions are available at OSF: \url{https://doi.org/10.17605/OSF.IO/64MWK}.
 
 Authors' contributions: [To be completed and approved by all authors before submission.]
 
