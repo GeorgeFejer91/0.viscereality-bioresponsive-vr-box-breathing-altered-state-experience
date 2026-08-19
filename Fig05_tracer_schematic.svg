@@ -7,8 +7,9 @@
 
   <rect width="240" height="210" fill="white"/>
 
-  <text x="120" y="14" text-anchor="middle" font-size="7.5" font-weight="bold">
-    Temporal Trace Profiles: Peak versus Area Under the Curve
+  <text x="120" y="16" text-anchor="middle" font-size="13" font-weight="bold">
+    <tspan x="120" dy="0">Temporal Trace Profiles:</tspan>
+    <tspan x="120" dy="15">Peak versus Area Under the Curve</tspan>
   </text>
 
   <!-- Green Gaussian -->
