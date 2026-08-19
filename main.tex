@@ -2,6 +2,7 @@
 \documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
 
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{placeins}
 
@@ -254,13 +255,12 @@ The altered-states family was assessed with the 11D-ASC questionnaire and an exp
 
 \medskip\phantomsection\noindent\textbf{Temporal Experience Tracers (Exploratory).}\label{subsubsec:measures_tracers} Temporal experience tracers are a continuous retrospective self-report method in which participants draw intensity curves for specified experiential dimensions over a session's time course \citep{Jachs2022,Damci2023,LewisHealy2024}. Unlike global retrospective ratings, tracers preserve temporal dynamics.
 
-\begin{figure}[!htbp]
+\begin{wrapfigure}{r}{0.48\columnwidth}
 \centering
-\includegraphics[width=0.82\textwidth,trim=0 16bp 0 0,clip]{Fig05_tracer_schematic.pdf}
+\includegraphics[width=\linewidth,trim=0 16bp 0 0,clip]{Fig05_tracer_schematic.pdf}
 \caption{Temporal experience tracers capture within-session intensity profiles that a single retrospective ASC slider cannot disambiguate. Two profiles with identical peaks but different cumulative loads illustrate how tracers separately recover peak intensity and area under the curve (AUC), two summary variables that may differentially underlie a given 0--100 VAS rating depending on how participants anchor their response.}
 \label{fig:methods_tracer_peak_auc_schematic}
-\end{figure}
-\FloatBarrier
+\end{wrapfigure}
 
 For each of the 11 ASC dimensions, the constituent questionnaire items were consolidated into a single prompt that named the construct and briefly described what it refers to, yielding one tracer per dimension rather than 42 individual item-level ratings. Participants traced how each dimension's intensity changed across the block using the VR controller on a world-space time--value plotting surface. The controller's 3D position was projected onto a 2D drawing plane, with input gated by a trigger-hold mechanism to ensure intentional drawing and constant spatial spacing of emitted points regardless of hand speed. This produced 11 continuous traces per condition, each summarized by peak intensity (maximum value) and area under the curve (AUC; cumulative experiential load; Figure~\ref{fig:methods_tracer_peak_auc_schematic}). The tracers were intended as an exploratory adjunct to the ASC questionnaire, testing whether 11 dimension-level traces recover comparable information to the full 42-item instrument. Because the tracers did not change the interpretation of our primary results, full tracer analyses are reported in the OSF repository.
 
