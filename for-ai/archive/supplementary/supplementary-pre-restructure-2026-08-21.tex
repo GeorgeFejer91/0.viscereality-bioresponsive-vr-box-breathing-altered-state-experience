@@ -1,0 +1,310 @@
+% Supplementary Information for the Viscereality manuscript.
+% Compile from the project root with pdflatex/bibtex using references.bib.
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{placeins}
+
+\makeatletter
+\providecommand{\@LN}[2]{}
+\makeatother
+
+\begin{document}
+
+\title[Supplementary Information: Viscereality]{Supplementary Information for ``Viscereality: Bioresponsive Virtual Reality for Box Breathing and Altered-State Experience''}
+
+\author*[1,2,3]{\fnm{George} \sur{Fejer}}\email{george.fejer@aliusresearch.org}
+\author[4]{\fnm{Till} \sur{Holzapfel}}
+\author{\fnm{Taru} \sur{Hirvonen}}
+\author[5]{\fnm{Johannes} \sur{Blum}}
+\author[6]{\fnm{Anestis} \sur{Lalidis Mateo}}
+\author[2]{\fnm{Michael} \sur{Gaebler}}
+\author[7,8]{\fnm{Bigna} \sur{Lenggenhager}}
+
+\affil*[1]{\orgname{University of Konstanz}, \orgaddress{\city{Konstanz}, \country{Germany}}}
+\affil[2]{\orgname{Max Planck Institute for Human Cognitive and Brain Sciences}, \orgaddress{\country{Germany}}}
+\affil[3]{\orgname{ALIUS Research Network}, \orgaddress{\country{Germany}}}
+\affil[4]{\orgname{University of Duisburg-Essen}, \orgdiv{Research Center Trustworthy Data Science and Security}, \orgaddress{\city{Duisburg}, \country{Germany}}}
+\affil[5]{\orgname{P\"adagogische Hochschule Schaffhausen}, \orgaddress{\city{Schaffhausen}, \country{Switzerland}}}
+\affil[6]{\orgdiv{Institute for Building Intelligence}, \orgname{Hochschule Bielefeld--University of Applied Sciences and Arts}, \orgaddress{\city{Bielefeld}, \country{Germany}}}
+\affil[7]{\orgname{AIR---Association for Independent Research}, \orgaddress{\city{Zurich}, \country{Switzerland}}}
+\affil[8]{\orgdiv{Department of Psychology}, \orgname{University of Zurich}, \orgaddress{\city{Zurich}, \country{Switzerland}}}
+
+\maketitle
+
+\section{Purpose and scope}
+
+This document provides methodological and analytical detail supporting the main manuscript. It should be read together with the preregistration, deidentified participant-level data, executable analysis scripts, statistical outputs, figure-generation scripts, and study materials deposited in the OSF reproducibility package (\url{https://doi.org/10.17605/OSF.IO/64MWK}). The supplement does not replace those machine-readable records. Instead, it records the relationship between the preregistered and implemented analyses, clarifies the construction and interpretation of the principal outcome families, and documents sensitivity and blinding considerations that are important for interpreting the reported effects.
+
+\section{Study design and condition structure}
+
+The study used a within-participant design. Each participant completed three 10-minute audio-guided box-breathing blocks in one of the six possible counterbalanced orders. Every breathing cycle comprised four seconds of inhalation, four seconds of retention, four seconds of exhalation, and four seconds of retention. The conditions were:
+
+\begin{enumerate}
+\item \textbf{High-symmetry VR.} A breath-responsive particle sphere expanded during inhalation and contracted during exhalation. During retention phases, positive oscillator coupling transiently organized the particles into more coherent geometric configurations.
+\item \textbf{Asymmetric VR.} The respiratory mapping, particles, colour palette, audio guidance, and logging pipeline were the same as in high-symmetry VR. Negative oscillator coupling kept particle dynamics comparatively irregular.
+\item \textbf{Black-screen control.} The particle field was absent. Audio guidance, logging, and the central breathing-performance indicator remained available.
+\end{enumerate}
+
+The central contrast between the two active conditions therefore concerned oscillator coupling rather than the presence of respiratory biofeedback. The pooled-VR contrast tested the combined effect of the breath-responsive particle environment relative to the minimal-feedback control.
+
+\section{Controller-derived respiratory signal}
+
+The respiratory interface followed the controller-tracking approach introduced for Flowborne \citep{rockstroh2021mobile}. Participants held a tracked controller against the lower abdomen. Following calibration, controller displacement was projected onto a breathing-relevant axis. The difference between short- and long-timescale smoothed position estimates yielded a respiratory trend signal. Positive, negative, and near-zero trends were classified as inhalation, exhalation, and pause, respectively. Samples associated with abrupt controller rotation or implausibly large trends were treated as tracking artefacts.
+
+The classification drove a bounded target radius for the particle sphere. The displayed radius followed that target using damped interpolation with a 0.25-s smoothing time and overshoot prevention. Thus, the visual feedback represented respiratory direction and accumulated expansion or contraction rather than displaying unfiltered controller displacement.
+
+\section{Breathing-adherence measure}
+
+\subsection{Phase-locking value}
+
+Adherence was quantified using phase-locking value (PLV), which measures the stability of the phase difference between the observed respiratory trajectory and the ideal 16-s box-breathing reference. For participant $j$ in condition $c$, the generic form is
+
+\begin{equation}
+\mathrm{PLV}_{jc}=\left|\frac{1}{T}\sum_{t=1}^{T}\exp\left(i[\phi^{\mathrm{observed}}_{jct}-\phi^{\mathrm{reference}}_{t}]\right)\right|,
+\end{equation}
+
+where $\phi^{\mathrm{observed}}$ and $\phi^{\mathrm{reference}}$ denote instantaneous phases and $T$ is the number of valid samples. PLV ranges from 0 to 1; larger values indicate a more stable phase relationship. It is a measure of phase consistency, not a direct estimate of tidal volume, respiratory depth, or physiological benefit.
+
+\subsection{Exclusion and complete-case sensitivity analysis}
+
+The implemented lower-tail global IQR rule was applied to condition-level PLV values. If any condition-level value for a participant fell below the cutoff of 0.366, that participant was excluded from all conditions so that the within-participant triad remained intact. This procedure excluded P08, P12, P16, P18, P23, P27, P32, and P40, leaving $N=39$ from 47 complete cases.
+
+Because exclusions were defined using the outcome distribution itself, the complete-case analysis is an essential sensitivity check. In the selected sample, pooled VR exceeded control, $t(38)=3.47$, $p=.001$, $d_z=0.56$, with a 95\% confidence interval for the mean PLV difference of $[0.026,0.097]$. Across all 47 complete cases, the estimate was attenuated and the interval included zero, $t(46)=1.09$, $p=.283$, $d_z=0.16$, 95\% CI $[-0.031,0.105]$. The breathing-adherence conclusion should therefore be understood as dependent on the signal-quality selection rule.
+
+\section{Outcome-family organization}
+
+\begin{longtable}{p{0.22\textwidth}p{0.28\textwidth}p{0.40\textwidth}}
+\caption{Organization and interpretation of study outcomes.}\label{tab:s_outcomes}\\
+\toprule
+Family & Measures & Interpretive role \\
+\midrule
+\endfirsthead
+\toprule
+Family & Measures & Interpretive role \\
+\midrule
+\endhead
+Breathing adherence & Controller-derived PLV & Behavioural correspondence with the guided respiratory rhythm; subject to the exclusion sensitivity described above. \\
+Self-related experience & Body-boundary permeability; spatial frame of reference; perceived self-size & Pictographic retrospective measures. Only spatial frame of reference showed a reliable pooled-VR effect. \\
+Altered states & 11D-ASC subscales and derived 3D-ASCr composites & Retrospective subjective outcomes. The 3D-ASCr variables are deterministic summaries of the preregistered 11D-ASC scores, not independent endpoints. \\
+Temporal experience & Peak and area-under-the-curve (AUC) values from experience tracers & Exploratory, time-resolved convergence check for the altered-state questionnaire. \\
+Blinding & Pre-unmasking feature probes; post-unmasking condition identification and confidence & Tests whether participants registered specific visual properties and whether they could identify the experimental condition. \\
+\bottomrule
+\end{longtable}
+
+\section{Exploratory temporal experience tracer study}
+
+\subsection{Rationale and reporting status}
+
+Temporal experience tracers were collected as an exploratory methodological extension rather than as part of the main outcome hierarchy. They addressed a question distinct from the primary intervention evaluation: whether compact, time-resolved retrospective traces recover information comparable to the established 42-item 11D-ASC questionnaire. Because this question, its additional outcome multiplicity, and its validation analyses extend beyond the main narrative focus of the article, the tracer methods and results are reported in full here.
+
+The tracers should not be interpreted as continuous measurements recorded during the breathing intervention. Participants drew them retrospectively after each block. Their horizontal axis represents reconstructed session time and their vertical axis represents reconstructed intensity. Consequently, the traces preserve participants' reported temporal shape but remain subject to retrospective memory, anchoring, and reconstruction biases.
+
+\subsection{Task and data reduction}
+
+For each of the 11 ASC dimensions, the constituent questionnaire items were consolidated into one prompt naming and briefly describing the construct. Participants used the VR controller to draw one intensity curve per dimension on a world-space time--value plotting surface. Controller position was projected onto a two-dimensional drawing plane. Input was gated by a trigger-hold mechanism, and points were emitted at constant spatial spacing regardless of hand speed.
+
+This procedure produced 11 traces per condition. Each trace was reduced to two summaries: peak intensity, defined as the maximum value, and area under the curve (AUC), representing cumulative reported intensity across reconstructed session time. Peak and AUC were analyzed as separate exploratory families, with Benjamini--Hochberg correction applied within each family.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{Fig05_tracer_schematic.pdf}
+\caption{Temporal experience tracer summaries. Two reconstructed profiles may have the same peak but different cumulative intensity. Peak and area under the curve (AUC) therefore capture distinct properties of the retrospectively drawn time course.}
+\label{fig:supp_tracer_schematic}
+\end{figure}
+
+\subsection{Condition profiles}
+
+The tracer condition profiles broadly resembled the retrospective 11D-ASC profile. The largest pooled-VR differences clustered around Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia. No peak or AUC variable showed a reliable symmetric-versus-asymmetric difference. These results are descriptive and exploratory; they do not constitute independent confirmation of the questionnaire findings because the tracer prompts were explicitly matched to the same 11 conceptual dimensions and were completed in the same post-block assessment context.
+
+Table~\ref{tab:supp_tracer_condition_contrasts} reports the complete paired-contrast results. After correction within each tracer family, pooled VR exceeded control for Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia for both peak and AUC. No symmetric-versus-asymmetric comparison survived correction. Several nominal pooled-VR results did not survive familywise FDR correction, reinforcing the decision to keep these analyses exploratory.
+
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\caption{Exploratory paired contrasts for tracer peak and AUC summaries ($N=39$). VR denotes pooled symmetric and asymmetric VR. FDR adjustment was performed separately across the 11 dimensions for each summary and contrast.}
+\label{tab:supp_tracer_condition_contrasts}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Summary & Dimension & \multicolumn{3}{c}{Pooled VR vs control} & \multicolumn{3}{c}{Symmetric vs asymmetric} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+& & $t$ & $p$ & $q$ & $t$ & $p$ & $q$ \\
+\midrule
+Peak & EU  & 2.93 & .006 & .021 &  0.83 & .413 & .780 \\
+     & SE  & 0.50 & .622 & .684 & -0.94 & .352 & .780 \\
+     & BS  &-0.67 & .508 & .621 &  0.28 & .784 & .784 \\
+     & IS  & 2.18 & .035 & .090 &  0.78 & .440 & .780 \\
+     & DIS & 2.12 & .041 & .090 & -1.48 & .146 & .780 \\
+     & ICC & 1.80 & .079 & .124 &  0.56 & .579 & .780 \\
+     & ANX & 1.84 & .074 & .124 &  0.78 & .441 & .780 \\
+     & CI  & 0.10 & .920 & .920 &  0.57 & .574 & .780 \\
+     & EI  & 6.98 & $<.001$ & $<.001$ & 0.37 & .713 & .784 \\
+     & AVS & 3.34 & .002 & .010 &  0.89 & .377 & .780 \\
+     & CMP & 1.63 & .112 & .155 &  0.47 & .638 & .780 \\
+\midrule
+AUC  & EU  & 3.26 & .002 & .009 &  1.31 & .199 & .850 \\
+     & SE  & 0.76 & .453 & .553 & -0.70 & .490 & .850 \\
+     & BS  &-0.38 & .704 & .774 &  0.39 & .695 & .850 \\
+     & IS  & 2.24 & .031 & .057 &  0.80 & .430 & .850 \\
+     & DIS & 2.37 & .023 & .057 & -1.19 & .240 & .850 \\
+     & ICC & 2.29 & .028 & .057 &  0.26 & .794 & .873 \\
+     & ANX & 1.55 & .129 & .178 &  0.88 & .382 & .850 \\
+     & CI  & 0.14 & .886 & .886 &  0.67 & .507 & .850 \\
+     & EI  & 7.25 & $<.001$ & $<.001$ & 0.49 & .627 & .850 \\
+     & AVS & 3.58 & .001 & .005 &  0.02 & .985 & .985 \\
+     & CMP & 1.62 & .113 & .178 &  0.42 & .677 & .850 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Fig08_tracer_profiles.pdf}
+\caption{Exploratory altered-state profiles across the 11 matched dimensions. Retrospective 11D-ASC questionnaire ratings are shown alongside tracer peak intensity and tracer AUC. Similarity across panels is treated as a methodological correspondence result, not as an independent replication of the intervention effect.}
+\label{fig:supp_tracer_profiles}
+\end{figure}
+
+\subsection{ASC--tracer correspondence}
+
+In pooled participant--condition observations, all 11 matched ASC--tracer associations were positive and survived FDR correction for both peak and AUC summaries. Peak correlations ranged from $\rho=.571$ to $\rho=.846$, and AUC correlations ranged from $\rho=.595$ to $\rho=.845$ (Table~\ref{tab:supp_tracer_correspondence}). These pooled correlations comprise 117 participant--condition observations from 39 participants and therefore should be interpreted as descriptive correspondence estimates rather than as estimates based on 117 independent participants.
+
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Pooled matched ASC--tracer correspondence by dimension. Values are Spearman correlations across 117 participant--condition observations; FDR adjustment was applied across the 11 dimensions within each tracer summary.}
+\label{tab:supp_tracer_correspondence}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Dimension & Peak $\rho$ & Peak $q$ & AUC $\rho$ & AUC $q$ \\
+\midrule
+EU  & .771 & $<.001$ & .768 & $<.001$ \\
+SE  & .712 & $<.001$ & .716 & $<.001$ \\
+BS  & .725 & $<.001$ & .733 & $<.001$ \\
+IS  & .674 & $<.001$ & .681 & $<.001$ \\
+DIS & .846 & $<.001$ & .845 & $<.001$ \\
+ICC & .760 & $<.001$ & .752 & $<.001$ \\
+ANX & .684 & $<.001$ & .737 & $<.001$ \\
+CI  & .773 & $<.001$ & .747 & $<.001$ \\
+EI  & .595 & $<.001$ & .595 & $<.001$ \\
+AVS & .825 & $<.001$ & .839 & $<.001$ \\
+CMP & .571 & $<.001$ & .599 & $<.001$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Peak-versus-AUC comparison}
+
+Permutation-based comparisons found no dimension for which the difference between peak and AUC correspondence survived FDR correction (0/11; Table~\ref{tab:supp_tracer_peak_auc}). This indicates that neither summary had a consistent aggregate validity advantage in this dataset. Pearson correlations and Steiger comparisons were also computed, but the non-parametric permutation comparison was treated as primary because the pooled ASC and tracer variables were not uniformly normal.
+
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Permutation comparison of peak and AUC correspondence with matched ASC ratings.}
+\label{tab:supp_tracer_peak_auc}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Dimension & Peak $\rho$ & AUC $\rho$ & $\Delta|\rho|$ & Permutation $q$ & Larger \\
+\midrule
+EU  & .771 & .768 &  .002 & .994 & Peak \\
+SE  & .712 & .716 & -.004 & .994 & AUC \\
+BS  & .725 & .733 & -.009 & .994 & AUC \\
+IS  & .674 & .681 & -.007 & .994 & AUC \\
+DIS & .846 & .845 &  .001 & .994 & Peak \\
+ICC & .760 & .752 &  .009 & .994 & Peak \\
+ANX & .684 & .737 & -.054 & .994 & AUC \\
+CI  & .773 & .747 &  .026 & .994 & Peak \\
+EI  & .595 & .595 & -.000 & .994 & AUC \\
+AVS & .825 & .839 & -.014 & .994 & AUC \\
+CMP & .571 & .599 & -.028 & .994 & AUC \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Interpretive boundary}
+
+The tracer results support the limited methodological conclusion that retrospectively drawn, dimension-matched curves reproduce much of the cross-dimensional pattern found with the 11D-ASC. They do not yet validate tracers as a replacement for the questionnaire. The same participants completed both measures, the prompts shared constructs and labels, observations were pooled across repeated conditions, and no external behavioral or physiological criterion was used. A dedicated validation study should assess test--retest reliability, participant-level agreement, sensitivity to temporal manipulations, and incremental validity beyond global ratings.
+
+\section{Preregistration and implemented analysis}
+
+The study was preregistered on AsPredicted (record 262,545). Table~\ref{tab:s_deviations} summarizes the principal differences between the preregistered plan and the final implementation. These changes should be considered when distinguishing confirmatory hypotheses from the inferential machinery ultimately used to evaluate them.
+
+\begin{longtable}{p{0.20\textwidth}p{0.32\textwidth}p{0.38\textwidth}}
+\caption{Preregistered plan and implemented analysis.}\label{tab:s_deviations}\\
+\toprule
+Component & Preregistered plan & Implemented analysis and rationale \\
+\midrule
+\endfirsthead
+\toprule
+Component & Preregistered plan & Implemented analysis and rationale \\
+\midrule
+\endhead
+Adherence & Phase-duration error with a valid-cycle rule & Replaced with PLV because recorded phase labels were too fragmented for stable per-phase estimates without arbitrary binning. \\
+Adherence exclusion & At least 70\% valid cycles plus a 2-SD mean-error rule & Replaced by a lower-tail global IQR rule on condition-level PLV because PLV does not decompose into valid-cycle counts. \\
+Omnibus condition test & Repeated-measures ANOVA with condition and presentation order & Order-adjusted mixed-effects likelihood-ratio test comparing a condition-plus-order model with an order-only model; participant was included as a random intercept. \\
+Planned contrasts & Pooled VR versus control and symmetric versus asymmetric & Implemented as standalone paired $t$-tests, preserving the intended within-participant contrasts. \\
+Distributional robustness & Not separately specified & Wilcoxon signed-rank and Friedman tests were added after non-normality was observed in several distributions. \\
+Multiplicity & No correction strategy specified & Benjamini--Hochberg false-discovery-rate correction was applied within each multi-test outcome family. Main-text confirmatory statements remain anchored in the planned paired contrasts. \\
+ASC composites & 11D-ASC outcomes preregistered & The subsequently published 3D-ASCr scoring scheme was added as a deterministic dimensionality-reduced summary of the same scores. \\
+Bayesian analysis & Parallel Bayesian tests & Implemented on the same included sample with explicitly documented priors; Bayes factors are interpreted as relative evidence, not posterior probabilities or effect sizes. \\
+Exploratory analyses & Not part of the principal confirmatory contrasts & Condition-by-PLV models and ASC--tracer correspondence correlations were added as exploratory analyses. \\
+\bottomrule
+\end{longtable}
+
+\section{Multiplicity and robustness conventions}
+
+False-discovery-rate adjustment was conducted separately within the following families: 11 ASC dimensions, three 3D-ASCr composites, 11 tracer-peak variables, 11 tracer-AUC variables, and three self-related measures. Unadjusted $p$ values from the two planned paired contrasts provide the confirmatory anchor used in the main manuscript. Adjusted $q$ values and distribution-free checks qualify those results rather than defining a new set of primary hypotheses.
+
+One relevant qualification concerns Impaired Control and Cognition. Its pooled-VR contrast was significant at the unadjusted level, $t(38)=2.15$, $p=.038$, $d_z=0.34$, but was borderline after within-family FDR adjustment ($q=.060$). Anxiety did not reach the conventional threshold, $t(38)=1.92$, $p=.063$. These dimensions should not be grouped with the six ASC subscales that showed clearer pooled-VR effects.
+
+\section{Bayesian model specification}
+
+Omnibus Bayes factors compared an order-only point-null model with a model additionally containing condition, with participant included as a random intercept. Analyses used the BayesFactor R package with fixed-effect $r=0.50$, continuous-covariate $r=\sqrt{2}/4$, and random-effect nuisance $r=1.00$. Planned paired contrasts used a two-sided alternative and the default Cauchy prior on standardized effect size, $r=\sqrt{2}/2$. Preregistered one-sided ordered checks were limited to Experience of Unity, Blissful State, and Audio-Visual Synesthesia. Prior-robustness output and posterior summaries are retained in the OSF package.
+
+\section{Blinding analyses}
+
+Before participants were told that the active VR scenes differed, 12 probes assessed condition-specific, shared, and sham features. Symmetry-item accuracy was evaluated against a 0.25 chance baseline. Binary recoding additionally yielded signal-detection sensitivity ($d'$) and criterion ($c$), and directional accuracy among detected symmetry items was evaluated against 0.50.
+
+After unmasking, identification responses were classified as correct ($R$), incorrect ($W$), or uncertain ($U$). The single-group Bang blinding index was
+
+\begin{equation}
+\mathrm{BBI}=\frac{R-W}{R+W+U}.
+\end{equation}
+
+The 95\% confidence interval was obtained by participant-level bootstrap resampling. The observed counts were 17 correct, 19 incorrect, and 3 uncertain, giving $\mathrm{BBI}=-.051$ and a 95\% interval of $[-.359,.256]$. Although the point estimate was close to zero, the interval was not fully contained in the prespecified $[-0.2,0.2]$ region. The results therefore show no net correct identification but do not establish intact blinding with precision.
+
+The pre-unmasking and post-unmasking findings answer different questions. Above-chance symmetry-feature detection indicates partial perceptual registration. Near-balanced condition identification indicates that this registration did not translate into reliable assignment of the experimental labels.
+
+\section{Interpretation of the null symmetry contrast}
+
+No outcome family showed a reliable high-symmetry-versus-asymmetric difference. Several explanations remain observationally compatible with this null result: the manipulation may have been too subtle; effective exposure may have been too brief because the difference occurred only during retention phases; attention may have remained focused on respiratory expansion and contraction; oscillator coupling may not have targeted the most experientially consequential visual feature; or symmetry may genuinely have little effect at this exposure level. The present design does not distinguish among these possibilities.
+
+Future studies could manipulate exposure duration, attention, and aesthetic feature type independently. Short aesthetic-judgment trials would also permit separate estimation of responses to trajectory smoothness, speed, synchrony, spatial coherence, colour, and geometric regularity before these features are combined in a prolonged breathwork intervention.
+
+\section{Cross-study contextualization}
+
+Comparisons with published breathwork datasets are descriptive. The referenced studies differ in breathing technique, duration, population, music, facilitation, setting, and study design. Consequently, similarity between 3D-ASCr profiles must not be interpreted as evidence of equivalence, non-inferiority, or a shared mechanism. The comparison is useful only for locating the magnitude and qualitative shape of the present subjective profile within the wider altered-state literature.
+
+\section{Reproducibility inventory}
+
+The OSF package is reported to contain the unchanged preregistration record, deidentified participant-level data, statistical analysis scripts and outputs, figure-generation scripts, study materials, environment specifications, and replay instructions. The following items should be verified immediately before journal submission:
+
+\begin{enumerate}
+\item the public DOI resolves without authentication;
+\item all scripts run from a clean environment using the deposited dependency specification;
+\item generated tables and figures match the submitted manuscript and supplement;
+\item the participant-exclusion list and PLV cutoff are reproduced from deposited code;
+\item all identifiers are removed from shared data and logs; and
+\item filenames and figure numbering agree across the article, supplement, and repository.
+\end{enumerate}
+
+\section{Reporting boundaries}
+
+The study supports conclusions about short-term subjective experience and controller-derived synchronization during a brief, guided box-breathing task in a predominantly female university psychology sample. It does not by itself establish clinical efficacy, durable therapeutic benefit, physiological respiratory improvement, or objective expansion of peripersonal space. No adverse events were observed among the 47 tested participants, but this sample is not sufficient to establish safety in clinical or otherwise vulnerable populations.
+
+\bibliography{references}
+
+\end{document}

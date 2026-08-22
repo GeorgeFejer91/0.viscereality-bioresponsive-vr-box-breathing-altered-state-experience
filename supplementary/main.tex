@@ -1,0 +1,157 @@
+\documentclass[pdflatex,sn-mathphys-num]{../sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{placeins}
+
+\graphicspath{{figures/}}
+
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theequation}{S\arabic{equation}}
+
+\makeatletter
+\providecommand{\@LN}[2]{}
+\makeatother
+
+\begin{document}
+
+\section*{Supplementary Information}
+
+\section{Deviations from preregistration}
+\label{sec:supp_deviations}
+
+The preregistered phase-duration adherence measure was replaced by phase-locking value (PLV) because the recorded phase labels were too fragmented for stable phase-duration estimation without additional segmentation rules. The associated requirement of at least 70\% valid cycles and the two-standard-deviation phase-error exclusion rule were replaced by a pooled lower-tail IQR rule applied to condition-level PLV values.
+
+The preregistered repeated-measures ANOVA with presentation order as a covariate was replaced by an order-adjusted mixed-effects likelihood-ratio test comparing a condition-plus-order model with an order-only model and including participant as a random intercept. The two preregistered contrasts, pooled VR versus black-screen control and symmetric versus asymmetric VR, were implemented as paired $t$-tests.
+
+Wilcoxon signed-rank and Friedman tests were added as distribution-free checks. Benjamini--Hochberg false-discovery-rate correction was applied within each multi-test outcome family because the preregistration did not specify a multiplicity procedure. The subsequently published 3D-ASCr scoring system was applied to the preregistered 11-ASC scores. Condition-by-PLV models and ASC--tracer correspondence analyses were treated as exploratory. All inferential analyses used the final included sample of $N=39$.
+
+\section{PLV computation and quality screening}
+\label{sec:supp_plv}
+
+\subsection{Phase-locking value}
+
+PLV was calculated between the normalized sphere-radius trajectory displayed during each block and the ideal sphere-radius trajectory generated from the audio-instruction timing. Samples for which either series was non-finite were removed. Each series was mean-centred, and instantaneous phase was obtained from its analytic signal. Blocks with fewer than 20 paired finite samples were treated as missing.
+
+For participant $j$ in condition $c$,
+
+\begin{equation}
+\mathrm{PLV}_{jc}
+=
+\left|
+\frac{1}{T}
+\sum_{t=1}^{T}
+\exp
+\left(
+i[
+\phi^{\mathrm{observed}}_{jct}
+-
+\phi^{\mathrm{reference}}_{t}
+]
+\right)
+\right|,
+\end{equation}
+
+where $T$ is the number of paired finite samples. PLV ranges from 0 to 1, with larger values indicating a more stable phase relationship. PLV does not measure respiratory depth or tidal volume.
+
+\subsection{Screening rule and exclusions}
+
+The screening distribution contained the three condition-level PLV values from each of the 47 tested participants. The lower fence was calculated as
+
+\begin{equation}
+Q_1-1.5(Q_3-Q_1),
+\end{equation}
+
+with $Q_1=0.695346$ and $Q_3=0.914776$, producing a cutoff of 0.366201. A participant was excluded from all conditions if any condition-level PLV was below the cutoff. Table~\ref{tab:supp_plv_exclusions} lists the excluded participants and their condition-level values. The remaining 39 participants formed the analytic sample used for all inferential analyses.
+
+\begin{table}[!htbp]
+\centering
+\small
+\caption{Condition-level PLV values for participants excluded by the pooled lower-tail IQR quality-screening rule. Values below the cutoff of 0.366201 are flagged. If any condition was flagged, the participant was excluded from all three conditions.}
+\label{tab:supp_plv_exclusions}
+\begin{tabular}{@{}lrrrp{0.23\textwidth}@{}}
+\toprule
+Participant & Black screen & Symmetric VR & Asymmetric VR & Below-cutoff condition(s) \\
+\midrule
+P08 & 0.487994 & 0.641091 & 0.363136 & Asymmetric \\
+P12 & 0.045540 & 0.858897 & 0.651905 & Black screen \\
+P16 & 0.322388 & 0.424615 & 0.923065 & Black screen \\
+P18 & 0.046679 & 0.424962 & 0.105354 & Black screen; asymmetric \\
+P23 & 0.950082 & 0.033076 & 0.048964 & Symmetric; asymmetric \\
+P27 & 0.859589 & 0.488851 & 0.336871 & Asymmetric \\
+P32 & 0.723235 & 0.493400 & 0.101153 & Asymmetric \\
+P40 & 0.441212 & 0.267064 & 0.245893 & Symmetric; asymmetric \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Altered-state questionnaire analyses}
+\label{sec:supp_asc}
+
+\subsection{3D-ASCr scoring}
+
+The three 3D-ASCr composites were calculated from the 11-ASC subscale means as follows:
+
+\begin{align}
+\mathrm{PosE} &= \operatorname{mean}(\mathrm{EU},\mathrm{SE},\mathrm{BS},\mathrm{IS},\mathrm{DIS},\mathrm{CMP}),\\
+\mathrm{DisE} &= \operatorname{mean}(\mathrm{ICC},\mathrm{ANX}),\\
+\mathrm{PerE} &= \operatorname{mean}(\mathrm{CI},\mathrm{EI},\mathrm{AVS}).
+\end{align}
+
+The composites were deterministic transformations of the 11-ASC scores. The scoring system became available after preregistration and was not specified as a separate preregistered outcome.
+
+\subsection{11-ASC analyses}
+
+\section{Temporal experience tracer analyses}
+\label{sec:supp_tracers}
+
+\subsection{Task and data reduction}
+
+Temporal experience tracers are psychometric time-series ratings in which participants retrospectively draw intensity curves for specified experiential dimensions over a session's time course \citep{Jachs2022,Damci2023,LewisHealy2024}. Unlike global retrospective ratings, tracers preserve temporal dynamics. For each of the 11 ASC dimensions, one prompt consolidates the constituent questionnaire items into a construct-level description, yielding one tracer per dimension rather than 42 item-level ratings.
+
+After each condition, participants draw the 11 intensity curves on a world-space time-by-intensity surface using the VR controller. We project controller position onto the drawing plane, gate input through a trigger hold, and emit points at constant spatial spacing regardless of hand speed. Each trace yields peak intensity and area under the curve (AUC), which capture maximum intensity and cumulative experiential load, respectively. We analyse peak and AUC as separate exploratory families.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.72\textwidth]{FigS01_tracer_schematic.pdf}
+\caption{Two temporal profiles can have the same peak intensity but different AUCs. Peak and AUC therefore summarize distinct aspects of a retrospectively drawn within-session trace.}
+\label{fig:supp_tracer_schematic}
+\end{figure}
+\FloatBarrier
+
+\subsection{Condition contrasts}
+
+Tracer peak and AUC profiles broadly follow the condition profiles observed for the 11D-ASC questionnaire, with the strongest pooled-VR differences clustering on Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia. No tracer variable shows a symmetric-versus-asymmetric difference (Figure~\ref{fig:supp_tracer_profiles}).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{FigS02_tracer_profiles.pdf}
+\caption{Condition-wise altered-state profiles across all 11 dimensions for retrospective 11D-ASC questionnaire ratings (left), tracer peak intensity (centre), and tracer AUC (right). Lines show condition means on the 0--100 scale.}
+\label{fig:supp_tracer_profiles}
+\end{figure}
+\FloatBarrier
+
+\subsection{ASC--tracer correspondence}
+
+\section{Reproducibility and file access}
+\label{sec:supp_reproducibility}
+
+The preregistration record, deidentified participant-level data, inclusion indicator, statistical outputs, analysis scripts, figure-generation scripts, study materials, environment specifications, and replay instructions are available at \url{https://doi.org/10.17605/OSF.IO/64MWK}.
+
+The exact GitHub repository version corresponding to the submitted manuscript is available at:
+
+\begin{center}
+\url{https://github.com/GeorgeFejer91/0_OSF_reproducability_package/tree/FINAL_SUBMISSION_COMMIT}
+\end{center}
+
+The repository's Start Here documentation identifies the analysis entry points, output directories, environment files, and replay sequence.
+
+\bibliography{../references}
+
+\end{document}
