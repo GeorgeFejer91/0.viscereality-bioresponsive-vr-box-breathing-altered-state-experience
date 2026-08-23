@@ -453,3 +453,17 @@ Consequences:
 - A future figure rename or renumber must be applied across both repositories and all active references in the same task.
 - Historical aliases and independent source-only figure numbering are not permitted in active output inventories.
 - This exact-name identity rule supersedes any earlier workflow that temporarily tolerated legacy-numbered manuscript copies or differently numbered authoritative exports.
+
+## 2026-08-23 - Pictographic-measure provenance and exploratory ASC correspondence
+
+Decision: identify all three self-related pictographs as SVG recreations of previously published versions and explain the vector format's direct control over graded visual properties. Identify the Small Self item only as sourced from the Vidal publication and described there as ad hoc; do not imply that the present authors are conducting its validation or that the source authors' validation work is ongoing. Place the complete exploratory pictograph--ASC association analysis in a dedicated supplementary segment, while limiting the main article to a concise, explicitly exploratory summary of construct-linked associations such as spatial self-extension with unity and disembodiment.
+
+Rationale: the SVG format provides scalable rendering and direct control of opacity, line width, dash pattern, figure size, and spatial extent, which should be disclosed without implying measurement equivalence. A complete corrected association matrix in the supplement avoids selective reporting, while a short main-text synthesis keeps the central theoretical relationships visible. Intervention-aware analyses must distinguish pooled-VR-minus-control change covariance from symmetric-minus-asymmetric covariance and formal condition moderation.
+
+Consequences:
+
+- Exact Methods, Results, Discussion, and supplementary wording remains subject to item-by-item approval.
+- Label every pictograph--ASC association as exploratory and report the full multiplicity-corrected family in the supplement.
+- Do not claim that a cross-sectional or change-score association is causal.
+- Report that pooled VR-related SFoRC and Small Self changes covary with Positive Effects, but that no symmetric-minus-asymmetric contrast correlation survives family correction.
+- Treat condition-interaction findings cautiously and report both the planned contrasts and family correction rather than foregrounding an isolated omnibus result.

@@ -1,6 +1,6 @@
 # Preregistration and deviation crosswalk
 
-Last audited: 2026-08-22
+Last audited: 2026-08-23
 
 ## Mandatory use
 
@@ -230,6 +230,15 @@ Status: The implemented procedures are accurately disclosed. By user direction, 
 - Preregistered: Bang's Blinding Index computed with and without confidence ratings.
 - Implemented: the standard single-group Bang index plus an exploratory confidence-weighted directional index; additional pre-unmasking chance tests and a symmetry-score versus final-guess association test are also reported.
 - Required treatment: do not describe the modified confidence-weighted directional index as a standard Bang index. Retain its exploratory label; no additional deviation paragraph is required.
+
+### D15: Exploratory pictograph--ASC correspondence
+
+Status: Implemented and explicitly identified as exploratory in `main.tex`, Supplementary Sections S1 and S4, and the submission-facing tables.
+
+- Preregistered: condition analyses of the three self-related pictographs and condition analyses of the ASC outcomes; no pictograph--ASC correlation or condition-dependent association analysis was specified.
+- Added: pooled-VR-minus-dark-screen-control Spearman change correlations between each pictograph and the 3D-ASCr composites, 11D-ASC subscales, and ASC items; symmetric-minus-asymmetric change correlations; and order-adjusted participant fixed-effects condition-by-pictograph models with participant-clustered covariance.
+- Multiplicity and interpretation: Benjamini--Hochberg correction is applied separately to the 9 composite, 33 subscale, and 126 item-level association families and within each interaction family. The manuscript treats the results as exploratory correspondence, not causal effects or preregistered confirmation.
+- Reporting hierarchy: the main article retains only a concise set of construct-linked results, including Unity and Disembodiment; Supplementary Section S4 reports the complete composite and subscale screens, all item associations surviving the 126-test correction, and the intervention- and mapping-specificity analyses.
 
 ## Retained commitments
 

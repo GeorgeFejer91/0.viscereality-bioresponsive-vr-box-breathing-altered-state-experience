@@ -45,7 +45,7 @@ The preregistered phase-duration adherence measure was replaced by phase-locking
 
 The preregistered repeated-measures ANOVA with presentation order as a covariate was replaced by an order-adjusted mixed-effects likelihood-ratio test comparing a condition-plus-order model with an order-only model and including participant as a random intercept. The two preregistered contrasts, pooled VR versus dark-screen control and symmetric versus asymmetric VR, were implemented as paired $t$-tests.
 
-Wilcoxon signed-rank and Friedman tests were added as distribution-free checks. Benjamini--Hochberg false-discovery-rate correction was applied within each multi-test outcome family because the preregistration did not specify a multiplicity procedure. The subsequently published 3D-ASCr scoring system was applied to the registered 11D-ASC scores as a post-registration higher-order summary; complete analyses of all 11 subscales remain in Section~S3. Condition-by-PLV models and ASC--tracer correspondence analyses were treated as exploratory. All inferential analyses used the final included sample of $N=39$.
+Wilcoxon signed-rank and Friedman tests were added as distribution-free checks. Benjamini--Hochberg false-discovery-rate correction was applied within each multi-test outcome family because the preregistration did not specify a multiplicity procedure. The subsequently published 3D-ASCr scoring system was applied to the registered 11D-ASC scores as a post-registration higher-order summary; complete analyses of all 11 subscales remain in Section~S3. Pictograph--ASC correspondence, condition-by-PLV models, and ASC--tracer correspondence analyses were treated as exploratory. All inferential analyses used the final included sample of $N=39$.
 
 \section{PLV computation and quality screening}
 \label{sec:supp_plv}
@@ -234,6 +234,115 @@ The Positive Effects increase was principally associated with Experience of Unit
 The smaller Distressing Effects increase was distributed across Impaired Control and Cognition and Anxiety, with Impaired Control and Cognition making the somewhat larger contribution. Their items assess experiences such as diminished personal agency, difficulty making decisions or sustaining a coherent thought, feelings of paralysis or isolation, unexplained fear, perceived threat, strangely altered surroundings, and anticipation that something harmful might occur. Both subscales were descriptively higher during VR, but neither remained significant after correction across the 11 dimensions, and their Bayesian results did not clearly distinguish effect from null models. The significant composite result is therefore best interpreted as the accumulation of two modest and compatible distress-related tendencies rather than as a pronounced or clearly localized adverse effect.
 
 The Perceptual Effects increase was almost entirely associated with Audio-Visual Synesthesia and Elementary Imagery. These subscales assess phenomena such as sounds appearing to influence perceived shapes or colors and the perception of simple patterns, colors, lights, or flashes. Complex Imagery, which instead assesses vivid internally generated scenes, memories, fantasy images, and imaginative content, remained unchanged. The perceptual result therefore reflects elementary visual phenomena and perceived cross-modal influence rather than a general intensification of internally generated imagery. Because the strongest item themes closely resemble properties directly supplied by the visually rich VR environment, the magnitude of this composite also reflects overlap between the intervention content and the questionnaire's perceptual criteria. Across all fine-grained subscales, there was no reliable symmetric-versus-asymmetric difference and no FDR-corrected evidence that the condition pattern was influenced by the order in which participants underwent the three conditions.
+
+\clearpage
+\section{Pictographic self-related measures and ASC correspondence}
+\label{sec:supp_pictograph_asc}
+
+\subsection{Scoring and analytic approach}
+
+These post hoc analyses examined whether changes in the three pictographic self-related measures corresponded with changes in ASC outcomes. They were not specified in the preregistration and are treated as exploratory. The released Perceived Body Boundaries pictograph progresses from a diffuse silhouette at A to a sharply delineated silhouette at G. Because the stored A--G coding maps these responses to 1--7, higher stored values indicate stronger boundary salience. We reversed this score for the analyses in this section so that higher values indicate greater boundary dissolution. Higher SFoRC and Small Self ratings respectively indicate greater perceived extension of the self into surrounding space and greater self-diminishment relative to the surroundings.
+
+The primary estimand was the Spearman correlation between pooled-VR-minus-dark-screen-control changes in each pictograph and the corresponding change in each ASC outcome. This tests whether participants showing larger VR-related changes in pictographic self-representation also showed larger VR-related changes in subjective effects. Two-sided permutation $p$ values used 10,000 random permutations, and percentile confidence intervals used 2,000 participant-bootstrap resamples. To examine mapping specificity, we separately correlated symmetric-minus-asymmetric changes and tested condition-by-pictograph interactions in order-adjusted participant fixed-effects models with participant-clustered covariance. Pictograph ratings were centered within participant for the interaction models. Benjamini--Hochberg correction was applied separately across the 9 composite, 33 subscale, and 126 item-level associations and separately within each interaction family.
+
+\subsection{Composite-level correspondence}
+
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Pooled-VR-minus-dark-screen-control change correlations between pictographic measures and 3D-ASCr composites.}
+\label{tab:supp_pictograph_asc_composites}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccc@{}}
+\toprule
+Composite & Boundary dissolution & SFoRC & Small Self \\
+\midrule
+Positive Effects & .25 (.276) & .70 (.001) & .46 (.015) \\
+Distressing Effects & $-.04$ (.885) & .07 (.842) & .02 (.885) \\
+Perceptual Effects & .20 (.334) & .21 (.334) & .28 (.234) \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize\textit{Note.} Cells report Spearman $\rho$ with the Benjamini--Hochberg $q$ value in parentheses. Correction was applied across all nine pictograph--composite tests. Boundary dissolution is reverse-scored so that higher values indicate greater dissolution.}
+\end{table}
+\FloatBarrier
+
+Table~\ref{tab:supp_pictograph_asc_composites} reports the complete pictograph--3D-ASCr composite screen. Greater SFoRC extension covaried strongly with greater Positive Effects, $\rho=.70$, $q=.001$. Greater Small Self ratings also covaried with Positive Effects, $\rho=.46$, $q=.015$. Boundary dissolution did not show a reliable association with Positive Effects, and none of the pictographs showed a correction-robust association with Distressing or Perceptual Effects. Rank-partial follow-ups controlling the other two pictographs retained the Positive Effects associations for SFoRC, partial $r=.64$, $q<.001$, and Small Self, partial $r=.38$, $q=.028$, but not boundary dissolution, partial $r=.04$, $q=.802$; these three follow-ups were corrected together.
+
+\subsection{Fine-grained ASC correspondence}
+
+Table~\ref{tab:supp_pictograph_asc_subscales} reports all 33 pictograph--subscale associations. The SFoRC association with Positive Effects was distributed across Experience of Unity, Blissful State, Insightfulness, and Spiritual Experience. The association with Disembodiment was more moderate and did not survive correction across the full subscale family, $\rho=.36$, $q=.081$. Greater Small Self ratings covaried with Blissful State, Spiritual Experience, and Audio-Visual Synesthesia. Boundary dissolution did not show a correction-robust association with any ASC subscale, including Disembodiment, $\rho=.11$, $q=.591$.
+
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Pooled-VR-minus-dark-screen-control change correlations between pictographic measures and all 11 ASC subscales.}
+\label{tab:supp_pictograph_asc_subscales}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccc@{}}
+\toprule
+ASC subscale & Boundary dissolution & SFoRC & Small Self \\
+\midrule
+Experience of Unity & .14 (.492) & .68 (.002) & .36 (.081) \\
+Spiritual Experience & .19 (.357) & .41 (.049) & .46 (.021) \\
+Blissful State & .24 (.277) & .65 (.002) & .52 (.012) \\
+Insightfulness & .29 (.174) & .51 (.012) & .36 (.081) \\
+Disembodiment & .11 (.591) & .36 (.081) & .22 (.292) \\
+Impaired Control and Cognition & .19 (.357) & .28 (.188) & .15 (.469) \\
+Anxiety & $-.25$ (.259) & $-.32$ (.114) & $-.09$ (.644) \\
+Complex Imagery & .21 (.331) & .04 (.867) & .01 (.969) \\
+Elementary Imagery & $-.09$ (.660) & .22 (.295) & .01 (.969) \\
+Audio-Visual Synesthesia & .23 (.277) & .33 (.114) & .47 (.021) \\
+Changed Meaning of Percepts & .13 (.538) & .36 (.081) & .20 (.331) \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize\textit{Note.} Cells report Spearman $\rho$ with the Benjamini--Hochberg $q$ value in parentheses. Correction was applied across all 33 pictograph--subscale tests.}
+\end{table}
+\FloatBarrier
+
+Item-level follow-ups clarified the content of these associations. Within Disembodiment, SFoRC change covaried with floating, $\rho=.55$, $q=.015$, and altered self-location outside the body, $\rho=.45$, $q=.044$, but not with bodylessness. The broader item-level SFoRC pattern also included all three Blissful State items and three Experience of Unity items. Small Self associations included items concerning inner peace, pleasure, spiritual connection, and sound-related colour changes. Table~\ref{tab:supp_pictograph_asc_items} reports every association surviving correction across all 126 item-level tests; no boundary-dissolution association survived this correction.
+
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Item-level pictograph--ASC associations surviving correction across 126 tests.}
+\label{tab:supp_pictograph_asc_items}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+Pictograph & Item & Subscale & Brief content & $\rho$ ($q$) \\
+\midrule
+SFoRC & Q39 & Blissful State & Inner peace & .69 (.008) \\
+SFoRC & Q15 & Experience of Unity & Unity with environment & .64 (.008) \\
+SFoRC & Q18 & Experience of Unity & Timelessness & .58 (.008) \\
+SFoRC & Q19 & Experience of Unity & Resolution of conflict & .57 (.013) \\
+SFoRC & Q29 & Disembodiment & Floating & .55 (.015) \\
+SFoRC & Q03 & Blissful State & Boundless pleasure & .51 (.016) \\
+Small Self & Q39 & Blissful State & Inner peace & .51 (.016) \\
+Small Self & Q34 & Audio-Visual Synesthesia & Sound-related colour change & .49 (.017) \\
+SFoRC & Q12 & Changed Meaning of Percepts & Altered meaning & .49 (.028) \\
+SFoRC & Q24 & Insightfulness & Profundity & .47 (.028) \\
+SFoRC & Q36 & Impaired Control and Cognition & Reduced personal will & .48 (.033) \\
+SFoRC & Q16 & Impaired Control and Cognition & Difficulty judging importance & .45 (.039) \\
+Small Self & Q02 & Spiritual Experience & Connection to a superior power & .46 (.044) \\
+Small Self & Q03 & Blissful State & Boundless pleasure & .45 (.044) \\
+SFoRC & Q41 & Blissful State & All-embracing love & .44 (.044) \\
+SFoRC & Q28 & Disembodiment & Location outside the body & .45 (.044) \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize\textit{Note.} Item descriptions are concise content labels rather than replacements for the administered questionnaire wording. $q$ values control the false-discovery rate across all 126 pictograph--item tests.}
+\end{table}
+\FloatBarrier
+
+\subsection{Intervention and condition specificity}
+
+The primary change-score results explicitly concern intervention-related change: they correlate each participant's pooled-VR-minus-control pictograph change with that participant's pooled-VR-minus-control ASC change. To test whether correspondence instead depended on the visual mapping, we repeated the analysis using symmetric-minus-asymmetric change scores. No association survived correction among the nine 3D-ASCr composite tests (minimum $q=.142$) or the 33 subscale tests (minimum $q=.082$). Thus, the data did not establish that participants showing a larger pictographic response to one VR mapping also showed a larger ASC response to that mapping.
+
+The participant fixed-effects interaction models gave the same overall conclusion about mapping specificity. No symmetric-versus-asymmetric pictograph-slope interaction survived correction for any composite (all $q\geq.959$) or subscale (all $q\geq.999$). The omnibus condition-by-SFoRC interaction for Positive Effects survived correction across the nine composite models, $q=.038$, but neither the planned pooled-VR-versus-control slope contrast, $q=.111$, nor the symmetric-versus-asymmetric slope contrast, $q=.959$, survived correction. We therefore treat that omnibus result as inconclusive rather than as evidence that condition reliably changed the SFoRC--Positive Effects relationship.
+
+Taken together, the exploratory analyses show that participants with larger pooled VR-related increases in spatial self-extension also tended to show larger increases in unity and Positive Effects, while greater self-diminishment covaried with blissful and spiritual experience. These relationships were not specific to the symmetric or asymmetric mapping. They may reflect convergence between pictographic self-representation and ASC phenomenology, but common-method variance, response style, and visual-content overlap remain alternative explanations. The correlations do not establish that changes in one measure caused changes in the other.
 
 \section{Temporal experience tracer analyses}
 \label{sec:supp_tracers}

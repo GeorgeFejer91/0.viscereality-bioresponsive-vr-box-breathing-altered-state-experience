@@ -130,6 +130,8 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-23
 
+- Implemented the approved pictographic-measure audit and ASC correspondence reporting. Updated the hypotheses and Methods, documented PBBS orientation and reverse scoring, identified Small Self as an ad hoc item sourced from Vidal, described all pictographs as controllable SVG recreations, added a concise construct-linked main-text correlation summary, and added complete multiplicity-corrected composite, subscale, item, contrast, and condition-interaction analyses in Supplementary Section S4. Added Departure Ledger Item D15 to preserve the exploratory status and analysis-family definitions.
+
 - Recorded the selected pictographic-measure reporting hierarchy: disclose all three as SVG recreations with directly controllable graded visual properties; identify Small Self as an ad hoc item sourced from Vidal without implying ongoing validation by either team; place the complete multiplicity-corrected pictograph--ASC analysis in a dedicated supplementary segment; and retain only a concise construct-linked exploratory synthesis in the main article. Temporary read-only analyses found strong pooled-VR SFoRC and Small Self correspondence with Positive Effects but no family-corrected symmetric-minus-asymmetric association.
 
 - Recorded the project-wide terminology rule that hypothesized or observed increases in positively valenced experience must not be described as ``biasing'' experience. Use neutral wording such as ``increase'' or ``enhance'' instead, while retaining ``bias'' where it has a genuine technical meaning.
