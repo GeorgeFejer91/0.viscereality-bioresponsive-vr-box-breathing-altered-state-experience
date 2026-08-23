@@ -443,8 +443,11 @@ inspect the S3.4 page.
 
 ## Item B1: registered non-PLV RM-ANCOVA replacement
 
-Status: substance and earlier exact replacements were approved, but application
-is blocked until the OSF maintainer adopts and regenerates authoritative values.
+Status: approved interim placeholders are applied. The main and supplementary
+Methods now describe the registered partial-$F$ implementation, and the two
+main non-PLV omnibus locations plus all 11 S3 omnibus locations contain a
+searchable OSF-source-lock placeholder. Final numerical replacement remains
+blocked until the OSF maintainer adopts and regenerates authoritative values.
 The replacement covers 39 non-PLV outcomes only. PLV remains unchanged.
 
 Required verification: authoritative CSV/TXT outputs, replay, decision comparison,

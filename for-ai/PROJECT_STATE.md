@@ -276,3 +276,10 @@ The user's instruction authorizes the substance of the selected hierarchy and co
 - The handoff keeps PLV frozen, prohibits non-PLV inference in the eight excluded participants, and distinguishes required manuscript-supporting tests from optional OSF-only extensions. Tracer Bayes factors, pooled repeated-observation ASC--tracer correlations, extra blinding diagnostics, tracer moderation extensions, and unreported item-level pictograph expansions are outside the required reviewer-facing scope.
 - The preferred OSF architecture extends the existing registry and numbered scripts rather than creating outcome-specific scripts. The existing 39-row primary-family CSV becomes the canonical registered frequentist table after its mixed-model omnibus fields are superseded; a three-row joint-order Bayesian output, compact blinding output, five pictograph outputs, and a manuscript-statistic map complete the missing machine-readable layer.
 - No manuscript, supplement, figure, data, or authoritative OSF file was changed for this handoff.
+
+## 2026-08-23 - Registered-omnibus source-lock placeholders
+
+- The user approved placeholder Items P1--P3 pending authoritative OSF adoption of the registered non-PLV partial-$F$ pipeline.
+- Main and supplementary Methods now describe the registered participant-blocked, block-position-adjusted partial-$F$ analysis for non-PLV outcomes. The finalized PLV omnibus remains unchanged.
+- Two main-results locations and all 11 Supplementary S3 omnibus locations now use the exact searchable marker `REGISTERED OMNIBUS STATISTICS PENDING OSF SOURCE LOCK` instead of the obsolete mixed-model chi-square values.
+- The placeholders are review-state blockers and must be replaced from a clean, replay-verified OSF commit before final-mode packaging. Planned contrasts, ordinary Bayesian results, PLV statistics, and exploratory mixed models were not changed.
