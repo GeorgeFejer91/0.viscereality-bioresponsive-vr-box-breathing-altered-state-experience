@@ -1,0 +1,45 @@
+Internal non-authoritative pictograph--ASC candidate
+Sample: final included N=39 only
+Seed: 262545
+Permutation draws: 10000
+Bootstrap draws: 2000
+Master SHA-256: 3e91ee750f60fb86433e4a96f3d148e3b87cfebc6204c75775cf1a8300947a57
+Raw ASC SHA-256: b3f76deb87e9ed3f1a930c0f78eb83681ddaf85ecab1602e21c0785ba1ae7a1f
+
+PASS SFoRC--Positive rho: 0.6957
+PASS Small self--Positive rho: 0.462042
+PASS SFoRC partial Positive r: 0.642953
+PASS Small self partial Positive r: 0.375819
+PASS Composite symmetry minimum q: 0.142186
+PASS Composite SFoRC joint interaction q: 0.0379267
+
+Correction-robust pooled-VR composite/subscale results:
+            family                      scale                   target      rho  permutation_p  q_bh_family
+ 11D-ASC subscales Spatial frame of reference      Experience of Unity 0.679385       0.000100     0.001650
+ 11D-ASC subscales Spatial frame of reference           Blissful State 0.646890       0.000100     0.001650
+ 11D-ASC subscales Spatial frame of reference           Insightfulness 0.512235       0.001400     0.011549
+ 11D-ASC subscales                 Small self           Blissful State 0.515357       0.001300     0.011549
+ 11D-ASC subscales                 Small self     Spiritual Experience 0.459644       0.003600     0.021448
+ 11D-ASC subscales                 Small self Audio-Visual Synesthesia 0.465458       0.003900     0.021448
+ 11D-ASC subscales Spatial frame of reference     Spiritual Experience 0.407848       0.010399     0.049024
+3D-ASCr composites Spatial frame of reference         Positive Effects 0.695700       0.000100     0.000900
+3D-ASCr composites                 Small self         Positive Effects 0.462042       0.003300     0.014849
+
+Item results surviving the 126-test correction:
+                     scale    target      rho  permutation_p  q_bh_family
+Spatial frame of reference  Q15 (EU) 0.638620       0.000200     0.008399
+Spatial frame of reference  Q18 (EU) 0.580202       0.000200     0.008399
+Spatial frame of reference  Q39 (BS) 0.687287       0.000100     0.008399
+Spatial frame of reference  Q19 (EU) 0.569507       0.000400     0.012599
+Spatial frame of reference Q29 (DIS) 0.554240       0.000600     0.015118
+                Small self  Q39 (BS) 0.512551       0.000900     0.016198
+Spatial frame of reference  Q03 (BS) 0.512797       0.000900     0.016198
+                Small self Q34 (AVS) 0.488564       0.001100     0.017323
+Spatial frame of reference Q12 (CMP) 0.487567       0.002200     0.027717
+Spatial frame of reference  Q24 (IS) 0.473610       0.002200     0.027717
+Spatial frame of reference Q36 (ICC) 0.479840       0.002900     0.033215
+Spatial frame of reference Q16 (ICC) 0.446642       0.003700     0.038846
+                Small self  Q03 (BS) 0.451165       0.005099     0.043676
+Spatial frame of reference  Q41 (BS) 0.435097       0.005199     0.043676
+                Small self  Q02 (SE) 0.456412       0.005099     0.043676
+Spatial frame of reference Q28 (DIS) 0.448218       0.005599     0.044096

@@ -60,9 +60,12 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] Incorrect claim that Changed Meaning of Percepts was unaffected removed.
 - [x] Confidence-weighted blinding index retained with limited emphasis.
 - [ ] Finalize the compact 3D-ASCr Bayesian paragraph after RM-ANCOVA adoption.
+- [ ] Add the six source-locked 3D-ASCr planned-contrast Bayes factors and plain-language model comparisons.
 - [ ] Define `naive` as recruitment-naive, not screened absence of prior VR, meditation, breathwork, or psychedelic experience, after exact wording approval.
 - [ ] Decide whether exploratory order statistics remain in the main Results or move to the supplement.
 - [ ] Confirm abstract, Results, Discussion, and Conclusion make the same strength of claim.
+- [ ] Remove or source-lock the repeated `no adverse events across 47` claim.
+- [ ] Remove equivalence-like cross-study wording from the unqualified final Discussion and Conclusion.
 
 ## F. Supplement audit
 
@@ -74,10 +77,13 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] S4 includes complete composite, subscale, item, and mapping-specific exploratory screens.
 - [x] S5 tracer contrast table appears under Condition contrasts rather than ASC–tracer correspondence.
 - [ ] Add a compact complete condition-analysis table for all three self measures after exact table approval.
-- [ ] Add item-wise blinding reporting if the authoritative pipeline produces the registered item inventory and the table receives exact approval.
+- [x] Keep item-wise blinding detail in the reproducibility output unless a specific item-level manuscript claim is introduced; the registered domain-level estimands are already reported.
+- [ ] Add a compact complete registered omnibus table for tracer peak and AUC after authoritative RM-ANCOVA adoption.
+- [x] Consolidate and execute the internal pictograph--ASC pipeline under `for-ai/`; manuscript spot checks pass at 10,000 permutations and 2,000 bootstraps.
 - [ ] Sync the S4 pictograph-analysis outputs into the authoritative reproducibility repository.
 - [ ] Replace S3 mixed-model omnibus statistics after RM-ANCOVA adoption.
 - [ ] Replace S3 stepwise directional results after joint-order BF adoption.
+- [ ] Reconcile the supplement's four-study prose and five-dataset caption with the current six-profile cross-study figure.
 
 ## G. Numerical and build verification
 

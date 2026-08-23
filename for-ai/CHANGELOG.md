@@ -4,6 +4,17 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-23
 
+- Verified that the Fincham Airways to Alteration study shown as 2026 in the
+  cross-study figure has a final Frontiers in Psychology publication (volume 17,
+  article 1851882; DOI `10.3389/fpsyg.2026.1851882`) and updated the internal A6
+  approval proposal; no bibliography or submission-facing citation was changed.
+
+- Reaffirmed the final PLV boundary: the eight PLV-screened-out participants enter only adherence quality screening, outlier detection, and participant flow; every non-PLV analysis uses the final included `N=39` sample.
+- Added and executed `for-ai/scripts/pictograph_asc_correspondence_pipeline.py`, consolidating the temporary composite, subscale, item, rank-partial, symmetry-change, within-person, and condition-interaction S4 analyses. The full 10,000-permutation/2,000-bootstrap run reproduced all manuscript spot checks and wrote only internal adoption-required outputs.
+- Added `NON_OSF_STATISTICS_PIPELINE_INVENTORY.md` and `FULL_PAPER_STATISTICAL_CLAIM_AUDIT.md`. Confirmed that the only manuscript-facing pipelines absent from OSF are the registered non-PLV RM-ANCOVA, registered EU/BS/AVS joint ordered Bayes factors, and S4 pictograph--ASC pipeline.
+- Recorded missing paper-level statistics: six 3D-ASCr planned-contrast Bayes factors in the main Results, complete registered self-condition/Bayesian reporting in S4, and 22 tracer omnibus tests in S5. Confirmed from the preserved registration that tracer Bayes factors are not explicitly required and can remain in OSF.
+- Flagged unsupported or stale claims: no identified source for the repeated no-adverse-events statement, unqualified cross-study comparability in the final Discussion/Conclusion, and S3 prose/caption that omit Fincham from the current six-profile figure.
+
 - Added `for-ai/FINAL_SUBMISSION_CHECKLIST.md` as the consolidated checkable tracker for journal formatting, Online Resource compliance, final reproducibility publication, scientific sign-off, canonical compilation, source packaging, portal upload, and hard stop conditions. Pre-marked only requirements already implemented locally; placeholders, external releases, final audits, extracted-source compilation, and final portal verification remain unchecked.
 - Recorded the permanent cross-repository figure filename contract: active manuscript and supplement `\includegraphics` filenames now control canonical pipeline export names, numeric prefixes, manifests, generated registries, reviewer-scope records, and synchronized manuscript copies. Future renames must update both repositories atomically.
 - Synchronized the revised `Fig09_cross_study_profiles.pdf` after centering Kartar exactly between Viscereality and Bahi and Uthaug exactly between Bahi and Havenith; the final rendered figure has zero detected text collisions.

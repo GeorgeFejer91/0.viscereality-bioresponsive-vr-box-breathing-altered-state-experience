@@ -66,13 +66,13 @@ Core authoritative sources:
 - Location: `main.tex`, Results, Self-Related Measures.
 - Reports: detailed SFoRC descriptives, pooled contrast, symmetry contrast, omnibus result, and planned-contrast BF; concise pooled results and Bayes evidence for body boundaries and Small Self.
 - Source: primary family summary and Bayesian planned contrasts.
-- Status: `LOCKED`, but complete all-outcome tabulation in the supplement remains `TEXT PENDING`.
+- Status: reported main values are `LOCKED`, but the registered family is incomplete across the paper. A compact supplementary table must add all three condition descriptives, the three registered omnibus tests after adoption, all three omnibus Bayes factors, and both planned-contrast Bayes factors for every self measure.
 
 ### M05 — Exploratory pictograph–ASC summary
 
 - Location: `main.tex`, final paragraph of Self-Related Measures.
 - Reports: non-numerical summary only; complete coefficients refer to Supplementary S4.
-- Status: `SOURCE SYNC REQUIRED` because the complete current analysis output remains under internal temporary audit files rather than the authoritative package.
+- Status: `SOURCE SYNC REQUIRED`. The complete analysis has now been consolidated and executed through `for-ai/scripts/pictograph_asc_correspondence_pipeline.py`; candidate outputs are under `for-ai/statistical-audit/non-osf-results/pictograph-asc-correspondence/`. OSF adoption remains required.
 
 ### M06 — 3D-ASCr main altered-state result
 
@@ -82,6 +82,7 @@ Core authoritative sources:
 - Status: `LOCKED` under the current mixed-model source; omnibus statistics must be replaced after registered RM-ANCOVA adoption.
 - Executed registered candidates: Positive `F(2,75)=7.56`, Distressing `F(2,75)=4.64`, Perceptual `F(2,75)=19.63`; all preserve the current substantive decisions.
 - Interpretive rule: Perceptual and Positive evidence is clear; Distressing is smaller and its modest Bayesian support must not be overstated.
+- Missing reporting: all six source-locked Bayesian planned contrasts. Pooled VR versus control: Perceptual `BF10=1178.41`, Positive `BF10=12.96`, Distressing `BF10=3.02`. Symmetric versus asymmetric: Perceptual `BF01=3.87`, Positive `BF01=5.07`, Distressing `BF01=5.66`.
 
 ### M07 — 11D-ASC referral
 
@@ -172,7 +173,7 @@ Core authoritative sources:
 ### S4.00 — Pictograph scoring and exploratory model
 
 - Reports: coding direction, reverse scoring, pooled-VR and symmetry change scores, permutation and bootstrap settings, fixed-effects interaction models, and three multiplicity families.
-- Status: `SOURCE SYNC REQUIRED`.
+- Status: internal pipeline and candidate outputs now exist and reproduce the manuscript; authoritative `SOURCE SYNC REQUIRED` remains.
 
 ### S4.01 — Composite correspondence
 
@@ -187,7 +188,12 @@ Core authoritative sources:
 ### S4.03 — Intervention and mapping specificity
 
 - Reports: symmetry-minus-asymmetry screens and participant fixed-effects interaction families.
-- Status: `SOURCE SYNC REQUIRED`.
+- Status: internal pipeline and candidate outputs now exist and reproduce the manuscript; authoritative `SOURCE SYNC REQUIRED` remains.
+
+### S4.04 — Registered self-measure condition inventory
+
+- Intended reports: complete condition descriptives, registered omnibus tests, omnibus Bayes factors, and both planned frequentist/Bayesian contrasts for Perceived Body Boundaries, SFoRC, and Small Self.
+- Status: `TEXT PENDING` and `ADOPTION REQUIRED` for the registered omnibus values. This compact table is currently absent.
 
 ### S5.00 — Tracer task and data reduction
 
@@ -199,6 +205,11 @@ Core authoritative sources:
 - Reports: 44 paired contrasts, comprising peak and AUC for eleven dimensions and both planned contrasts, with `t`, `d_z`, `p`, and `q`.
 - Source: primary family summary and tracer reference output.
 - Status: `LOCKED`.
+
+### S5.01A — Registered tracer omnibus condition tests
+
+- Intended reports: order-adjusted RM-ANCOVA for peak and AUC across all 11 dimensions, with `F(2,75)`, nominal `p`, partial eta-squared, and exploratory-family `q`.
+- Status: currently absent; `ADOPTION REQUIRED` for authoritative registered values. The candidate pattern retains EU, EI, and AVS after FDR for both peak and AUC; DIS is nominal only.
 
 ### S5.02 — ASC–tracer correspondence
 
@@ -219,3 +230,5 @@ Core authoritative sources:
 5. Replace manuscript mixed-model omnibus statistics with source-locked RM-ANCOVA values.
 6. Replace stepwise directional interpretation with source-locked joint-order Bayes factors for EU, BS, and AVS.
 7. Re-run the full segment-by-segment audit before submission.
+8. Add the source-locked 3D planned Bayes factors, compact self-condition table, and tracer omnibus table after the applicable approval and adoption gates.
+9. Reconcile the cross-study prose/caption with the current six-profile figure and resolve unsupported safety/equivalence-like claims.

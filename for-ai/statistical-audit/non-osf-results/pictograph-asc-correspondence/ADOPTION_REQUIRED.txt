@@ -1,0 +1,1 @@
+These candidate outputs are internal and non-authoritative. The OSF maintainer must review, adopt, regenerate, validate, and commit the pipeline before the manuscript can cite the outputs as reproducible.

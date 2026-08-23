@@ -78,3 +78,58 @@ Rscript .\for-ai\scripts\candidate_registered_analysis_pipeline.R `
   --package-root C:\path\to\0_OSF_reproducability_package `
   --write
 ```
+
+### `candidate_registered_rm_ancova.py`
+
+Internal, non-authoritative Python implementation of the registered
+order-adjusted repeated-measures ANCOVA. It compares
+`value ~ participant + numeric block position + condition` with
+`value ~ participant + numeric block position`, using participant fixed effects
+for repeated-measures blocking. The script asserts the final included `N=39`,
+refuses OSF writes, and writes candidate results only below
+`for-ai/statistical-audit/candidate-registered-results/` when `--write` is used.
+
+```powershell
+& 'C:\S3OSF\e\python.exe' .\for-ai\scripts\candidate_registered_rm_ancova.py `
+  --package-root C:\path\to\0_OSF_reproducability_package `
+  --write
+```
+
+The executed candidate reproduces all 40 partial-F values in an independent
+statsmodels calculation and preserves every nominal and within-family FDR
+decision from the current mixed-effects pipeline. The 39 non-PLV outcomes are
+the adoption target; PLV remains frozen by user direction.
+
+### `pictograph_asc_correspondence_pipeline.py`
+
+Internal, non-authoritative consolidated pipeline for the complete exploratory
+pictograph--ASC analysis reported in Supplementary Section S4. It covers:
+
+- pooled-VR-minus-dark-screen-control Spearman change correlations for all three
+  3D-ASCr composites, all 11D-ASC subscales, and all 42 ASC items;
+- participant-bootstrap confidence intervals, permutation p values, and
+  family-wise Benjamini--Hochberg correction;
+- participant-clustered within-person sensitivity estimates;
+- rank-partial Positive Effects follow-ups;
+- symmetric-minus-asymmetric change correlations; and
+- order-adjusted participant fixed-effects condition interactions with
+  participant-clustered covariance.
+
+The script asserts the final included `N=39`, reverse-scores the administered
+Perceived Body Boundaries pictograph into the construct-facing dissolution
+direction, refuses OSF writes, records input hashes and package versions, and
+validates key manuscript values. Dry run is the default. `--write` saves only
+under
+`for-ai/statistical-audit/non-osf-results/pictograph-asc-correspondence/`.
+
+```powershell
+# Full internal execution used for the audit.
+& 'C:\S3OSF\e\python.exe' .\for-ai\scripts\pictograph_asc_correspondence_pipeline.py `
+  --package-root C:\path\to\0_OSF_reproducability_package `
+  --permutations 10000 `
+  --bootstraps 2000 `
+  --write
+```
+
+These outputs are excluded from submission and remain `SOURCE SYNC REQUIRED`
+until the OSF maintainer adopts and validates the pipeline.

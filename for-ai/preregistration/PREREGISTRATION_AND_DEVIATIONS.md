@@ -241,6 +241,29 @@ Status: Implemented and explicitly identified as exploratory in `main.tex`, Supp
 - Multiplicity and interpretation: Benjamini--Hochberg correction is applied separately to the 9 composite, 33 subscale, and 126 item-level association families and within each interaction family. The manuscript treats the results as exploratory correspondence, not causal effects or preregistered confirmation.
 - Reporting hierarchy: the main article retains only a concise set of construct-linked results, including Unity and Disembodiment; Supplementary Section S4 reports the complete composite and subscale screens, all item associations surviving the 126-test correction, and the intervention- and mapping-specificity analyses.
 
+### D16: Complete reporting of self and tracer condition analyses
+
+Status: Registered analyses exist in source or candidate form but are not yet
+completely reported across the active paper and supplement.
+
+- Self-related experience: the registration requires an order-adjusted RM-ANOVA,
+  both planned contrasts, and parallel Bayesian RM-ANOVAs for each of the three
+  pictographic measures. The main article reports the core planned contrasts and
+  pooled-VR Bayes factors, but no paper section currently gives the complete three-
+  outcome omnibus and Bayesian inventory. After D02 source adoption, add one
+  compact complete table to Supplementary S4.
+- Temporal tracers: the registration requires peak and AUC for each dimension to
+  use the same order-adjusted RM-ANOVA approach as the primary outcomes. S5 reports
+  all 44 planned contrasts but omits the 22 omnibus condition tests. Add a compact
+  omnibus table after D02 source adoption.
+- Bayesian tracer analyses are present in the authoritative repository but are not
+  explicitly promised in the tracer paragraph of the registration. They are
+  optional robustness material and should remain in OSF unless a later claim
+  requires them.
+- Parsimony rule: complete the registered inventories in the supplement; do not
+  expand the main narrative beyond the six 3D-ASCr planned-contrast Bayes factors
+  that directly mirror its confirmatory frequentist results.
+
 ## Retained commitments
 
 The current paper retains the within-subject three-condition design, counterbalanced presentation, 10-minute 4-4-4-4 audio-guided breathing blocks, controller-based respiratory acquisition, the five preregistered measurement blocks, all three self-related instruments, the 11D-ASC response data, both planned condition contrasts, parallel frequentist and Bayesian analysis families, and a blinding assessment. Retention of an outcome family does not imply retention of its exact preregistered acquisition method, exclusion rule, model, software, or confirmatory status.

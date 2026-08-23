@@ -492,3 +492,29 @@ Execution record: the internal registered RM-ANCOVA candidate was run on the loc
 - Do not claim that a cross-sectional or change-score association is causal.
 - Report that pooled VR-related SFoRC and Small Self changes covary with Positive Effects, but that no symmetric-minus-asymmetric contrast correlation survives family correction.
 - Treat condition-interaction findings cautiously and report both the planned contrasts and family correction rather than foregrounding an isolated omnibus result.
+
+## 2026-08-23 - Complete-statistics placement after the final PLV clarification
+
+Decision: preserve PLV unchanged and use the supplement for complete registered
+statistics that do not advance the main narrative. After authoritative source
+adoption and exact text/table approval, the main 3D-ASCr paragraph should add the
+six directly relevant planned-contrast Bayes factors; Supplementary S4 should add
+one compact complete condition/Bayesian table for the three self measures; and
+Supplementary S5 should add the 22 registered tracer peak/AUC omnibus tests.
+
+Rationale: the three 3D-ASCr composites are the main explanatory outcome, while
+the self-family and tracer inventories are required for transparent coverage of
+the registered analyses but would bloat the main article. The preregistration does
+not explicitly require Bayesian tracer analyses, so that large optional inventory
+remains in OSF.
+
+Consequences:
+
+- Records from PLV-screened-out participants remain limited to adherence quality
+  screening, outlier detection, and participant flow; all non-PLV analyses use
+  only the 39 included participants.
+- Item-wise blinding output and complete distribution-free inventories remain in
+  the reproducibility package unless a specific manuscript claim requires them.
+- The pictograph--ASC pipeline remains an internal candidate until OSF adoption.
+- Unsupported safety claims and stale cross-study profile counts require exact
+  submission-facing correction proposals before editing.

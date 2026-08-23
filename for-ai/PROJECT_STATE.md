@@ -1,6 +1,6 @@
 # Current project state
 
-Last updated: 2026-08-22
+Last updated: 2026-08-23
 
 ## GitHub checkpoint policy
 
@@ -229,3 +229,14 @@ The user's instruction authorizes the substance of the selected hierarchy and co
 - `for-ai/statistical-audit/STATISTICAL_REPORTING_CHRONOLOGY.md` is the running segment inventory. `FINAL_STATISTICS_AUDIT_CHECKLIST.md` is the controlling final reconciliation checklist.
 - Remaining statistical blockers are authoritative RM-ANCOVA adoption, authoritative joint-order BF adoption, final multiplicity wording approval and application, pictograph-output synchronization, and final manuscript-to-output numerical reconciliation.
 - PLV is frozen by user direction. The confidence-weighted blinding index remains in the main Results with limited emphasis. The partially prospective registration timing and JASP substitution are not to be foregrounded.
+
+## 2026-08-23 - Post-screening sample and complete statistics re-audit
+
+- The user reaffirmed that PLV is final. Records from the eight PLV-screened-out participants may be used only for adherence quality screening, outlier detection, and participant flow; they do not enter any other analysis. The active manuscript and supplement contain no 47-participant inferential comparison.
+- The complete manuscript-facing non-OSF pipeline inventory is now `for-ai/statistical-audit/NON_OSF_STATISTICS_PIPELINE_INVENTORY.md`. The only missing pipeline families are the registered non-PLV RM-ANCOVA, the registered joint ordered Bayes factors for EU/BS/AVS, and the exploratory pictograph--ASC analysis reported in S4.
+- `for-ai/scripts/pictograph_asc_correspondence_pipeline.py` consolidates and supersedes the temporary S4 audit scripts. It ran successfully at 10,000 permutations and 2,000 participant bootstraps on the locked `N=39` inputs and reproduced all manuscript spot checks. Its outputs remain internal and require OSF adoption.
+- The critical consistency report is `for-ai/statistical-audit/FULL_PAPER_STATISTICAL_CLAIM_AUDIT.md`.
+- Newly confirmed reporting gaps are the six available 3D-ASCr planned-contrast Bayes factors in the main Results, a compact complete self-condition/Bayesian table in S4, and the 22 registered tracer omnibus tests in S5. Tracer Bayes factors are not explicitly preregistered and should remain in OSF for parsimony.
+- The supplementary cross-study prose is stale relative to the current six-profile figure because it omits Fincham and calls the figure a five-dataset comparison.
+- The repeated claim of no adverse events among all 47 participants has no identified source in the active manuscript or OSF result outputs. It requires a source-locked safety record or removal after exact item approval.
+- Submission-facing corrections remain blocked by the item-by-item wording gate. Candidate RM-ANCOVA and joint-order values remain additionally blocked by authoritative OSF adoption.
