@@ -75,7 +75,7 @@ Checked boxes mean that the commitment is either fulfilled as registered or form
 
 ### Frequentist condition analyses
 
-- [x] **ADDRESSED DEVIATION — Test the three-level within-subject condition factor for every dimension while accounting for presentation order.** The registered RM-ANOVA was replaced by an order-adjusted participant-random-intercept mixed-effects likelihood-ratio test. The replacement and rationale are disclosed in `main.tex` and Supplementary Section S1; exact primary results appear in every S3 subscale block.
+- [ ] **RESTORATION PENDING — Test the three-level within-subject condition factor for every dimension while accounting for presentation order using the registered repeated-measures ANCOVA.** The current manuscript still reports an order-adjusted participant-random-intercept mixed-effects likelihood-ratio test. A candidate registered implementation exists under `for-ai/scripts/`, but the authoritative repository maintainer must adopt and regenerate it before the manuscript statistics can be replaced.
 - [x] **ADDRESSED DEVIATION — Conduct the pooled-VR-versus-control planned contrast.** It is implemented as a paired $t$-test, which yields the same paired contrast statistic in this within-subject comparison. Every S3 block reports the result, paired $d_z$, FDR-adjusted value, and Bayes factor; Tables S2--S4 add the mean difference and 95% confidence interval.
 - [x] **ADDRESSED DEVIATION — Conduct the symmetric-versus-asymmetric planned contrast.** It is likewise implemented as a paired $t$-test and reported in every S3 block with paired $d_z$, FDR-adjusted value, and Bayes factor.
 - [x] **FORMALLY DISCLOSED ADDITION — Apply distribution-free checks and multiplicity control.** Friedman and Wilcoxon analyses and Benjamini--Hochberg correction were not registered, but their addition and rationale are disclosed in `main.tex` and Supplementary Section S1.
@@ -85,8 +85,8 @@ Checked boxes mean that the commitment is either fulfilled as registered or form
 
 - [x] **ADDRESSED DEVIATION — Conduct a parallel Bayesian omnibus condition analysis for every dimension.** The analysis uses R/BayesFactor rather than JASP and mirrors the implemented order-adjusted condition model. The software, priors, and model comparison are specified in the main Methods, and every S3 block reports the omnibus Bayes factor. By user decision, software substitution alone is treated as a reproducibility detail rather than a scientific deviation when the hypotheses, priors, model, and estimand are preserved.
 - [x] **FULFILLED — Conduct Bayesian versions of both planned contrasts for all eleven dimensions.** Every S3 block reports Bayesian pooled-VR-versus-control and symmetric-versus-asymmetric results.
-- [ ] **MISSING/UNRESOLVED — Compute one Bayes factor for the registered joint ordering symmetric VR greater than asymmetric VR greater than control for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.** The authoritative pipeline instead computes two separate one-sided paired Bayes factors. These stepwise results do not constitute the registered joint order-constrained test. Resolution requires a maintainer-side implementation in the immutable analysis repository or an explicit submission-facing deviation disclosure.
-- [x] **ADDRESSED DEVIATION — Make the directional-test status fully explicit in S3.** The main Methods identifies the implemented analyses as two one-sided pairwise steps rather than one joint ordering test. S3 reports both steps with exact values for Experience of Unity, Blissful State, and Audio-Visual Synesthesia and states that the hypothesized full ordering was not supported for any subscale because symmetric VR did not reliably exceed asymmetric VR.
+- [ ] **RESTORATION PENDING — Compute one Bayes factor for the registered joint ordering symmetric VR greater than asymmetric VR greater than control for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.** The authoritative pipeline instead computes two separate one-sided paired Bayes factors. A candidate encompassing-prior implementation exists under `for-ai/scripts/`; the OSF maintainer must validate, adopt, and regenerate it.
+- [ ] **REPLACEMENT PENDING — Replace the current stepwise directional results in S3 with the authoritative joint-order results.** By user direction, an avoidable stepwise-deviation disclosure is not the final resolution.
 
 ### Post-registration hierarchy and interpretation
 
@@ -98,7 +98,7 @@ Checked boxes mean that the commitment is either fulfilled as registered or form
 
 The core ASC commitment is substantially fulfilled or formally addressed: the registered instrument was administered and scored, all eleven dimensions were analyzed across all three conditions, presentation order was accounted for, both planned contrasts and parallel Bayesian analyses were conducted, and the complete fine-grained results are placed in an explicitly referenced supplementary section. Supplementary placement satisfies the promise to perform and report the 11D-ASC analyses because the registration did not prescribe a manuscript location.
 
-The ASC package is not yet a literal match to the registration because the joint order-constrained Bayes factors remain unimplemented. The main Methods and S3 now disclose that the available directional results are stepwise substitutes, report all six exact pairwise Bayes factors, and explain that the full ordering was not supported for any of the three subscales. Exact distribution-free statistics remain in the reproducibility outputs under the approved parsimonious reporting policy rather than being reproduced in S3.
+The ASC package is not yet a literal match to the registration because the registered RM-ANCOVA and joint order-constrained Bayes factors still require authoritative adoption. Internal candidate implementations exist under `for-ai/scripts/`, but their outputs are not manuscript-facing. Exact distribution-free statistics remain in the reproducibility outputs under the approved parsimonious reporting policy rather than being reproduced in S3.
 
 ### Preregistered exclusions and sample target
 
@@ -146,6 +146,7 @@ Status: Explicitly disclosed and rationalized in `main.tex` and Supplementary Se
 - Preregistered: no distribution-free robustness procedure and no multiplicity correction were specified.
 - Added: Wilcoxon signed-rank tests, Friedman omnibus tests, and Benjamini-Hochberg FDR correction within each multi-test outcome family.
 - Stated reason: Shapiro-Wilk checks indicated non-normality for several distributions, and the preregistration did not specify a multiple-comparison procedure.
+- User-selected final hierarchy: nominal $p$ values govern preregistered planned contrasts; FDR governs exploratory and post-hoc screens; adjusted $q$ values remain visible as sensitivity information for preregistered multi-outcome families. Exact manuscript wording remains pending approval.
 
 ### D05: Post-preregistration 3D-ASCr composites and reporting hierarchy
 
@@ -167,12 +168,12 @@ Status: Resolved by user direction as a non-substantive software substitution.
 
 ### D07: Ordered Bayesian predictions
 
-Status: Disclosed implementation mismatch; the registered joint tests remain unimplemented.
+Status: Registered-test restoration selected; authoritative adoption remains pending.
 
 - Preregistered: Bayes factors for the joint three-condition order symmetric VR greater than asymmetric VR greater than control, only for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.
-- Current manuscript and supplement: accurately describe the available analyses as two stepwise one-sided pairwise tests, report all six exact values, and state that they do not support the full ordering for any of the three dimensions.
+- Current supplement: still reports the two available stepwise one-sided pairwise tests. These are temporary and must be replaced by the joint-order results after authoritative regeneration.
 - Authoritative pipeline finding: it implements two separate one-sided paired Bayes factors rather than one joint order-constrained Bayes factor.
-- Required future treatment: do not call the two stepwise tests the registered joint ordering. The current disclosure may be retained if the maintainer does not implement the original joint tests.
+- Required future treatment: validate and adopt the candidate joint-order implementation in the authoritative repository, regenerate outputs, replace the stepwise reporting, and record the authoritative commit. Do not retain an avoidable deviation solely because the current pipeline is incomplete.
 
 ### D08: Temporal tracer acquisition
 
@@ -185,7 +186,7 @@ Status: Closed by user direction; no submission-facing disclosure or further esc
 
 ### D09: ASC-tracer correlations
 
-Status: The change in status is disclosed, but its rationale and valid inferential implementation remain unresolved.
+Status: The non-inferential treatment and rationale are disclosed; valid dependence-aware implementation remains unresolved.
 
 - Preregistered: correlate tracer peak and AUC with corresponding 11D-ASC scores to assess convergent validity.
 - Current supplement: labels ASC-tracer correspondence analyses exploratory.

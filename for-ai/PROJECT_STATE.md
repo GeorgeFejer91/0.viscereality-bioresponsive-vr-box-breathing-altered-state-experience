@@ -216,3 +216,16 @@ The user's instruction authorizes the substance of the selected hierarchy and co
 - The Methods now identifies all pictographs as SVG recreations of published or earlier versions and explains direct control over opacity, line width, dash pattern, figure size, and spatial extent without claiming validated measurement equivalence.
 - The Small Self wording now identifies the Vidal publication as the source and the item as ad hoc, without implying that the present team is validating it or that external validation activity is ongoing.
 - The PBBS direction has been verified against the released administered asset. The Methods reports A-to-G coding as increasing boundary salience, and construct-facing correspondence analyses reverse the score so that higher values indicate greater boundary dissolution.
+
+## 2026-08-23 - Full-paper audit implementation and registered-pipeline restoration
+
+- Detailed 11D-ASC statistics have been removed from the main Results and replaced by a direct Supplementary S3 referral. This eliminates the main paragraph that mixed omnibus and planned-contrast Bayes factors.
+- Exploratory pictograph--ASC coefficients have been removed from the main Results; S4 remains the complete numerical destination.
+- The descriptive cross-study ASC figure and detailed comparison have moved from the main Discussion to Supplementary S3. The incorrect claim that Changed Meaning of Percepts was unaffected has been removed.
+- The Discussion now uses four functional subsections plus a separate Conclusion.
+- The user rejected retaining a stepwise-directional deviation when the registered joint order test can be implemented. The temporary disclosure was removed. The registered joint tests for EU, BS, and AVS are now a required maintainer-side restoration rather than an optional alternative.
+- `for-ai/scripts/candidate_registered_analysis_pipeline.R` contains a non-authoritative candidate implementation of both the registered order-adjusted repeated-measures ANCOVA and the registered joint ordered Bayes factors. It has not been executed in this workspace because no R runtime is installed.
+- The candidate script is designed to read the authoritative master dataset while refusing to write inside the authoritative repository. Any output remains under `for-ai/statistical-audit/` and requires OSF maintainer adoption.
+- `for-ai/statistical-audit/STATISTICAL_REPORTING_CHRONOLOGY.md` is the running segment inventory. `FINAL_STATISTICS_AUDIT_CHECKLIST.md` is the controlling final reconciliation checklist.
+- Remaining statistical blockers are authoritative RM-ANCOVA adoption, authoritative joint-order BF adoption, final multiplicity wording approval and application, pictograph-output synchronization, and final manuscript-to-output numerical reconciliation.
+- PLV is frozen by user direction. The confidence-weighted blinding index remains in the main Results with limited emphasis. The partially prospective registration timing and JASP substitution are not to be foregrounded.

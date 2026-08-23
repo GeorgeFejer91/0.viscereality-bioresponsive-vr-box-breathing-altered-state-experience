@@ -464,6 +464,29 @@ Consequences:
 
 - Exact Methods, Results, Discussion, and supplementary wording remains subject to item-by-item approval.
 - Label every pictograph--ASC association as exploratory and report the full multiplicity-corrected family in the supplement.
+
+## 2026-08-23 - Preregistration-first pipeline restoration and internal candidate boundary
+
+Decision: use the registered analysis whenever it remains sensible and does not materially change the interpretation. Restore the order-adjusted repeated-measures ANCOVA and the joint ordered Bayes factors for EU, BS, and AVS rather than preserving avoidable deviations.
+
+Implementation boundary:
+
+- Candidate pipelines may be created and run only under `for-ai/`.
+- Candidate outputs remain internal, non-authoritative, and excluded from submission.
+- The authoritative `0_OSF_reproducability_package` remains read-only for AI agents.
+- The OSF maintainer must review, port, regenerate, and commit the adopted analyses before numerical manuscript replacement.
+- The stepwise-directional deviation disclosure added during the audit was removed after the user selected implementation of the registered joint test.
+
+## 2026-08-23 - Statistical reporting preferences from the full-paper audit
+
+Decisions:
+
+- Make no further PLV changes. The current main and supplementary PLV reporting is accepted.
+- Retain the exploratory confidence-weighted blinding index in the main Results, but do not give it additional emphasis because it does not materially change the standard Bang-index interpretation.
+- Do not add manuscript discussion of the partially prospective registration timing.
+- Do not foreground the JASP-to-R software substitution when the statistical model, hypothesis, prior, and estimand are reproduced.
+- Preserve ``naive'' only in the recruitment-naive sense defined in `GLOBAL_INSTRUCTIONS.md`, not as a claim that prior experience was screened or absent.
+- Use a preregistration-first, less-conservative multiplicity hierarchy: nominal $p$ values govern preregistered planned contrasts; FDR governs exploratory and post-hoc screens; adjusted $q$ values remain visible as sensitivity information for preregistered multi-outcome families. Exact submission-facing replacements remain subject to item-by-item wording approval.
 - Do not claim that a cross-sectional or change-score association is causal.
 - Report that pooled VR-related SFoRC and Small Self changes covary with Positive Effects, but that no symmetric-minus-asymmetric contrast correlation survives family correction.
 - Treat condition-interaction findings cautiously and report both the planned contrasts and family correction rather than foregrounding an isolated omnibus result.

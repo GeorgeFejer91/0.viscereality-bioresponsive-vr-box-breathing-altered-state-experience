@@ -75,6 +75,21 @@ Any future agent receiving a new user instruction that applies project-wide must
 
 Conflicts or ambiguities must be surfaced to the user. Do not silently weaken or overwrite an existing user instruction.
 
+## Preregistration-first statistical governance
+
+1. Prefer the preregistered statistical pipeline whenever it remains technically sensible and does not materially distort the estimand or interpretation.
+2. Do not substitute a different model merely because it is more convenient, newer, or already implemented. A departure requires an ample, explicit, statistically defensible rationale tied to a genuine design, data-quality, model-validity, or estimand problem.
+3. When the current authoritative OSF pipeline differs from a still-viable registered analysis, create and test a candidate implementation only under `for-ai/scripts/` and write any candidate output only under `for-ai/statistical-audit/`.
+4. Treat every local candidate result as non-authoritative. Do not insert it into the manuscript, supplement, figures, or submission package until the reproducibility-repository maintainer adopts the implementation and regenerates canonical outputs.
+5. Keep the inconsistency open in `for-ai/statistical-audit/FINAL_STATISTICS_AUDIT_CHECKLIST.md` until the manuscript and authoritative repository are reconciled at a recorded commit.
+6. The registered order-adjusted repeated-measures ANCOVA takes precedence over the current mixed-effects omnibus if maintainer regeneration confirms the already observed absence of material interpretive change.
+7. The registered joint ordered Bayes factor for Experience of Unity, Blissful State, and Audio-Visual Synesthesia takes precedence over the current two stepwise directional tests. Do not retain a deviation merely to avoid implementing the registered joint test.
+8. Do not make further PLV reporting or analysis changes unless the user explicitly reopens PLV.
+
+## Recruitment-naive terminology
+
+When the manuscript calls participants ``naive,'' the intended meaning is recruitment-naive: participants were recruited from the general university participant pool through a VR breathing-biofeedback study advertisement rather than an altered-state, psychedelic, breathwork, or comparable experience-seeking recruitment channel. The term must not imply that prior VR, meditation, breathwork, or psychedelic experience was screened or absent.
+
 ## Evidence and provenance
 
 1. Distinguish recovered source material from reconstructed or newly written material.
