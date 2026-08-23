@@ -6,7 +6,6 @@
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{placeins}
-\usepackage{wrapfig}
 
 \graphicspath{{figures/}}
 
@@ -250,11 +249,57 @@ Temporal experience tracers are psychometric time-series ratings in which partic
 \label{fig:supp_tracer_schematic}
 \end{wrapfigure}
 
-After each condition, participants draw the 11 intensity curves on a world-space time-by-intensity surface using the VR controller. We project controller position onto the drawing plane, gate input through a trigger hold, and emit points at constant spatial spacing regardless of hand speed. Each trace yields peak intensity and area under the curve (AUC), which capture maximum intensity and cumulative experiential load, respectively. We analyse peak and AUC as separate exploratory families.
+After each condition, participants draw the 11 intensity curves on a world-space time-by-intensity surface using the VR controller. We project controller position onto the drawing plane, gate input through a trigger hold, and emit points at constant spatial spacing regardless of hand speed. We map reconstructed time and intensity to normalized 0--1 coordinates. Peak is the maximum sampled intensity. AUC is the trapezoidal integral of intensity after ordering points by reconstructed time, normalized to the 0--1 plotting interval. We analyse peak and AUC as separate exploratory families.
 
 \subsection{Condition contrasts}
 
-Tracer peak and AUC profiles broadly follow the condition profiles observed for the 11D-ASC questionnaire, with the strongest pooled-VR differences clustering on Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia. No tracer variable shows a symmetric-versus-asymmetric difference (Figure~\ref{fig:supp_tracer_profiles}).
+Tracer peak and AUC profiles broadly follow the condition profiles observed for the 11D-ASC questionnaire, with the strongest pooled-VR differences clustering on Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia (Figure~\ref{fig:supp_tracer_profiles}). After correction across the 11 dimensions within each tracer family, pooled VR exceeded the dark-screen control for all three dimensions for both peak and AUC. The paired effects were moderate for Experience of Unity and Audio-Visual Synesthesia and large for Elementary Imagery. Several smaller nominal differences did not survive FDR correction. No symmetric-versus-asymmetric comparison survived correction.
+
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\caption{Exploratory paired contrasts for tracer peak and AUC summaries ($N=39$). VR denotes the mean of the symmetric and asymmetric VR conditions. All tests have 38 degrees of freedom. Benjamini--Hochberg adjustment was performed separately across the 11 dimensions for each tracer summary and contrast.}
+\label{tab:supp_tracer_condition_contrasts}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llrrrrrrrr@{}}
+\toprule
+& & \multicolumn{4}{c}{Pooled VR vs control} & \multicolumn{4}{c}{Symmetric vs asymmetric} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+Summary & Dimension & $t$ & $d_z$ & $p$ & $q$ & $t$ & $d_z$ & $p$ & $q$ \\
+\midrule
+Peak & EU  & 2.93 & 0.47 & .006 & .021 &  0.83 &  0.13 & .413 & .780 \\
+     & SE  & 0.50 & 0.08 & .622 & .684 & $-0.94$ & $-0.15$ & .352 & .780 \\
+     & BS  & $-0.67$ & $-0.11$ & .508 & .621 & 0.28 & 0.04 & .784 & .784 \\
+     & IS  & 2.18 & 0.35 & .035 & .090 & 0.78 & 0.12 & .440 & .780 \\
+     & DIS & 2.12 & 0.34 & .041 & .090 & $-1.48$ & $-0.24$ & .146 & .780 \\
+     & ICC & 1.80 & 0.29 & .079 & .124 & 0.56 & 0.09 & .579 & .780 \\
+     & ANX & 1.84 & 0.29 & .074 & .124 & 0.78 & 0.12 & .441 & .780 \\
+     & CI  & 0.10 & 0.02 & .920 & .920 & 0.57 & 0.09 & .574 & .780 \\
+     & EI  & 6.98 & 1.12 & $<.001$ & $<.001$ & 0.37 & 0.06 & .713 & .784 \\
+     & AVS & 3.34 & 0.54 & .002 & .010 & 0.89 & 0.14 & .377 & .780 \\
+     & CMP & 1.63 & 0.26 & .112 & .155 & 0.47 & 0.08 & .638 & .780 \\
+\midrule
+AUC  & EU  & 3.26 & 0.52 & .002 & .009 & 1.31 & 0.21 & .199 & .850 \\
+     & SE  & 0.76 & 0.12 & .453 & .553 & $-0.70$ & $-0.11$ & .490 & .850 \\
+     & BS  & $-0.38$ & $-0.06$ & .704 & .774 & 0.39 & 0.06 & .695 & .850 \\
+     & IS  & 2.24 & 0.36 & .031 & .057 & 0.80 & 0.13 & .430 & .850 \\
+     & DIS & 2.37 & 0.38 & .023 & .057 & $-1.19$ & $-0.19$ & .240 & .850 \\
+     & ICC & 2.29 & 0.37 & .028 & .057 & 0.26 & 0.04 & .794 & .873 \\
+     & ANX & 1.55 & 0.25 & .129 & .178 & 0.88 & 0.14 & .382 & .850 \\
+     & CI  & 0.14 & 0.02 & .886 & .886 & 0.67 & 0.11 & .507 & .850 \\
+     & EI  & 7.25 & 1.16 & $<.001$ & $<.001$ & 0.49 & 0.08 & .627 & .850 \\
+     & AVS & 3.58 & 0.57 & $<.001$ & .005 & 0.02 & 0.00 & .985 & .985 \\
+     & CMP & 1.62 & 0.26 & .113 & .178 & 0.42 & 0.07 & .677 & .850 \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\FloatBarrier
+
+\subsection{ASC--tracer correspondence}
+
+The questionnaire, tracer-peak, and tracer-AUC profiles show broadly similar relative patterns across the 11 dimensions (Figure~\ref{fig:supp_tracer_profiles}). This comparison is descriptive: observations from the three conditions are nested within 39 participants, and no dependence-aware correspondence model was specified. The present results therefore support profile-level convergence, rather than demonstrating that the measurement formats are interchangeable.
+
+Collecting one explained tracer for each dimension could, in principle, reduce 42 item-level responses to 11 construct-level ratings while retaining distinctions between momentary peaks and cumulative experience. This may make assessment faster and more engaging, but the present study did not directly compare completion time, burden, enjoyment, reliability, or validity. Whether explanatory tracer prompts can replace or complement the 11D-ASC therefore requires dedicated validation, including dependence-aware correspondence analyses and tests of whether peak, AUC, or finer temporal features explain global retrospective ratings.
 
 \clearpage
 \newgeometry{left=39.4mm,right=39.4mm,top=10mm,bottom=12mm}
@@ -266,8 +311,6 @@ Tracer peak and AUC profiles broadly follow the condition profiles observed for 
 \end{figure}
 \clearpage
 \restoregeometry
-
-\subsection{ASC--tracer correspondence}
 
 \section{Reproducibility and file access}
 \label{sec:supp_reproducibility}
