@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{placeins}
+\usepackage{wrapfig}
 
 % Overleaf can retain auxiliary files from an earlier referee/lineno build.
 % Ignore stale line-number records if they are present in main.aux.
@@ -292,11 +293,20 @@ reproducibility map.
 
 
 \subsubsection{Altered States of Consciousness}\label{subsubsec:measures_asc}
-The preregistered temporal experience tracers provide psychometric time-series ratings of the same experiential dimensions. Because their results do not add explanatory value beyond the questionnaire results in this study, we treat their analyses as exploratory and report their complete methods, results, and figures in Supplementary Section~S4.
-
 \medskip\noindent\textbf{3D-ASCr composites.} The revised 3D-ASCr higher-order factor model became available after preregistration. It provides a parsimonious contemporary summary of the same preregistered 11D-ASC responses by organizing them into Positive, Distressing, and Perceptual Effects. This level of aggregation matches our broad theoretical interest in positively versus negatively valenced experience, while retaining a perceptual dimension, and avoids overinterpreting lower-order dimensions for which no specific predictions were made. We therefore use the 3D-ASCr composites as the main-text summary. Supplementary Section~S3 reports complete analyses of all 11 preregistered 11D-ASC dimensions.
 
 \medskip\noindent\textbf{11D-ASC Questionnaire.} We assessed altered states with the 11-Dimensional Altered States of Consciousness Rating Scale (11D-ASC; 42 items, 0--100 visual analogue scales), a validated lower-order factorization of the OAV/APZ framework \citep{studerus2010,Dittrich1998,Hovmand2024,Prugger2022}. The 11 subscales were Experience of Unity (EU), Spiritual Experience (SE), Blissful State (BS), Insightfulness (IS), Disembodiment (DIS), Impaired Control and Cognition (ICC), Anxiety (ANX), Complex Imagery (CI), Elementary Imagery (EI), Audio-Visual Synesthesia (AVS), and Changed Meaning of Percepts (CMP). Participants completed one condition-specific rating after each block.
+
+\medskip\phantomsection\noindent\textbf{Temporal Experience Tracers (Exploratory).}\label{subsubsec:measures_tracers} Temporal experience tracers provide psychometric time-series ratings of the same 11 experiential dimensions.
+
+\begin{wrapfigure}{R}{0.48\columnwidth}
+\centering
+\includegraphics[width=\linewidth]{Fig05_tracer_schematic.pdf}
+\caption{\textbf{Temporal experience tracers: peak and cumulative intensity.} These hypothetical profiles illustrate information retained by psychometric time-series intensity ratings but not by a single retrospective visual-analogue-scale response. The red profile has a higher momentary peak, whereas the broader green profile has a larger area under the curve (AUC), reflecting greater cumulative intensity. Analyses in this paper focus on these two summaries because no hypothesis required finer-grained temporal features.}
+\label{fig:methods_tracer_peak_auc_schematic}
+\end{wrapfigure}
+
+After each condition, participants retrospectively drew one intensity curve for each dimension on a time-by-intensity surface in VR. Peak intensity summarized the strongest reported moment, whereas AUC summarized intensity across the session (Figure~\ref{fig:methods_tracer_peak_auc_schematic}). We treat these analyses as exploratory. Supplementary Section~S4 provides the complete task implementation, data reduction, analyses, and results.
 
 \subsubsection{Blinding Questionnaire}\label{subsubsec:measures_blinding}
 Blinding was assessed in two phases. In the pre-unmasking phase, participants were told that the study investigated how subtle differences in visual aesthetics might influence perception in virtual reality. We constructed a 12-item ad hoc masked-comparison questionnaire for this study. For each item, participants chose whether the feature was stronger in Scenario 1, stronger in Scenario 2, equal in both scenarios, or absent in both scenarios. The chance baseline was 0.25. Scenario labels referred to the two virtual-reality conditions in encounter order. The item set covered three hidden domains. These were manipulation-relevant symmetry/coordination cues that genuinely differed between the two VR conditions, matched comparison features that were present similarly in both conditions and therefore should be judged as equal, and foil (sham) features that were not present in either condition and therefore should be judged as absent. There were four items per domain.

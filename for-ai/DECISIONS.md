@@ -402,3 +402,28 @@ Consequences:
 - Keep the unchanged official `sn-basic.bst` from Springer Nature's December 2024 template package in the submission source set.
 - Compile both active documents with line numbers during submission review.
 - Rebuild the bibliography and visually inspect both PDFs after any formatting change.
+
+## 2026-08-23 - Local-first formatting with deferred reproducibility publication
+
+Decision: complete all feasible manuscript, supplement, naming, packaging, compilation, and visual-verification work in this repository first. Keep OSF, Zenodo, and authoritative GitHub reproducibility publication, the final repository audit, and final identifier substitution as the last stage.
+
+Rationale: final archival identifiers and immutable repository versions should describe the submission-frozen reproducibility package. Explicit placeholders allow formatting to proceed without prematurely publishing records that may change during the final audit.
+
+Consequences:
+
+- Track current local formatting work and deferred release work separately in the `PROJECT_STATE.md` submission-formatting to-do list.
+- Use uniquely searchable placeholders until final identifiers exist, subject to item-by-item approval for submission-facing insertions.
+- A placeholder-bearing PDF or source package is an internal review artifact, not a submission-ready artifact.
+- AI agents may format and validate this manuscript repository within existing approval gates, but external reproducibility publication and mutations to authoritative research artifacts remain maintainer actions.
+
+## 2026-08-23 - Canonical upload-artifact names and internal orchestration boundary
+
+Decision: keep all build and packaging orchestration under `for-ai/scripts/`, all temporary compilation state under `for-ai/`, and all upload-facing outputs under `output/submission/`. The canonical PDF names are `Manuscript.pdf` and `ESM_1.pdf`; the canonical editable-source archive is `Manuscript_Source.zip`.
+
+Rationale: fixed output names prevent legacy local filenames from leaking into the submission package, while the directory boundary keeps AI controls and build state separate from upload-ready artifacts.
+
+Consequences:
+
+- A successful orchestrated build must compile the main article and supplement independently and only then stage the two canonical PDFs.
+- Packaging must exclude legacy compiled PDFs, internal control files, logs, auxiliary files, temporary directories, and review-only artifacts.
+- Script creation and modification remain subject to exact item-by-item approval before implementation.

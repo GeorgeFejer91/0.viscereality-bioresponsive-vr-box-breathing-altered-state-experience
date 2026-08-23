@@ -6,6 +6,7 @@
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{placeins}
+\usepackage{wrapfig}
 
 \graphicspath{{figures/}}
 
@@ -242,15 +243,14 @@ The Perceptual Effects increase was almost entirely associated with Audio-Visual
 
 Temporal experience tracers are psychometric time-series ratings in which participants retrospectively draw intensity curves for specified experiential dimensions over a session's time course \citep{Jachs2022,Damci2023,LewisHealy2024}. Unlike global retrospective ratings, tracers preserve temporal dynamics. For each of the 11 ASC dimensions, one prompt consolidates the constituent questionnaire items into a construct-level description, yielding one tracer per dimension rather than 42 item-level ratings.
 
-After each condition, participants draw the 11 intensity curves on a world-space time-by-intensity surface using the VR controller. We project controller position onto the drawing plane, gate input through a trigger hold, and emit points at constant spatial spacing regardless of hand speed. Each trace yields peak intensity and area under the curve (AUC), which capture maximum intensity and cumulative experiential load, respectively. We analyse peak and AUC as separate exploratory families.
-
-\begin{figure}[!htbp]
+\begin{wrapfigure}{r}{0.48\columnwidth}
 \centering
-\includegraphics[width=0.72\textwidth]{FigS01_tracer_schematic.pdf}
-\caption{Two temporal profiles can have the same peak intensity but different AUCs. Peak and AUC therefore summarize distinct aspects of a retrospectively drawn within-session trace.}
+\includegraphics[width=\linewidth]{FigS01_tracer_schematic.pdf}
+\caption{\textbf{Temporal experience tracers: peak and cumulative intensity.} These hypothetical profiles illustrate information retained by psychometric time-series intensity ratings but not by a single retrospective visual-analogue-scale response. The red profile has a higher momentary peak, whereas the broader green profile has a larger area under the curve (AUC), reflecting greater cumulative intensity. Analyses in this paper focus on these two summaries because no hypothesis required finer-grained temporal features.}
 \label{fig:supp_tracer_schematic}
-\end{figure}
-\FloatBarrier
+\end{wrapfigure}
+
+After each condition, participants draw the 11 intensity curves on a world-space time-by-intensity surface using the VR controller. We project controller position onto the drawing plane, gate input through a trigger hold, and emit points at constant spatial spacing regardless of hand speed. Each trace yields peak intensity and area under the curve (AUC), which capture maximum intensity and cumulative experiential load, respectively. We analyse peak and AUC as separate exploratory families.
 
 \subsection{Condition contrasts}
 

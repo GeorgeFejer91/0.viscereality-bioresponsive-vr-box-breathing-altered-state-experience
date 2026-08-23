@@ -152,6 +152,23 @@ Conflicts or ambiguities must be surfaced to the user. Do not silently weaken or
 2. Other main-text references to detailed analyses, implementation information, or supporting outputs should point to the corresponding identifiable supplementary section rather than repeating the OSF URL or using generic ``OSF repository'' language.
 3. The supplement may provide the detailed reproducibility map and immutable repository version after the final commit identifier is available.
 
+## Local-first submission sequencing
+
+1. Complete manuscript, supplement, bibliography, source-package, naming, compilation, and visual-formatting work inside this repository before publishing the final reproducibility package externally.
+2. Treat uploads or final releases to OSF, Zenodo, and the authoritative GitHub reproducibility repository as end-stage maintainer actions. Do not make or simulate those releases during manuscript-formatting work.
+3. Use explicit, uniquely searchable placeholders for external identifiers that do not yet exist. Candidate placeholder classes are the OSF project DOI, Zenodo version DOI, GitHub final commit, and GitHub release tag. Any insertion or replacement in submission-facing text remains subject to exact item-by-item approval.
+4. Keep deferred external-release work and the final reproducibility audit in the dedicated submission-formatting to-do list in `PROJECT_STATE.md`.
+5. Do not treat placeholder-bearing manuscript or supplementary files as submission-ready. Replace and verify every placeholder only after the final reproducibility audit and external archival records are complete.
+
+## Build and upload-artifact orchestration
+
+1. Keep every build, validation, staging, packaging, and file-renaming script under `for-ai/scripts/`, and keep all temporary compilation state under `for-ai/`.
+2. Produce upload-facing artifacts only under `output/submission/`. Do not place orchestration scripts, logs, auxiliary files, manifests, or temporary build trees there.
+3. The canonical review PDF names are `Manuscript.pdf` for the main article and `ESM_1.pdf` for Online Resource 1. Orchestration must copy only successfully compiled, validated PDFs to those names.
+4. Treat `output/pdf/main-article.pdf` and `output/pdf/supplementary-materials.pdf` as legacy local outputs once the canonical orchestrator is approved and implemented. Do not package them for submission.
+5. The upload-facing source archive must be named `Manuscript_Source.zip`, contain only the editable sources and assets needed by Springer, and exclude `AGENTS.md`, `for-ai/`, Git metadata, temporary files, build artifacts, internal archives, and review-only files.
+6. Build and packaging commands must default to a safe preview or validation mode where practical, fail on missing expected artifacts or unresolved placeholders at final-release mode, and report the exact files they produce or include.
+
 ## Blinding placement
 
 1. Keep the blinding methods, results, and interpretation parsimonious, complete, and self-contained in `main.tex`.

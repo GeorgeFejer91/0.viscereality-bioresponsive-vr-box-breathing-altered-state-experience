@@ -96,6 +96,29 @@ Agents must run `git status --short` at the start of any editing task because th
 - User-executed disposition of corresponding full-sample outputs and pipeline references in the immutable authoritative reproducibility repository.
 - Approval of the audited figure disposition: reroute the two temporal-tracer figures to Supplementary Section S4, standardize the remaining eight main-figure filenames to placement order, insert the supplementary figures as Figures S1 and S2, and archive duplicate or legacy variants.
 
+## Submission-formatting to-do list
+
+### Work now inside this repository
+
+- Audit the main manuscript and active supplement against the live *Virtual Reality* formatting and supplementary-information requirements.
+- Prepare exact, separately approvable wording proposals for every required submission-facing change, including `Online Resource 1` referrals, its concise caption, availability statements, and formal repository citations. Do not insert these changes before approval.
+- Define and, after approval, use uniquely searchable placeholder tokens for `OSF_PROJECT_DOI`, `ZENODO_VERSION_DOI`, `GITHUB_FINAL_COMMIT`, and `GITHUB_RELEASE_TAG` wherever final external identifiers are not yet available.
+- Complete local file organization and Springer upload naming, including the final supplementary upload name `ESM_1.pdf`, while retaining stable editable LaTeX entry points.
+- Build both PDFs, resolve technical formatting defects, and visually inspect title pages, line numbering, citations, figures, tables, declarations, supplement front matter, hyperlinks, and references.
+- Generate a dry-run submission manifest and source archive that exclude `AGENTS.md`, `for-ai/`, Git metadata, build caches, temporary files, and internal archives.
+- Run a placeholder scan and produce a local readiness report that clearly separates completed formatting from deliberately deferred external identifiers and reproducibility validation.
+- Add a canonical build orchestrator under `for-ai/scripts/` that compiles through internal scratch directories and emits only `output/submission/Manuscript.pdf` and `output/submission/ESM_1.pdf` after successful validation.
+- Revise the packaging orchestrator so its canonical upload-facing result is `output/submission/Manuscript_Source.zip` and its manifest excludes legacy PDFs plus all internal or review-only material.
+
+### Final-stage maintainer tasks, deliberately deferred
+
+- Run the final end-to-end audit of the complete reproducibility package after manuscript and supplement formatting are frozen.
+- Resolve any maintainer-only reproducibility issues without allowing AI agents to mutate the immutable authoritative data, figures, statistics, outputs, or pipelines.
+- Publish or finalize the study package on OSF, create the immutable Zenodo archival release, and tag or pin the final authoritative GitHub reproducibility commit.
+- Synchronize titles, creators, ORCIDs, versions, licences, related identifiers, checksums, and reciprocal links across OSF, Zenodo, GitHub, the manuscript, and the supplement.
+- Replace every approved placeholder with the resulting DOI, release tag, or full commit hash; formally cite the finalized records; and verify all public links while logged out.
+- Rebuild the final PDFs and source archive, rerun the placeholder scan, and block submission if any unresolved placeholder or repository-version mismatch remains.
+
 ## Figure audit status
 
 - The 2026-08-21 read-only audit found 24 root figure assets representing 10 unique visuals, plus three assets in `supplementary/figures/` representing two of those visuals and one already archived duplicate tracer PDF.
