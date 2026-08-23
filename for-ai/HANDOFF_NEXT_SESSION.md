@@ -67,7 +67,7 @@ The subsection contains descriptive prose and Figure S2 but no numerical table. 
 
 The subsection is empty. Do not populate inferential correlations from the currently committed pooled implementation. The authoritative pipeline treats three repeated observations per participant as independent. A repository maintainer must implement or approve a dependence-aware analysis first. Once corrected source values exist, present the exact S4.3 prose and table cells for user approval.
 
-The preregistration describes continuous tracer ratings, whereas the implemented task used retrospective traces. Prepare a separate exact disclosure proposal. Do not conceal the mismatch or describe the retrospective procedure as the preregistered continuous procedure.
+The user has closed the preregistration's continuous-versus-retrospective tracer-description issue. Describe the implemented retrospective procedure accurately, but do not prepare a deviation disclosure or raise the issue again unless the user explicitly reopens it.
 
 #### Exploratory order and PLV-moderation checks
 
@@ -188,3 +188,7 @@ The repository is dirty. Preserve all unrelated user changes. At handoff creatio
 ## Recommended first action next session
 
 Re-run `git status --short`, confirm this handoff still matches the filesystem, and prepare the exact numbered Item 8 proposal for S3.2 before changing any submission-facing text or numerical table.
+
+## 2026-08-23 tracer continuation override
+
+The earlier statements that S4.3 is empty, Figure S2 uses the horizontal PDF, or the supplement PDF is stale are superseded. Approved tracer Items 1--3 and 5 are implemented; S4.3 contains the approved descriptive correspondence and validation caveat; Figure S2 uses the canonical portrait PDF; and the current 12-page supplement has passed compilation and visual QA. The only unfinished tracer item is approved Item 4, which requires a maintainer-supplied canonical `supplementary/figures/FigS03_tracer_timecourses.pdf`. Once that asset exists, insert the already approved subsection and figure environment, compile twice, render every affected page, and update this handoff.

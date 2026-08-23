@@ -1,5 +1,19 @@
 # Project decisions
 
+## 2026-08-23 - GitHub checkpoint before every approved item
+
+Decision: require a successful pushed Git checkpoint immediately before implementation of every separately approved project-text item.
+
+Rationale: the user wants a durable remote record of exactly what changed, when it changed, and which approved item caused each change.
+
+Consequences:
+
+- Multiple approved items must be implemented serially rather than bundled into one uncheckpointed edit.
+- The state before Item 1 must be committed and pushed before Item 1 is applied. The completed Item 1 state must then be committed and pushed as the checkpoint before Item 2, and so forth.
+- An item remains unapplied if its required checkpoint cannot be committed or pushed.
+- Checkpointing must preserve unrelated user changes and does not weaken the immutable research-artifact gate.
+- Each implementation report must identify the pushed branch and pre-item commit.
+
 ## 2026-08-21 — AI control plane
 
 Decision: use `for-ai/` as the single internal location for AI instructions, project constraints, workflow state, decisions, and orchestration scripts.
@@ -149,9 +163,11 @@ Consequences:
 - Remove ``black-screen,'' ``black screen,'' ``blackened VR screen,'' ``eyes-open control,'' and generic alternative labels for the condition after exact replacements receive item-by-item approval.
 - Exact submission-facing wording remains subject to the item-by-item approval gate.
 
-## 2026-08-21 - Parsimonious Bayesian altered-state reporting
+## 2026-08-21 - Parsimonious Bayesian altered-state reporting (superseded in part on 2026-08-22)
 
 Decision: center the main article's Bayesian altered-state reporting on the three 3D-ASCr composites across the three conditions. Place complete 11D-ASC Bayesian analyses in Supplementary Section S3, and replace stepwise directional testing in the main narrative with joint three-condition order-restricted tests that map as closely as possible to the preregistered directional intent.
+
+Supersession note: the later decision not to add 3D-ASCr ordered-model Bayes factors replaces the composite joint-order portion of this decision. The omnibus and planned-contrast hierarchy remains active.
 
 Rationale: the main article should present a small set of interpretable theory-relevant analyses rather than numerous lower-order Bayes factors. The preregistration requested Bayesian condition analyses and predicted the three-condition order for Experience of Unity, Blissful State, and Audio-Visual Synesthesia. The post-preregistration 3D-ASCr compresses the first two into Positive Effects and the third into Perceptual Effects, although it also includes lower-order dimensions without directional predictions.
 
@@ -207,3 +223,182 @@ Consequences:
 - All new current-paper prose should prefer present tense and active voice.
 
 Implementation: the user approved Revised Items 10A--10F and 11A--11C. The approved main-text referrals and tracer relocation are applied, supplementary tracer Figures S1 and S2 are inserted, supplementary blinding is removed, and reproducibility now occupies S5. Detailed ASC--tracer correspondence statistics remain pending Item 8 and are not silently inferred or added.
+
+## 2026-08-22 - Final 3D-ASCr main-text and 11D-ASC supplement split
+
+Decision: limit detailed altered-state analysis and interpretation in the main article to the three post-preregistration 3D-ASCr composites. Move the substantive 11D-ASC Results and lower-order subscale Discussion material to Supplementary Section S3, where the complete preregistered 11D-ASC analysis inventory and a concise descriptive component decomposition will be reported.
+
+Rationale: the three higher-order dimensions provide sufficient detail for the explanatory scope of the article, while the supplement can preserve preregistration transparency and show which lower-order dimensions account for the composite pattern without overloading the main narrative.
+
+Consequences:
+
+- The main Methods retains the measurement identity, the post-preregistration disclosure, the scope rationale, and an explicit S3 referral.
+- The main Results reports the 3D-ASCr descriptives, implemented condition analysis, both planned contrasts, and parallel Bayesian results at composite level.
+- Preregistered directional hypotheses for EU, BS, and AVS remain 11D-ASC hypotheses and must be reported in S3. Any composite-level directional test is post-preregistration and must be labeled accordingly.
+- S3 must report all 11 subscales, condition descriptives, the implemented order-adjusted omnibus analysis and preregistered RM-ANOVA sensitivity, both planned contrasts, Bayesian omnibus and planned-contrast results, the preregistered directional checks, multiplicity and robustness information, and deviations from the exact preregistered implementation.
+- The S3 component decomposition is descriptive and deterministic. It should identify arithmetic contributions of constituent subscale mean differences to each equal-weighted composite, without causal or unique-effect language.
+- Older text is a source for careful transfer only. The mixed Bayesian paragraph and the inaccurate Changed Meaning of Percepts interpretation require correction rather than unchanged copying.
+- Exact manuscript and supplementary wording remains pending item-by-item approval. Source-derived numerical insertions remain protected by the immutable research-artifact rule.
+
+## 2026-08-22 - Hierarchical internal structure for Supplementary Section S3
+
+Decision: organize the complete lower-order altered-state supplement beneath the three 3D-ASCr composites. Use subsections for Positive Effects, Distressing Effects, and Perceptual Effects, and use consistent bold run-in headings for every constituent 11D-ASC dimension rather than eleven additional numbered subsections.
+
+Rationale: this structure maintains the main article's three-composite explanatory hierarchy while allowing readers to drill down directly to the lower-order dimensions that account for each composite result.
+
+Consequences:
+
+- Precede the three composite subsections with one shared subsection describing the 11D-ASC measure, preregistered analysis commitments, implemented deviations, multiplicity, robustness, Bayesian models, and the descriptive component-decomposition rule.
+- Use the same result order under every bold dimension heading: condition descriptives, omnibus analysis, RM-ANOVA sensitivity, both planned contrasts, parallel Bayesian results, any preregistered directional test, and arithmetic contribution to the parent composite.
+- Reserve direction-specific reporting for EU, BS, and AVS. Do not imply that the other eight dimensions or the three composites had preregistered directional predictions.
+- Use tables to carry the repeated exact statistics and concise prose to explain the driver pattern, thereby avoiding eleven long and repetitive mini-results sections.
+- Complete S3 and its main Methods and Results correspondence before revising or relocating altered-states Discussion material.
+- Exact submission-facing headings, prose, and table cells remain pending item-by-item approval.
+
+Naming: use ``11D-ASC: Altered States of Consciousness Rating Scale'' as the S3 section title. ``Rating Scale'' follows the title of the Studerus psychometric paper, and ``11D-ASC'' is the manuscript's established abbreviation for the 11-dimensional scoring structure.
+
+## 2026-08-22 - Author contribution allocation and declaration funding scope
+
+Decision: distinguish BIAL funding of the reported study from Baden-W\"urttemberg Stiftung support for continued Viscereality development. Record author contributions using the CRediT taxonomy according to the user's direct allocation.
+
+Rationale: the later Atemr\"aume award supports continued development and should not be described as funding the experiment reported here. CRediT roles should describe actual work rather than author order or generic principal-investigator status.
+
+Consequences:
+
+- George Fejer: Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Software, Validation, Visualization, Writing -- original draft, and Writing -- review and editing.
+- Till Holzapfel: Conceptualization, Methodology, Resources, Software, Validation, and Visualization.
+- Taru Hirvonen: Methodology, Resources, Software, and Visualization.
+- Johannes Blum: Methodology, Resources, Software, and Validation.
+- Anestis Lalidis Mateo: Methodology, Resources, and Software.
+- Michael Gaebler: Conceptualization, Project administration, Supervision, and Writing -- review and editing.
+- Bigna Lenggenhager: Conceptualization, Funding acquisition, Supervision, and Writing -- review and editing.
+- Investigation is assigned only to George Fejer, who collected all study data.
+- The exact assembled `Authors' contributions` replacement was subsequently approved and implemented in manuscript order. All authors will receive the final draft for final approval.
+
+## 2026-08-22 - Revised author order
+
+Decision: place Anestis Lalidis Mateo before Johannes Blum in the manuscript author list and use the same order in the CRediT contribution statement.
+
+Rationale: the user explicitly changed the formal author ordering.
+
+Consequences:
+
+- The target author order is George Fejer, Till Holzapfel, Taru Hirvonen, Anestis Lalidis Mateo, Johannes Blum, Michael Gaebler, and Bigna Lenggenhager.
+- Affiliation identifiers remain author-specific: Anestis Lalidis Mateo retains affiliation 6 and Johannes Blum retains affiliation 5.
+- The exact `main.tex` author-line reordering and assembled CRediT paragraph were subsequently approved and implemented. All authors will receive the final draft for final approval.
+
+## 2026-08-22 - Preserve the preregistration and maintain a live departure ledger
+
+Decision: preserve a byte-identical copy of AsPredicted #262545 under `for-ai/preregistration/` and maintain `PREREGISTRATION_AND_DEVIATIONS.md` as the reusable source-to-manuscript crosswalk for all future agents.
+
+Rationale: the original commitments and the study's departures are repeatedly relevant to analysis, reporting hierarchy, confirmatory status, Methods, Results, Discussion, and supplementary transparency. Scattered notes do not reliably preserve the distinction between an explicitly justified departure and an unresolved mismatch.
+
+Consequences:
+
+- Future preregistration-related work begins with the preserved PDF and the crosswalk.
+- The ledger separately records retained commitments, explicitly justified departures, disclosed but incompletely rationalized changes, and unresolved implementation or reporting mismatches.
+- The ledger must be updated together with `PROJECT_STATE.md` and `CHANGELOG.md` when preregistration-related status changes.
+- The source PDF remains immutable and internal. It is excluded from external submission packages with the rest of `for-ai/`.
+- Creating this internal record does not approve or apply any submission-facing text change.
+
+## 2026-08-22 - Reader-oriented Bayes-factor reporting
+
+Decision: report every Bayes factor with its direction and named model comparison, followed immediately by a plain-language statement of how much more likely the observed data are under the better-supported model than under the comparison model.
+
+Rationale: Bayes factors are frequently misunderstood as posterior probabilities of hypotheses. Guidance from van Doorn et al. (2021) and Kruschke (2021) supports reporting the numerical factor, model direction, priors, and an accessible relative-evidence interpretation. The user specifically requested reader-oriented wording and rejected treating a change from JASP to R/BayesFactor as a substantive issue when the statistical analysis is otherwise the same.
+
+Consequences:
+
+- State ``the observed data were approximately $x$ times more likely under model A than under model B,'' not ``hypothesis A was $x$ times more likely.''
+- Use $\mathrm{BF}_{10}$ or $\mathrm{BF}_{01}$ so the reported factor is normally at least 1 in the direction being described.
+- Treat categorical evidence labels as optional summaries, never as substitutes for the numerical factor and its model comparison.
+- Keep omnibus, paired-contrast, directional, and joint-order Bayes factors distinct.
+- Report priors, model definitions, software, and versions once in Methods or reproducibility documentation rather than repeating them in every result block.
+- Treat software substitution alone as a reproducibility detail, not a scientific deviation, when the model, hypotheses, priors, and estimand remain unchanged.
+- Exact submission-facing implementation remains subject to item-by-item approval.
+
+## 2026-08-22 - Direct 11D-ASC conclusions and order-language convention
+
+- Each Supplementary Section S3 subscale block reports the full three-condition pattern rather than relying only on the pooled driver table.
+- The primary omnibus result is described as an order-adjusted condition test. Separate exploratory order-main-effect and condition-by-order tests support statements about presentation order.
+- Each block ends with a direct substantive conclusion without the label ``in plain terms.''
+- Nonsignificant order findings are described as no reliable evidence that the result was influenced by the order in which participants underwent the three conditions, rather than as proof that order had no influence.
+- Reader-facing interpretive summaries call the 11D-ASC dimensions ``fine-grained subscales'' rather than ``lower-order'' subscales.
+
+## 2026-08-22 - Return the primary frequentist omnibus analysis to the registered model
+
+Decision: replace the order-adjusted mixed-effects likelihood-ratio omnibus test with the registered order-adjusted repeated-measures ANCOVA after maintainer-side regeneration of the immutable analysis outputs.
+
+Rationale: an isolated read-only comparison used participant as the repeated-measures blocking factor, condition as a three-level within-participant factor, and numeric block position (1--3) as a covariate. Across all 11D-ASC, 3D-ASCr, self-related, tracer-peak, tracer-AUC, and PLV outcomes, the registered-style partial-F test produced the same nominal and within-family FDR significance decisions as the current mixed-model likelihood-ratio test.
+
+Consequences:
+
+- The authoritative reproducibility repository must be updated by its maintainer; AI agents must not modify its pipeline or canonical outputs.
+- After source regeneration, the main article and supplement should report the registered order-adjusted repeated-measures ANCOVA statistics rather than characterize the omnibus model as a preregistration deviation.
+- Planned contrasts, Bayesian analyses, distribution-free robustness checks, FDR correction, and exploratory interaction models are separate procedures and are not changed by this decision.
+- The user approved the proposed main-article Methods and Results replacements and the corresponding Supplementary Sections S1 and S3 replacements on 2026-08-22. Applying them remains contingent on maintainer-side regeneration of the authoritative outputs.
+
+## 2026-08-22 - Grounded 3D-ASCr justification
+
+Decision: describe the 3D-ASCr as a psychometrically supported post-registration higher-order summary whose level of detail corresponds to the paper's broad Positive, Distressing, and Perceptual hypotheses. Do not claim that it has been independently validated or shown to be more reliable in bioresponsive VR, and do not claim that foregrounding the later hierarchy introduced no analytic degrees of freedom.
+
+Rationale: Stocker et al. support the higher-order scoring framework primarily in psychedelic datasets and state that it can be applied to previously collected ASC data. The complete registered 11D-ASC analyses remain in Supplementary Section S3, preserving the registered evidence while the main text uses the level of aggregation relevant to its explanatory scope.
+
+## 2026-08-22 - Preregistration-audit master decisions
+
+- Master Items 1--9 are approved. Items 1--4 remain staged until maintainer-side RM-ANCOVA regeneration makes the proposed hierarchy accurate; Item 9 remains staged until the directional Bayesian decision is resolved. Items 5, 7, 8, and 17 are implemented. Item 6 establishes that no large table of every unregistered nonparametric statistic will be added; exact secondary output remains in the reproducibility package and S3 reports material divergences.
+- Master Item 10, removal of the fine-grained Discussion paragraph, is pinned for later review.
+- Master Item 14, the tracer acquisition disclosure, is closed by later user direction and must not be proposed or repeatedly raised. Master Item 15, the dependence-aware ASC--tracer analysis, remains pending.
+- Do not add submission-facing preregistration-deviation discussion about the registry's inaccurate completely-black control description. Report the implemented dark-screen control accurately and otherwise ignore that historical detail.
+- Do not add a separate preregistration-deviation disclosure for the exploratory confidence-weighted blinding index or the additional blinding analyses. Preserve their current accurate exploratory labeling and do not describe the modified index as a standard Bang index.
+
+## 2026-08-22 - Do not add 3D-ASCr ordered-model Bayes factors
+
+Decision: do not add joint order-restricted Bayes factors for the post-registration Positive, Distressing, or Perceptual Effects composites.
+
+Rationale: the symmetric-versus-asymmetric differences are negligible to small, while the pooled-VR-versus-control differences carry the substantive condition signal. A composite ordering model would therefore add little beyond the omnibus and planned contrasts and could give undue interpretive weight to the exact ordering of the two VR mappings.
+
+Consequences:
+
+- Retain the 3D-ASCr omnibus analyses and the pooled-VR-versus-control and symmetric-versus-asymmetric planned contrasts.
+- Do not treat the registered directional predictions for Experience of Unity, Blissful State, and Audio-Visual Synesthesia as composite-level predictions.
+- The missing registered joint order-constrained tests for those three original 11D-ASC subscales remain a separate unresolved matter. Resolve them through maintainer-side implementation or a concise explicit deviation disclosure in Supplementary Section S3.
+
+## 2026-08-22 - Close the tracer acquisition-description issue
+
+Decision: do not foreground, disclose, or repeatedly raise the preregistration's continuous-in-block tracer description as a discrepancy. Continue to report the implemented retrospective post-block tracer procedure accurately.
+
+Rationale: the user explicitly closed this issue and instructed future agents to stop bringing it forward.
+
+Consequences:
+
+- Do not propose a submission-facing deviation statement about continuous versus retrospective tracer acquisition.
+
+## 2026-08-23 - Complete S4 prose and use the portrait tracer-profile figure
+
+Decision: implement approved tracer Items 1--5 and use the canonical portrait layout of Supplementary Figure S2 rather than the horizontal three-across layout. Size the portrait figure by page height so its radar plots are larger than in the horizontal arrangement while its caption and footer remain inside the text block.
+
+Rationale: the portrait layout gives each radar panel more room and remains readable at final A4 size. The S4 interpretation reports condition effects and raw pooled correspondence without treating the repeated participant-condition records as independent inferential observations. It frames an 11-prompt format as a validation target rather than a demonstrated replacement for the 42-item questionnaire.
+
+Dependency: the separately approved recalled-time-course subsection remains pending a canonical Figure S3 generated or restored by the reproducibility-repository maintainer. Do not copy a stale dissertation bitmap or mutate the immutable figure pipeline.
+
+## 2026-08-23 - Give portrait Supplementary Figure S2 a dedicated full-width page
+
+Decision: place `FigS02_tracer_profiles_vertical.pdf` at `\textwidth` on a dedicated float page. Retain the supplement's normal horizontal margins and locally reduce only the top and bottom margins to 10 mm and 12 mm, respectively, so the figure and its complete caption stay on one page.
+
+Rationale: at the normal text height, scaling the portrait asset to the full text width makes the figure plus caption too tall. A locally enlarged vertical page area preserves full-width radar plots, keeps the caption and page footer together, and does not modify the immutable source figure.
+- Do not list the issue as unresolved, pending, or blocking supplement completion.
+- Preserve accurate descriptions of the retrospective procedure and do not claim that continuous in-block ratings were collected.
+- Revisit the issue only if the user explicitly reopens it.
+
+## 2026-08-23 - Journal-specific submission formatting
+
+Decision: use the Springer Nature template's built-in `lineno` option in both active documents and use the `sn-basic` author--year reference style required by the live *Virtual Reality* journal guidance. Include identifying article, journal, author, affiliation, and corresponding-author information in the supplementary PDF, and use ``Statements and Declarations'' as the main declaration heading.
+
+Rationale: the journal-level author instructions govern over the generic template's active example configuration. The live guidance and recent journal articles use author--year citations, and the supplementary-information instructions require identifying metadata in each file.
+
+Consequences:
+
+- Keep the unchanged official `sn-basic.bst` from Springer Nature's December 2024 template package in the submission source set.
+- Compile both active documents with line numbers during submission review.
+- Rebuild the bibliography and visually inspect both PDFs after any formatting change.

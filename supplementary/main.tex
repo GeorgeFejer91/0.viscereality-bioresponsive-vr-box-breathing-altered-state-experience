@@ -1,4 +1,4 @@
-\documentclass[pdflatex,sn-mathphys-num]{../sn-jnl}
+\documentclass[pdflatex,sn-basic,lineno]{../sn-jnl}
 
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -21,16 +21,31 @@
 
 \begin{document}
 
-\section*{Supplementary Information}
+\begin{center}
+{\Large\bfseries Supplementary Information\par}
+\vspace{1em}
+{\large\bfseries Viscereality: Bioresponsive Virtual Reality for Box Breathing and Altered-State Experience\par}
+\vspace{0.75em}
+George Fejer, Till Holzapfel, Taru Hirvonen, Anestis Lalidis Mateo,
+Johannes Blum, Michael Gaebler, and Bigna Lenggenhager\par
+\vspace{0.5em}
+\textit{Virtual Reality}\par
+\vspace{0.5em}
+Corresponding author: George Fejer\par
+University of Konstanz, Konstanz, Germany\par
+Max Planck Institute for Human Cognitive and Brain Sciences, Germany\par
+ALIUS Research Network, Germany\par
+\href{mailto:george.fejer@aliusresearch.org}{george.fejer@aliusresearch.org}
+\end{center}
 
-\section{Deviations from preregistration}
+\section{Deviations from preregistrations}
 \label{sec:supp_deviations}
 
 The preregistered phase-duration adherence measure was replaced by phase-locking value (PLV) because the recorded phase labels were too fragmented for stable phase-duration estimation without additional segmentation rules. The associated requirement of at least 70\% valid cycles and the two-standard-deviation phase-error exclusion rule were replaced by a pooled lower-tail IQR rule applied to condition-level PLV values.
 
-The preregistered repeated-measures ANOVA with presentation order as a covariate was replaced by an order-adjusted mixed-effects likelihood-ratio test comparing a condition-plus-order model with an order-only model and including participant as a random intercept. The two preregistered contrasts, pooled VR versus black-screen control and symmetric versus asymmetric VR, were implemented as paired $t$-tests.
+The preregistered repeated-measures ANOVA with presentation order as a covariate was replaced by an order-adjusted mixed-effects likelihood-ratio test comparing a condition-plus-order model with an order-only model and including participant as a random intercept. The two preregistered contrasts, pooled VR versus dark-screen control and symmetric versus asymmetric VR, were implemented as paired $t$-tests.
 
-Wilcoxon signed-rank and Friedman tests were added as distribution-free checks. Benjamini--Hochberg false-discovery-rate correction was applied within each multi-test outcome family because the preregistration did not specify a multiplicity procedure. The subsequently published 3D-ASCr scoring system was applied to the preregistered 11-ASC scores. Condition-by-PLV models and ASC--tracer correspondence analyses were treated as exploratory. All inferential analyses used the final included sample of $N=39$.
+Wilcoxon signed-rank and Friedman tests were added as distribution-free checks. Benjamini--Hochberg false-discovery-rate correction was applied within each multi-test outcome family because the preregistration did not specify a multiplicity procedure. The subsequently published 3D-ASCr scoring system was applied to the registered 11D-ASC scores as a post-registration higher-order summary; complete analyses of all 11 subscales remain in Section~S3. Condition-by-PLV models and ASC--tracer correspondence analyses were treated as exploratory. All inferential analyses used the final included sample of $N=39$.
 
 \section{PLV computation and quality screening}
 \label{sec:supp_plv}
@@ -73,40 +88,152 @@ with $Q_1=0.695346$ and $Q_3=0.914776$, producing a cutoff of 0.366201. A partic
 \begin{table}[!htbp]
 \centering
 \small
-\caption{Condition-level PLV values for participants excluded by the pooled lower-tail IQR quality-screening rule. Values below the cutoff of 0.366201 are flagged. If any condition was flagged, the participant was excluded from all three conditions.}
+\caption{Condition-level PLV values for participants excluded by the pooled lower-tail IQR quality-screening rule. Values below the cutoff of 0.366201 are marked with an asterisk. If any condition was flagged, the participant was excluded from all three conditions.}
 \label{tab:supp_plv_exclusions}
-\begin{tabular}{@{}lrrrp{0.23\textwidth}@{}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc@{}}
 \toprule
 Participant & Black screen & Symmetric VR & Asymmetric VR & Below-cutoff condition(s) \\
 \midrule
-P08 & 0.487994 & 0.641091 & 0.363136 & Asymmetric \\
-P12 & 0.045540 & 0.858897 & 0.651905 & Black screen \\
-P16 & 0.322388 & 0.424615 & 0.923065 & Black screen \\
-P18 & 0.046679 & 0.424962 & 0.105354 & Black screen; asymmetric \\
-P23 & 0.950082 & 0.033076 & 0.048964 & Symmetric; asymmetric \\
-P27 & 0.859589 & 0.488851 & 0.336871 & Asymmetric \\
-P32 & 0.723235 & 0.493400 & 0.101153 & Asymmetric \\
-P40 & 0.441212 & 0.267064 & 0.245893 & Symmetric; asymmetric \\
+P08 & 0.487994 & 0.641091 & 0.363136\textsuperscript{*} & Asymmetric \\
+P12 & 0.045540\textsuperscript{*} & 0.858897 & 0.651905 & Black screen \\
+P16 & 0.322388\textsuperscript{*} & 0.424615 & 0.923065 & Black screen \\
+P18 & 0.046679\textsuperscript{*} & 0.424962 & 0.105354\textsuperscript{*} & Black screen; asymmetric \\
+P23 & 0.950082 & 0.033076\textsuperscript{*} & 0.048964\textsuperscript{*} & Symmetric; asymmetric \\
+P27 & 0.859589 & 0.488851 & 0.336871\textsuperscript{*} & Asymmetric \\
+P32 & 0.723235 & 0.493400 & 0.101153\textsuperscript{*} & Asymmetric \\
+P40 & 0.441212 & 0.267064\textsuperscript{*} & 0.245893\textsuperscript{*} & Symmetric; asymmetric \\
 \bottomrule
-\end{tabular}
+\end{tabular*}
 \end{table}
 
-\section{Altered-state questionnaire analyses}
+\section{11D-ASC: Altered States of Consciousness Rating Scale}
 \label{sec:supp_asc}
 
-\subsection{3D-ASCr scoring}
+This section reports analyses of the 11 dimensions of the Altered States of Consciousness Rating Scale (11D-ASC; \citealt{studerus2010}), grouped under the Positive, Distressing, and Perceptual Effects composites reported in the main article. Within each composite, we compare the constituent dimensions' pooled-VR-minus-dark-screen-control mean differences to identify the principal contributors to the higher-order result. These comparisons are descriptive and do not estimate independent or causal effects. Benjamini--Hochberg $q_{\mathrm{FDR}}$ values control the false-discovery rate across all 11 dimensions within each test family, rather than separately within each higher-order composite.
 
-The three 3D-ASCr composites were calculated from the 11-ASC subscale means as follows:
+\subsection{Positive Effects}
+\label{subsec:supp_asc_positive}
 
-\begin{align}
-\mathrm{PosE} &= \operatorname{mean}(\mathrm{EU},\mathrm{SE},\mathrm{BS},\mathrm{IS},\mathrm{DIS},\mathrm{CMP}),\\
-\mathrm{DisE} &= \operatorname{mean}(\mathrm{ICC},\mathrm{ANX}),\\
-\mathrm{PerE} &= \operatorname{mean}(\mathrm{CI},\mathrm{EI},\mathrm{AVS}).
-\end{align}
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Positive Effects dimensions ranked by paired Cohen's $d_z$ for the pooled-VR-versus-dark-screen-control contrast.}
+\label{tab:supp_asc_positive_drivers}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+Dimension & Mean difference [95\% CI] & Paired Cohen's $d_z$ & $p$ & $q_{\mathrm{FDR}}$ \\
+\midrule
+Experience of Unity & 13.10 [5.53, 20.68] & 0.56 & .001 & .004 \\
+Changed Meaning of Percepts & 9.56 [3.69, 15.42] & 0.53 & .002 & .006 \\
+Disembodiment & 8.45 [1.84, 15.07] & 0.41 & .014 & .025 \\
+Spiritual Experience & 6.60 [1.43, 11.77] & 0.41 & .014 & .025 \\
+Insightfulness & 3.74 [$-0.91$, 8.39] & 0.26 & .112 & .136 \\
+Blissful State & 1.56 [$-6.00$, 9.13] & 0.07 & .678 & .746 \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize\textit{Note.} Mean differences are pooled-VR-minus-dark-screen-control differences on the 0--100 scale; brackets show 95\% confidence intervals. $d_z$ is Cohen's standardized effect size for paired observations. Benjamini--Hochberg $q$ values are calculated across all 11 dimensions, not separately within each higher-order composite.}
+\end{table}
+\FloatBarrier
 
-The composites were deterministic transformations of the 11-ASC scores. The scoring system became available after preregistration and was not specified as a separate preregistered outcome.
+\medskip\noindent\textbf{Experience of Unity.}\nopagebreak[4]
 
-\subsection{11-ASC analyses}
+Ratings were higher in symmetric VR ($M=34.36$, $SD=27.78$) and asymmetric VR ($M=35.68$, $SD=25.81$) than in the dark-screen control ($M=21.92$, $SD=22.33$). The order-adjusted three-condition test showed a condition effect, $\chi^2(2)=16.07$, $q_{\mathrm{FDR}}=.001$, with corresponding Bayesian evidence, $\mathrm{BF}_{10}=64.02$; the data were approximately 64 times more likely under a model containing condition than under the order-only model. Pooled VR exceeded the control, $t(38)=3.50$, $d_z=0.56$, $q_{\mathrm{FDR}}=.004$, $\mathrm{BF}_{10}=26.15$, whereas symmetric and asymmetric VR did not differ, $t(38)=-0.48$, $d_z=-0.08$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=5.20$. The repeated-measures ANOVA and distribution-free analyses supported the same conclusion. The directional tests favored asymmetric VR over control, $\mathrm{BF}_{10}=87.69$, but not symmetric over asymmetric VR, $\mathrm{BF}_{01}=8.07$. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.934$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.872$). Both VR conditions increased Experience of Unity relative to control, with no meaningful difference between the two VR mappings. There was no reliable evidence that the result was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Changed Meaning of Percepts.}\nopagebreak[4]
+
+Ratings were higher in symmetric VR ($M=19.93$, $SD=19.65$) and asymmetric VR ($M=20.41$, $SD=20.62$) than in the dark-screen control ($M=10.62$, $SD=10.77$). The order-adjusted three-condition test showed a condition effect, $\chi^2(2)=11.99$, $q_{\mathrm{FDR}}=.007$, with corresponding Bayesian evidence, $\mathrm{BF}_{10}=12.56$; the data were approximately 13 times more likely under the condition model than under the order-only model. Pooled VR exceeded the control, $t(38)=3.30$, $d_z=0.53$, $q_{\mathrm{FDR}}=.006$, $\mathrm{BF}_{10}=15.81$, whereas symmetric and asymmetric VR did not differ, $t(38)=-0.17$, $d_z=-0.03$, $q_{\mathrm{FDR}}=.866$, $\mathrm{BF}_{01}=5.72$. The repeated-measures ANOVA and distribution-free analyses supported the same conclusion. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.345$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.819$). Both VR conditions increased Changed Meaning of Percepts relative to control, without evidence of a difference between the two mappings. There was no reliable evidence that the result was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Disembodiment.}\nopagebreak[4]
+
+Ratings were higher in symmetric VR ($M=29.55$, $SD=27.87$) and asymmetric VR ($M=30.40$, $SD=25.49$) than in the dark-screen control ($M=21.52$, $SD=22.40$). The order-adjusted three-condition test showed a condition effect, $\chi^2(2)=9.96$, $q_{\mathrm{FDR}}=.013$, with corresponding Bayesian evidence, $\mathrm{BF}_{10}=4.94$; the data were approximately five times more likely under the condition model than under the order-only model. Pooled VR exceeded the control, $t(38)=2.59$, $d_z=0.41$, $q_{\mathrm{FDR}}=.025$, $\mathrm{BF}_{10}=3.17$, whereas symmetric and asymmetric VR did not differ, $t(38)=-0.39$, $d_z=-0.06$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=5.39$. The repeated-measures ANOVA supported the condition effect, while the FDR-adjusted Friedman result was weaker. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.817$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.872$). VR increased Disembodiment relative to control, without a difference between the VR mappings. There was no reliable evidence that the result was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Spiritual Experience.}\nopagebreak[4]
+
+Ratings were higher in symmetric VR ($M=17.97$, $SD=22.77$) and asymmetric VR ($M=18.91$, $SD=22.91$) than in the dark-screen control ($M=11.85$, $SD=17.12$). The order-adjusted three-condition test showed a condition effect, $\chi^2(2)=10.38$, $q_{\mathrm{FDR}}=.012$, with corresponding Bayesian evidence, $\mathrm{BF}_{10}=5.60$; the data were approximately six times more likely under the condition model than under the order-only model. Pooled VR exceeded the control, $t(38)=2.58$, $d_z=0.41$, $q_{\mathrm{FDR}}=.025$, $\mathrm{BF}_{10}=3.13$, whereas symmetric and asymmetric VR did not differ, $t(38)=-0.60$, $d_z=-0.10$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=4.90$. The repeated-measures ANOVA and distribution-free analyses supported the same conclusion. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.817$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.872$). VR increased Spiritual Experience relative to control, without evidence of a difference between the two mappings. There was no reliable evidence that the result was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Insightfulness.}\nopagebreak[4]
+
+Mean ratings were $17.54$ ($SD=18.11$) in the dark-screen control, $22.42$ ($SD=21.33$) in symmetric VR, and $20.14$ ($SD=18.56$) in asymmetric VR. The order-adjusted three-condition test did not show a condition effect, $\chi^2(2)=3.33$, $q_{\mathrm{FDR}}=.231$, and the Bayesian analysis favored the order-only model, $\mathrm{BF}_{01}=3.31$; the observed data were approximately three times more likely without a condition effect. Neither pooled VR versus control, $t(38)=1.63$, $d_z=0.26$, $q_{\mathrm{FDR}}=.136$, $\mathrm{BF}_{01}=1.73$, nor symmetric versus asymmetric VR, $t(38)=0.84$, $d_z=0.13$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=4.16$, provided reliable evidence of a difference. The sensitivity and distribution-free analyses agreed. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.980$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.819$). Insightfulness was descriptively higher during VR, but the tests did not establish a reliable condition effect. There was no reliable evidence that it was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Blissful State.}\nopagebreak[4]
+
+Mean ratings were $29.86$ ($SD=21.60$) in the dark-screen control, $29.63$ ($SD=23.30$) in symmetric VR, and $33.22$ ($SD=25.51$) in asymmetric VR. The order-adjusted three-condition test did not show a condition effect, $\chi^2(2)=1.23$, $q_{\mathrm{FDR}}=.594$, and the Bayesian analysis favored the order-only model, $\mathrm{BF}_{01}=7.62$; the data were approximately eight times more likely without a condition effect. Neither pooled VR versus control, $t(38)=0.42$, $d_z=0.07$, $q_{\mathrm{FDR}}=.746$, $\mathrm{BF}_{01}=5.34$, nor symmetric versus asymmetric VR, $t(38)=-1.31$, $d_z=-0.21$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=2.61$, provided reliable evidence of a difference. The sensitivity and distribution-free analyses agreed, and the directional tests did not support either registered step. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.934$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.872$). Blissful State did not differ reliably among the three conditions. There was no reliable evidence that it was influenced by the order in which participants underwent the three conditions.
+
+\subsection{Distressing Effects}
+\label{subsec:supp_asc_distressing}
+
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Distressing Effects dimensions ranked by paired Cohen's $d_z$ for the pooled-VR-versus-dark-screen-control contrast.}
+\label{tab:supp_asc_distressing_drivers}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+Dimension & Mean difference [95\% CI] & Paired Cohen's $d_z$ & $p$ & $q_{\mathrm{FDR}}$ \\
+\midrule
+Impaired Control and Cognition & 5.47 [0.32, 10.62] & 0.34 & .038 & .060 \\
+Anxiety & 4.22 [$-0.23$, 8.67] & 0.31 & .063 & .086 \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize\textit{Note.} Mean differences are pooled-VR-minus-dark-screen-control differences on the 0--100 scale; brackets show 95\% confidence intervals. $d_z$ is Cohen's standardized effect size for paired observations. Benjamini--Hochberg $q$ values are calculated across all 11 dimensions, not separately within each higher-order composite.}
+\end{table}
+\FloatBarrier
+
+\medskip\noindent\textbf{Impaired Control and Cognition.}\nopagebreak[4]
+
+Mean ratings were $19.17$ ($SD=16.50$) in the dark-screen control, $24.17$ ($SD=20.02$) in symmetric VR, and $25.12$ ($SD=18.97$) in asymmetric VR. The order-adjusted three-condition result, $\chi^2(2)=6.45$, $q_{\mathrm{FDR}}=.062$, and pooled-VR contrast, $t(38)=2.15$, $d_z=0.34$, $q_{\mathrm{FDR}}=.060$, did not remain significant after FDR correction. Bayesian evidence for these effects was correspondingly inconclusive ($\mathrm{BF}_{10}=1.10$ and $1.35$, respectively). Symmetric and asymmetric VR did not differ, $t(38)=-0.51$, $d_z=-0.08$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=5.14$. The Friedman check detected a distributional difference, but this secondary rank-based test did not assess the same mean-difference estimand or adjust for presentation order and therefore did not alter the primary FDR-qualified conclusion. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.682$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.872$). Impaired Control and Cognition tended to be higher during VR, but the evidence did not survive correction across the 11 dimensions and did not differ reliably between the mappings. There was no reliable evidence that it was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Anxiety.}\nopagebreak[4]
+
+Mean ratings were $5.49$ ($SD=7.54$) in the dark-screen control, $10.49$ ($SD=13.83$) in symmetric VR, and $8.92$ ($SD=13.66$) in asymmetric VR. The order-adjusted three-condition test did not show a corrected condition effect, $\chi^2(2)=5.35$, $q_{\mathrm{FDR}}=.095$, and the Bayesian analysis slightly favored the order-only model, $\mathrm{BF}_{01}=1.34$. The pooled-VR contrast was also inconclusive, $t(38)=1.92$, $d_z=0.31$, $q_{\mathrm{FDR}}=.086$, $\mathrm{BF}_{01}=1.11$, while symmetric and asymmetric VR did not differ, $t(38)=0.86$, $d_z=0.14$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=4.10$. The distribution-free results were similarly not significant after correction. The exploratory order effect was nominally significant before correction but not after it ($p=.015$, $q_{\mathrm{FDR}}=.085$); the condition-by-order interaction was not supported ($q_{\mathrm{FDR}}=.872$). Anxiety was descriptively higher during VR, but the condition difference did not provide correction-robust evidence. There was no reliable evidence that it was influenced by the order in which participants underwent the three conditions.
+
+\subsection{Perceptual Effects}
+\label{subsec:supp_asc_perceptual}
+
+\begin{table}[!htbp]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Perceptual Effects dimensions ranked by paired Cohen's $d_z$ for the pooled-VR-versus-dark-screen-control contrast.}
+\label{tab:supp_asc_perceptual_drivers}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+Dimension & Mean difference [95\% CI] & Paired Cohen's $d_z$ & $p$ & $q_{\mathrm{FDR}}$ \\
+\midrule
+Audio-Visual Synesthesia & 25.56 [15.52, 35.61] & 0.82 & $<.001$ & $<.001$ \\
+Elementary Imagery & 19.92 [11.35, 28.49] & 0.75 & $<.001$ & $<.001$ \\
+Complex Imagery & $-0.45$ [$-7.73$, 6.83] & $-0.02$ & .901 & .901 \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize\textit{Note.} Mean differences are pooled-VR-minus-dark-screen-control differences on the 0--100 scale; brackets show 95\% confidence intervals. $d_z$ is Cohen's standardized effect size for paired observations. Benjamini--Hochberg $q$ values are calculated across all 11 dimensions, not separately within each higher-order composite.}
+\end{table}
+\FloatBarrier
+
+\medskip\noindent\textbf{Audio-Visual Synesthesia.}\nopagebreak[4]
+
+Ratings were markedly higher in symmetric VR ($M=38.85$, $SD=33.23$) and asymmetric VR ($M=34.44$, $SD=30.60$) than in the dark-screen control ($M=11.09$, $SD=17.82$). The order-adjusted three-condition test showed a condition effect, $\chi^2(2)=35.71$, $q_{\mathrm{FDR}}<.001$, with overwhelming Bayesian evidence, $\mathrm{BF}_{10}=416{,}663.96$; the data were over 400,000 times more likely under the condition model than under the order-only model. Pooled VR exceeded the control, $t(38)=5.15$, $d_z=0.82$, $q_{\mathrm{FDR}}<.001$, $\mathrm{BF}_{10}=2{,}408.46$, whereas symmetric and asymmetric VR did not differ reliably, $t(38)=1.41$, $d_z=0.23$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=2.32$. The repeated-measures and distribution-free analyses supported the condition effect. The directional analysis strongly favored asymmetric VR over control, $\mathrm{BF}_{10}=745.10$, but did not clearly distinguish symmetric from asymmetric VR. The exploratory order effect was nominally significant before correction but not afterward ($p=.010$, $q_{\mathrm{FDR}}=.085$); the condition-by-order interaction was not supported ($q_{\mathrm{FDR}}=.819$). Both VR conditions produced a large increase in Audio-Visual Synesthesia, with no reliable difference between mappings. There was no reliable evidence that the result was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Elementary Imagery.}\nopagebreak[4]
+
+Ratings were higher in symmetric VR ($M=26.51$, $SD=28.07$) and asymmetric VR ($M=28.78$, $SD=26.81$) than in the dark-screen control ($M=7.73$, $SD=13.43$). The order-adjusted three-condition test showed a condition effect, $\chi^2(2)=26.50$, $q_{\mathrm{FDR}}<.001$, with overwhelming Bayesian evidence, $\mathrm{BF}_{10}=7{,}796.37$; the data were almost 7,800 times more likely under the condition model than under the order-only model. Pooled VR exceeded the control, $t(38)=4.71$, $d_z=0.75$, $q_{\mathrm{FDR}}<.001$, $\mathrm{BF}_{10}=669.92$, whereas symmetric and asymmetric VR did not differ, $t(38)=-0.69$, $d_z=-0.11$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=4.65$. The repeated-measures and distribution-free analyses supported the same conclusion. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.421$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.872$). Both VR conditions strongly increased Elementary Imagery relative to control, without evidence of a difference between the mappings. There was no reliable evidence that the result was influenced by the order in which participants underwent the three conditions.
+
+\medskip\noindent\textbf{Complex Imagery.}\nopagebreak[4]
+
+Mean ratings were $15.41$ ($SD=17.99$) in the dark-screen control, $16.38$ ($SD=17.87$) in symmetric VR, and $13.55$ ($SD=16.31$) in asymmetric VR. The order-adjusted three-condition test did not show a condition effect, $\chi^2(2)=0.74$, $q_{\mathrm{FDR}}=.690$, and the Bayesian analysis favored the order-only model, $\mathrm{BF}_{01}=8.83$; the data were approximately nine times more likely without a condition effect. Neither pooled VR versus control, $t(38)=-0.12$, $d_z=-0.02$, $q_{\mathrm{FDR}}=.901$, $\mathrm{BF}_{01}=5.75$, nor symmetric versus asymmetric VR, $t(38)=1.22$, $d_z=0.20$, $q_{\mathrm{FDR}}=.766$, $\mathrm{BF}_{01}=2.91$, provided reliable evidence of a difference. The sensitivity and distribution-free analyses agreed. Exploratory checks found neither an order effect ($q_{\mathrm{FDR}}=.980$) nor a condition-by-order interaction ($q_{\mathrm{FDR}}=.872$). Complex Imagery was comparable across the three conditions. There was no reliable evidence that it was influenced by the order in which participants underwent the three conditions.
+
+\subsection{Summary of fine-grained subscale contributions}
+\label{subsec:supp_asc_drivers}
+
+The Positive Effects increase was principally associated with Experience of Unity and Changed Meaning of Percepts, followed by Disembodiment and Spiritual Experience. Together, these four fine-grained subscales account arithmetically for nearly nine-tenths of the composite increase. Their items assess experiences such as reduced separation between oneself and the environment, time or apparent contradictions merging into a unified whole, ordinary objects acquiring unusual significance or emotional salience, diminished bodily presence or floating sensations, and feelings of awe or spiritual connection. Blissful State and Insightfulness contributed comparatively little and did not change reliably, indicating that the Positive Effects result did not primarily reflect greater pleasure, inner peace, love, cognitive clarity, or original thought. The resulting profile is therefore better characterized as increased unity, altered meaning, bodily-boundary changes, and modest transcendence than as a general increase in positive mood.
+
+The smaller Distressing Effects increase was distributed across Impaired Control and Cognition and Anxiety, with Impaired Control and Cognition making the somewhat larger contribution. Their items assess experiences such as diminished personal agency, difficulty making decisions or sustaining a coherent thought, feelings of paralysis or isolation, unexplained fear, perceived threat, strangely altered surroundings, and anticipation that something harmful might occur. Both subscales were descriptively higher during VR, but neither remained significant after correction across the 11 dimensions, and their Bayesian results did not clearly distinguish effect from null models. The significant composite result is therefore best interpreted as the accumulation of two modest and compatible distress-related tendencies rather than as a pronounced or clearly localized adverse effect.
+
+The Perceptual Effects increase was almost entirely associated with Audio-Visual Synesthesia and Elementary Imagery. These subscales assess phenomena such as sounds appearing to influence perceived shapes or colors and the perception of simple patterns, colors, lights, or flashes. Complex Imagery, which instead assesses vivid internally generated scenes, memories, fantasy images, and imaginative content, remained unchanged. The perceptual result therefore reflects elementary visual phenomena and perceived cross-modal influence rather than a general intensification of internally generated imagery. Because the strongest item themes closely resemble properties directly supplied by the visually rich VR environment, the magnitude of this composite also reflects overlap between the intervention content and the questionnaire's perceptual criteria. Across all fine-grained subscales, there was no reliable symmetric-versus-asymmetric difference and no FDR-corrected evidence that the condition pattern was influenced by the order in which participants underwent the three conditions.
 
 \section{Temporal experience tracer analyses}
 \label{sec:supp_tracers}
@@ -129,13 +256,16 @@ After each condition, participants draw the 11 intensity curves on a world-space
 
 Tracer peak and AUC profiles broadly follow the condition profiles observed for the 11D-ASC questionnaire, with the strongest pooled-VR differences clustering on Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia. No tracer variable shows a symmetric-versus-asymmetric difference (Figure~\ref{fig:supp_tracer_profiles}).
 
-\begin{figure}[!htbp]
+\clearpage
+\newgeometry{left=39.4mm,right=39.4mm,top=10mm,bottom=12mm}
+\begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth]{FigS02_tracer_profiles.pdf}
-\caption{Condition-wise altered-state profiles across all 11 dimensions for retrospective 11D-ASC questionnaire ratings (left), tracer peak intensity (centre), and tracer AUC (right). Lines show condition means on the 0--100 scale.}
+\includegraphics[width=\textwidth]{FigS02_tracer_profiles_vertical.pdf}
+\caption{Condition-wise altered-state profiles across all 11 dimensions for retrospective 11D-ASC questionnaire ratings (top; 0--100 visual-analogue scale), tracer peak intensity (middle; normalized 0--1 intensity), and tracer AUC (bottom; normalized 0--1 area). Lines show condition means for the included sample ($N=39$). Separate radial scales are used; comparisons should concern profile shape and condition separation rather than absolute height across measurement formats.}
 \label{fig:supp_tracer_profiles}
 \end{figure}
-\FloatBarrier
+\clearpage
+\restoregeometry
 
 \subsection{ASC--tracer correspondence}
 

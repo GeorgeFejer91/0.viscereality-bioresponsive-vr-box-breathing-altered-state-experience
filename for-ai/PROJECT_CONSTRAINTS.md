@@ -25,7 +25,7 @@ Internal AI material belongs only under `for-ai/`, except for the required root 
 - General requests to revise or improve text authorize only a numbered recommendation list, not direct edits.
 - Each proposed edit must show exact current wording and exact proposed replacement wording, with rationale, consequences, risks, and verification.
 - Apply only explicitly approved item numbers; never infer approval for unmentioned items.
-- Preserve Springer Nature compatibility through `sn-jnl.cls` and `sn-mathphys-num.bst`.
+- Preserve Springer Nature compatibility through `sn-jnl.cls` and the journal-appropriate author--year `sn-basic.bst`.
 - Preserve citation-key compatibility with `references.bib`.
 - Do not silently alter statistical claims, sample sizes, exclusions, preregistration deviations, author order, affiliations, declarations, or availability statements.
 - The PLV quality-screening stage may use condition-level PLV values from all 47 tested participants solely to determine exclusions. After that stage, the final analytic sample is $N=39$, and every inferential protocol, including PLV condition tests, must use only those 39 participants. Participant-flow reporting must continue to state that 47 were tested, 8 were excluded, and 39 were analyzed.
