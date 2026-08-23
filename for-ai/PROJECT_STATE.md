@@ -27,6 +27,8 @@ Agents must run `git status --short` at the start of any editing task because th
 
 ## Known manuscript status
 
+- As of 2026-08-23, the user requires exact filename identity between active manuscript/supplement `\includegraphics` assets and their canonical reproducibility-pipeline exports. The current active manuscript filenames control synchronization until a deliberate cross-repository rename changes both sides together.
+
 - The manuscript is formatted for Springer Nature.
 - A LaTeX compiler was not available on the command path during the preceding checks.
 - Citation keys used by the inspected manuscript and supplementary draft resolved against `references.bib` during the preceding static check.

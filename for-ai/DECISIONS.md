@@ -440,3 +440,16 @@ Consequences:
 - Supplementary Figure S2 remains full width on its own page with its caption and footer.
 - Table S5 contains the source-verified peak and AUC contrasts; S4.3 explicitly treats cross-format correspondence as descriptive and calls for dedicated validation.
 - No unavailable historical time-course figure may be substituted for canonical Figure S3.
+
+## 2026-08-23 - Exact cross-repository figure filename identity
+
+Decision: use the exact filenames in the active manuscript and supplementary `\includegraphics` commands as the controlling names for the corresponding canonical reproducibility-pipeline exports.
+
+Rationale: different source and manuscript numbering for the same figure obscures provenance and makes synchronization error-prone.
+
+Consequences:
+
+- Canonical pipeline exports, numeric prefixes, manuscript copies, manifests, generated registries, and reviewer-scope records must use identical filenames.
+- A future figure rename or renumber must be applied across both repositories and all active references in the same task.
+- Historical aliases and independent source-only figure numbering are not permitted in active output inventories.
+- This exact-name identity rule supersedes any earlier workflow that temporarily tolerated legacy-numbered manuscript copies or differently numbered authoritative exports.

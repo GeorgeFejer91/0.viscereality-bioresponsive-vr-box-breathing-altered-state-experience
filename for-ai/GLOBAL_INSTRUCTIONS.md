@@ -213,3 +213,10 @@ Conflicts or ambiguities must be surfaced to the user. Do not silently weaken or
 1. Use the Springer Nature class's built-in `lineno` option for both the main manuscript and the active supplementary document during submission review.
 2. Keep this as a document-class option rather than adding a separate line-numbering implementation.
 3. Any submission-facing source edit needed to activate the option remains subject to the item-by-item approval protocol.
+
+## Cross-repository figure filename contract
+
+1. The exact filenames used by active `\includegraphics` commands in `main.tex` and `supplementary/main.tex` are the controlling names for the corresponding canonical figure exports in the authoritative reproducibility repository.
+2. A canonical pipeline export, its numeric prefix, the manuscript copy, figure manifests, generated registries, and reviewer-scope records must all use the same exact filename.
+3. Never allow a source-only numbering scheme or historical alias to diverge from the active manuscript asset name.
+4. If a figure is renamed or renumbered in either repository, update every affected reference and registry in both repositories in the same task, then verify that every active TeX reference resolves to the identically named canonical export.
