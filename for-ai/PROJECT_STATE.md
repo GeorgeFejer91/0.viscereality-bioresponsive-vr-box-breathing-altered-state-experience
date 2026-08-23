@@ -109,6 +109,7 @@ Agents must run `git status --short` at the start of any editing task because th
 - Run a placeholder scan and produce a local readiness report that clearly separates completed formatting from deliberately deferred external identifiers and reproducibility validation.
 - Add a canonical build orchestrator under `for-ai/scripts/` that compiles through internal scratch directories and emits only `output/submission/Manuscript.pdf` and `output/submission/ESM_1.pdf` after successful validation.
 - Revise the packaging orchestrator so its canonical upload-facing result is `output/submission/Manuscript_Source.zip` and its manifest excludes legacy PDFs plus all internal or review-only material.
+- Implemented on 2026-08-23: `for-ai/scripts/build-submission-pdfs.ps1` now compiles both documents through `for-ai/build/submission-pdfs/` and stages the canonical PDFs under `output/submission/`; `new-submission-package.ps1` packages the 16 active local source dependencies into `Manuscript_Source.zip`. Review mode warns about the deliberately unresolved final-commit placeholder, while `-Final` blocks release until it is replaced.
 
 ### Final-stage maintainer tasks, deliberately deferred
 
@@ -187,6 +188,14 @@ The user's instruction authorizes the substance of the selected hierarchy and co
 - The old pooled-correlation scatterplots, pooled peak--AUC plot, and heatmaps are not selected for the active supplement because they are redundant or treat repeated participant-condition observations as independent.
 - Approved Item 4, the descriptive 11-panel recalled-time-course subsection and Figure S3, remains unapplied because the required canonical asset is deleted from the immutable source worktree. It remains available at authoritative commit `1368f4283e9186b551aecad6d626e17df9eeff0b` as `4.Figures/Supplementary/3.AppendixTracerTimecourses/avg_tracer_timecourse_master_grid.pdf` (Git blob `bfc7a350a6d089d4b85f619c2285924e13f0b6dc`). A repository maintainer must restore or supply that exact PDF before insertion as `supplementary/figures/FigS03_tracer_timecourses.pdf`.
 - The current 12-page `output/pdf/supplementary-materials.pdf` was compiled with two final pdfLaTeX passes. Its log contains no undefined citations or references, overfull boxes, or oversized floats. S4 pages were rendered with Poppler and visually inspected; the vertical Figure S2, caption, page footer, section transitions, and references are legible and unclipped.
+
+## 2026-08-23 - Final temporal-tracer layout and reporting state
+
+- The main Methods now gives the concise Meta Quest tracer implementation and includes the hypothetical peak-versus-AUC schematic as a right-hand half-width wrapped figure. A deliberate page break starts the block at the top of page 20 so surrounding Methods text wraps cleanly without displacing later content.
+- Supplementary Figure S1 uses the same right-hand half-width presentation and titled hypothetical caption, preserving the supplement as a standalone account. Section S4 reports source-verified peak and AUC contrasts in Table S5 and closes with a cautious descriptive correspondence and validation interpretation.
+- Supplementary Section S4.3 now precedes Table S5 in source order. This fills page 9 with continuous explanatory text, places the complete table on page 10, and keeps the enlarged portrait Figure S2 and its caption together on page 11.
+- The final 53-page main article and 12-page supplement compile without undefined references or citations, overfull boxes, oversized floats, or wrap-figure collision warnings. The affected pages were rendered and visually verified.
+- Figure S3 remains the sole unavailable immutable-source dependency. It may be inserted only after a maintainer restores or supplies the exact canonical PDF already identified in the status above.
 
 ## 2026-08-23 - Submission review line numbering
 

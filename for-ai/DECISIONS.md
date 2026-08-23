@@ -427,3 +427,16 @@ Consequences:
 - A successful orchestrated build must compile the main article and supplement independently and only then stage the two canonical PDFs.
 - Packaging must exclude legacy compiled PDFs, internal control files, logs, auxiliary files, temporary directories, and review-only artifacts.
 - Script creation and modification remain subject to exact item-by-item approval before implementation.
+
+## 2026-08-23 - Final temporal-tracer figure hierarchy
+
+Decision: retain the hypothetical peak-versus-AUC schematic in both documents as a right-hand half-width wrapped figure, and retain the empirical portrait profile comparison as a dedicated full-width supplementary page. Present the S4 interpretation before the detailed contrast table so the wrapped page remains textually continuous.
+
+Rationale: the duplicated schematic lets the main Methods introduce the unfamiliar measurement while keeping the supplement independently interpretable. The dedicated portrait profile page gives the radar plots sufficient space, and moving S4.3 ahead of Table S5 removes the float-induced blank-page appearance without changing the approved scientific wording.
+
+Consequences:
+
+- The main schematic is Figure 5 and the supplementary duplicate is Figure S1; both use the approved titled hypothetical caption.
+- Supplementary Figure S2 remains full width on its own page with its caption and footer.
+- Table S5 contains the source-verified peak and AUC contrasts; S4.3 explicitly treats cross-format correspondence as descriptive and calls for dedicated validation.
+- No unavailable historical time-course figure may be substituted for canonical Figure S3.
