@@ -6,9 +6,30 @@ Do not place scripts in the repository root or among submission-facing manuscrip
 
 ## Script registry
 
+### `build-submission-pdfs.ps1`
+
+Compiles the main manuscript and Online Resource 1 through internal build directories and stages the canonical upload-facing PDFs. It runs one initial LaTeX pass, BibTeX, and three stabilization passes for each document. Compilation stops on command failures, missing PDFs, unresolved citations or references, unstable labels, multiply defined labels, or fatal LaTeX errors.
+
+Usage from the repository root:
+
+```powershell
+# Review build; unresolved external-identifier placeholders produce warnings
+.\for-ai\scripts\build-submission-pdfs.ps1
+
+# Final build; unresolved placeholders stop the build before staging
+.\for-ai\scripts\build-submission-pdfs.ps1 -Final
+```
+
+Canonical outputs:
+
+- `output/submission/Manuscript.pdf`
+- `output/submission/ESM_1.pdf`
+
+All auxiliary files, recorder manifests, and logs remain under `for-ai/build/submission-pdfs/`. Successful review builds overwrite only the two canonical PDFs named above. The script does not modify manuscript sources or authoritative reproducibility artifacts.
+
 ### `new-submission-package.ps1`
 
-Creates or previews a submission ZIP from the repository root while excluding internal AI controls, Git metadata, and LaTeX build artifacts.
+Creates or previews the canonical editable-source archive from the successful LaTeX recorder manifests. It includes explicit manuscript, bibliography, class, and style sources plus project-local assets used by the two builds. It excludes internal AI controls, Git metadata, legacy PDFs, unused figure variants, temporary directories, and LaTeX build artifacts.
 
 Usage from the repository root:
 
@@ -19,9 +40,18 @@ Usage from the repository root:
 # Create the archive after reviewing the manifest
 .\for-ai\scripts\new-submission-package.ps1 -Create
 
+# Preview in strict final mode; unresolved placeholders stop the command
+.\for-ai\scripts\new-submission-package.ps1 -Final
+
 # Choose a different output path
-.\for-ai\scripts\new-submission-package.ps1 -Create -OutputPath .\viscereality-submission.zip
+.\for-ai\scripts\new-submission-package.ps1 -Create -OutputPath .\output\submission\Alternate_Source.zip
 ```
+
+Canonical output:
+
+- `output/submission/Manuscript_Source.zip`
+
+Run `build-submission-pdfs.ps1` before this script so the recorder manifests describe the current successful builds. Preview mode is the default. `-Create` refuses to overwrite an existing archive.
 
 Every future script added here must be documented in this registry with its purpose, inputs, outputs, side effects, and example usage.
 
