@@ -2,6 +2,14 @@
 
 This log records control-plane changes and material workflow decisions. It is not a substitute for Git history.
 
+## 2026-08-24
+
+- Restored the unchanged cross-study ASC profile as Figure 9 in the altered-state Discussion and removed its duplicate subsection and figure environment from Online Resource 1. This supersedes the full-paper-audit placement decision that had moved the profile to Supplementary S3.
+- Implemented the approved Springer supplementary-material corrections through separately pushed checkpoints: standardized 13 referrals as `Online Resource 1`, added the concise file caption, cited Tables S2--S4 and S8 and tracer Figures S1--S2 in sequence, and defined IQR, 3D-ASCr, and SFoRC at first supplementary use.
+- Confirmed that restoring the main Figure 9 placement resolves the apparent supplementary filename mismatch without renaming immutable assets: the tracer schematic and profile comparison again display as S1 and S2 and match their `FigS01` and `FigS02` filenames.
+- Rebuilt the canonical 51-page manuscript and 16-page Online Resource PDFs. Final logs contain no undefined citations or references, duplicate labels, overfull boxes, or fatal errors. Rendered and visually inspected every page, including the restored Figure 9, the Online Resource caption, all newly cited tables, and both supplementary figures.
+- Left immutable maintainer work unchanged: the tracer schematic PDF-version re-export, redundant non-colour condition encodings, and restoration of the canonical recalled-time-course Figure S3.
+
 ## 2026-08-23
 
 - Added `OSF_PARSIMONIOUS_STATISTICS_PIPELINE_SPEC.md`, a comprehensive OSF maintainer handoff that defines the common `N=39` data contract, exact registered frequentist and Bayesian estimands, multiplicity families, manuscript-facing exploratory analyses, chronological main/supplement mapping, output schemas, validation contracts, exclusions, and adoption sequence while keeping PLV frozen.

@@ -1,6 +1,6 @@
 # Current project state
 
-Last updated: 2026-08-23
+Last updated: 2026-08-24
 
 ## GitHub checkpoint policy
 
@@ -283,3 +283,14 @@ The user's instruction authorizes the substance of the selected hierarchy and co
 - Main and supplementary Methods now describe the registered participant-blocked, block-position-adjusted partial-$F$ analysis for non-PLV outcomes. The finalized PLV omnibus remains unchanged.
 - Two main-results locations and all 11 Supplementary S3 omnibus locations now use the exact searchable marker `REGISTERED OMNIBUS STATISTICS PENDING OSF SOURCE LOCK` instead of the obsolete mixed-model chi-square values.
 - The placeholders are review-state blockers and must be replaced from a clean, replay-verified OSF commit before final-mode packaging. Planned contrasts, ordinary Bayesian results, PLV statistics, and exploratory mixed models were not changed.
+
+## 2026-08-24 - Cross-study Discussion placement and Online Resource audit
+
+- The user restored the descriptive cross-study ASC profile to the altered-state Discussion. The former full-paper-audit decision to place that profile in Supplementary S3 is superseded.
+- Main Figure 9 now uses the unchanged source-derived `Fig09_cross_study_profiles.pdf`, cites the current five comparison datasets, and retains the contextual, non-equivalence interpretation. The supplementary cross-study subsection and duplicate figure environment are removed.
+- With the cross-study figure removed from the supplement, the tracer schematic and empirical profile comparison again display as Figures S1 and S2, matching `FigS01_tracer_schematic.pdf` and `FigS02_tracer_profiles_vertical.pdf`. No figure asset was renamed, moved, or modified.
+- All 13 main-text supplementary referrals now use `Online Resource 1, Section S#`, and the main article supplies the approved concise Online Resource 1 caption.
+- Tables S2--S4 and S8 and Figures S1 and S2 now have explicit textual referrals in sequential order. IQR, 3D-ASCr, and SFoRC are defined at first supplementary use.
+- The old page-9 cross-study reflow and supplementary filename-renaming proposals are obsolete. The rebuilt supplement is 16 A4 pages; the former severely underfilled cross-study and pre-profile pages no longer exist in that form.
+- The canonical review build is 51 manuscript pages and 16 Online Resource pages. Final logs contain no undefined citations or references, duplicate labels, overfull boxes, or fatal errors, and every page was rendered and visually inspected.
+- Maintainer-only dependencies remain: re-export the tracer schematic at PDF 1.5 or earlier, add redundant non-colour condition encoding to the empirical tracer-profile figure, and restore the canonical recalled-time-course asset before inserting the already approved subsection and Figure S3.

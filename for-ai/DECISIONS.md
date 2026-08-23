@@ -528,3 +528,17 @@ within-study claim strength. The separate opening-Discussion safety sentence was
 not part of A7 and remains pending exact Item A8. The S3.4 Distressing synthesis
 also remains pending exact Item A9 so it can state the ICC nominal-versus-FDR
 distinction consistently with the corrected detailed block.
+
+## 2026-08-24 - Keep the cross-study ASC profile in the main Discussion
+
+Decision: retain the descriptive cross-study ASC profile figure and its concise contextual interpretation in the altered-state Discussion rather than in Online Resource 1.
+
+Rationale: the user identifies the profile comparison as Discussion context. It helps readers situate the observed profile while the surrounding prose explicitly prevents inferential comparison or claims of equivalence.
+
+Consequences:
+
+- Main Figure 9 uses the unchanged canonical filename `Fig09_cross_study_profiles.pdf` and is cited directly from the altered-state Discussion.
+- Remove the duplicate cross-study subsection and figure from Supplementary S3. Supplementary S3 retains the complete preregistered 11D-ASC analyses and fine-grained subscale interpretation.
+- Supplementary tracer figures return to displayed Figures S1 and S2, matching their existing `FigS01` and `FigS02` filenames. The approved recalled-time-course figure remains the pending Figure S3 after maintainer restoration.
+- The 2026-08-23 full-paper-audit placement decision that moved the cross-study profile to the supplement is superseded by this decision.
+- This placement change does not authorize any modification of the immutable source-derived figure.
