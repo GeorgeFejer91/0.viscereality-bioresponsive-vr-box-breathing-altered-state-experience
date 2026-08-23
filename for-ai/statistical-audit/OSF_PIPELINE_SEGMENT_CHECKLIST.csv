@@ -1,0 +1,49 @@
+sequence,segment_id,document,subsegment,outcome_or_scope,compute_key,required_analysis,multiplicity,expected_test_count,current_osf_state,required_osf_action
+001,M00,main,Participants and design,Flow demographics and counterbalancing,DESIGN.FLOW,Descriptive summaries only,None,0,Present,Retain master and flow outputs
+002,M01,main,Statistical framework,All analysis families,METHODS.CONTRACT,Model prior multiplicity and robustness contracts,By bundle,0,Partially present,Validate prose against implemented contracts
+003,M02,main,Sample and exclusions,47 screened 8 excluded 39 included,DESIGN.SAMPLE,Frozen PLV screening and complete-triad validation,None,0,Present and frozen,No PLV change
+004,M03,main,Adherence,PLV,PLV.FROZEN,Frozen descriptives omnibus two paired contrasts effect sizes CIs and two planned BFs,Frozen standalone,Frozen,Present and frozen,No change
+005,M04.01,main,Self-related measures,Perceived body boundaries,SELF.PBBS,B01 registered frequentist plus B03 Bayesian,Self family of 3,Primary bundle,Registered omnibus missing,Adopt registered F and retain existing contrasts and BFs
+006,M04.02,main,Self-related measures,SFoRC,SELF.SFORC,B01 registered frequentist plus B03 Bayesian,Self family of 3,Primary bundle,Registered omnibus missing,Adopt registered F and retain existing contrasts and BFs
+007,M04.03,main,Self-related measures,Small Self,SELF.SMALL,B01 registered frequentist plus B03 Bayesian,Self family of 3,Primary bundle,Registered omnibus missing,Adopt registered F and retain existing contrasts and BFs
+008,M05,main,Pictograph ASC summary,Correction-retained concise summary,PICTO.SUMMARY,Derived view of B07,Exploratory q,0,Missing canonical source,Adopt pictograph pipeline and map only concise results
+009,M06.01,main,3D-ASCr,Positive Effects,ASC3.POSE,B01 registered frequentist plus B03 Bayesian,3D family of 3,Primary bundle,Registered omnibus missing,Adopt registered F
+010,M06.02,main,3D-ASCr,Distressing Effects,ASC3.DISE,B01 registered frequentist plus B03 Bayesian,3D family of 3,Primary bundle,Registered omnibus missing,Adopt registered F and retain critical Bayesian interpretation
+011,M06.03,main,3D-ASCr,Perceptual Effects,ASC3.PERE,B01 registered frequentist plus B03 Bayesian,3D family of 3,Primary bundle,Registered omnibus missing,Adopt registered F
+012,M07,main,11D-ASC referral,All eleven dimensions,ASC11.REFERRAL,No new test; validate S3 completeness,None,0,Present,Retain referral
+013,M08.01,main,Blinding,Four pre-unmasking accuracy endpoints,BLIND.PRE,Four Wilcoxon signed-rank tests versus 0.25,BH across 4,4,Present in text output,Add compact machine-readable summary
+014,M08.02,main,Blinding,Standard Bang index,BLIND.BBI,Counts point estimate and participant-bootstrap CI,Standalone,0,Present in text output,Add compact machine-readable summary and map
+015,M08.03,main,Blinding,Confidence-weighted directional index,BLIND.WEIGHTED,Point estimate and participant-bootstrap CI,Exploratory standalone,0,Present in text output,Add compact machine-readable summary and map
+016,M08.04,main,Blinding,Masked symmetry score versus final guess,BLIND.ASSOC,Point-biserial correlation with exact two-sided label permutation,Exploratory standalone,1,Present,Retain one-row output
+017,M09.01,main,Exploratory checks,11D 3D and self outcomes,EXPLORATORY.SUBJECTIVE,Order main condition by order condition by PLV and three-way interaction,BH across 17 separately for each test,68,Present with extra tracer rows,Restrict reviewer mapping to 17 reported outcomes
+018,M09.02,main,Exploratory checks,PLV order diagnostics,PLV.ORDER.FROZEN,Frozen order main condition by order and linear session-position contrast,Frozen,Frozen,Present and frozen,No change
+019,S1,supplement,Preregistration departures,Departure ledger,PREREG.LEDGER,No independent test,None,0,Present,Update only after authoritative adoption
+020,S2.01,supplement,PLV computation,Analytic-signal and PLV computation,PLV.COMPUTE.FROZEN,Frozen computation and documentation,None,Frozen,Present and frozen,No change
+021,S2.02,supplement,PLV screening,Pooled lower-tail IQR screening,PLV.SCREEN.FROZEN,Frozen quartiles cutoff flags and exclusions,None,Frozen,Present and frozen,No change
+022,S3.00,supplement,11D orientation,Family and grouping definition,ASC11.ORIENTATION,No inferential test,None,0,Present,Retain
+023,S3.01,supplement,Positive driver table,"EU CMP DIS SE IS BS",ASC11.DRIVER.POS,Derived C1 mean difference CI dz p and q view,BH across all 11,0,Present,Regenerate view from canonical primary output
+024,S3.02,supplement,Positive dimension,Experience of Unity,ASC11.EU,B01 plus B03 plus B05 plus joint B04,BH across all 11 by test type,Outcome bundle plus 1 joint BF,Registered omnibus and joint BF missing,Adopt registered F and joint-order BF
+025,S3.03,supplement,Positive dimension,Changed Meaning of Percepts,ASC11.CMP,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F
+026,S3.04,supplement,Positive dimension,Disembodiment,ASC11.DIS,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F
+027,S3.05,supplement,Positive dimension,Spiritual Experience,ASC11.SE,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F
+028,S3.06,supplement,Positive dimension,Insightfulness,ASC11.IS,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F
+029,S3.07,supplement,Positive dimension,Blissful State,ASC11.BS,B01 plus B03 plus B05 plus joint B04,BH across all 11 by test type,Outcome bundle plus 1 joint BF,Registered omnibus and joint BF missing,Adopt registered F and joint-order BF
+030,S3.08,supplement,Distressing driver table,ICC and ANX,ASC11.DRIVER.DISTRESS,Derived C1 mean difference CI dz p and q view,BH across all 11,0,Present,Regenerate view from canonical primary output
+031,S3.09,supplement,Distressing dimension,Impaired Control and Cognition,ASC11.ICC,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F and preserve nominal versus q distinction
+032,S3.10,supplement,Distressing dimension,Anxiety,ASC11.ANX,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F
+033,S3.11,supplement,Perceptual driver table,"AVS EI CI",ASC11.DRIVER.PERCEPT,Derived C1 mean difference CI dz p and q view,BH across all 11,0,Present,Regenerate view from canonical primary output
+034,S3.12,supplement,Perceptual dimension,Audio-Visual Synesthesia,ASC11.AVS,B01 plus B03 plus B05 plus joint B04,BH across all 11 by test type,Outcome bundle plus 1 joint BF,Registered omnibus and joint BF missing,Adopt registered F and joint-order BF
+035,S3.13,supplement,Perceptual dimension,Elementary Imagery,ASC11.EI,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F
+036,S3.14,supplement,Perceptual dimension,Complex Imagery,ASC11.CI,B01 plus B03 plus B05,BH across all 11 by test type,Outcome bundle,Registered omnibus missing,Adopt registered F
+037,S3.15,supplement,Fine-grained contribution summary,11D contributions to 3D,ASC11.CONTRIBUTION,Arithmetic and content-based descriptive synthesis,None,0,Present,Validate deterministic arithmetic only
+038,S3.16,supplement,Cross-study context,Six profiles,ASC11.CROSSSTUDY,Descriptive overlay without inferential comparison,None,0,Present,Retain descriptive scope
+039,S4.00,supplement,Pictograph methods,Scoring and analytic configuration,PICTO.METHODS,Scoring seed permutation bootstrap model and family contracts,Exploratory q,0,Missing canonical source,Adopt pipeline and validation contracts
+040,S4.01,supplement,Composite correspondence,Three pictographs by three composites,PICTO.COMPOSITE,Pooled change within-person sensitivity and three Positive rank-partials,"BH across 9 9 and 3",21,Missing canonical source,Adopt candidate output
+041,S4.02,supplement,Fine-grained correspondence,Subscales and items,PICTO.FINE,Pooled change 33 subscale and 126 item plus 33 within-person,"BH across 33 126 and 33",192,Missing canonical source,Adopt candidate output
+042,S4.03,supplement,Mapping specificity,Composite and subscale targets,PICTO.SPECIFICITY,42 symmetry-change correlations plus 42 interaction models with three tests each,BH by target family and estimand,168,Missing canonical source,Adopt candidate output
+043,S4.04,supplement,Complete self inventory,Three self measures,SELF.COMPLETE_VIEW,Reuse B01 plus B03 outputs; no recomputation,Self family of 3,0,Table absent,Generate compact view after canonical adoption and text approval
+044,S5.00,supplement,Tracer task and reduction,Peak and AUC,TRACER.SCORING,Deterministic reconstruction and reference checks,None,0,Present,Retain
+045,S5.01,supplement,Tracer contrasts,11 peak and 11 AUC outcomes,TRACER.CONTRASTS,Two paired t contrasts per outcome with CI dz p and q,BH separately by summary and contrast,44,Present,Retain canonical rows
+046,S5.01A,supplement,Tracer omnibuses,11 peak and 11 AUC outcomes,TRACER.OMNIBUS,Registered order-adjusted partial F with p q and partial eta squared,BH separately for peak and AUC,22,Missing canonical registered model,Adopt registered F and generate compact table
+047,S5.02,supplement,ASC tracer correspondence,Questionnaire peak and AUC profiles,TRACER.CORRESPONDENCE,Descriptive correspondence only,None,0,Present,Exclude pooled repeated-observation inference
+048,S6,supplement,Reproducibility,Entry point outputs map environment and commit,REPRO.MAP,No statistical test,None,0,Partially present,Add manuscript statistic map and final commit

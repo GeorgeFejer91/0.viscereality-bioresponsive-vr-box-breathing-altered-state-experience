@@ -268,3 +268,11 @@ The user's instruction authorizes the substance of the selected hierarchy and co
   boxes, or fatal errors. Every page affected by A1--A7 was rendered and visually
   verified. Zenodo and final OSF-commit placeholders remain expected blockers for
   final-mode packaging.
+
+## 2026-08-23 - Parsimonious OSF statistics pipeline handoff
+
+- `for-ai/statistical-audit/OSF_PARSIMONIOUS_STATISTICS_PIPELINE_SPEC.md` now defines the complete OSF maintainer target: a 39-outcome non-PLV registered engine, the three registered joint-order Bayes factors, the manuscript-facing exploratory scope, compact output schemas, validation contracts, and the adoption/replay sequence.
+- `for-ai/statistical-audit/OSF_PIPELINE_SEGMENT_CHECKLIST.csv` provides a 48-row chronological main-and-supplement audit sheet with stable segment IDs, compute-once keys, expected test scope, current OSF state, and required maintainer action.
+- The handoff keeps PLV frozen, prohibits non-PLV inference in the eight excluded participants, and distinguishes required manuscript-supporting tests from optional OSF-only extensions. Tracer Bayes factors, pooled repeated-observation ASC--tracer correlations, extra blinding diagnostics, tracer moderation extensions, and unreported item-level pictograph expansions are outside the required reviewer-facing scope.
+- The preferred OSF architecture extends the existing registry and numbered scripts rather than creating outcome-specific scripts. The existing 39-row primary-family CSV becomes the canonical registered frequentist table after its mixed-model omnibus fields are superseded; a three-row joint-order Bayesian output, compact blinding output, five pictograph outputs, and a manuscript-statistic map complete the missing machine-readable layer.
+- No manuscript, supplement, figure, data, or authoritative OSF file was changed for this handoff.

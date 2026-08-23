@@ -12,6 +12,7 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] Detailed 11D-ASC statistics are confined to Supplementary S3.
 - [x] Main Results use 3D-ASCr as the compact altered-state summary.
 - [x] Stepwise directional Bayes factors are not presented as the registered joint-order test.
+- [x] Created a complete parsimonious OSF pipeline specification and 48-row chronological segment audit under `for-ai/statistical-audit/`.
 - [ ] Record the final authoritative reproducibility-repository commit hash.
 - [ ] Confirm every manuscript statistic has one authoritative output cell or documented deterministic derivation.
 - [ ] Confirm no `for-ai/` candidate output is included in the submission package.

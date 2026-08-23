@@ -4,6 +4,10 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-23
 
+- Added `OSF_PARSIMONIOUS_STATISTICS_PIPELINE_SPEC.md`, a comprehensive OSF maintainer handoff that defines the common `N=39` data contract, exact registered frequentist and Bayesian estimands, multiplicity families, manuscript-facing exploratory analyses, chronological main/supplement mapping, output schemas, validation contracts, exclusions, and adoption sequence while keeping PLV frozen.
+- Added `OSF_PIPELINE_SEGMENT_CHECKLIST.csv`, a machine-readable 48-row chronology for auditing every main and supplementary segment against the OSF scripts and outputs without recomputing repeated statistics.
+- Updated the internal index and project state. No submission-facing or authoritative research artifact was modified.
+
 - Implemented explicitly approved statistical-text Items A1--A7 through seven
   separately pushed commits: added six 3D-ASCr planned-contrast Bayes factors;
   qualified the smaller Distressing effect; standardized the multiplicity rule;

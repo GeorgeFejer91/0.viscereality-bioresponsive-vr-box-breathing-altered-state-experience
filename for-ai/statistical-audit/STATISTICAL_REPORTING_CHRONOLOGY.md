@@ -6,6 +6,8 @@ Last updated: 2026-08-23
 
 This is the running structural inventory used to reconcile manuscript reporting with the authoritative analysis software and outputs. Segment identifiers are stable even when LaTeX line numbers change.
 
+The implementation-facing OSF handoff is `OSF_PARSIMONIOUS_STATISTICS_PIPELINE_SPEC.md`; its machine-readable segment audit is `OSF_PIPELINE_SEGMENT_CHECKLIST.csv`. Those files define the compute-once test bundles, expected counts, output schemas, and maintainer adoption sequence corresponding to this chronology.
+
 - `LOCKED`: reported values have an identified authoritative output source.
 - `TEXT PENDING`: source output exists, but approved manuscript wording still awaits upstream regeneration or exact approval.
 - `ADOPTION REQUIRED`: a candidate implementation exists only under `for-ai/` and must be adopted into the authoritative repository.
