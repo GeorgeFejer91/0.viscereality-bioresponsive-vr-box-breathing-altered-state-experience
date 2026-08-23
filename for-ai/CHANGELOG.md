@@ -130,6 +130,10 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-23
 
+- Recorded the selected pictographic-measure reporting hierarchy: disclose all three as SVG recreations with directly controllable graded visual properties; identify Small Self as an ad hoc item sourced from Vidal without implying ongoing validation by either team; place the complete multiplicity-corrected pictograph--ASC analysis in a dedicated supplementary segment; and retain only a concise construct-linked exploratory synthesis in the main article. Temporary read-only analyses found strong pooled-VR SFoRC and Small Self correspondence with Positive Effects but no family-corrected symmetric-minus-asymmetric association.
+
+- Recorded the project-wide terminology rule that hypothesized or observed increases in positively valenced experience must not be described as ``biasing'' experience. Use neutral wording such as ``increase'' or ``enhance'' instead, while retaining ``bias'' where it has a genuine technical meaning.
+
 - Implemented the approved full-page embedding for portrait Supplementary Figure S2. The figure now spans the full text width on a dedicated page with locally reduced top and bottom margins; the complete caption and page footer remain on the same page. Rebuilt the 11-page supplement with two final pdfLaTeX passes and visually verified the figure page without clipping, overflow, unresolved references, or oversized-float warnings.
 
 - Recorded the project-wide instruction to use Springer Nature's built-in `lineno` document-class option in both the main manuscript and active supplement during submission review.

@@ -105,6 +105,7 @@ Conflicts or ambiguities must be surfaced to the user. Do not silently weaken or
 9. Preserve exact repetition when methodological clarity, defined terminology, instrument names, condition labels, statistical labels, or other technical conventions require consistent wording. Do not replace a precise established term merely to create superficial variety.
 10. State result interpretations directly. Do not introduce them with self-narrating labels such as ``in plain terms.''
 11. When an order test is not statistically reliable, write that there was no reliable evidence that the outcome or result was influenced by the order in which participants underwent the three conditions. Do not convert a nonsignificant order test into a categorical claim that order had no influence.
+12. When describing a hypothesized or observed increase in positively valenced experience, do not use ``bias'' or ``biased.'' Use neutral wording such as ``increase,'' ``enhance,'' or ``produce stronger positively valenced experiences,'' according to the evidence and context. Reserve ``bias'' for genuine technical meanings, such as an explicitly directional model parameter or systematic measurement bias.
 
 ## Table formatting
 
