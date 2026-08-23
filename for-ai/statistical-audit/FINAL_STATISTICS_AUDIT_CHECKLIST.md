@@ -46,7 +46,7 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 
 - [x] User selected the less-conservative preregistration-first approach in principle.
 - [x] Intended rule: nominal `p` values govern preregistered planned contrasts; FDR governs exploratory and post-hoc screens; adjusted `q` values remain visible as sensitivity information for preregistered multi-outcome families.
-- [ ] Obtain exact item-by-item approval for the revised main Methods, main Results, S3 orientation, ICC block, and S3 Distressing summary wording.
+- [x] Obtain and apply exact item-by-item approval for the main multiplicity rule and the ICC interpretation.
 - [ ] Apply the approved rule consistently to every confirmatory and exploratory conclusion.
 - [ ] Verify that no sentence switches between nominal and adjusted thresholds opportunistically.
 
@@ -60,12 +60,12 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] Incorrect claim that Changed Meaning of Percepts was unaffected removed.
 - [x] Confidence-weighted blinding index retained with limited emphasis.
 - [ ] Finalize the compact 3D-ASCr Bayesian paragraph after RM-ANCOVA adoption.
-- [ ] Add the six source-locked 3D-ASCr planned-contrast Bayes factors and plain-language model comparisons.
-- [ ] Define `naive` as recruitment-naive, not screened absence of prior VR, meditation, breathwork, or psychedelic experience, after exact wording approval.
+- [x] Add the six source-locked 3D-ASCr planned-contrast Bayes factors and plain-language model comparisons.
+- [x] Define `naive` as recruitment-naive, not screened absence of prior VR, meditation, breathwork, or psychedelic experience.
 - [ ] Decide whether exploratory order statistics remain in the main Results or move to the supplement.
 - [ ] Confirm abstract, Results, Discussion, and Conclusion make the same strength of claim.
 - [ ] Remove or source-lock the repeated `no adverse events across 47` claim.
-- [ ] Remove equivalence-like cross-study wording from the unqualified final Discussion and Conclusion.
+- [x] Remove equivalence-like cross-study wording from the unqualified final Discussion and Conclusion.
 
 ## F. Supplement audit
 
@@ -83,7 +83,7 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [ ] Sync the S4 pictograph-analysis outputs into the authoritative reproducibility repository.
 - [ ] Replace S3 mixed-model omnibus statistics after RM-ANCOVA adoption.
 - [ ] Replace S3 stepwise directional results after joint-order BF adoption.
-- [ ] Reconcile the supplement's four-study prose and five-dataset caption with the current six-profile cross-study figure.
+- [x] Reconcile the supplement's four-study prose and five-dataset caption with the current six-profile cross-study figure and final Fincham citation.
 
 ## G. Numerical and build verification
 

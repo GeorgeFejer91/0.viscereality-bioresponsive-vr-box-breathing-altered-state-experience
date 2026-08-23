@@ -518,3 +518,13 @@ Consequences:
 - The pictograph--ASC pipeline remains an internal candidate until OSF adoption.
 - Unsupported safety claims and stale cross-study profile counts require exact
   submission-facing correction proposals before editing.
+
+Implementation update: approved Items A1--A7 are applied and source-verified.
+The selected multiplicity hierarchy is now explicit in main Methods; ICC is
+qualified in S3; all six 3D planned-contrast Bayes factors are in the main Results;
+recruitment-naive is defined; the six-profile cross-study text and final Fincham
+citation are synchronized; and the final Discussion and Conclusion use
+within-study claim strength. The separate opening-Discussion safety sentence was
+not part of A7 and remains pending exact Item A8. The S3.4 Distressing synthesis
+also remains pending exact Item A9 so it can state the ICC nominal-versus-FDR
+distinction consistently with the corrected detailed block.

@@ -240,3 +240,31 @@ The user's instruction authorizes the substance of the selected hierarchy and co
 - The supplementary cross-study prose is stale relative to the current six-profile figure because it omits Fincham and calls the figure a five-dataset comparison.
 - The repeated claim of no adverse events among all 47 participants has no identified source in the active manuscript or OSF result outputs. It requires a source-locked safety record or removal after exact item approval.
 - Submission-facing corrections remain blocked by the item-by-item wording gate. Candidate RM-ANCOVA and joint-order values remain additionally blocked by authoritative OSF adoption.
+
+## 2026-08-23 - Approved statistical-text Items A1--A7
+
+- The user explicitly approved A1--A7. Each item was applied only after its
+  required GitHub checkpoint, committed separately, and pushed to `main`.
+- The main article now contains all six source-locked 3D-ASCr planned-contrast
+  Bayes factors, qualifies the smaller Distressing effect, states the selected
+  multiplicity hierarchy, and defines recruitment-naive.
+- Supplementary S3 now interprets ICC as weak nominal evidence that is not
+  FDR-robust, with inconclusive Bayesian evidence.
+- The cross-study text and caption now identify the present profile plus five
+  comparison datasets, and the bibliography uses the final Fincham et al. 2026
+  Frontiers in Psychology record.
+- The final Discussion paragraph and Conclusion no longer claim cross-study
+  equivalence, superior tolerability, clinical benefit, practice efficacy, or an
+  unsupported absence of adverse events.
+- A separate opening-Discussion sentence still says `no adverse events across 47
+  tested participants`. It was outside A7's approved locations and remains
+  unapplied as exact Item A8.
+- The S3.4 Distressing summary still states only that neither constituent
+  survives FDR. Exact Item A9 would align it with the approved hierarchy by
+  distinguishing ICC's weak nominal result from its non-robust FDR sensitivity
+  result and Anxiety's nominally inconclusive contrast.
+- The canonical review PDFs compile to 50 main pages and 18 supplementary pages.
+  Logs contain no undefined citations or references, duplicate labels, overfull
+  boxes, or fatal errors. Every page affected by A1--A7 was rendered and visually
+  verified. Zenodo and final OSF-commit placeholders remain expected blockers for
+  final-mode packaging.

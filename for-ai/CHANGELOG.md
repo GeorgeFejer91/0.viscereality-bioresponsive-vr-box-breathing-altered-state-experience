@@ -4,6 +4,24 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-23
 
+- Implemented explicitly approved statistical-text Items A1--A7 through seven
+  separately pushed commits: added six 3D-ASCr planned-contrast Bayes factors;
+  qualified the smaller Distressing effect; standardized the multiplicity rule;
+  corrected the ICC interpretation; defined recruitment-naive; synchronized the
+  six-profile cross-study text and final Fincham 2026 citation; and calibrated the
+  final Discussion and Conclusion claims.
+- Rebuilt the canonical review outputs as a 50-page manuscript and 18-page
+  supplement. Final logs contain no undefined citations or references, duplicate
+  labels, overfull boxes, or fatal errors. Rendered and visually verified every
+  page changed by A1--A7, including both Fincham bibliography entries.
+- Isolated one additional unsupported `no adverse events across 47 tested
+  participants` sentence in the opening Discussion paragraph. It was not part of
+  A7's exact approved locations, so it remains unchanged as pending Item A8.
+- Isolated the remaining S3.4 multiplicity-summary mismatch as pending Item A9:
+  the detailed ICC block now distinguishes nominal and FDR-sensitive evidence,
+  but the synthesis still reports only that neither distress subscale survives
+  correction.
+
 - Verified that the Fincham Airways to Alteration study shown as 2026 in the
   cross-study figure has a final Frontiers in Psychology publication (volume 17,
   article 1851882; DOI `10.3389/fpsyg.2026.1851882`) and updated the internal A6

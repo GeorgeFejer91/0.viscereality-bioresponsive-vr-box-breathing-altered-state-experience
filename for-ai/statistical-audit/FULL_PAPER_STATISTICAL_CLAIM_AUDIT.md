@@ -2,6 +2,23 @@
 
 Last audited: 2026-08-23
 
+## Post-approval implementation update
+
+Approved Items A1--A7 are implemented. The main article now reports all six
+3D-ASCr planned-contrast Bayes factors, distinguishes the smaller Distressing
+effect, states the selected multiplicity hierarchy, and defines
+recruitment-naive. S3 now qualifies ICC using nominal evidence, FDR sensitivity,
+and Bayesian uncertainty; the cross-study prose, six-profile caption, and final
+Fincham citation agree; and the final Discussion and Conclusion no longer make
+unsupported equivalence, tolerability, adverse-event, or practice-efficacy
+claims. One separate Discussion-opening sentence still says that no adverse
+events occurred across 47 tested participants. It was outside A7's exact approved
+locations and remains pending as Item A8. The S3 Distressing summary also still
+describes correction status without the material ICC nominal-versus-FDR
+distinction and remains pending as Item A9. The RM-ANCOVA, joint-order Bayes,
+compact self/tracer tables, and OSF source synchronization remain open as
+described below.
+
 ## Executive verdict
 
 The paper's broad result pattern is stable and mostly supported: VR is associated
@@ -16,13 +33,10 @@ The package is not yet statistically final. Five issues prevent that conclusion:
    likelihood-ratio pipeline instead of the registered order-adjusted RM-ANCOVA.
 2. Supplementary S3 reports stepwise directional Bayes factors instead of the
    registered joint ordered Bayes factor for EU, BS, and AVS.
-3. The main 3D-ASCr section omits all six available Bayesian planned contrasts,
-   even though these are the Bayesian counterparts of the paper's confirmatory
-   frequentist contrasts.
-4. Complete registered condition/Bayesian results for the three self measures
+3. Complete registered condition/Bayesian results for the three self measures
    and registered omnibus condition tests for the tracer peak/AUC outcomes are
    not reported in the paper or supplement.
-5. Supplementary S4 is numerically reproducible only through an internal
+4. Supplementary S4 is numerically reproducible only through an internal
    candidate pipeline, not the OSF package.
 
 The current main/supplement multiplicity hierarchy is also inconsistent. Main

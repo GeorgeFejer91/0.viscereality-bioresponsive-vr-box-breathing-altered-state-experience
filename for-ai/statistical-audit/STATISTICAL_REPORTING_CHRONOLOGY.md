@@ -82,7 +82,7 @@ Core authoritative sources:
 - Status: `LOCKED` under the current mixed-model source; omnibus statistics must be replaced after registered RM-ANCOVA adoption.
 - Executed registered candidates: Positive `F(2,75)=7.56`, Distressing `F(2,75)=4.64`, Perceptual `F(2,75)=19.63`; all preserve the current substantive decisions.
 - Interpretive rule: Perceptual and Positive evidence is clear; Distressing is smaller and its modest Bayesian support must not be overstated.
-- Missing reporting: all six source-locked Bayesian planned contrasts. Pooled VR versus control: Perceptual `BF10=1178.41`, Positive `BF10=12.96`, Distressing `BF10=3.02`. Symmetric versus asymmetric: Perceptual `BF01=3.87`, Positive `BF01=5.07`, Distressing `BF01=5.66`.
+- Planned Bayesian reporting: all six source-locked contrasts are now in the main paragraph. Pooled VR versus control: Perceptual `BF10=1178.41`, Positive `BF10=12.96`, Distressing `BF10=3.02`. Symmetric versus asymmetric: Perceptual `BF01=3.87`, Positive `BF01=5.07`, Distressing `BF01=5.66`.
 
 ### M07 — 11D-ASC referral
 
@@ -122,7 +122,7 @@ Core authoritative sources:
 ### S3.00 — 11D-ASC family orientation
 
 - Reports: eleven-dimension family, three 3D-ASCr groupings, descriptive driver ranking, and multiplicity definition.
-- Status: `TEXT PENDING` for the final planned-versus-exploratory multiplicity wording.
+- Status: main Methods now states the selected planned-versus-exploratory hierarchy; a final S3-wide sentence audit remains open.
 
 ### S3.01 — Positive Effects driver table
 
@@ -141,7 +141,7 @@ Core authoritative sources:
 ### S3.08 — Distressing Effects driver table
 
 - Ordered rows: ICC, ANX.
-- Status: `LOCKED` numerically; interpretation depends on final multiplicity wording.
+- Status: `LOCKED` numerically; the ICC block now distinguishes nominal evidence, FDR sensitivity, and inconclusive Bayesian evidence.
 
 ### S3.09–S3.10 — Distressing constituent blocks
 
@@ -167,7 +167,7 @@ Core authoritative sources:
 
 ### S3.16 — Cross-study context
 
-- Reports: raw-profile comparison across five datasets and subscale-level qualitative context.
+- Reports: the present profile plus five comparison datasets and subscale-level qualitative context.
 - Status: `DESCRIPTIVE` only. No cross-study inferential claim is permitted.
 
 ### S4.00 — Pictograph scoring and exploratory model
@@ -230,5 +230,5 @@ Core authoritative sources:
 5. Replace manuscript mixed-model omnibus statistics with source-locked RM-ANCOVA values.
 6. Replace stepwise directional interpretation with source-locked joint-order Bayes factors for EU, BS, and AVS.
 7. Re-run the full segment-by-segment audit before submission.
-8. Add the source-locked 3D planned Bayes factors, compact self-condition table, and tracer omnibus table after the applicable approval and adoption gates.
-9. Reconcile the cross-study prose/caption with the current six-profile figure and resolve unsupported safety/equivalence-like claims.
+8. Add the compact self-condition and tracer omnibus tables after the applicable approval and adoption gates; the source-locked 3D planned Bayes factors are complete.
+9. Resolve the one remaining unsupported Discussion-opening safety claim; the cross-study prose/caption and final Discussion/Conclusion claims are reconciled.

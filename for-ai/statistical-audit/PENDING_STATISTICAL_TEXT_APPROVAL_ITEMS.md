@@ -2,11 +2,22 @@
 
 Prepared: 2026-08-23
 
-These items are independently approvable. They concern submission-facing text
-and have not been applied. Items A1--A7 use current authoritative values or
-correct unsupported wording and can be approved before OSF regeneration. Items
-B1--B3 remain blocked by authoritative source adoption even if their substance is
-approved.
+Items A1--A7 were explicitly approved on 2026-08-23 and have been applied,
+committed, pushed, compiled, and visually verified. Their implementation commits
+are recorded below. Item A8 is a newly isolated, independently approvable safety
+sentence that was outside A7's approved locations and therefore remains
+unapplied. Items B1--B3 remain blocked by authoritative source adoption even
+where their substance is already approved.
+
+Implementation commits:
+
+- A1: `e5d7e1e`
+- A2: `31c7e67`
+- A3: `7c5eef0`
+- A4: `4332f91`
+- A5: `a8d0ab0`
+- A6: `59151a6`
+- A7: `a915c32`
 
 ## Item A1: add all six 3D-ASCr planned-contrast Bayes factors
 
@@ -338,6 +349,97 @@ statement can be proposed rather than removed.
 
 Verification: confirm the Abstract, Discussion opening, final Discussion, and
 Conclusion use the same claim strength.
+
+## Item A8: remove the remaining unsupported Discussion-opening safety claim
+
+Status: pending exact approval; not applied.
+
+File and location: `main.tex`, opening paragraph of Discussion.
+
+Current wording:
+
+> Relative to audio-guided box breathing in the dark-screen control, the two VR
+> conditions improved breathing adherence, shifted spatial self-experience toward
+> a more expanded frame of reference, and produced an altered-state profile in
+> which perceptual and positive effects outweighed mild distressing effects, with
+> no adverse events across 47 tested participants.
+
+Proposed replacement:
+
+> Relative to audio-guided box breathing in the dark-screen control, the two VR
+> conditions were associated with closer synchronization to the instructed
+> rhythm, a more spatially extended self-rating, and higher Perceptual, Positive,
+> and smaller Distressing Effects.
+
+Rationale: A7 removed the same unsupported safety claim from the final Discussion
+and Conclusion, but this separate Discussion-opening sentence was not included in
+A7's exact approved locations. No source-locked safety-accounting record has been
+identified. The replacement also avoids presenting the separately scored
+composites as if their relative magnitudes were directly tested.
+
+Consequence: makes the opening Discussion summary agree with the source-supported
+Conclusion and removes the final active `N=47` outcome claim outside participant
+flow and PLV screening.
+
+Risk/dependency: if a source-locked adverse-event record exists, a separate exact
+safety statement can be proposed instead of removing the claim.
+
+Verification: search the active article and supplement for `adverse events`,
+`outweighed`, and outcome claims based on 47 participants; compile and inspect the
+Discussion page.
+
+## Item A9: make the S3 Distressing summary follow the approved multiplicity rule
+
+Status: pending exact approval; not applied.
+
+File and location: `supplementary/main.tex`, S3.4, second paragraph.
+
+Current wording:
+
+> The smaller Distressing Effects increase was distributed across Impaired
+> Control and Cognition and Anxiety, with Impaired Control and Cognition making
+> the somewhat larger contribution. Their items assess experiences such as
+> diminished personal agency, difficulty making decisions or sustaining a
+> coherent thought, feelings of paralysis or isolation, unexplained fear,
+> perceived threat, strangely altered surroundings, and anticipation that
+> something harmful might occur. Both subscales were descriptively higher during
+> VR, but neither remained significant after correction across the 11 dimensions,
+> and their Bayesian results did not clearly distinguish effect from null models.
+> The significant composite result is therefore best interpreted as the
+> accumulation of two modest and compatible distress-related tendencies rather
+> than as a pronounced or clearly localized adverse effect.
+
+Proposed replacement:
+
+> The smaller Distressing Effects increase was distributed across Impaired
+> Control and Cognition and Anxiety, with Impaired Control and Cognition making
+> the somewhat larger contribution. Their items assess experiences such as
+> diminished personal agency, difficulty making decisions or sustaining a
+> coherent thought, feelings of paralysis or isolation, unexplained fear,
+> perceived threat, strangely altered surroundings, and anticipation that
+> something harmful might occur. Impaired Control and Cognition provided weak
+> nominal evidence for a pooled-VR increase, but this did not survive the
+> 11-dimension sensitivity correction; Anxiety did not provide nominal evidence
+> of a pooled-VR difference. The Bayesian results for both subscales did not
+> clearly distinguish effect from null models. The significant composite result
+> is therefore best interpreted as the accumulation of two modest and compatible
+> distress-related tendencies rather than as a pronounced or clearly localized
+> adverse effect.
+
+Rationale: the approved hierarchy treats nominal $p$ as primary for the
+preregistered planned contrast and $q$ as sensitivity information. The current
+summary describes only the FDR result and therefore obscures the ICC distinction
+now reported correctly in its detailed block ($p=.038$, $q=.060$,
+$\mathrm{BF}_{10}=1.35$). Anxiety remains nominally inconclusive ($p=.063$).
+
+Consequence: makes the S3 synthesis agree with the approved Methods rule and the
+corrected ICC paragraph without strengthening the substantive distress claim.
+
+Risk/dependency: none for the planned contrasts. The separate omnibus statistics
+still require B1 after OSF RM-ANCOVA adoption.
+
+Verification: compare the S3 driver table and both detailed blocks, compile, and
+inspect the S3.4 page.
 
 ## Item B1: registered non-PLV RM-ANCOVA replacement
 
