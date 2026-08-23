@@ -58,3 +58,23 @@ Every future script added here must be documented in this registry with its purp
 Scripts that change project files must default to a dry run when practical. A script must not change textual content unless every resulting text change was presented as a numbered recommendation and explicitly approved item by item. Approval for one item cannot be treated as approval for other script-generated changes.
 
 No script may mutate `https://github.com/GeorgeFejer91/0_OSF_reproducability_package`, its original data, analysis pipelines, statistical outputs, figure-generation mechanisms, generated figures, or source-derived copies in this repository. Validation scripts must operate read-only or use isolated temporary copies and must never overwrite canonical artifacts.
+
+### `candidate_registered_analysis_pipeline.R`
+
+Internal, non-authoritative candidate implementation of the two registered analyses that still require maintainer adoption in `0_OSF_reproducability_package`:
+
+- the order-adjusted repeated-measures ANCOVA condition test for every registered outcome family; and
+- the joint ordered Bayes factor comparing `symmetric > asymmetric > dark-screen control` with equal condition means for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.
+
+The script reads the authoritative master dataset but refuses to write inside the authoritative repository. Dry run is the default. `--write` saves candidate CSVs and session information only under `for-ai/statistical-audit/candidate-registered-results/`. These candidate files must not be cited in the manuscript, packaged for submission, or described as authoritative. The reproducibility-repository maintainer must review, port, run, and publish the implementation before its results can replace the currently reported statistics.
+
+```powershell
+# Dry run; prints candidate results without writing files.
+Rscript .\for-ai\scripts\candidate_registered_analysis_pipeline.R `
+  --package-root C:\path\to\0_OSF_reproducability_package
+
+# Write internal candidate outputs under for-ai/ only.
+Rscript .\for-ai\scripts\candidate_registered_analysis_pipeline.R `
+  --package-root C:\path\to\0_OSF_reproducability_package `
+  --write
+```
