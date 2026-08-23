@@ -487,6 +487,8 @@ Decisions:
 - Do not foreground the JASP-to-R software substitution when the statistical model, hypothesis, prior, and estimand are reproduced.
 - Preserve ``naive'' only in the recruitment-naive sense defined in `GLOBAL_INSTRUCTIONS.md`, not as a claim that prior experience was screened or absent.
 - Use a preregistration-first, less-conservative multiplicity hierarchy: nominal $p$ values govern preregistered planned contrasts; FDR governs exploratory and post-hoc screens; adjusted $q$ values remain visible as sensitivity information for preregistered multi-outcome families. Exact submission-facing replacements remain subject to item-by-item wording approval.
+
+Execution record: the internal registered RM-ANCOVA candidate was run on the locked authoritative `N=39` master dataset. All 40 nominal and all 40 within-family FDR decisions match the current mixed-effects pipeline, and an independent statsmodels calculation reproduced the candidate `F` statistics to numerical precision. The registered frequentist model is therefore the selected final pipeline after OSF adoption. The joint-order Bayes factor remains pending locked Linux x86-64 execution because the native-Windows R backend crashes before analysis.
 - Do not claim that a cross-sectional or change-score association is causal.
 - Report that pooled VR-related SFoRC and Small Self changes covary with Positive Effects, but that no symmetric-minus-asymmetric contrast correlation survives family correction.
 - Treat condition-interaction findings cautiously and report both the planned contrasts and family correction rather than foregrounding an isolated omnibus result.

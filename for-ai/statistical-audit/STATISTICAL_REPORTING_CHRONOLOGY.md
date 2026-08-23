@@ -42,6 +42,8 @@ Core authoritative sources:
 - Reports: omnibus condition model, two preregistered paired contrasts, robustness tests, multiplicity policy, Bayesian omnibus and planned contrasts, directional hypotheses, blinding models, and exploratory models.
 - Status: `ADOPTION REQUIRED` for the omnibus RM-ANCOVA and joint ordered Bayes test; otherwise `LOCKED`.
 - Candidate implementation: `for-ai/scripts/candidate_registered_analysis_pipeline.R`.
+- Executed frequentist candidate: `for-ai/scripts/candidate_registered_rm_ancova.py` and `for-ai/statistical-audit/candidate-registered-results/candidate_registered_rm_ancova.csv`.
+- Decision audit: all 40 nominal and all 40 FDR decisions match the current mixed-effects pipeline. Authoritative adoption is still required before manuscript replacement.
 - Required OSF adoption: replace the mixed-effects omnibus with the registered order-adjusted repeated-measures ANCOVA; replace the stepwise directional substitute with a joint `symmetric > asymmetric > dark-screen control` Bayes factor for EU, BS, and AVS.
 
 ### M02 — Sample and exclusions
@@ -78,6 +80,7 @@ Core authoritative sources:
 - Reports: three condition means and SDs for Positive, Distressing, and Perceptual Effects; pooled-VR `t`, `p`, `d_z`, raw-scale change, and common-language effect; symmetry summary; three omnibus condition statistics; three omnibus Bayes factors.
 - Source: primary family summary and Bayesian omnibus summary.
 - Status: `LOCKED` under the current mixed-model source; omnibus statistics must be replaced after registered RM-ANCOVA adoption.
+- Executed registered candidates: Positive `F(2,75)=7.56`, Distressing `F(2,75)=4.64`, Perceptual `F(2,75)=19.63`; all preserve the current substantive decisions.
 - Interpretive rule: Perceptual and Positive evidence is clear; Distressing is smaller and its modest Bayesian support must not be overstated.
 
 ### M07 — 11D-ASC referral
@@ -209,11 +212,10 @@ Core authoritative sources:
 
 ## Required reconciliation sequence
 
-1. Run the internal candidate registered-analysis script in a locked R/BayesFactor environment.
-2. Review the RM-ANCOVA model matrix and joint-order posterior coefficient mapping.
-3. Confirm that the registered outputs preserve the current substantive decisions.
-4. Have the authoritative repository maintainer adopt the implementation and regenerate canonical outputs.
-5. Record the authoritative commit hash and output paths.
-6. Replace manuscript mixed-model omnibus statistics with source-locked RM-ANCOVA values.
-7. Replace stepwise directional interpretation with source-locked joint-order Bayes factors for EU, BS, and AVS.
-8. Re-run the full segment-by-segment audit below before submission.
+1. Have the authoritative repository maintainer review and adopt the executed RM-ANCOVA candidate; its 40/40 decision audit is complete.
+2. Run the joint-order candidate in the locked Linux x86-64 R/BayesFactor environment.
+3. Validate the joint-order posterior coefficient mapping, prior order probability, and Monte Carlo error.
+4. Regenerate canonical OSF outputs and record the authoritative commit hash and output paths.
+5. Replace manuscript mixed-model omnibus statistics with source-locked RM-ANCOVA values.
+6. Replace stepwise directional interpretation with source-locked joint-order Bayes factors for EU, BS, and AVS.
+7. Re-run the full segment-by-segment audit before submission.

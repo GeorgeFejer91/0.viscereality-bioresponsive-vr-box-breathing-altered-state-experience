@@ -1,0 +1,11 @@
+INTERNAL CANDIDATE OUTPUT ONLY
+These files are not authoritative and must not be cited or submitted.
+The implementation must be adopted, reviewed, and regenerated in:
+https://github.com/GeorgeFejer91/0_OSF_reproducability_package
+Authoritative input: C:\Users\gyorg\Desktop\0_OSF_reproducability_package\3.Results\1.MasterDataset\01_master_analysis_dataset.csv
+Input SHA-256: 3e91ee750f60fb86433e4a96f3d148e3b87cfebc6204c75775cf1a8300947a57
+Included N: 39
+Registered model: participant blocking + numeric block position + three-level condition
+Current-vs-candidate nominal decisions unchanged: 40/40
+Current-vs-candidate FDR decisions unchanged: 40/40
+Windows R/BayesFactor remains unavailable; the joint ordered Bayes test is still pending.

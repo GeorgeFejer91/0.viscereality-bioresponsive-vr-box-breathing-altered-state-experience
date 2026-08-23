@@ -1,0 +1,5 @@
+Python: 3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:38:32) [MSC v.1944 64 bit (AMD64)]
+Platform: Windows-11-10.0.26200-SP0
+NumPy: 2.4.2
+pandas: 3.0.1
+SciPy: 1.17.0

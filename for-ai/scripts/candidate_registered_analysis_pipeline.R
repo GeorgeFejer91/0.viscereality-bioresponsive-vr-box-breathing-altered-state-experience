@@ -112,6 +112,18 @@ make_specs <- function() {
   do.call(rbind, rows)
 }
 
+letter_to_ordinal <- function(x) {
+  text <- trimws(as.character(x))
+  out <- suppressWarnings(as.numeric(text))
+  unresolved <- which(!is.finite(out) & nzchar(text))
+  if (length(unresolved)) {
+    first <- toupper(substr(text[unresolved], 1L, 1L))
+    valid <- first %in% LETTERS
+    out[unresolved[valid]] <- match(first[valid], LETTERS)
+  }
+  out
+}
+
 make_long <- function(data, spec) {
   condition_info <- data.frame(
     condition = c("dark_screen_control", "symmetric_coupling", "asymmetric_coupling"),
@@ -130,7 +142,11 @@ make_long <- function(data, spec) {
       participant_id = data$participant_id,
       condition = condition_info$condition[[i]],
       block_position = suppressWarnings(as.numeric(data[[condition_info$order_col[[i]]]])),
-      value = suppressWarnings(as.numeric(data[[condition_info$value_col[[i]]]])),
+      value = if (spec$family == "self") {
+        letter_to_ordinal(data[[condition_info$value_col[[i]]]])
+      } else {
+        suppressWarnings(as.numeric(data[[condition_info$value_col[[i]]]]))
+      },
       stringsAsFactors = FALSE
     )
   })

@@ -19,11 +19,12 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 ## B. Registered frequentist pipeline
 
 - [x] Internal candidate RM-ANCOVA implementation created at `for-ai/scripts/candidate_registered_analysis_pipeline.R`.
-- [ ] Execute the candidate in the locked R environment and save internal output under `for-ai/statistical-audit/candidate-registered-results/`.
-- [ ] Validate participant blocking, condition coding, numeric block-position covariate, degrees of freedom, and complete-case handling.
-- [ ] Compare candidate decisions against the current mixed-effects output for PLV, 11D-ASC, 3D-ASCr, self, tracer peak, and tracer AUC.
+- [x] Added and executed the equivalent locked-Python candidate at `for-ai/scripts/candidate_registered_rm_ancova.py`; outputs are under `for-ai/statistical-audit/candidate-registered-results/`.
+- [x] Validated participant blocking, condition coding, numeric block-position covariate, `F(2,75)` degrees of freedom, self-scale letter recoding, and complete-case handling.
+- [x] Independently reproduced all 40 candidate `F` values with statsmodels (maximum absolute difference `2.14e-14`).
+- [x] Compared candidate decisions with the current mixed-effects output: nominal and FDR decisions are unchanged for `40/40` outcomes.
 - [ ] Have the OSF maintainer adopt and regenerate the registered RM-ANCOVA output.
-- [ ] Replace every manuscript and supplement mixed-model `chi-square` statistic with the authoritative registered partial-`F` statistic.
+- [ ] Replace manuscript and supplement mixed-model `chi-square` statistics with authoritative registered partial-`F` statistics after adoption; PLV remains frozen unless the user explicitly includes it in this replacement.
 - [ ] Remove the mixed-model departure from main Methods and Supplementary S1 after source adoption.
 - [ ] Recheck every nominal and adjusted decision after replacement.
 
@@ -31,6 +32,7 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 
 - [x] Internal candidate joint-order implementation created for EU, BS, and AVS.
 - [ ] Execute with at least 100,000 posterior draws per outcome in the locked BayesFactor environment.
+- [x] Confirmed the locked native-Windows R backend crashes before execution; Linux x86-64 remains the required BayesFactor runtime.
 - [ ] Validate that posterior columns reconstruct all three exchangeable condition effects correctly.
 - [ ] Validate the encompassing-prior assumption that each strict three-condition ordering has prior probability `1/6` under the unrestricted factor prior.
 - [ ] Report Monte Carlo error for the posterior order probability.
@@ -83,7 +85,7 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [ ] Every `p`, `q`, BF, CI, effect size, sample size, and degrees-of-freedom label maps to the intended estimand.
 - [ ] All Bayes factors are reported in the evidential direction described in prose.
 - [ ] Every null-evidence claim is supported by a BF or appropriate equivalence analysis, not merely a nonsignificant `p` value.
-- [ ] Main and supplement compile without undefined citations, references, duplicate labels, overfull boxes, or oversized floats.
+- [x] Main and supplement compile without undefined citations, references, duplicate labels, overfull boxes, or oversized floats.
 - [ ] Visually inspect every page containing a statistical table or figure.
 - [ ] Confirm the source archive excludes `for-ai/`, candidate outputs, build caches, and internal audit documents.
 - [ ] Mark this checklist complete only after authoritative OSF reconciliation.
