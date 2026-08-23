@@ -32,6 +32,7 @@ Figures, statistical results, source data, analysis pipelines, and figure-genera
 - `DECISIONS.md`: durable editorial and workflow decisions with rationale.
 - `CHANGELOG.md`: chronological record of control-plane and material project changes.
 - `HANDOFF_NEXT_SESSION.md`: current completion state, remaining work, dependency order, protected actions, and next-session startup guidance.
+- `FINAL_SUBMISSION_CHECKLIST.md`: checkable local formatting, reproducibility, packaging, and portal-upload gates for the submission-frozen manuscript candidate.
 - `preregistration/`: immutable source registration plus the living commitment and departure crosswalk that must be consulted for preregistration-related work.
 - `scripts/`: orchestration, validation, compilation, packaging, and synchronization scripts.
 

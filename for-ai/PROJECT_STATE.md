@@ -100,6 +100,8 @@ Agents must run `git status --short` at the start of any editing task because th
 
 ## Submission-formatting to-do list
 
+The consolidated checkable tracker is `for-ai/FINAL_SUBMISSION_CHECKLIST.md`. Keep its completed and pending states synchronized with this project-state record after each finalization step.
+
 ### Work now inside this repository
 
 - Audit the main manuscript and active supplement against the live *Virtual Reality* formatting and supplementary-information requirements.
