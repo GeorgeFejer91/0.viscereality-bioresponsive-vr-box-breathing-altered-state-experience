@@ -13,7 +13,7 @@ Last updated: 2026-08-22
 
 - The approved opening of the altered-states Discussion now interprets the three 3D-ASCr dimensions through the fine-grained subscale decomposition and administered item content rather than relisting subscale results.
 - It characterizes Perceptual Effects as elementary visual and cross-modal attribution phenomena with intervention-to-measure overlap, Positive Effects as unity, altered salience, diminished bodily presence, and awe rather than generalized bliss, and Distressing Effects as a diffuse accumulation of modest destabilizing experiences.
-- The paragraph explicitly refers readers to Supplementary Section S3.4 and cites Terhune et al. for the distinction between LSD-induced synaesthesia-like reports and genuine synaesthesia. The corresponding bibliography entry is controlled as a separate approved item.
+- The paragraph explicitly refers readers to Supplementary Section S3.4 and cites Terhune et al. for the distinction between LSD-induced synaesthesia-like reports and genuine synaesthesia. The approved bibliography entry is now implemented and resolves in the compiled article.
 
 The durable next-session handoff is `for-ai/HANDOFF_NEXT_SESSION.md`. Read it after the mandatory bootstrap files and verify it against the current working tree before continuing.
 

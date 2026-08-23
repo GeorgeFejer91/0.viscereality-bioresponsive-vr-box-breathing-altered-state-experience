@@ -6,6 +6,7 @@ This log records control-plane changes and material workflow decisions. It is no
 
 - Recorded the project-wide requirement to commit and successfully push the complete pre-item repository state to GitHub before implementing every separately approved project-text item. Multiple approved items must be implemented serially with a fresh pushed checkpoint before each item, and a failed checkpoint blocks that item's implementation.
 - Pushed pre-Item-1 checkpoint `bb7b7e4` to `origin/main`, then implemented the approved ASC Discussion opening that interprets the three higher-order effects through their pooled item content and refers readers to Supplementary Section S3.4. The separately approved Terhune bibliography entry remains Item 2.
+- Pushed Item 1 as commit `434ac3c`, thereby creating the required pre-Item-2 checkpoint, then implemented the approved Terhune et al. bibliography entry. Recompiled the 53-page main article, confirmed that the new citation and all cross-references resolve without overfull boxes, and visually verified the revised Discussion pages.
 
 ## 2026-08-21
 
