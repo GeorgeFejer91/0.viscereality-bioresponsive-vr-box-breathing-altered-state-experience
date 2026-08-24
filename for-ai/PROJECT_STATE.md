@@ -28,6 +28,8 @@ Agents must run `git status --short` at the start of any editing task because th
 ## Known manuscript status
 
 - As of 2026-08-23, the user requires exact filename identity between active manuscript/supplement `\includegraphics` assets and their canonical reproducibility-pipeline exports. The current active manuscript filenames control synchronization until a deliberate cross-repository rename changes both sides together.
+- As of 2026-08-24, the main article cites ten figures in physical order: `Fig01_study_procedure.pdf` through `Fig06_plv_results.pdf`, `Fig07_results_subjective_self_pictogram_violin_grid.pdf`, `Fig08_3d_ascr_results.pdf`, `Fig09_results_blinding_condensed_summary.pdf`, and `Fig10_cross_study_profiles.pdf`. The supplement cites `FigS01_tracer_schematic.pdf` and `FigS02_tracer_profiles_vertical.pdf`. All 12 cited assets are SHA-256 identical to the canonical reproducibility-package copies.
+- The current canonical review build contains a 51-page manuscript and 16-page Online Resource. The compiled pages containing Figures 7 through 10 and S1 through S2 passed visual inspection without clipping or overlap. The unresolved Zenodo DOI, final GitHub commit, and statistical placeholders still prevent final submission status.
 
 - The manuscript is formatted for Springer Nature.
 - A LaTeX compiler was not available on the command path during the preceding checks.

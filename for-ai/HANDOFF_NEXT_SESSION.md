@@ -1,6 +1,6 @@
 # Next-session handoff
 
-Last updated: 2026-08-21
+Last updated: 2026-08-24
 
 ## Mandatory startup
 
@@ -13,6 +13,8 @@ Before acting, read `AGENTS.md` and every file listed there in the required orde
 - Do not use em dashes in project text.
 
 ## Current manuscript state
+
+The active main figure canon is now sequential and synchronized to the reproducibility repository: Figures 1 through 6 retain their manuscript-facing names, the restored pictographic self-related results are Figure 7, 3D-ASCr is Figure 8, blinding is Figure 9, and the cross-study comparison is Figure 10. The active supplement retains Figures S1 and S2. Every cited figure asset is byte-identical across the two repositories. The canonical 51-page manuscript and 16-page Online Resource compiled successfully, and the affected figure pages passed rendered visual inspection.
 
 Active sources:
 
