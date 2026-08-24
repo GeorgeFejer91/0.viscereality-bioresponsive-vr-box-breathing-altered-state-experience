@@ -11,6 +11,15 @@
 \providecommand{\@LN}[2]{}
 \makeatother
 
+% The supplied Springer class calls \footnoteA for \artnote content but does not
+% define it. Render article notes as unnumbered title-page footnotes.
+\providecommand{\footnoteA}[1]{%
+  \begingroup
+  \renewcommand{\thefootnote}{}%
+  \footnotetext{#1}%
+  \endgroup
+}
+
 \raggedbottom
 \setlength{\abovecaptionskip}{6pt plus 2pt minus 1pt}
 \setlength{\belowcaptionskip}{2pt plus 1pt minus 1pt}
