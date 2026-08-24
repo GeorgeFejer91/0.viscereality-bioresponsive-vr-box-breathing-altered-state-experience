@@ -90,6 +90,10 @@ Conflicts or ambiguities must be surfaced to the user. Do not silently weaken or
 
 When the manuscript calls participants ``naive,'' the intended meaning is recruitment-naive: participants were recruited from the general university participant pool through a VR breathing-biofeedback study advertisement rather than an altered-state, psychedelic, breathwork, or comparable experience-seeking recruitment channel. The term must not imply that prior VR, meditation, breathwork, or psychedelic experience was screened or absent.
 
+## Neurorehabilitation terminology
+
+In neurorehabilitation contexts, use ``stroke patients'' rather than ``stroke survivors.''
+
 ## Evidence and provenance
 
 1. Distinguish recovered source material from reconstructed or newly written material.

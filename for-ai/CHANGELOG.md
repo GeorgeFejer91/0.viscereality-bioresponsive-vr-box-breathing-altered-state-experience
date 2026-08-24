@@ -4,6 +4,7 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-24
 
+- Recorded and implemented the user's project-wide neurorehabilitation terminology preference: use ``stroke patients'' rather than ``stroke survivors.''
 - Completed the publication-readiness audit at manuscript commit `9bbf683`.
   Marked final identifiers, declarations, Online Resource referrals, and final
   PDF/build checks complete. Recorded the remaining concrete packaging blocker:
