@@ -14,9 +14,10 @@ Last updated: 2026-08-24
 - The published Zenodo ZIP contains 2,059 entries; all 2,057 manifested files
   passed SHA-256 verification. The archive SHA-256 is
   `0fe7094d3224736fe8ac7513c642e685812e1e329b6342fac112cff9562a609f`.
-- The supplementary reproducibility section now names the final Zenodo DOI,
-  GitHub repository, release tag, and exact release commit instead of external
-  identifier placeholders.
+- The supplementary reproducibility section now presents four complementary
+  records: the OSF project, Zenodo archival release, GitHub version 1.0.0
+  release, and version-controlled GitHub repository with its exact release
+  commit.
 
 ## GitHub checkpoint policy
 

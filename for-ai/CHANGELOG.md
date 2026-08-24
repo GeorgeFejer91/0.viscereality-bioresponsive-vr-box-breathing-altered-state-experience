@@ -4,6 +4,9 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-24
 
+- Finalized the supplementary reproducibility map as four complementary
+  records: OSF, Zenodo, the GitHub `v1.0.0` release, and the GitHub repository
+  with its exact release commit.
 - Published the Study 3 reproducibility package as GitHub release `v1.0.0`
   (commit `1de1acc03e325e66aad8751c5e4a0efa86e149f7`) and Zenodo record
   `22073981` (DOI `10.5281/zenodo.22073981`). Added the reciprocal Zenodo link
