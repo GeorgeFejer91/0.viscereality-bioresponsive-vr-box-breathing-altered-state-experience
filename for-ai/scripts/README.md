@@ -61,12 +61,12 @@ No script may mutate `https://github.com/GeorgeFejer91/0_OSF_reproducability_pac
 
 ### `candidate_registered_analysis_pipeline.R`
 
-Internal, non-authoritative candidate implementation of the two registered analyses that still require maintainer adoption in `0_OSF_reproducability_package`:
+Historical internal, non-authoritative candidate implementation of the two registered analyses later adopted in `0_OSF_reproducability_package`:
 
 - the order-adjusted repeated-measures ANCOVA condition test for every registered outcome family; and
 - the joint ordered Bayes factor comparing `symmetric > asymmetric > dark-screen control` with equal condition means for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.
 
-The script reads the authoritative master dataset but refuses to write inside the authoritative repository. Dry run is the default. `--write` saves candidate CSVs and session information only under `for-ai/statistical-audit/candidate-registered-results/`. These candidate files must not be cited in the manuscript, packaged for submission, or described as authoritative. The reproducibility-repository maintainer must review, port, run, and publish the implementation before its results can replace the currently reported statistics.
+The script reads the authoritative master dataset but refuses to write inside the authoritative repository. Dry run is the default. `--write` saves candidate CSVs and session information only under `for-ai/statistical-audit/candidate-registered-results/`. These candidate files remain audit history and must not be cited in the manuscript, packaged for submission, or described as authoritative. Authoritative adoption is recorded at statistics commit `9df6cc4d1ef291445dadab11fdb53d5bbde084dd`.
 
 ```powershell
 # Dry run; prints candidate results without writing files.
@@ -81,7 +81,7 @@ Rscript .\for-ai\scripts\candidate_registered_analysis_pipeline.R `
 
 ### `candidate_registered_rm_ancova.py`
 
-Internal, non-authoritative Python implementation of the registered
+Historical internal, non-authoritative Python implementation of the registered
 order-adjusted repeated-measures ANCOVA. It compares
 `value ~ participant + numeric block position + condition` with
 `value ~ participant + numeric block position`, using participant fixed effects
@@ -97,12 +97,12 @@ refuses OSF writes, and writes candidate results only below
 
 The executed candidate reproduces all 40 partial-F values in an independent
 statsmodels calculation and preserves every nominal and within-family FDR
-decision from the current mixed-effects pipeline. The 39 non-PLV outcomes are
-the adoption target; PLV remains frozen by user direction.
+decision from the historical mixed-effects pipeline. The 39 non-PLV outcomes
+were subsequently adopted; PLV remains frozen by user direction.
 
 ### `pictograph_asc_correspondence_pipeline.py`
 
-Internal, non-authoritative consolidated pipeline for the complete exploratory
+Historical internal, non-authoritative consolidated pipeline for the complete exploratory
 pictograph--ASC analysis reported in Supplementary Section S4. It covers:
 
 - pooled-VR-minus-dark-screen-control Spearman change correlations for all three
@@ -131,5 +131,6 @@ under
   --write
 ```
 
-These outputs are excluded from submission and remain `SOURCE SYNC REQUIRED`
-until the OSF maintainer adopts and validates the pipeline.
+These local outputs remain excluded from submission. The adopted authoritative
+outputs are recorded in the OSF statistics pipeline at commit
+`9df6cc4d1ef291445dadab11fdb53d5bbde084dd`.

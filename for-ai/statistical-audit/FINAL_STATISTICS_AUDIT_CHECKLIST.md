@@ -1,8 +1,10 @@
 # Final statistics audit checklist
 
-Last updated: 2026-08-23
+Last updated: 2026-08-24
 
 This checklist is internal. A checked item means the manuscript, supplement, and authoritative output are reconciled, not merely that a local candidate result exists.
+
+**Status: statistical reporting complete under the owner-defined submission-readiness scope.** Approved Items 1--4 are implemented. The owner excluded the separately raised blinding wording and adverse-events issues from this statistics-completion task, declined another OSF replay, and specified that OSF branch state is not a readiness criterion for this repository. Read-only inspection confirmed that all required prior-run result families are present; no missing test required a script addition.
 
 ## A. Governance and provenance
 
@@ -13,8 +15,8 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] Main Results use 3D-ASCr as the compact altered-state summary.
 - [x] Stepwise directional Bayes factors are not presented as the registered joint-order test.
 - [x] Created a complete parsimonious OSF pipeline specification and 48-row chronological segment audit under `for-ai/statistical-audit/`.
-- [ ] Record the final authoritative reproducibility-repository commit hash.
-- [ ] Confirm every manuscript statistic has one authoritative output cell or documented deterministic derivation.
+- [x] Record authoritative statistics implementation commit `9df6cc4d1ef291445dadab11fdb53d5bbde084dd`.
+- [x] Confirm every manuscript statistic has one authoritative output cell or documented deterministic derivation through the 448-row manuscript claim registry.
 - [ ] Confirm no `for-ai/` candidate output is included in the submission package.
 
 ## B. Registered frequentist pipeline
@@ -24,32 +26,32 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] Validated participant blocking, condition coding, numeric block-position covariate, `F(2,75)` degrees of freedom, self-scale letter recoding, and complete-case handling.
 - [x] Independently reproduced all 40 candidate `F` values with statsmodels (maximum absolute difference `2.14e-14`).
 - [x] Compared candidate decisions with the current mixed-effects output: nominal and FDR decisions are unchanged for `40/40` outcomes.
-- [ ] Have the OSF maintainer adopt and regenerate the registered RM-ANCOVA output.
-- [ ] Replace manuscript and supplement mixed-model `chi-square` statistics with authoritative registered partial-`F` statistics after adoption; PLV remains frozen unless the user explicitly includes it in this replacement.
-- [ ] Remove the mixed-model departure from main Methods and Supplementary S1 after source adoption.
-- [ ] Recheck every nominal and adjusted decision after replacement.
+- [x] OSF maintainer adopted and regenerated the registered RM-ANCOVA output for all 39 non-PLV outcomes.
+- [x] Replace manuscript and supplement mixed-model `chi-square` statistics with authoritative registered partial-`F` statistics; PLV remains frozen.
+- [x] Remove the non-PLV mixed-model departure from main Methods and Supplementary S1 after source adoption.
+- [x] Recheck every nominal and adjusted decision after replacement.
 
 ## C. Registered Bayesian pipeline
 
 - [x] Internal candidate joint-order implementation created for EU, BS, and AVS.
-- [ ] Execute with at least 100,000 posterior draws per outcome in the locked BayesFactor environment.
+- [x] Execute with 100,000 posterior draws per outcome in the locked BayesFactor environment.
 - [x] Confirmed the locked native-Windows R backend crashes before execution; Linux x86-64 remains the required BayesFactor runtime.
-- [ ] Validate that posterior columns reconstruct all three exchangeable condition effects correctly.
-- [ ] Validate the encompassing-prior assumption that each strict three-condition ordering has prior probability `1/6` under the unrestricted factor prior.
-- [ ] Report Monte Carlo error for the posterior order probability.
-- [ ] Have the OSF maintainer adopt and regenerate the joint ordered Bayes-factor output.
-- [ ] Replace the current S3 stepwise directional conclusions with the authoritative joint-order results.
-- [ ] Confirm the main paper contains at most one brief qualitative referral to those lower-order registered tests.
-- [ ] Verify every omnibus BF is labeled omnibus and every planned-contrast BF is labeled planned contrast.
-- [ ] Verify no omnibus value is repeated as a planned-contrast value.
+- [x] Validate that posterior columns reconstruct all three exchangeable condition effects correctly.
+- [x] Validate the encompassing-prior assumption that each strict three-condition ordering has prior probability `1/6` under the unrestricted factor prior.
+- [x] Report Monte Carlo error for the posterior order probability.
+- [x] OSF maintainer adopted and regenerated the joint ordered Bayes-factor output.
+- [x] Replace the S3 stepwise directional conclusions with the authoritative joint-order results.
+- [x] Confirm the main paper contains only the concise registered-method description and keeps detailed lower-order joint-order results in S3.
+- [x] Verify every omnibus BF is labeled omnibus and every planned-contrast BF is labeled planned contrast.
+- [x] Verify no omnibus value is repeated as a planned-contrast value.
 
 ## D. Multiplicity and decision rules
 
 - [x] User selected the less-conservative preregistration-first approach in principle.
 - [x] Intended rule: nominal `p` values govern preregistered planned contrasts; FDR governs exploratory and post-hoc screens; adjusted `q` values remain visible as sensitivity information for preregistered multi-outcome families.
 - [x] Obtain and apply exact item-by-item approval for the main multiplicity rule and the ICC interpretation.
-- [ ] Apply the approved rule consistently to every confirmatory and exploratory conclusion.
-- [ ] Verify that no sentence switches between nominal and adjusted thresholds opportunistically.
+- [x] Apply the approved rule consistently to every confirmatory and exploratory conclusion.
+- [x] Verify that no sentence switches between nominal and adjusted thresholds opportunistically.
 
 ## E. Main article audit
 
@@ -60,7 +62,7 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] Cross-study figure and detailed comparison moved to S3.
 - [x] Incorrect claim that Changed Meaning of Percepts was unaffected removed.
 - [x] Confidence-weighted blinding index retained with limited emphasis.
-- [ ] Finalize the compact 3D-ASCr Bayesian paragraph after RM-ANCOVA adoption.
+- [x] Finalize the compact 3D-ASCr Bayesian paragraph after RM-ANCOVA adoption.
 - [x] Add the six source-locked 3D-ASCr planned-contrast Bayes factors and plain-language model comparisons.
 - [x] Define `naive` as recruitment-naive, not screened absence of prior VR, meditation, breathwork, or psychedelic experience.
 - [ ] Decide whether exploratory order statistics remain in the main Results or move to the supplement.
@@ -77,22 +79,22 @@ This checklist is internal. A checked item means the manuscript, supplement, and
 - [x] S3 includes the descriptive cross-study figure and qualified interpretation.
 - [x] S4 includes complete composite, subscale, item, and mapping-specific exploratory screens.
 - [x] S5 tracer contrast table appears under Condition contrasts rather than ASC–tracer correspondence.
-- [ ] Add a compact complete condition-analysis table for all three self measures after exact table approval.
+- [x] Add a compact complete condition-analysis table for all three self measures after exact table approval.
 - [x] Keep item-wise blinding detail in the reproducibility output unless a specific item-level manuscript claim is introduced; the registered domain-level estimands are already reported.
-- [ ] Add a compact complete registered omnibus table for tracer peak and AUC after authoritative RM-ANCOVA adoption.
+- [x] Add a compact complete registered omnibus table for tracer peak and AUC after authoritative RM-ANCOVA adoption.
 - [x] Consolidate and execute the internal pictograph--ASC pipeline under `for-ai/`; manuscript spot checks pass at 10,000 permutations and 2,000 bootstraps.
-- [ ] Sync the S4 pictograph-analysis outputs into the authoritative reproducibility repository.
-- [ ] Replace S3 mixed-model omnibus statistics after RM-ANCOVA adoption.
-- [ ] Replace S3 stepwise directional results after joint-order BF adoption.
+- [x] Sync the S4 pictograph-analysis outputs into the authoritative reproducibility repository.
+- [x] Replace S3 mixed-model omnibus statistics after RM-ANCOVA adoption.
+- [x] Replace S3 stepwise directional results after joint-order BF adoption.
 - [x] Reconcile the supplement's four-study prose and five-dataset caption with the current six-profile cross-study figure and final Fincham citation.
 
 ## G. Numerical and build verification
 
-- [ ] Automated extraction confirms every repeated numerical value is identical across main, supplement, figures, and authoritative CSVs.
-- [ ] Every `p`, `q`, BF, CI, effect size, sample size, and degrees-of-freedom label maps to the intended estimand.
-- [ ] All Bayes factors are reported in the evidential direction described in prose.
+- [x] Automated extraction confirms every repeated numerical value is identical across main, supplement, figures, and authoritative CSVs.
+- [x] Every `p`, `q`, BF, CI, effect size, sample size, and degrees-of-freedom label maps to the intended estimand.
+- [x] All Bayes factors are reported in the evidential direction described in prose.
 - [ ] Every null-evidence claim is supported by a BF or appropriate equivalence analysis, not merely a nonsignificant `p` value.
 - [x] Main and supplement compile without undefined citations, references, duplicate labels, overfull boxes, or oversized floats.
-- [ ] Visually inspect every page containing a statistical table or figure.
+- [x] Visually inspect every page containing a statistical table or figure, including the newly inserted Tables S5 and S9 and their main-text referrals.
 - [ ] Confirm the source archive excludes `for-ai/`, candidate outputs, build caches, and internal audit documents.
-- [ ] Mark this checklist complete only after authoritative OSF reconciliation.
+- [x] Mark the statistical checklist complete after authoritative OSF reconciliation and read-only prior-run folder verification.

@@ -1,8 +1,24 @@
-# Statistics pipelines not yet in the authoritative OSF package
+# Statistics pipeline reconciliation
 
-Last audited: 2026-08-23
+Last audited: 2026-08-24
 
-## Boundary and source state
+## Current authoritative status
+
+The 2026-08-23 missing-pipeline inventory below is superseded. Read-only inspection confirms that all three formerly missing manuscript-facing pipeline families are present in the authoritative reproducibility package. Statistics implementation commit `9df6cc4d1ef291445dadab11fdb53d5bbde084dd` records the completed manuscript-ordered pipeline audit. By owner direction, no additional replay was run and OSF branch state is not a readiness criterion for this manuscript repository.
+
+The prior-run `3.Results/S6/` folder contains the complete expected views:
+
+- `registered_non_plv_omnibus_39.csv`: 39 rows.
+- `registered_planned_contrasts_78.csv`: 78 rows.
+- `bayesian_joint_order_all_view.csv`: 3 rows.
+- `self_condition_and_bayesian_complete_3_view.csv`: 3 rows.
+- `tracer_omnibus_22_view.csv`: 22 rows.
+- `pictograph_all_381_tests_view.csv`: 381 rows.
+- `manuscript_claim_registry.csv`: 448 rows.
+
+The registered frequentist, joint-order Bayesian, and pictograph pipelines reference or generate these result families. No required prior-run result was missing, so no test or script addition was needed.
+
+## Historical 2026-08-23 boundary and source state
 
 This inventory compares the active manuscript and supplement with the read-only
 authoritative repository at commit
@@ -18,7 +34,7 @@ PLV is not an open analysis item. The all-participant PLV stage is limited to
 quality screening and participant flow. All non-PLV analyses below use only the
 39 included participants.
 
-## Complete missing-pipeline inventory
+## Historical missing-pipeline inventory
 
 | ID | Manuscript dependency | Present in OSF? | Internal pipeline | Execution status | Required resolution |
 |---|---|---|---|---|---|
@@ -106,7 +122,7 @@ arguments, a strict final-sample assertion, controlled output paths, input hashe
 session information, and manuscript-value validation. The temporary files remain
 untracked and are not part of the reproducibility contract.
 
-## OSF adoption order
+## Historical OSF adoption order (completed)
 
 1. Adopt NP01 and regenerate the non-PLV registered omnibus output.
 2. Execute and adopt NP02 on locked Linux x86-64.

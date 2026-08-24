@@ -542,3 +542,15 @@ Consequences:
 - Supplementary tracer figures return to displayed Figures S1 and S2, matching their existing `FigS01` and `FigS02` filenames. The approved recalled-time-course figure remains the pending Figure S3 after maintainer restoration.
 - The 2026-08-23 full-paper-audit placement decision that moved the cross-study profile to the supplement is superseded by this decision.
 - This placement change does not authorize any modification of the immutable source-derived figure.
+
+## 2026-08-24 - Owner-defined statistical completion scope
+
+Decision: statistical readiness for this manuscript repository is determined by the implemented manuscript reporting and the presence of the required authoritative prior-run OSF result families, not by OSF branch publication state or another replay.
+
+Consequences:
+
+- Implement approved statistical Items 1--4 parsimoniously and allow LaTeX to renumber the resulting tables and references.
+- Do not rerun the OSF analysis for this completion decision. Verify the existing result folders and generation scripts read-only; add tests only if a required family is absent.
+- Treat the separately raised blinding wording and adverse-events issues as outside this statistical completion scope.
+- Do not treat OSF branch state as a readiness blocker for this repository.
+- Continue to preserve the OSF repository as immutable for AI agents.

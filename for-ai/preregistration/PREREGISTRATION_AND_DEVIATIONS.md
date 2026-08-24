@@ -75,7 +75,7 @@ Checked boxes mean that the commitment is either fulfilled as registered or form
 
 ### Frequentist condition analyses
 
-- [ ] **RESTORATION PENDING — Test the three-level within-subject condition factor for every dimension while accounting for presentation order using the registered repeated-measures ANCOVA.** The current manuscript still reports an order-adjusted participant-random-intercept mixed-effects likelihood-ratio test. The internal candidate has now been executed on the locked `N=39` master dataset and preserves all 40 nominal and FDR decisions; the authoritative repository maintainer must still adopt and regenerate it before manuscript statistics can be replaced.
+- [x] **FULFILLED — Test the three-level within-subject condition factor for every dimension while accounting for presentation order using the registered repeated-measures ANCOVA.** The authoritative pipeline now reports the registered block-position-adjusted, participant-blocked partial-`F` tests for all 39 non-PLV outcomes. PLV retains its separately finalized mixed-effects omnibus by owner direction.
 - [x] **ADDRESSED DEVIATION — Conduct the pooled-VR-versus-control planned contrast.** It is implemented as a paired $t$-test, which yields the same paired contrast statistic in this within-subject comparison. Every S3 block reports the result, paired $d_z$, FDR-adjusted value, and Bayes factor; Tables S2--S4 add the mean difference and 95% confidence interval.
 - [x] **ADDRESSED DEVIATION — Conduct the symmetric-versus-asymmetric planned contrast.** It is likewise implemented as a paired $t$-test and reported in every S3 block with paired $d_z$, FDR-adjusted value, and Bayes factor.
 - [x] **FORMALLY DISCLOSED ADDITION — Apply distribution-free checks and multiplicity control.** Friedman and Wilcoxon analyses and Benjamini--Hochberg correction were not registered, but their addition and rationale are disclosed in `main.tex` and Supplementary Section S1.
@@ -85,8 +85,8 @@ Checked boxes mean that the commitment is either fulfilled as registered or form
 
 - [x] **ADDRESSED DEVIATION — Conduct a parallel Bayesian omnibus condition analysis for every dimension.** The analysis uses R/BayesFactor rather than JASP and mirrors the implemented order-adjusted condition model. The software, priors, and model comparison are specified in the main Methods, and every S3 block reports the omnibus Bayes factor. By user decision, software substitution alone is treated as a reproducibility detail rather than a scientific deviation when the hypotheses, priors, model, and estimand are preserved.
 - [x] **FULFILLED — Conduct Bayesian versions of both planned contrasts for all eleven dimensions.** Every S3 block reports Bayesian pooled-VR-versus-control and symmetric-versus-asymmetric results.
-- [ ] **RESTORATION PENDING — Compute one Bayes factor for the registered joint ordering symmetric VR greater than asymmetric VR greater than control for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.** The authoritative pipeline instead computes two separate one-sided paired Bayes factors. A candidate encompassing-prior implementation exists under `for-ai/scripts/`; the OSF maintainer must validate, adopt, and regenerate it.
-- [ ] **REPLACEMENT PENDING — Replace the current stepwise directional results in S3 with the authoritative joint-order results.** By user direction, an avoidable stepwise-deviation disclosure is not the final resolution.
+- [x] **FULFILLED — Compute one Bayes factor for the registered joint ordering symmetric VR greater than asymmetric VR greater than control for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.** The authoritative pipeline now provides the three encompassing-prior joint-order tests with 100,000 posterior draws per outcome and an exchangeable-prior order probability of `1/6`.
+- [x] **FULFILLED — Replace the stepwise directional results in S3 with the authoritative joint-order results.** S3 now reports the registered EU, BS, and AVS joint-order Bayes factors and names the ordered and equal-means models explicitly.
 
 ### Post-registration hierarchy and interpretation
 
@@ -98,7 +98,7 @@ Checked boxes mean that the commitment is either fulfilled as registered or form
 
 The core ASC commitment is substantially fulfilled or formally addressed: the registered instrument was administered and scored, all eleven dimensions were analyzed across all three conditions, presentation order was accounted for, both planned contrasts and parallel Bayesian analyses were conducted, and the complete fine-grained results are placed in an explicitly referenced supplementary section. Supplementary placement satisfies the promise to perform and report the 11D-ASC analyses because the registration did not prescribe a manuscript location.
 
-The ASC package is not yet a literal match to the registration because the registered RM-ANCOVA and joint order-constrained Bayes factors still require authoritative adoption. Internal candidate implementations exist under `for-ai/scripts/`, but their outputs are not manuscript-facing. Exact distribution-free statistics remain in the reproducibility outputs under the approved parsimonious reporting policy rather than being reproduced in S3.
+The ASC package now contains the registered frequentist condition tests and the three registered joint order-constrained Bayes factors. Exact distribution-free statistics remain in the reproducibility outputs under the approved parsimonious reporting policy rather than being reproduced in S3.
 
 ### Preregistered exclusions and sample target
 
@@ -122,14 +122,13 @@ Status: Explicitly disclosed and rationalized in `main.tex` and Supplementary Se
 
 ### D02: Omnibus frequentist model
 
-Status: User-approved return to the registered model is pending maintainer-side source implementation.
+Status: Fulfilled in the authoritative source and active manuscript.
 
 - Preregistered: one-way repeated-measures ANOVA with condition and presentation order as a covariate.
-- Implemented: order-adjusted mixed-effects likelihood-ratio comparison of a condition-plus-order model against an order-only model, with participant as a random intercept.
-- Stated reason: the realized counterbalanced design was represented more naturally by condition-specific block-position covariates than by a single omnibus order term, while retaining a within-subject, order-adjusted condition comparison.
+- Historical implementation: order-adjusted mixed-effects likelihood-ratio comparison of a condition-plus-order model against an order-only model, with participant as a random intercept.
+- Final implementation: block-position-adjusted participant-blocked partial-`F` condition tests for all 39 non-PLV outcomes. The finalized PLV omnibus remains unchanged by owner direction.
 - Sensitivity: a condition-only repeated-measures ANOVA is retained in the reproducibility outputs.
-- Read-only resolution check: a registered-style repeated-measures ANCOVA was evaluated with participant as the repeated-measures blocking factor, condition as the three-level within-participant factor, and numeric block position (1--3) as a covariate. Its partial-F condition tests produced the same nominal and within-family FDR significance decisions as the current mixed-model tests across every 11D-ASC, 3D-ASCr, self-related, tracer-peak, tracer-AUC, and PLV outcome.
-- Required resolution: the repository maintainer regenerates the immutable primary outputs using the registered model. The exact main-article Methods and Results and Supplementary Sections S1 and S3 replacements were approved on 2026-08-22; after source regeneration, apply them and remove this item from the submission-facing deviation account.
+- Resolution evidence: authoritative statistics commit `9df6cc4d1ef291445dadab11fdb53d5bbde084dd` contains the registered pipeline and canonical 39-row non-PLV omnibus output. The active manuscript and supplement use the source-locked partial-`F` values.
 
 ### D03: Planned-contrast implementation
 
@@ -156,7 +155,7 @@ Status: Explicitly disclosed and rationalized in `main.tex` and Supplementary Se
 - Implemented reporting hierarchy: the later 3D-ASCr Positive, Distressing, and Perceptual Effects composites are the detailed main-text summary; complete 11D-ASC reporting is assigned to Supplementary Section S3.
 - Stated reason: the revised higher-order scoring model became available only after preregistration, deterministically summarizes the preregistered responses, reduces dimensionality, and matches the paper's broad theoretical focus on valence while retaining a perceptual dimension.
 - Constraint: the directional predictions for Experience of Unity, Blissful State, and Audio-Visual Synesthesia remain lower-order preregistered predictions. They must not be relabeled as preregistered 3D-ASCr composite predictions.
-- Current status: Supplementary Section S3 now contains all eleven dimension blocks, both planned contrasts, frequentist and Bayesian omnibus results, Bayesian planned contrasts, order diagnostics, driver tables, and a three-paragraph fine-grained summary. Exact RM-ANOVA sensitivity and distribution-free statistics remain summarized qualitatively rather than reported numerically, and the joint directional Bayes-factor mismatch remains governed by D07.
+- Current status: Supplementary Section S3 now contains all eleven dimension blocks, both planned contrasts, frequentist and Bayesian omnibus results, Bayesian planned contrasts, the three registered joint-order results, order diagnostics, driver tables, and a three-paragraph fine-grained summary. Exact RM-ANOVA sensitivity and distribution-free statistics remain summarized qualitatively rather than reported numerically.
 
 ### D06: Bayesian software and model implementation
 
@@ -168,12 +167,11 @@ Status: Resolved by user direction as a non-substantive software substitution.
 
 ### D07: Ordered Bayesian predictions
 
-Status: Registered-test restoration selected; authoritative adoption remains pending.
+Status: Fulfilled in the authoritative source and active supplement.
 
 - Preregistered: Bayes factors for the joint three-condition order symmetric VR greater than asymmetric VR greater than control, only for Experience of Unity, Blissful State, and Audio-Visual Synesthesia.
-- Current supplement: still reports the two available stepwise one-sided pairwise tests. These are temporary and must be replaced by the joint-order results after authoritative regeneration.
-- Authoritative pipeline finding: it implements two separate one-sided paired Bayes factors rather than one joint order-constrained Bayes factor.
-- Required future treatment: validate and adopt the candidate joint-order implementation in the authoritative repository, regenerate outputs, replace the stepwise reporting, and record the authoritative commit. Do not retain an avoidable deviation solely because the current pipeline is incomplete.
+- Final source: authoritative statistics commit `9df6cc4d1ef291445dadab11fdb53d5bbde084dd` provides the three encompassing-prior joint-order tests with 100,000 posterior draws per outcome and an exchangeable-prior order probability of `1/6`.
+- Current supplement: the obsolete stepwise statements have been replaced by the registered joint-order results for EU (`BF10=141.96`), BS (`BF01=12.42`), and AVS (`BF10=2.11e6`).
 
 ### D08: Temporal tracer acquisition
 
@@ -243,19 +241,13 @@ Status: Implemented and explicitly identified as exploratory in `main.tex`, Supp
 
 ### D16: Complete reporting of self and tracer condition analyses
 
-Status: Registered analyses exist in source or candidate form but are not yet
-completely reported across the active paper and supplement.
+Status: Fulfilled across the authoritative source, active paper, and supplement.
 
-- Self-related experience: the registration requires an order-adjusted RM-ANOVA,
-  both planned contrasts, and parallel Bayesian RM-ANOVAs for each of the three
-  pictographic measures. The main article reports the core planned contrasts and
-  pooled-VR Bayes factors, but no paper section currently gives the complete three-
-  outcome omnibus and Bayesian inventory. After D02 source adoption, add one
-  compact complete table to Supplementary S4.
-- Temporal tracers: the registration requires peak and AUC for each dimension to
-  use the same order-adjusted RM-ANOVA approach as the primary outcomes. S5 reports
-  all 44 planned contrasts but omits the 22 omnibus condition tests. Add a compact
-  omnibus table after D02 source adoption.
+- Self-related experience: Supplementary Section S4 now gives the complete
+  three-measure frequentist and Bayesian condition-analysis inventory in Table S5,
+  and the main Results refers readers to that section.
+- Temporal tracers: the tracer section now reports all 22 registered peak and AUC
+  omnibus condition tests in Table S9 and all 44 planned contrasts in Table S10.
 - Bayesian tracer analyses are present in the authoritative repository but are not
   explicitly promised in the tracer paragraph of the registration. They are
   optional robustness material and should remain in OSF unless a later claim
@@ -274,6 +266,6 @@ The current paper retains the within-subject three-condition design, counterbala
 2. When adding or reviewing a result, map it to the exact preregistered outcome, contrast, model, and status.
 3. Preserve the distinction between preregistered, post-preregistration, exploratory, robustness, sensitivity, and descriptive analyses.
 4. Do not convert lower-order directional predictions into higher-order composite predictions.
-5. Describe the implemented tracer procedure as retrospective, but do not raise the preregistration's continuous-rating description as an unresolved issue unless the user explicitly reopens it. Do not claim that the control display was completely black or that the current ordered Bayesian implementation is the preregistered joint order test.
+5. Describe the implemented tracer procedure as retrospective, but do not raise the preregistration's continuous-rating description as an unresolved issue unless the user explicitly reopens it. Do not claim that the control display was completely black.
 6. Update this ledger whenever the manuscript, supplement, or authoritative analysis package resolves or creates a preregistration-related difference. Record the same update in `for-ai/PROJECT_STATE.md` and `for-ai/CHANGELOG.md`.
 7. Treat the source PDF and research outputs as immutable. Submission-facing corrections still require exact item-by-item user approval.
