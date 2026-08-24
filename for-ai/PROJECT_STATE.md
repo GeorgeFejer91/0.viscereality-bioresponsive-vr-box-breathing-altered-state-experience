@@ -19,6 +19,21 @@ Last updated: 2026-08-24
   release, and version-controlled GitHub repository with its exact release
   commit.
 
+## Current publication-readiness status (2026-08-24)
+
+- Completed: active manuscript and supplement sources contain no release or
+  registered-statistics placeholder tokens; declarations are populated; Online
+  Resource 1 has a caption and explicit section referrals; and the final-mode
+  PDF build succeeds at manuscript commit `9bbf683` (52 manuscript pages,
+  17 Online Resource pages).
+- Completed: Zenodo, OSF, GitHub release, GitHub repository, DOI, release tag,
+  and reciprocal supplement links are recorded. Do not reopen these items from
+  older notes below.
+- Open: `output/submission/Manuscript_Source.zip` is stale. It contains 16
+  entries instead of the current 17-file source manifest, eight files differ
+  from the working tree, and it still contains `FINAL_SUBMISSION_COMMIT`.
+  Regenerate, extract, and compile this archive before submission.
+
 ## GitHub checkpoint policy
 
 - Before every separately approved project-text item is implemented, the complete pre-item repository state must be committed and successfully pushed to the configured GitHub remote.
@@ -46,12 +61,12 @@ Agents must run `git status --short` at the start of any editing task because th
 
 - As of 2026-08-23, the user requires exact filename identity between active manuscript/supplement `\includegraphics` assets and their canonical reproducibility-pipeline exports. The current active manuscript filenames control synchronization until a deliberate cross-repository rename changes both sides together.
 - As of 2026-08-24, the main article cites ten figures in physical order: `Fig01_study_procedure.pdf` through `Fig06_plv_results.pdf`, `Fig07_results_subjective_self_pictogram_violin_grid.pdf`, `Fig08_3d_ascr_results.pdf`, `Fig09_results_blinding_condensed_summary.pdf`, and `Fig10_cross_study_profiles.pdf`. The supplement cites `FigS01_tracer_schematic.pdf` and `FigS02_tracer_profiles_vertical.pdf`. All 12 cited assets are SHA-256 identical to the canonical reproducibility-package copies.
-- The current canonical review build contains a 51-page manuscript and 16-page Online Resource. The compiled pages containing Figures 7 through 10 and S1 through S2 passed visual inspection without clipping or overlap. The unresolved Zenodo DOI, final GitHub commit, and statistical placeholders still prevent final submission status.
+- The current final-mode build contains a 52-page manuscript and 17-page Online Resource. The source archive, not the external identifiers or active-source placeholders, is the current packaging blocker.
 
 - The manuscript is formatted for Springer Nature.
 - A LaTeX compiler was not available on the command path during the preceding checks.
 - Citation keys used by the inspected manuscript and supplementary draft resolved against `references.bib` during the preceding static check.
-- The manuscript declarations still contained submission placeholders when last reviewed, including author contributions and confirmation fields.
+- The manuscript declarations are populated in the current source; older placeholder notes are superseded.
 - The root still contains duplicate or legacy-named figure copies. They require a user-supervised artifact audit before the root can be treated literally as an upload-ready file set.
 - The user has set the final analytic sample to the 39 included participants. Condition-level PLV values from all 47 tested participants may be used only during the quality-screening stage that determines the eight exclusions; all subsequent inferential protocols, including PLV condition tests, use only the 39 included participants.
 - Participant flow must still report that 47 participants were tested, 8 were excluded, and 39 were analyzed.
@@ -78,12 +93,13 @@ Agents must run `git status --short` at the start of any editing task because th
 - The former root `supplementary.tex` was a reconstructed draft that was not byte-identical to the canonical dissertation appendix or either standalone dissertation supplementary source. It has been retired to `for-ai/archive/supplementary/supplementary-pre-restructure-2026-08-21.tex`.
 - The active supplementary source is `supplementary/main.tex`. On 2026-08-21, the user approved and an agent implemented a supplementary-only technical restructure comprising preregistration deviations, PLV computation and quality screening, altered-state questionnaire analyses, temporal experience tracer analyses, blinding analyses, and reproducibility access.
 - The implemented supplement contains the approved PLV equation, pooled lower-tail IQR calculation, exact exclusion list and condition-level PLV table, 3D-ASCr scoring equations, compact tracer-method description, Bang blinding-index definition and observed counts, and the OSF access statement.
-- Exact numerical table bodies for the detailed 11-ASC, tracer, and expanded blinding results remain pending separate cell-by-cell approval because those values were not displayed in the approved recommendation batch. Their subsection structure is present but intentionally unpopulated.
+- The current active supplement contains populated 11D-ASC, pictograph--ASC, tracer, blinding, and reproducibility sections; older notes describing empty sections are superseded.
 - The supplement now identifies the cleaned public reproducibility repository,
   release `v1.0.0`, and exact commit
   `1de1acc03e325e66aad8751c5e4a0efa86e149f7`.
-- The newly populated supplementary sections do not yet have explicit, identifiable referrals in `main.tex`. The user expressly limited this implementation to the supplementary document and deferred all corresponding `main.tex` changes for separate analysis and item-by-item preapproval. This is an unresolved supplement-admissibility discrepancy, so the active supplement is a working technical draft and must not be treated as submission-ready.
-- Before substantive content is added to or retained in the active supplement, it must be mapped to an explicit, identifiable referral in `main.tex`. Any missing referral is a mandatory unresolved discrepancy, requiring either an approved referral in `main.tex` or approved omission from the supplement.
+- The current `main.tex` contains explicit `Online Resource 1, Section~S#`
+  referrals and a concise Online Resource 1 caption; older notes describing
+  missing referrals are superseded.
 - Supplementary tracer figure copies are stored in `supplementary/figures/`. Root copies remain temporarily because `main.tex` still references them.
 - Retired supplementary material is stored in `for-ai/archive/supplementary/` and must not be included in external submission packages.
 - The user has not approved corresponding edits to `main.tex` that would reroute temporal experience tracer content.
@@ -134,15 +150,17 @@ The consolidated checkable tracker is `for-ai/FINAL_SUBMISSION_CHECKLIST.md`. Ke
 - Run a placeholder scan and produce a local readiness report that clearly separates completed formatting from deliberately deferred external identifiers and reproducibility validation.
 - Add a canonical build orchestrator under `for-ai/scripts/` that compiles through internal scratch directories and emits only `output/submission/Manuscript.pdf` and `output/submission/ESM_1.pdf` after successful validation.
 - Revise the packaging orchestrator so its canonical upload-facing result is `output/submission/Manuscript_Source.zip` and its manifest excludes legacy PDFs plus all internal or review-only material.
-- Implemented on 2026-08-23: `for-ai/scripts/build-submission-pdfs.ps1` now compiles both documents through `for-ai/build/submission-pdfs/` and stages the canonical PDFs under `output/submission/`; `new-submission-package.ps1` packages the 16 active local source dependencies into `Manuscript_Source.zip`. Review mode warns about the deliberately unresolved final-commit placeholder, while `-Final` blocks release until it is replaced.
+- Implemented: `for-ai/scripts/build-submission-pdfs.ps1` compiles both
+  documents through `for-ai/build/submission-pdfs/` and stages the canonical
+  PDFs. The existing `Manuscript_Source.zip` still needs regeneration because
+  it predates the final source edits.
 
 ### Final-stage maintainer tasks, deliberately deferred
 
 - Run the final end-to-end audit of the complete reproducibility package after manuscript and supplement formatting are frozen.
 - Resolve any maintainer-only reproducibility issues without allowing AI agents to mutate the immutable authoritative data, figures, statistics, outputs, or pipelines.
-- Publish or finalize the study package on OSF, create the immutable Zenodo archival release, and tag or pin the final authoritative GitHub reproducibility commit.
-- Synchronize titles, creators, ORCIDs, versions, licences, related identifiers, checksums, and reciprocal links across OSF, Zenodo, GitHub, the manuscript, and the supplement.
-- Replace every approved placeholder with the resulting DOI, release tag, or full commit hash; formally cite the finalized records; and verify all public links while logged out.
+- Regenerate and independently compile the final source archive; complete the
+  remaining journal-portal and scientific/editorial checklist items.
 - Rebuild the final PDFs and source archive, rerun the placeholder scan, and block submission if any unresolved placeholder or repository-version mismatch remains.
 
 ## Figure audit status
@@ -325,4 +343,6 @@ The user's instruction authorizes the substance of the selected hierarchy and co
 - The owner excluded the separately raised blinding wording and adverse-events issues from this statistical completion scope and stated that OSF branch state does not determine readiness of this manuscript repository. Those matters must not be reopened as statistical blockers unless the owner changes scope.
 - The owner subsequently reaffirmed approval of audit concerns 1--4 and resolved concerns 5--6 by authorial authority, with an explicit instruction not to reopen or raise concerns 5--6 again. Concern 4 is implemented in the self-measure Methods: PBBS and Small Self use A--G/1--7, whereas SFoRC uses A--H/1--8, preserving the valid included `H` response and the required `N=39` analysis.
 - The canonical review build completes successfully at 52 manuscript pages and 17 Online Resource pages. Final logs contain no undefined citations or references, duplicate labels, overfull boxes, or fatal errors. The pages containing the amended Bayesian method, restored Figure 7 referral, Table S5, and Table S9 were rendered and visually verified without clipping, overlap, or illegible content.
-- Statistical reporting is complete for the active manuscript and the required reproducibility-package evidence under this owner-defined scope. The unresolved Zenodo DOI and final OSF commit URL remain external submission placeholders, not statistical blockers.
+- Statistical reporting and external release identifiers are complete under
+  the owner-defined scope. The stale source archive and remaining checklist
+  items are the active submission blockers.

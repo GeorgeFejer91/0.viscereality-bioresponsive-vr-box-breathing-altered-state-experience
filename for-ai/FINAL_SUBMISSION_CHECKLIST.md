@@ -10,9 +10,9 @@ Use this checklist for the submission-frozen manuscript candidate. Checked items
 - [x] Main manuscript uses the journal-appropriate `sn-basic` author--year bibliography style.
 - [x] Main manuscript uses the Springer class `lineno` option for review line numbering.
 - [x] Main declaration heading is `Statements and Declarations`.
-- [ ] Replace submission-facing `Supplementary Section S#` wording with journal-compliant, specific `Online Resource 1` referrals while preserving the internal S-section destination.
-- [ ] Add one concise manuscript caption describing the complete content of Online Resource 1.
-- [ ] Verify that every substantive item in the supplement has a specific, identifiable main-text referral.
+- [x] Replace submission-facing `Supplementary Section S#` wording with journal-compliant, specific `Online Resource 1` referrals while preserving the internal S-section destination.
+- [x] Add one concise manuscript caption describing the complete content of Online Resource 1.
+- [x] Verify that every substantive item in the supplement has a specific, identifiable main-text referral.
 - [ ] Confirm that title, abstract, keywords, author order, affiliations, corresponding-author details, and declarations match the submission portal exactly.
 - [ ] Obtain every author's final approval of the manuscript, author order, contributions, affiliations, funding, and declarations.
 
@@ -60,8 +60,8 @@ Use this checklist for the submission-frozen manuscript candidate. Checked items
 - [x] Canonical main PDF name is `Manuscript.pdf`.
 - [x] Canonical supplementary PDF name is `ESM_1.pdf`.
 - [x] Canonical editable-source archive name is `Manuscript_Source.zip`.
-- [ ] After the final source edit, run `./for-ai/scripts/build-submission-pdfs.ps1 -Final` and require success.
-- [ ] Confirm the final logs contain no unresolved citations, unresolved references, duplicate labels, fatal errors, or unstable-label warnings.
+- [x] After the final source edit, run `./for-ai/scripts/build-submission-pdfs.ps1 -Final` and require success.
+- [x] Confirm the final logs contain no unresolved citations, unresolved references, duplicate labels, fatal errors, or unstable-label warnings.
 - [ ] Render and visually inspect every final PDF page for clipping, overlap, blank pages, broken glyphs, unreadable figures/tables, line-number collisions, and incorrect page size.
 - [ ] Confirm PDF links, bookmarks where present, fonts, page count, and file integrity.
 
@@ -78,8 +78,8 @@ Use this checklist for the submission-frozen manuscript candidate. Checked items
 
 ## 7. Final upload set
 
-- [ ] `Manuscript.pdf` is the final review PDF generated from the frozen source.
-- [ ] `ESM_1.pdf` is the final Online Resource 1 PDF generated from the frozen source.
+- [x] `Manuscript.pdf` is the final review PDF generated from the frozen source.
+- [x] `ESM_1.pdf` is the final Online Resource 1 PDF generated from the frozen source.
 - [ ] `Manuscript_Source.zip` compiles independently and matches the two uploaded PDFs.
 - [ ] The submission portal contains the concise caption for Online Resource 1.
 - [ ] File designations in the portal are correct: manuscript, editable source, and supplementary information / Online Resource.

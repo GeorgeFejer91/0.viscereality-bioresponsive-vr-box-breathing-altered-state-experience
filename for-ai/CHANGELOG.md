@@ -4,6 +4,11 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-24
 
+- Completed the publication-readiness audit at manuscript commit `9bbf683`.
+  Marked final identifiers, declarations, Online Resource referrals, and final
+  PDF/build checks complete. Recorded the remaining concrete packaging blocker:
+  `Manuscript_Source.zip` is stale, mismatched to the current 17-file source
+  manifest, and still contains the obsolete `FINAL_SUBMISSION_COMMIT` token.
 - Finalized the supplementary reproducibility map as four complementary
   records: OSF, Zenodo, the GitHub `v1.0.0` release, and the GitHub repository
   with its exact release commit.
