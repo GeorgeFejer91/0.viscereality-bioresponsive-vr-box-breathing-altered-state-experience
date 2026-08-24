@@ -373,7 +373,48 @@ Figure~\ref{fig:supp_tracer_schematic} illustrates the distinction between peak 
 
 After each condition, participants draw the 11 intensity curves on a world-space time-by-intensity surface using the VR controller. We project controller position onto the drawing plane, gate input through a trigger hold, and emit points at constant spatial spacing regardless of hand speed. We map reconstructed time and intensity to normalized 0--1 coordinates. Peak is the maximum sampled intensity. AUC is the trapezoidal integral of intensity after ordering points by reconstructed time, normalized to the 0--1 plotting interval. We analyse peak and AUC as separate exploratory families.
 
-\subsection{Condition contrasts}
+\subsection{Condition analyses}
+
+Table~\ref{tab:supp_tracer_omnibus} reports the registered order-adjusted omnibus condition tests for tracer peak and AUC.
+
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\caption{Registered order-adjusted omnibus condition tests for tracer peak and AUC summaries ($N=39$).}
+\label{tab:supp_tracer_omnibus}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccccc@{}}
+\toprule
+Summary & Dimension & $F$ & $p$ & $q_{\mathrm{FDR}}$ & $\eta_p^2$ \\
+\midrule
+Peak & EU  & 6.36  & .003   & .010   & .145 \\
+Peak & SE  & 0.51  & .605   & .740   & .013 \\
+Peak & BS  & 0.30  & .741   & .815   & .008 \\
+Peak & IS  & 2.78  & .069   & .151   & .069 \\
+Peak & DIS & 3.46  & .037   & .101   & .084 \\
+Peak & ICC & 2.02  & .140   & .222   & .051 \\
+Peak & ANX & 2.01  & .141   & .222   & .051 \\
+Peak & CI  & 0.14  & .870   & .870   & .004 \\
+Peak & EI  & 29.48 & $<.001$ & $<.001$ & .440 \\
+Peak & AVS & 9.60  & $<.001$ & .001   & .204 \\
+Peak & CMP & 1.83  & .168   & .231   & .046 \\
+\midrule
+AUC & EU  & 8.63  & $<.001$ & .002   & .187 \\
+AUC & SE  & 0.69  & .506   & .619   & .018 \\
+AUC & BS  & 0.11  & .899   & .899   & .003 \\
+AUC & IS  & 2.85  & .064   & .118   & .071 \\
+AUC & DIS & 3.56  & .033   & .091   & .087 \\
+AUC & ICC & 2.85  & .064   & .118   & .071 \\
+AUC & ANX & 1.73  & .185   & .254   & .044 \\
+AUC & CI  & 0.20  & .818   & .899   & .005 \\
+AUC & EI  & 31.01 & $<.001$ & $<.001$ & .453 \\
+AUC & AVS & 9.94  & $<.001$ & $<.001$ & .210 \\
+AUC & CMP & 1.80  & .172   & .254   & .046 \\
+\bottomrule
+\end{tabular*}
+\parbox{\textwidth}{\footnotesize\textit{Note.} All tests have 2 and 75 degrees of freedom. Benjamini--Hochberg correction was performed separately across the 11 dimensions within each tracer-summary family.}
+\end{table}
+\FloatBarrier
 
 Tracer peak and AUC profiles broadly follow the condition profiles observed for the 11D-ASC questionnaire, with the strongest pooled-VR differences clustering on Experience of Unity, Elementary Imagery, and Audio-Visual Synesthesia (Figure~\ref{fig:supp_tracer_profiles}). After correction across the 11 dimensions within each tracer family, pooled VR exceeded the dark-screen control for all three dimensions for both peak and AUC. The paired effects were moderate for Experience of Unity and Audio-Visual Synesthesia and large for Elementary Imagery. Several smaller nominal differences did not survive FDR correction. No symmetric-versus-asymmetric comparison survived correction. Table~\ref{tab:supp_tracer_condition_contrasts} reports all peak and AUC contrasts.
 
