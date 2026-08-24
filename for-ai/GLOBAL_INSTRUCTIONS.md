@@ -121,6 +121,7 @@ When the manuscript calls participants ``naive,'' the intended meaning is recrui
 10. State result interpretations directly. Do not introduce them with self-narrating labels such as ``in plain terms.''
 11. When an order test is not statistically reliable, write that there was no reliable evidence that the outcome or result was influenced by the order in which participants underwent the three conditions. Do not convert a nonsignificant order test into a categorical claim that order had no influence.
 12. When describing a hypothesized or observed increase in positively valenced experience, do not use ``bias'' or ``biased.'' Use neutral wording such as ``increase,'' ``enhance,'' or ``produce stronger positively valenced experiences,'' according to the evidence and context. Reserve ``bias'' for genuine technical meanings, such as an explicitly directional model parameter or systematic measurement bias.
+13. Give each paragraph one primary communicative purpose. Split material when a paragraph would otherwise carry several independently interpretable points, and remove repetition rather than using a single paragraph to accumulate loosely related qualifications, examples, or future directions.
 
 ## Table formatting
 
