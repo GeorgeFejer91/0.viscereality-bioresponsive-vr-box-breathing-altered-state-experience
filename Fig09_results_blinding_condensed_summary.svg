@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="488.474791pt" height="587.349814pt" viewBox="0 0 488.474791 587.349814" version="1.1" data-study3-canonical-name="Fig08_results_blinding_condensed_summary" data-study3-title-slug="blinding-assessment-summary">
- <title>Blinding Assessment Summary</title><desc>Four-panel blinding-results figure including participant pre-unmasking accuracy profiles grouped by final condition guess. Keywords: Study 3; Viscereality; Fig08_results_blinding_condensed_summary; Blinding Assessment Summary; blinding-assessment-summary; main manuscript figure</desc><metadata>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="488.474791pt" height="587.349814pt" viewBox="0 0 488.474791 587.349814" version="1.1" data-study3-canonical-name="Fig09_results_blinding_condensed_summary" data-study3-title-slug="blinding-assessment-summary">
+ <title>Blinding Assessment Summary</title><desc>Four-panel blinding assessment used as main Figure 9. Keywords: Study 3; Viscereality; Fig09_results_blinding_condensed_summary; Blinding Assessment Summary; blinding-assessment-summary; main manuscript figure</desc><metadata>
   <rdf:RDF>
    <ns2:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-    <dc:date>2026-08-21T15:16:04.420643</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <ns2:Agent>
@@ -36,8 +35,8 @@
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(64.134316 149.728947)">Symmetry</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(67.053847 160.21926)">(4 items)</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(64.134316 149.728947)">Symmetry</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(67.053847 160.21926)">(4 items)</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -47,8 +46,8 @@
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(164.784011 149.747697)">Neutral</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(161.86448 160.21926)">(4 items)</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(164.784011 149.747697)">Neutral</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(161.86448 160.21926)">(4 items)</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -58,8 +57,8 @@
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(263.19855 149.747697)">Sham</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(256.675112 160.21926)">(4 items)</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(263.19855 149.747697)">Sham</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(256.675112 160.21926)">(4 items)</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -69,8 +68,8 @@
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(356.759182 149.747697)">All 12</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(358.565432 160.21926)">items</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(356.759182 149.747697)">All 12</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(358.565432 160.21926)">items</text>
      </g>
     </g>
    </g>
@@ -85,7 +84,7 @@
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="139.275822" transform="rotate(-0 35.301563 139.275822)">0</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="139.275822" transform="rotate(-0 35.301563 139.275822)">0</text>
      </g>
     </g>
     <g id="ytick_2">
@@ -95,7 +94,7 @@
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="106.781707" transform="rotate(-0 35.301563 106.781707)">20</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="106.781707" transform="rotate(-0 35.301563 106.781707)">20</text>
      </g>
     </g>
     <g id="ytick_3">
@@ -105,7 +104,7 @@
       </g>
      </g>
      <g id="text_7">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="74.287592" transform="rotate(-0 35.301563 74.287592)">40</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="74.287592" transform="rotate(-0 35.301563 74.287592)">40</text>
      </g>
     </g>
     <g id="ytick_4">
@@ -115,11 +114,11 @@
       </g>
      </g>
      <g id="text_8">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="41.793477" transform="rotate(-0 35.301563 41.793477)">60</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="41.793477" transform="rotate(-0 35.301563 41.793477)">60</text>
      </g>
     </g>
     <g id="text_9">
-     <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="19.14375" y="79.751599" transform="rotate(-90 19.14375 79.751599)">Mean item accuracy (%)</text>
+     <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="19.14375" y="79.751599" transform="rotate(-90 19.14375 79.751599)">Mean item accuracy (%)</text>
     </g>
    </g>
    <g id="line2d_9">
@@ -147,43 +146,43 @@
     <g id="patch_9">
      <path d="M 404.148179 94.216539 L 444.891577 94.216539 L 444.891577 86.063218 L 404.148179 86.063218 z " style="fill: #ffffff; opacity: 0.9" />
     </g>
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: start; fill: #595959" x="404.478179" y="92.121812" transform="rotate(-0 404.478179 92.121812)">25% chance</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: start; fill: #595959" x="404.478179" y="92.121812" transform="rotate(-0 404.478179 92.121812)">25% chance</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="84.966347" y="33.671939" transform="rotate(-0 84.966347 33.671939)">***</text>
+    <text style="font-weight: 700; font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="84.966347" y="33.671939" transform="rotate(-0 84.966347 33.671939)">***</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="84.966347" y="41.115888" transform="rotate(-0 84.966347 41.115888)">44.2%</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="84.966347" y="41.115888" transform="rotate(-0 84.966347 41.115888)">44.2%</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="84.966347" y="48.102123" transform="rotate(-0 84.966347 48.102123)">q &lt; .001</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="84.966347" y="48.102123" transform="rotate(-0 84.966347 48.102123)">q &lt; .001</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="179.77698" y="41.115888" transform="rotate(-0 179.77698 41.115888)">27.6%</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="179.77698" y="41.115888" transform="rotate(-0 179.77698 41.115888)">27.6%</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="179.77698" y="48.102123" transform="rotate(-0 179.77698 48.102123)">q = .610</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="179.77698" y="48.102123" transform="rotate(-0 179.77698 48.102123)">q = .610</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="274.587612" y="41.115888" transform="rotate(-0 274.587612 41.115888)">32.7%</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="274.587612" y="41.115888" transform="rotate(-0 274.587612 41.115888)">32.7%</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="274.587612" y="48.102123" transform="rotate(-0 274.587612 48.102123)">q = .100</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="274.587612" y="48.102123" transform="rotate(-0 274.587612 48.102123)">q = .100</text>
    </g>
    <g id="text_18">
-    <text style="font-weight: 700; font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="369.398245" y="33.671939" transform="rotate(-0 369.398245 33.671939)">***</text>
+    <text style="font-weight: 700; font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="369.398245" y="33.671939" transform="rotate(-0 369.398245 33.671939)">***</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="369.398245" y="41.115888" transform="rotate(-0 369.398245 41.115888)">34.8%</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="369.398245" y="41.115888" transform="rotate(-0 369.398245 41.115888)">34.8%</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="369.398245" y="48.102123" transform="rotate(-0 369.398245 48.102123)">q &lt; .001</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="369.398245" y="48.102123" transform="rotate(-0 369.398245 48.102123)">q &lt; .001</text>
    </g>
    <g id="text_21">
-    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end; fill: #202020" x="26.9375" y="18.586445" transform="rotate(-0 26.9375 18.586445)">(a)</text>
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', serif; text-anchor: end; fill: #202020" x="26.9375" y="18.586445" transform="rotate(-0 26.9375 18.586445)">(a)</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 10.8px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="261.788177" y="14.69925" transform="rotate(-0 261.788177 14.69925)">Pre-unmasking accuracy</text>
+    <text style="font-size: 10.8px; font-family: 'Times New Roman', serif; text-anchor: middle" x="261.788177" y="14.69925" transform="rotate(-0 261.788177 14.69925)">Pre-unmasking accuracy</text>
    </g>
    <g id="LineCollection_1">
     <path d="M 84.966347 78.522654 L 84.966347 49.361269 " clip-path="url(#p24ef24fc91)" style="fill: none; stroke: #202020" />
@@ -223,7 +222,7 @@
       </g>
      </g>
      <g id="text_23">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="76.59703" y="340.416406" transform="rotate(-0 76.59703 340.416406)">Correct</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="76.59703" y="340.416406" transform="rotate(-0 76.59703 340.416406)">Correct</text>
      </g>
     </g>
     <g id="xtick_6">
@@ -233,7 +232,7 @@
       </g>
      </g>
      <g id="text_24">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="129.359288" y="340.416406" transform="rotate(-0 129.359288 340.416406)">Incorrect</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="129.359288" y="340.416406" transform="rotate(-0 129.359288 340.416406)">Incorrect</text>
      </g>
     </g>
     <g id="xtick_7">
@@ -243,7 +242,7 @@
       </g>
      </g>
      <g id="text_25">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="182.121546" y="340.416406" transform="rotate(-0 182.121546 340.416406)">Uncertain</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="182.121546" y="340.416406" transform="rotate(-0 182.121546 340.416406)">Uncertain</text>
      </g>
     </g>
    </g>
@@ -255,7 +254,7 @@
       </g>
      </g>
      <g id="text_26">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="329.944531" transform="rotate(-0 35.301563 329.944531)">0</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="329.944531" transform="rotate(-0 35.301563 329.944531)">0</text>
      </g>
     </g>
     <g id="ytick_6">
@@ -265,7 +264,7 @@
       </g>
      </g>
      <g id="text_27">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="293.30901" transform="rotate(-0 35.301563 293.30901)">20</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="293.30901" transform="rotate(-0 35.301563 293.30901)">20</text>
      </g>
     </g>
     <g id="ytick_7">
@@ -275,7 +274,7 @@
       </g>
      </g>
      <g id="text_28">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="256.673488" transform="rotate(-0 35.301563 256.673488)">40</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="256.673488" transform="rotate(-0 35.301563 256.673488)">40</text>
      </g>
     </g>
     <g id="ytick_8">
@@ -285,11 +284,11 @@
       </g>
      </g>
      <g id="text_29">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="220.037966" transform="rotate(-0 35.301563 220.037966)">60</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="220.037966" transform="rotate(-0 35.301563 220.037966)">60</text>
      </g>
     </g>
     <g id="text_30">
-     <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="19.1625" y="271.519374" transform="rotate(-90 19.1625 271.519374)">Participants (%)</text>
+     <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="19.1625" y="271.519374" transform="rotate(-90 19.1625 271.519374)">Participants (%)</text>
     </g>
    </g>
    <g id="patch_11">
@@ -308,16 +307,16 @@
     <path d="M 166.820491 326.472656 L 197.422601 326.472656 L 197.422601 312.382071 L 166.820491 312.382071 z " clip-path="url(#p0593528441)" style="fill: #927a51; stroke: #202020; stroke-width: 0.65; stroke-linejoin: miter" />
    </g>
    <g id="text_31">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="76.59703" y="242.754737" transform="rotate(-0 76.59703 242.754737)">17 (43.6%)</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="76.59703" y="242.754737" transform="rotate(-0 76.59703 242.754737)">17 (43.6%)</text>
    </g>
    <g id="text_32">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="129.359288" y="233.361013" transform="rotate(-0 129.359288 233.361013)">19 (48.7%)</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="129.359288" y="233.361013" transform="rotate(-0 129.359288 233.361013)">19 (48.7%)</text>
    </g>
    <g id="text_33">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="182.121546" y="308.510802" transform="rotate(-0 182.121546 308.510802)">3 (7.7%)</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="182.121546" y="308.510802" transform="rotate(-0 182.121546 308.510802)">3 (7.7%)</text>
    </g>
    <g id="text_34">
-    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end; fill: #202020" x="27.645262" y="211.508239" transform="rotate(-0 27.645262 211.508239)">(b)</text>
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', serif; text-anchor: end; fill: #202020" x="27.645262" y="211.508239" transform="rotate(-0 27.645262 211.508239)">(b)</text>
    </g>
   </g>
   <g id="axes_3">
@@ -347,7 +346,7 @@
       </g>
      </g>
      <g id="text_35">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="309.489321" y="340.416406" transform="rotate(-0 309.489321 340.416406)">−0.4</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="309.489321" y="340.416406" transform="rotate(-0 309.489321 340.416406)">−0.4</text>
      </g>
     </g>
     <g id="xtick_9">
@@ -357,7 +356,7 @@
       </g>
      </g>
      <g id="text_36">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="347.66387" y="340.416406" transform="rotate(-0 347.66387 340.416406)">−0.2</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="347.66387" y="340.416406" transform="rotate(-0 347.66387 340.416406)">−0.2</text>
      </g>
     </g>
     <g id="xtick_10">
@@ -367,7 +366,7 @@
       </g>
      </g>
      <g id="text_37">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="385.838419" y="340.416406" transform="rotate(-0 385.838419 340.416406)">0.0</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="385.838419" y="340.416406" transform="rotate(-0 385.838419 340.416406)">0.0</text>
      </g>
     </g>
     <g id="xtick_11">
@@ -377,7 +376,7 @@
       </g>
      </g>
      <g id="text_38">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="424.012967" y="340.416406" transform="rotate(-0 424.012967 340.416406)">0.2</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="424.012967" y="340.416406" transform="rotate(-0 424.012967 340.416406)">0.2</text>
      </g>
     </g>
     <g id="xtick_12">
@@ -387,26 +386,26 @@
       </g>
      </g>
      <g id="text_39">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="462.187516" y="340.416406" transform="rotate(-0 462.187516 340.416406)">0.4</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="462.187516" y="340.416406" transform="rotate(-0 462.187516 340.416406)">0.4</text>
      </g>
     </g>
     <g id="text_40">
-     <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="385.838419" y="353.499219" transform="rotate(-0 385.838419 353.499219)">Index value</text>
+     <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="385.838419" y="353.499219" transform="rotate(-0 385.838419 353.499219)">Index value</text>
     </g>
    </g>
    <g id="matplotlib.axis_6">
     <g id="ytick_9">
      <g id="line2d_24" />
      <g id="text_41">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; fill: #0072b2" transform="translate(247.855171 254.748904)">Standard</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; fill: #0072b2" transform="translate(266.731734 265.220467)">BBI</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; fill: #0072b2" transform="translate(247.855171 254.748904)">Standard</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; fill: #0072b2" transform="translate(266.731734 265.220467)">BBI</text>
      </g>
     </g>
     <g id="ytick_10">
      <g id="line2d_25" />
      <g id="text_42">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; fill: #2a7f62" transform="translate(233.977046 286.15078)">Confidence-</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; fill: #2a7f62" transform="translate(246.745796 296.622343)">weighted</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; fill: #2a7f62" transform="translate(233.977046 286.15078)">Confidence-</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; fill: #2a7f62" transform="translate(246.745796 296.622343)">weighted</text>
      </g>
     </g>
    </g>
@@ -417,16 +416,16 @@
     <path d="M 290.402046 326.472656 L 481.274791 326.472656 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
    <g id="text_43">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #c43c39" x="309.489321" y="212.0537" transform="rotate(-0 309.489321 212.0537)">Incorrect</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #c43c39" x="309.489321" y="212.0537" transform="rotate(-0 309.489321 212.0537)">Incorrect</text>
    </g>
    <g id="text_44">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #2a7f62" x="385.838419" y="212.0537" transform="rotate(-0 385.838419 212.0537)">Blinded</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #2a7f62" x="385.838419" y="212.0537" transform="rotate(-0 385.838419 212.0537)">Blinded</text>
    </g>
    <g id="text_45">
-    <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #0072b2" x="462.187516" y="212.0537" transform="rotate(-0 462.187516 212.0537)">Correct</text>
+    <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #0072b2" x="462.187516" y="212.0537" transform="rotate(-0 462.187516 212.0537)">Correct</text>
    </g>
    <g id="text_46">
-    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end; fill: #202020" x="283.7215" y="211.508239" transform="rotate(-0 283.7215 211.508239)">(c)</text>
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', serif; text-anchor: end; fill: #202020" x="283.7215" y="211.508239" transform="rotate(-0 283.7215 211.508239)">(c)</text>
    </g>
    <g id="LineCollection_2">
     <path d="M 317.319997 255.818436 L 434.780148 255.818436 " clip-path="url(#p3da64231e9)" style="fill: none; stroke: #0072b2; stroke-width: 1.35" />
@@ -489,8 +488,8 @@
       </g>
      </g>
      <g id="text_47">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(54.95054 567.520439)">Symmetry</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(57.870071 578.010751)">(4 items)</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(54.95054 567.520439)">Symmetry</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(57.870071 578.010751)">(4 items)</text>
      </g>
     </g>
     <g id="xtick_14">
@@ -500,8 +499,8 @@
       </g>
      </g>
      <g id="text_48">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(246.795208 567.539189)">Neutral</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(243.875677 578.010751)">(4 items)</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(246.795208 567.539189)">Neutral</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(243.875677 578.010751)">(4 items)</text>
      </g>
     </g>
     <g id="xtick_15">
@@ -511,8 +510,8 @@
       </g>
      </g>
      <g id="text_49">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(436.404719 567.539189)">Sham</text>
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif" transform="translate(429.881282 578.010751)">(4 items)</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(436.404719 567.539189)">Sham</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif" transform="translate(429.881282 578.010751)">(4 items)</text>
      </g>
     </g>
    </g>
@@ -527,7 +526,7 @@
       </g>
      </g>
      <g id="text_50">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="552.26399" transform="rotate(-0 35.301563 552.26399)">0</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="552.26399" transform="rotate(-0 35.301563 552.26399)">0</text>
      </g>
     </g>
     <g id="ytick_12">
@@ -540,7 +539,7 @@
       </g>
      </g>
      <g id="text_51">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="522.243215" transform="rotate(-0 35.301563 522.243215)">25</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="522.243215" transform="rotate(-0 35.301563 522.243215)">25</text>
      </g>
     </g>
     <g id="ytick_13">
@@ -553,7 +552,7 @@
       </g>
      </g>
      <g id="text_52">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="492.22244" transform="rotate(-0 35.301563 492.22244)">50</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="492.22244" transform="rotate(-0 35.301563 492.22244)">50</text>
      </g>
     </g>
     <g id="ytick_14">
@@ -566,7 +565,7 @@
       </g>
      </g>
      <g id="text_53">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="462.201665" transform="rotate(-0 35.301563 462.201665)">75</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="462.201665" transform="rotate(-0 35.301563 462.201665)">75</text>
      </g>
     </g>
     <g id="ytick_15">
@@ -579,11 +578,11 @@
       </g>
      </g>
      <g id="text_54">
-      <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end" x="35.301563" y="432.18089" transform="rotate(-0 35.301563 432.18089)">100</text>
+      <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: end" x="35.301563" y="432.18089" transform="rotate(-0 35.301563 432.18089)">100</text>
      </g>
     </g>
     <g id="text_55">
-     <text style="font-size: 10px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="14.14375" y="488.750565" transform="rotate(-90 14.14375 488.750565)">Questions answered correctly (%)</text>
+     <text style="font-size: 10px; font-family: 'Times New Roman', serif; text-anchor: middle" x="14.14375" y="488.750565" transform="rotate(-90 14.14375 488.750565)">Questions answered correctly (%)</text>
     </g>
    </g>
    <g id="line2d_46">
@@ -989,10 +988,10 @@
     </g>
    </g>
    <g id="text_56">
-    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: end; fill: #202020" x="26.9375" y="402.79049" transform="rotate(-0 26.9375 402.79049)">(d)</text>
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Times New Roman', serif; text-anchor: end; fill: #202020" x="26.9375" y="402.79049" transform="rotate(-0 26.9375 402.79049)">(d)</text>
    </g>
    <g id="text_57">
-    <text style="font-size: 10.8px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle" x="261.788177" y="389.905691" transform="rotate(-0 261.788177 389.905691)">Participant pre-unmasking accuracy profiles by final guess</text>
+    <text style="font-size: 10.8px; font-family: 'Times New Roman', serif; text-anchor: middle" x="261.788177" y="389.905691" transform="rotate(-0 261.788177 389.905691)">Participant pre-unmasking accuracy profiles by final guess</text>
    </g>
    <g id="line2d_85">
     <path d="M 75.782571 488.750565 L 261.788177 518.77134 L 447.793782 502.877989 " clip-path="url(#pca4a51418f)" style="fill: none; stroke: #0072b2; stroke-width: 2.8; stroke-linecap: square" />
@@ -1027,7 +1026,7 @@
      </g>
     </g>
     <g id="text_58">
-     <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: start" x="149.730735" y="417.289219" transform="rotate(-0 149.730735 417.289219)">Correct final guess (n=17)</text>
+     <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: start" x="149.730735" y="417.289219" transform="rotate(-0 149.730735 417.289219)">Correct final guess (n=17)</text>
     </g>
     <g id="line2d_88">
      <path d="M 248.930306 414.419219 L 259.590306 414.419219 L 270.250306 414.419219 " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c43c39; stroke-width: 2.8" />
@@ -1036,12 +1035,12 @@
      </g>
     </g>
     <g id="text_59">
-     <text style="font-size: 8.25px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: start" x="276.810306" y="417.289219" transform="rotate(-0 276.810306 417.289219)">Incorrect/uncertain final guess (n=22)</text>
+     <text style="font-size: 8.25px; font-family: 'Times New Roman', serif; text-anchor: start" x="276.810306" y="417.289219" transform="rotate(-0 276.810306 417.289219)">Incorrect/uncertain final guess (n=22)</text>
     </g>
    </g>
   </g>
   <g id="text_60">
-   <text style="font-size: 10.8px; font-family: 'Times New Roman', 'DejaVu Serif', 'Liberation Serif', serif; text-anchor: middle; fill: #202020" x="236.55983" y="198.907272" transform="rotate(-0 236.55983 198.907272)">Post-unmasking assessments</text>
+   <text style="font-size: 10.8px; font-family: 'Times New Roman', serif; text-anchor: middle; fill: #202020" x="236.55983" y="198.907272" transform="rotate(-0 236.55983 198.907272)">Post-unmasking assessments</text>
   </g>
  </g>
  <defs>
