@@ -4,6 +4,12 @@ This log records control-plane changes and material workflow decisions. It is no
 
 ## 2026-08-24
 
+- Published the Study 3 reproducibility package as GitHub release `v1.0.0`
+  (commit `1de1acc03e325e66aad8751c5e4a0efa86e149f7`) and Zenodo record
+  `22073981` (DOI `10.5281/zenodo.22073981`). Added the reciprocal Zenodo link
+  to the GitHub repository, replaced the supplementary DOI and commit
+  placeholders with final public identifiers, and recorded the verified ZIP
+  SHA-256 `0fe7094d3224736fe8ac7513c642e685812e1e329b6342fac112cff9562a609f`.
 - Implemented the owner's approved audit concern 4 by stating the measure-specific pictograph response ranges in `main.tex`: PBBS and Small Self use A--G/1--7, whereas SFoRC uses A--H/1--8. Recorded the owner's reaffirmed approval of concerns 1--4 and authorial resolution of concerns 5--6; concerns 5--6 are outside scope and must not be raised again unless the owner reopens them.
 - Recorded the project-wide paragraph-structure rule that each paragraph must have one primary communicative purpose. Future prose recommendations must split independently interpretable points and remove repetition rather than accumulating loosely related qualifications, examples, or future directions in one paragraph. No submission-facing text was changed.
 - Restored the pictographic self-related results panel as main Figure 7 under the approved filename `Fig07_results_subjective_self_pictogram_violin_grid.pdf`. Renumbered the later active main assets in manuscript order as Figure 8 `Fig08_3d_ascr_results.pdf`, Figure 9 `Fig09_results_blinding_condensed_summary.pdf`, and Figure 10 `Fig10_cross_study_profiles.pdf`.

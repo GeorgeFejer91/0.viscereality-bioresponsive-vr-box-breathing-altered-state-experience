@@ -2,6 +2,22 @@
 
 Last updated: 2026-08-24
 
+## 2026-08-24 reproducibility release
+
+- The public reproducibility repository is
+  `https://github.com/GeorgeFejer91/Viscereality-Bioresponsive-Virtual-Reality-for-Box-Breathing-and-Altered-State-Experience`.
+  Release `v1.0.0` resolves to commit
+  `1de1acc03e325e66aad8751c5e4a0efa86e149f7`.
+- The immutable Zenodo version 1.0.0 record is
+  `https://zenodo.org/records/22073981`, with version DOI
+  `10.5281/zenodo.22073981`.
+- The published Zenodo ZIP contains 2,059 entries; all 2,057 manifested files
+  passed SHA-256 verification. The archive SHA-256 is
+  `0fe7094d3224736fe8ac7513c642e685812e1e329b6342fac112cff9562a609f`.
+- The supplementary reproducibility section now names the final Zenodo DOI,
+  GitHub repository, release tag, and exact release commit instead of external
+  identifier placeholders.
+
 ## GitHub checkpoint policy
 
 - Before every separately approved project-text item is implemented, the complete pre-item repository state must be committed and successfully pushed to the configured GitHub remote.
@@ -62,7 +78,9 @@ Agents must run `git status --short` at the start of any editing task because th
 - The active supplementary source is `supplementary/main.tex`. On 2026-08-21, the user approved and an agent implemented a supplementary-only technical restructure comprising preregistration deviations, PLV computation and quality screening, altered-state questionnaire analyses, temporal experience tracer analyses, blinding analyses, and reproducibility access.
 - The implemented supplement contains the approved PLV equation, pooled lower-tail IQR calculation, exact exclusion list and condition-level PLV table, 3D-ASCr scoring equations, compact tracer-method description, Bang blinding-index definition and observed counts, and the OSF access statement.
 - Exact numerical table bodies for the detailed 11-ASC, tracer, and expanded blinding results remain pending separate cell-by-cell approval because those values were not displayed in the approved recommendation batch. Their subsection structure is present but intentionally unpopulated.
-- The GitHub reproducibility URL in the supplement retains the explicitly approved `FINAL_SUBMISSION_COMMIT` placeholder. It must not be treated as submission-ready until a cleaned immutable commit exists and its exact URL is separately approved.
+- The supplement now identifies the cleaned public reproducibility repository,
+  release `v1.0.0`, and exact commit
+  `1de1acc03e325e66aad8751c5e4a0efa86e149f7`.
 - The newly populated supplementary sections do not yet have explicit, identifiable referrals in `main.tex`. The user expressly limited this implementation to the supplementary document and deferred all corresponding `main.tex` changes for separate analysis and item-by-item preapproval. This is an unresolved supplement-admissibility discrepancy, so the active supplement is a working technical draft and must not be treated as submission-ready.
 - Before substantive content is added to or retained in the active supplement, it must be mapped to an explicit, identifiable referral in `main.tex`. Any missing referral is a mandatory unresolved discrepancy, requiring either an approved referral in `main.tex` or approved omission from the supplement.
 - Supplementary tracer figure copies are stored in `supplementary/figures/`. Root copies remain temporarily because `main.tex` still references them.
@@ -147,7 +165,8 @@ The consolidated checkable tracker is `for-ai/FINAL_SUBMISSION_CHECKLIST.md`. Ke
 - The formal author order now places Anestis Lalidis Mateo before Johannes Blum: George Fejer, Till Holzapfel, Taru Hirvonen, Anestis Lalidis Mateo, Johannes Blum, Michael Gaebler, and Bigna Lenggenhager. Affiliation identifiers remain author-specific.
 - The approved minimal ethics declaration now identifies approval by the Ethics Committee of the University of Konstanz and conduct in accordance with the Declaration of Helsinki.
 - All authors will receive the final manuscript draft for final approval of authorship order, contributions, declarations, and content before submission.
-- Replacing the supplement's `FINAL_SUBMISSION_COMMIT` placeholder remains deliberately deferred as the final task.
+- The supplement's former `FINAL_SUBMISSION_COMMIT` placeholder has been
+  replaced by the exact public release commit.
 - The user rejected supplementary blinding. The active supplement's current blinding section remains present pending exact deletion approval; once removed, reproducibility becomes Section S5.
 - The revised tracer plan retains the motivation in the main Introduction, introduces ``psychometric time-series ratings'' as an alternative term, and limits other main tracer content to one exploratory Methods referral to S4.
 - The direct OSF reference for recreated stimuli, item keys, and study materials should remain in Methods and also point to the supplementary reproducibility map.

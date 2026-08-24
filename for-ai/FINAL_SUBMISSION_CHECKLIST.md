@@ -35,12 +35,12 @@ Use this checklist for the submission-frozen manuscript candidate. Checked items
 - [ ] Run the final end-to-end reproducibility audit after manuscript and supplement formatting are frozen.
 - [ ] Confirm that every reported statistic, table, and figure maps to the correct input, script, environment, output, and expected result.
 - [ ] Confirm that participant data are appropriately deidentified and that consent, rights, and access conditions permit the stated sharing.
-- [ ] Finalize the authoritative GitHub reproducibility commit and release tag.
-- [ ] Create or finalize the immutable Zenodo archival release and version-specific DOI.
+- [x] Finalize the authoritative GitHub reproducibility commit and release tag.
+- [x] Create or finalize the immutable Zenodo archival release and version-specific DOI.
 - [ ] Finalize the OSF package and confirm its DOI, public visibility, licence, documentation, and file inventory.
 - [ ] Synchronize titles, creators, author order, ORCIDs, versions, licences, related identifiers, checksums, and reciprocal links across OSF, Zenodo, GitHub, the manuscript, and the supplement.
 - [ ] Add or finalize formal reference-list entries for publicly archived data and software records using their persistent identifiers.
-- [ ] Replace `ZENODO_VERSION_DOI`, `FINAL_SUBMISSION_COMMIT`, and any other approved placeholder with the final identifier.
+- [x] Replace `ZENODO_VERSION_DOI`, `FINAL_SUBMISSION_COMMIT`, and any other approved placeholder with the final identifier.
 - [ ] Verify every repository and DOI link while logged out.
 
 ## 4. Scientific and editorial readiness
