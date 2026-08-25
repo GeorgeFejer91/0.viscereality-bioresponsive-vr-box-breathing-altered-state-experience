@@ -226,3 +226,4 @@ This log records control-plane changes and material workflow decisions. It is no
 ## 2026-08-25
 
 - Documented the approved routing of self-malleability material to Study 5 and particle-generation, particle-aesthetics, and abstract-emotion material to Study 6; no manuscript wording was changed by this documentation item.
+- Added project-wide scientific-prose rules that limit colon use and cap prose enumerations at three parallel items. The same rules place citations next to the claims they support and require sources for externally verifiable concrete factual claims.
