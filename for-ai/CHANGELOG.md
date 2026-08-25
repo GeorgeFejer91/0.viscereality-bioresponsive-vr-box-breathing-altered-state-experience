@@ -222,3 +222,7 @@ This log records control-plane changes and material workflow decisions. It is no
 - Rebuilt the canonical 52-page manuscript and 17-page Online Resource PDFs. The final logs contain no undefined citations or references, duplicate labels, overfull boxes, or fatal errors, and all affected pages were rendered and visually verified.
 - Completed the owner-requested read-only prior-run folder check without rerunning the OSF analysis. All seven required result views are present with the expected 39, 78, 3, 3, 22, 381, and 448 rows; no test or script addition was required.
 - Marked statistical reporting complete in the internal readiness records under the owner-defined scope. The separately raised blinding wording and adverse-events issues are excluded from this task, and OSF branch state is not a readiness criterion for this repository.
+
+## 2026-08-25
+
+- Documented the approved routing of self-malleability material to Study 5 and particle-generation, particle-aesthetics, and abstract-emotion material to Study 6; no manuscript wording was changed by this documentation item.

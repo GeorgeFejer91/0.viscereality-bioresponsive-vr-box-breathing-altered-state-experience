@@ -554,3 +554,7 @@ Consequences:
 - Treat the separately raised blinding wording and adverse-events issues as outside this statistical completion scope.
 - Do not treat OSF branch state as a readiness blocker for this repository.
 - Continue to preserve the OSF repository as immutable for AI agents.
+
+## 2026-08-25 - Cross-study Introduction-material routing
+
+Detailed self-malleability and peripersonal-space material is reserved for Study 5. Particle-system history, particles as a generative medium, particle aesthetics, and abstract particle representations of emotion are reserved for Study 6. The current Viscereality Introduction retains only the minimum bridges needed to motivate its self-related outcomes, altered-state outcomes, and symmetry contrast. Cross-study reuse is conceptual and citation-based, with study-specific rewriting rather than verbatim transfer.
