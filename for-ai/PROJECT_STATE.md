@@ -1,6 +1,6 @@
 # Current project state
 
-Last updated: 2026-08-24
+Last updated: 2026-08-26
 
 ## 2026-08-24 reproducibility release
 
@@ -182,6 +182,7 @@ The consolidated checkable tracker is `for-ai/FINAL_SUBMISSION_CHECKLIST.md`. Ke
 - The user finalized the CRediT role allocation: George Fejer holds Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Software, Validation, Visualization, Writing -- original draft, and Writing -- review and editing; Till Holzapfel holds Conceptualization, Methodology, Resources, Software, Validation, and Visualization; Taru Hirvonen holds Methodology, Resources, Software, and Visualization; Johannes Blum holds Methodology, Resources, Software, and Validation; Anestis Lalidis Mateo holds Methodology, Resources, and Software; Michael Gaebler holds Conceptualization, Project administration, Supervision, and Writing -- review and editing; Bigna Lenggenhager holds Conceptualization, Funding acquisition, Supervision, and Writing -- review and editing. Investigation is assigned only to George Fejer because he collected all data.
 - The approved assembled `Authors' contributions` statement is inserted in `main.tex` using the finalized CRediT allocation and manuscript order.
 - The formal author order now places Anestis Lalidis Mateo before Johannes Blum: George Fejer, Till Holzapfel, Taru Hirvonen, Anestis Lalidis Mateo, Johannes Blum, Michael Gaebler, and Bigna Lenggenhager. Affiliation identifiers remain author-specific.
+- George Fejer's affiliations are, in order, the Max Planck Institute for Human Development in Berlin, the Max Planck Institute for Human Cognitive and Brain Sciences in Leipzig, the University of Konstanz, and the ALIUS Research Network. Michael Gaebler is affiliated with both Max Planck institutes. The main manuscript and Online Resource corresponding-author block reflect the approved metadata.
 - The approved minimal ethics declaration now identifies approval by the Ethics Committee of the University of Konstanz and conduct in accordance with the Declaration of Helsinki.
 - All authors will receive the final manuscript draft for final approval of authorship order, contributions, declarations, and content before submission.
 - The supplement's former `FINAL_SUBMISSION_COMMIT` placeholder has been

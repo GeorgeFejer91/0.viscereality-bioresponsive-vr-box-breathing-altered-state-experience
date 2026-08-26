@@ -2,6 +2,10 @@
 
 This log records control-plane changes and material workflow decisions. It is not a substitute for Git history.
 
+## 2026-08-26
+
+- Added the Max Planck Institute for Human Development in Berlin as George Fejer's first affiliation, followed by the Max Planck Institute for Human Cognitive and Brain Sciences in Leipzig, the University of Konstanz, and the ALIUS Research Network. Added the Berlin institute to Michael Gaebler's affiliations and synchronized George Fejer's corresponding-author affiliations in Online Resource 1.
+
 ## 2026-08-24
 
 - Recorded and implemented the user's project-wide neurorehabilitation terminology preference: use ``stroke patients'' rather than ``stroke survivors.''
