@@ -111,6 +111,14 @@ In neurorehabilitation contexts, use ``stroke patients'' rather than ``stroke su
 6. References to inferential or sensitivity analyses based on all 47 tested participants must be removed from the manuscript and active supplement only after item-by-item approval.
 7. The authoritative reproducibility repository remains immutable for AI agents. Agents may identify upstream files affected by this policy but must not delete, rewrite, regenerate, or otherwise modify them.
 
+## Mandatory academic-writing skill
+
+1. Invoke the installed Codex skill `academic-writing-style` whenever drafting, revising, editing, reviewing, or critiquing academic or scientific prose for this project.
+2. Apply the skill together with the stricter project-specific rules in this control plane. The project rules govern any conflict.
+3. The canonical skill repository is `https://github.com/GeorgeFejer91/academic-writing-style`, and the installed local checkout is `C:/Users/gyorg/.codex/skills/academic-writing-style`.
+4. Keep broadly reusable academic-style preferences in the skill. Keep manuscript-specific facts, terminology, provenance, approval requirements, and statistical decisions in this project's control plane.
+5. If the skill is unavailable in a future environment, state that limitation and apply the writing-style rules below as the fallback.
+
 ## Writing style
 
 1. Apply these rules to all project prose, including every proposed replacement and other prose recommendation presented for approval.

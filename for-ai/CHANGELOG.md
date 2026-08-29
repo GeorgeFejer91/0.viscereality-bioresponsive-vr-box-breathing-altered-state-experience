@@ -2,6 +2,10 @@
 
 This log records control-plane changes and material workflow decisions. It is not a substitute for Git history.
 
+## 2026-08-29
+
+- Created and installed the implicitly invocable Codex skill `academic-writing-style` for every academic-writing task. Recorded its private canonical repository at `https://github.com/GeorgeFejer91/academic-writing-style` and required future agents to combine the reusable skill with this project's stricter local instructions. No submission-facing text was changed.
+
 ## 2026-08-26
 
 - Added the Max Planck Institute for Human Development in Berlin as George Fejer's first affiliation, followed by the Max Planck Institute for Human Cognitive and Brain Sciences in Leipzig, the University of Konstanz, and the ALIUS Research Network. Added the Berlin institute to Michael Gaebler's affiliations and synchronized George Fejer's corresponding-author affiliations in Online Resource 1.
