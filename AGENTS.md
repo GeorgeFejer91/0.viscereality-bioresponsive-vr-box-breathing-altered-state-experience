@@ -21,3 +21,16 @@ Immutable research-source gate: figures, statistics, original data, analysis pip
 If the user gives a new instruction that applies to the project as a whole, the agent must update the appropriate file in `for-ai/` during the same task. If the correct destination is unclear, record it in `for-ai/GLOBAL_INSTRUCTIONS.md` and note the decision in `for-ai/CHANGELOG.md`.
 
 `AGENTS.md` and the entire `for-ai/` directory are internal workflow controls. Never include them in a journal, Overleaf, OSF, or other external submission package.
+
+<!-- for-ai:shared-skills:start -->
+## Shared project workflow
+
+At project entry, also read [for-ai/SKILLS.md](for-ai/SKILLS.md) for the required RTK, GSD Core,
+and Superpowers baseline, conditional Rust/Tauri/HTML routes, and Git worktree
+policy. Preserve this project's product and evidence contracts.
+
+Read the durable project goal and resume its active checklist at session
+start. Before ending, update that same state with evidence, blockers, the
+next action, and observed Git/publication state. Keep the overall goal open
+until its own acceptance criteria pass.
+<!-- for-ai:shared-skills:end -->
